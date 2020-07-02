@@ -21,7 +21,7 @@ endif::withRemarks[]
 // additional markers might be configured here!
 :include_configuration: tags=**;{language}{remarks};!*
 
-:curriculum-short: MODULKUERZEL
+:curriculum-short: DATA
 
 ifeval::["{language}" == "DE"]
 :curriculum-name: MODULNAME IN VOLLER LAENGE
