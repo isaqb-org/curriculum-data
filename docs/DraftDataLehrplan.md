@@ -129,8 +129,11 @@ Retention time, cloud storage, data lake, data warehouse, on premise storage, di
 
 ## Terms and concepts
 
+Predictive and descriptive data analysis, Data science, BI, Dashboards. 
+
 ## Learning goals
 
+* Executing queries and data models against stored data.
 * Data based prediction and planning
     * Models of real world systems can be used to predict future behaviour.
     * Based on the predicted behaviour organizations can implement actions. 
@@ -189,8 +192,40 @@ DataOps definition. DataOps Components: Catalog/Registry - Metadata Store, Movem
 # Crosscutting concerns 
 
 ## Terms and concepts
+Metadata Management, Data Quality Assurance, Security, Data and Systems Governance, Data and Systems Oberservability
 
 ## Learning goals
+
+* Understand metadata and why it is important.
+  * Understand data profiling as a process of gathering metadata.
+  * Know the representation form of metadata
+* Know the metadata categories for data management:
+  * Basic - size, format, aliases, last modified time, access control lists
+  * Content-based - schema, number of records, single-column and inter-column   * metadata, data fingerprint, key field, frequent tokens, similar datasets
+  * Provenance - reading jobs, writing jobs, downstream datasets, upstream datasets
+  * User-supplied - description, annotations
+  * Team and project -  project description, owner team name
+  * Temporal - change history
+* Know existing metadata systems and frameworks
+
+* Understand data quality requirements, assessment and monitoring:
+  * Quantitative Dimensionen of Data Quality as Foundation for Metrics:
+      Intrinsic Dimensions: Accuracy, Lineage, Structural/Syntactic Consistency, Semantic Consistency, Outliers.
+      Contextual (Inter-Column) Dimensions: Completeness, Consistency,      Timeliness.
+  * Qualitative Dimensions: Authoritative (trusted) sources, Trust, Anonymity/Privacy/Governance compliance, Standards and Policies.
+
+* Understand Data Cleaning Approaches: Rule-based, Missing values imputation, Duplicate detection and consolidation.
+* Understand the security and data governance aspects of data management:
+  * Archivierung
+  * Einschlägige Gesetze und Verordnungen (DSGVO, ,Anonymisierung, Pseudonymisierung)
+  * Geo-Fencing
+  * Schutzklassen und Sicherheitsstufen
+
+* Understand the data observability, monitoring, traceability, logging: 
+  * Dashboards
+  * Logging
+ 
+
 
 # Examples of data processing pipelines 
 
