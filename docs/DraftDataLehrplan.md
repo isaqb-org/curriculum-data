@@ -154,7 +154,7 @@ Retention time, cloud storage, data lake, data warehouse, on premise storage, di
 
 ## Terms and concepts
 
-DataOps Components: Catalog/Registry - Metadata Store, Movement/ETL - Data Pipelines, Alignment/Unification - Creating Consistency in Data, Data Integration, Publishing Data - (DaaS), Data Feedback, Data Governance.
+DataOps definition. DataOps Components: Catalog/Registry - Metadata Store, Movement/ETL - Data Pipelines, Alignment/Unification - Creating Consistency in Data, Data Integration, Publishing Data - (DaaS), Data Feedback, Data Governance.
 
 ## Learning goals
 
