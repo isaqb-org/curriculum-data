@@ -154,6 +154,8 @@ Retention time, cloud storage, data lake, data warehouse, on premise storage, di
 
 ## Terms and concepts
 
+DataOps Components: Catalog/Registry - Metadata Store, Movement/ETL - Data Pipelines, Alignment/Unification - Creating Consistency in Data, Data Integration, Publishing Data - (DaaS), Data Feedback, Data Governance.
+
 ## Learning goals
 
 * Understand the need for automation of data ingestion and processing.
@@ -161,6 +163,14 @@ Retention time, cloud storage, data lake, data warehouse, on premise storage, di
   * Understandability 
   * Less errors
   * Cost reduction
+* Know the DataOps Practices. 
+  * Agile process application - short time-to-delivery and responsiveness to change
+  * Implementint everything in code (e.g. host configuration, network configuration, automation, gathering and publishing test results, service installation * and startup, error handling)
+  * Applying software engineering best practices - using version control with branching and merging, automated regression testing of everything, clear code * design and factoring, clear comments
+  * Maintaining multiple environments (keep development, acceptance testing, and production environments separate)
+  * Integrating the toolchains - everything needs to work together.
+  * Testing - automated testing to make changes quickly and find problems early.
+
 * Know tools for definition and execution of data transformation.
 
 
