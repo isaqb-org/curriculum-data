@@ -122,7 +122,7 @@ Retention time, cloud storage, data lake, data warehouse, on premise storage, di
 
 ## Learning goals 
 
-* Know different types of query languages and the 
+* Know different types of query languages and the [???]
 
 
 #  Data consumer
