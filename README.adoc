@@ -160,11 +160,11 @@ For that purpose we define a variable named `include_configuration` in the file 
 
 ==== Structure File Example
 
-In theory, you can just use the `docs/advanced-curriculum.adoc` as is and just
+In theory, you can just use the `docs/curriculum-template.adoc` as is and just
 edit the section documents in the subdirectories. If you want to create your own file,
 we recommend to stick with the following:
 
-From `docs/advanced-curriculum.adoc` (excerpts):
+From `docs/curriculum-template.adoc` (excerpts):
 
 [source,asciidoc]
 ----
@@ -219,7 +219,8 @@ task buildDocs {
 
 In the task "renderNoRemarksDE", certain attributes (aka variables) are defined that configure the corresponding output.
 
-
+== Additional translations/languages
+include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
 
 == Maintainers
 
