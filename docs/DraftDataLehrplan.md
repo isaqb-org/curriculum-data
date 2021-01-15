@@ -91,6 +91,29 @@ Retention time, cloud storage, data lake, data mesh, data warehouse, on premise 
   * Distributed file system: HDFS, Ceph, Lustre
   * Cloud storage: S3, Azure Blob, Google ?, IBM ?
 * Data Mesh
+  * When Centralization is an issue: DWH and Data Lake
+  * Data Mesh Paradigm Shift Principles: 
+    * Decentralization (Decentralized Ownership)
+      * Domain-driven data decomposition
+      * Domain data is a first-class concern
+      * Data pipelines are second class
+    * Product Thinking (Success Criteria: Decreased Lead time to discover and consume data product) 
+      * Domain data as a product (data is consumed by Data Scientists)
+      * Characteristics: Data is discoverable, addressable, trustworthy (SLO), self-described, secure
+      * Publishing output data points (instead of getting data trough centralized data pipelines)
+      * Role: Domain Data Product Owner
+    * Self-service Infrastructure as a Platform (Success Criteria: Reduced lead time to create new secure and discoverable data products)
+      * Distributed
+      * Data Pipelines are domain-agnostic (like cloud platforms)
+      * DataOps (Data Product CI/CD)
+      * Metadata
+    * Federated Ecosystem Governance
+      * Encryption
+      * ACLs
+      * Regulations
+
+
+
 * Understand that different types of workload require different adopted storage structures.
 * Know that multiple representations of data can be stored.
 * Data lineage helps to trace the origins of the transformed representations.
