@@ -90,6 +90,7 @@ Retention time, cloud storage, data lake, data warehouse, on premise storage, di
   * Technical storage formats: Parquet, Avro, ORC
   * Distributed file system: HDFS, Ceph, Lustre
   * Cloud storage: S3, Azure Blob, Google ?, IBM ?
+* Data Mesh
 * Understand that different types of workload require different adopted storage structures.
 * Know that multiple representations of data can be stored.
 * Data lineage helps to trace the origins of the transformed representations.
