@@ -69,7 +69,7 @@ ETL, ELT, batch processing, stream processing, event driven architecture, data l
 
 ## Terms and concepts
 
-Retention time, cloud storage, data lake, data warehouse, on premise storage, distributed file systems.
+Retention time, cloud storage, data lake, data mesh, data warehouse, on premise storage, distributed file systems.
 
 ## Learning goals 
 
