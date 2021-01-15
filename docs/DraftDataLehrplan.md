@@ -169,7 +169,7 @@ DataOps definition. DataOps Components: Catalog/Registry - Metadata Store, Movem
 * Know the DataOps Practices. 
   * Agile process application - short time-to-delivery and responsiveness to change
   * Implementint everything in code (e.g. host configuration, network configuration, automation, gathering and publishing test results, service installation * and startup, error handling)
-  * Applying software engineering best practices - using version control with branching and merging, automated regression testing of everything, clear code * design and factoring, clear comments
+  * Applying software engineering best practices - using version control with branching and merging, automated regression testing of everything, clean code design and factoring, clear comments
   * Maintaining multiple environments (keep development, acceptance testing, and production environments separate)
   * Integrating the toolchains - everything needs to work together.
   * Testing - automated testing to make changes quickly and find problems early.
@@ -201,20 +201,20 @@ Metadata Management, Data Quality Assurance, Security, Data and Systems Governan
   * Know the representation form of metadata
 * Know the metadata categories for data management:
   * Basic - size, format, aliases, last modified time, access control lists
-  * Content-based - schema, number of records, single-column and inter-column   * metadata, data fingerprint, key field, frequent tokens, similar datasets
+  * Content-based - schema, number of records, single-column and inter-column metadata, data fingerprint, key field, frequent tokens, similar datasets
   * Provenance - reading jobs, writing jobs, downstream datasets, upstream datasets
   * User-supplied - description, annotations
   * Team and project -  project description, owner team name
   * Temporal - change history
-* Know existing metadata systems and frameworks
+* Know existing metadata systems and frameworks.
 
 * Understand data quality requirements, assessment and monitoring:
-  * Quantitative Dimensionen of Data Quality as Foundation for Metrics:
-      Intrinsic Dimensions: Accuracy, Lineage, Structural/Syntactic Consistency, Semantic Consistency, Outliers.
-      Contextual (Inter-Column) Dimensions: Completeness, Consistency,      Timeliness.
-  * Qualitative Dimensions: Authoritative (trusted) sources, Trust, Anonymity/Privacy/Governance compliance, Standards and Policies.
+  * Quantitative dimensionen of data quality as foundation for metrics:
+      * Intrinsic dimensions: Accuracy, Lineage, Structural/Syntactic Consistency, Semantic Consistency, Outliers.
+      Contextual (Inter-Column) Dimensions: Completeness, Consistency, Timeliness.
+  * Qualitative dimensions: Authoritative (trusted) sources, Trust, Anonymity/Privacy/Governance compliance, Standards and Policies.
 
-* Understand Data Cleaning Approaches: Rule-based, Missing values imputation, Duplicate detection and consolidation.
+* Understand data cleaning approaches: Rule-based, Missing values imputation, Duplicate detection and consolidation.
 * Understand the security and data governance aspects of data management:
   * Archivierung
   * Einschlägige Gesetze und Verordnungen (DSGVO, ,Anonymisierung, Pseudonymisierung)
