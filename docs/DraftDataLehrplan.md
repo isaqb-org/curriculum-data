@@ -217,7 +217,7 @@ Metadata Management, Data Quality Assurance, Security, Data and Systems Governan
 * Understand data cleaning approaches: Rule-based, Missing values imputation, Duplicate detection and consolidation.
 * Understand the security and data governance aspects of data management:
   * Archivierung
-  * Einschlägige Gesetze und Verordnungen (DSGVO, ,Anonymisierung, Pseudonymisierung)
+  * Einschlägige Gesetze und Verordnungen (DSGVO, Anonymisierung, Pseudonymisierung)
   * Geo-Fencing
   * Schutzklassen und Sicherheitsstufen
 
