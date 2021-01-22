@@ -2,23 +2,23 @@
 
 # Motivation and architectural challenges
 
-## Learning goals 
+## Learning goals
 
-* Give an introduction to the field. 
+* Give an introduction to the field.
 * Know motifs to handle data as "first class citizen".
 * Delimitation to other iSAQB-Modules.
 
-# Data sources 
+# Data sources
 
-## Terms and concepts 
+## Terms and concepts
 
-Data, information, master data, operational data 
+Data, information, master data, operational data
 
-## Learning goals 
+## Learning goals
 
 * Know the different qualities that characterize data:
   * Correctness
-  * Completeness 
+  * Completeness
   * Timeliness
   * Data volume
   * Change rate, stability of information
@@ -31,7 +31,7 @@ Data, information, master data, operational data
   * Logs
   * External APIs (e.g. stock market)
   * SCADA, IoT systems
-* Understand the need to gather data from different sources. 
+* Understand the need to gather data from different sources.
 * Be aware that different sources may provide conflicting data about same entity.
 * Know trade-off and implications of unified data model for all sources vs. one model per source.
 * Know means to assess the data quality of different sources.
@@ -40,14 +40,15 @@ Data, information, master data, operational data
 * Understand what metadata is and how it helps to retrieve information from data.
 * Know different solutions to manage metadata.
 * Understand the impact of legal and organizational constraints on data accessibility.
+* Understand that the nature of data the system has to deal with is a major driver for architectural decisions.
 
-# Ingestion and transformation 
+# Ingestion and transformation
 
 ## Terms and concepts
 
 ETL, ELT, batch processing, stream processing, event driven architecture, data lineage
 
-## Learning goals 
+## Learning goals
 
 * Understand the typical requirements that determine architectural decisions.
   * Data volume
@@ -55,23 +56,23 @@ ETL, ELT, batch processing, stream processing, event driven architecture, data l
   * Data format/model
   * Stability of data model
   * Number of sources
-  * Availability of sources 
+  * Availability of sources
 * Understand the difference between ETL and ELT as well as their impications and respective pros and cons.
 * Know about possibilities and implications of data transformation in the ingestion pipeline.
 * Know typical architectures and technologies for data ingestion and make informed choices.
   * Batch systems, ETL, ELT
-  * Stream processing 
+  * Stream processing
   * Event driven architecture
 * Understand what data lineage is, when it is needed and how to implement it.
 * Know ways how to detect and handle data errors during the ingestion.
 
-# Storage 
+# Storage
 
 ## Terms and concepts
 
-Retention time, cloud storage, data lake, data mesh, data warehouse, on premise storage, distributed file systems.
+Retention time, latency, cloud storage, data lake, data mesh, data warehouse, on premise storage, distributed file systems.
 
-## Learning goals 
+## Learning goals
 
 * Storage system as an ingestion endpoint
 * Schema on write vs schema on read.
@@ -79,9 +80,9 @@ Retention time, cloud storage, data lake, data mesh, data warehouse, on premise 
 * Characteristics of classical database systems.
   * Combination of storage and query processing.
   * Focus on one query and processing model.
-* Different data base types: 
+* Different data base types:
   * Relational DB
-  * Graph DB, 
+  * Graph DB,
   * Column oriented DB,
   * Document DB
 * Database as a (cloud) service
@@ -92,12 +93,12 @@ Retention time, cloud storage, data lake, data mesh, data warehouse, on premise 
   * Cloud storage: S3, Azure Blob, Google ?, IBM ?
 * Data Mesh
   * When Centralization is an issue: DWH and Data Lake
-  * Data Mesh Paradigm Shift Principles: 
+  * Data Mesh Paradigm Shift Principles:
     * Decentralization (Decentralized Ownership)
       * Domain-driven data decomposition
       * Domain data is a first-class concern
       * Data pipelines are second class
-    * Product Thinking (Success Criteria: Decreased Lead time to discover and consume data product) 
+    * Product Thinking (Success Criteria: Decreased Lead time to discover and consume data product)
       * Domain data as a product (data is consumed by Data Scientists)
       * Characteristics: Data is discoverable, addressable, trustworthy (SLO), self-described, secure
       * Publishing output data points (instead of getting data trough centralized data pipelines)
@@ -118,19 +119,25 @@ Retention time, cloud storage, data lake, data mesh, data warehouse, on premise 
 * Know that multiple representations of data can be stored.
 * Data lineage helps to trace the origins of the transformed representations.
 
-# Data analysis 
+# Data analysis
 
 ## Terms and concepts
 
+Model, hypothesis, test, prediction, descriptive statistics
+
 ## Learning goals
 
-* Data analysis as means to understand the past.
-* Data analysis as a tool to assess the quality of data.
-* Use the data pipeline to build models of real world systems from data analysis.
+* Participants should know the different intents of data analysis:
+  * Data analysis as means to understand the past.
+  * Data analysis as tool to create and test hypothesis.
+  * Data analysis for model based prediction.
+  * Data analysis as a tool to assess the quality of data.
+* Participants should understand the specific quality requirements relevant for different data analysis uses cases.
+* They should know  the typical architectures that support the different analytical style.
 * Understand that work with data can be explorative or repetitive.
   * Building new models, derive meaningful characteristic values.
   * Regular measurement of characteristic model parameters, KPIs.
-* Systems for exploratory data analysis: 
+* Systems for exploratory data analysis:
   * interactive environments
   * working on smaller subsets of data
   * results in research prototype of algortithm and modes
@@ -138,45 +145,47 @@ Retention time, cloud storage, data lake, data mesh, data warehouse, on premise 
   * Reporting systems
   * KPIs
   * Dashboards
-* Possible ways to to transfer research model into production.
+* Possible ways to to transfer research models into production.
 
-# Query engines 
+# Query and processing engines
 
-## Terms and concepts 
+## Terms and concepts
 
-## Learning goals 
+## Learning goals
 
-* Know different types of query languages and the [???]
-
+* Know different types of query and processing languages and their characteristics:
+  * Relational query languages
+  * Graph query languages
+  * Other (embedded) domain specific languages like R, matlab.
 
 #  Data consumer
 
 ## Terms and concepts
 
-Predictive and descriptive data analysis, Data science, BI, Dashboards. 
+Predictive and descriptive data analysis, Data science, BI, Dashboards.
 
 ## Learning goals
 
 * Executing queries and data models against stored data.
 * Data based prediction and planning
     * Models of real world systems can be used to predict future behaviour.
-    * Based on the predicted behaviour organizations can implement actions. 
+    * Based on the predicted behaviour organizations can implement actions.
     * Integration patterns of predictive models and automated decisions systems in control loops.
 
-# Systems for data analytics and model creation 
+# Systems for data analytics and model creation
 
 ## Terms and concepts
 
 ## Learning goals
- 
+
 * Know the different categories of data analysis tools:
   * Query engines
-  * Statistical analysis 
-  * Machine learning 
+  * Statistical analysis
+  * Machine learning
 * Know typical uses cases for ML and statistical analysis.
-* Understand that tools 
+* Understand that tools
 .
- 
+
 # Data ops
 
 ## Terms and concepts
@@ -187,10 +196,10 @@ DataOps definition. DataOps Components: Catalog/Registry - Metadata Store, Movem
 
 * Understand the need for automation of data ingestion and processing.
   * Reproducible results
-  * Understandability 
+  * Understandability
   * Less errors
   * Cost reduction
-* Know the DataOps Practices. 
+* Know the DataOps Practices.
   * Agile process application - short time-to-delivery and responsiveness to change
   * Implementint everything in code (e.g. host configuration, network configuration, automation, gathering and publishing test results, service installation * and startup, error handling)
   * Applying software engineering best practices - using version control with branching and merging, automated regression testing of everything, clean code design and factoring, clear comments
@@ -202,18 +211,20 @@ DataOps definition. DataOps Components: Catalog/Registry - Metadata Store, Movem
 
 
 # Infrastructure
-  
+
 ## Terms and concepts
 
 ## Learning goals
 
 * Understand the specific requirements on infrastructure:
   * Storage capacity
-  * Processing 
+  * Processing
   * Network
-* Cloud vs on premise infrastructure 
+* Cloud vs on premise infrastructure
+* Processor options: CPU, GPU, TPU
+* Parallelization middleware like MPI
 
-# Crosscutting concerns 
+# Crosscutting concerns
 
 ## Terms and concepts
 Metadata Management, Data Quality Assurance, Security, Data and Systems Governance, Data and Systems Oberservability
@@ -245,18 +256,18 @@ Metadata Management, Data Quality Assurance, Security, Data and Systems Governan
   * Geo-Fencing
   * Schutzklassen und Sicherheitsstufen
 
-* Understand the data observability, monitoring, traceability, logging: 
+* Understand the data observability, monitoring, traceability, logging:
   * Dashboards
   * Logging
- 
 
 
-# Examples of data processing pipelines 
 
-## Learning goals 
+# Examples of data processing pipelines
+
+## Learning goals
 
 * Know example requirements that are a good fit for database types (FORMULIERUNG!)
 * Know examples of (big) data architectures and possible fields of application
     * Lambda
-    * Kappa 
+    * Kappa
     * Data vault
