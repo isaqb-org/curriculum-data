@@ -94,13 +94,43 @@ Retention time, cloud storage, data lake, data warehouse, on premise storage, di
 * Know that multiple representations of data can be stored.
 * Data lineage helps to trace the origins of the transformed representations.
 
-# Data analysis 
+# Query and Processing
 
 ## Terms and concepts
 
 ## Learning goals
 
-* Data analysis as means to understand the past.
+* Types of data analysises (-> Motivation and architectural challenges)
+  * Descriptive
+  * Diagnostic
+  * Predictive
+  * Prescriptive
+* exploratory vs confirmatory (Mode) (-> Motivation and architectural challenges)
+* Suitable data representations (references to storage)
+  * structured, semi structured, unstructured
+  * normalized vs denormalized
+  * multidimensional (star, snowflake)
+  * time series
+  * text, binary
+  * File system, Database
+  * graph
+* Processing
+  * Batch
+  * Micro-Batch
+  * Stream
+* As-is vs As-was (Abbildung der Historie: SCD)
+* Indexing, Aggregation, Grouping, Filtering, Pivoting, Windowing, Sorting, Map-Reduce
+* Query languages
+  * SQL
+  * MDX
+  * R, Julia
+  * Spark
+  * Query generation
+* Interactive vs implemented
+* drill down, up, across, slice and dice
+
+* Roles
+* Scalability
 * Data analysis as a tool to assess the quality of data.
 * Use the data pipeline to build models of real world systems from data analysis.
 * Understand that work with data can be explorative or repetitive.
@@ -114,7 +144,7 @@ Retention time, cloud storage, data lake, data warehouse, on premise storage, di
   * Reporting systems
   * KPIs
   * Dashboards
-* Possible ways to to transfer research model into production.
+* Possible ways to transfer research model into production.
 
 # Query engines 
 
