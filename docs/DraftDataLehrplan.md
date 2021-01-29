@@ -119,11 +119,7 @@ Retention time, latency, cloud storage, data lake, data mesh, data warehouse, on
 * Know that multiple representations of data can be stored.
 * Data lineage helps to trace the origins of the transformed representations.
 
-<<<<<<< HEAD
-# Query and Processing
-=======
 # Data analysis
->>>>>>> a0984112f3688ff895d2c98de660fa795dafcd8e
 
 ## Terms and concepts
 
@@ -131,7 +127,6 @@ Model, hypothesis, test, prediction, descriptive statistics
 
 ## Learning goals
 
-<<<<<<< HEAD
 * Types of data analysises (-> Motivation and architectural challenges)
   * Descriptive
   * Diagnostic
@@ -160,12 +155,8 @@ Model, hypothesis, test, prediction, descriptive statistics
   * Query generation
 * Interactive vs implemented
 * drill down, up, across, slice and dice
-
 * Roles
 * Scalability
-* Data analysis as a tool to assess the quality of data.
-* Use the data pipeline to build models of real world systems from data analysis.
-=======
 * Participants should know the different intents of data analysis:
   * Data analysis as means to understand the past.
   * Data analysis as tool to create and test hypothesis.
@@ -173,7 +164,6 @@ Model, hypothesis, test, prediction, descriptive statistics
   * Data analysis as a tool to assess the quality of data.
 * Participants should understand the specific quality requirements relevant for different data analysis uses cases.
 * They should know  the typical architectures that support the different analytical style.
->>>>>>> a0984112f3688ff895d2c98de660fa795dafcd8e
 * Understand that work with data can be explorative or repetitive.
   * Building new models, derive meaningful characteristic values.
   * Regular measurement of characteristic model parameters, KPIs.
@@ -185,13 +175,7 @@ Model, hypothesis, test, prediction, descriptive statistics
   * Reporting systems
   * KPIs
   * Dashboards
-<<<<<<< HEAD
 * Possible ways to transfer research model into production.
-
-# Query engines 
-=======
-* Possible ways to to transfer research models into production.
->>>>>>> a0984112f3688ff895d2c98de660fa795dafcd8e
 
 # Query and processing engines
 
