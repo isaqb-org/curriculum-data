@@ -7,6 +7,12 @@
 * Give an introduction to the field.
 * Know motifs to handle data as "first class citizen".
 * Delimitation to other iSAQB-Modules.
+* Know types of data analysises 
+  * Descriptive
+  * Diagnostic
+  * Predictive
+  * Prescriptive
+* exploratory vs confirmatory (Mode) 
 
 # Data sources
 
@@ -74,9 +80,18 @@ Retention time, latency, cloud storage, data lake, data mesh, data warehouse, on
 
 ## Learning goals
 
-* Storage system as an ingestion endpoint
+* Storage system as an ingestion endpoint.
 * Schema on write vs schema on read.
 * Memory hierarchy: trade-off between data volumen, access time and power consumption.
+* Data representations: algorithms require specific data structures. The choice of structure has impact on the storage layout (=> griffiger formulieren) 
+  * structured, semi structured, unstructured
+  * normalized vs denormalized
+  * multidimensional (star, snowflake)
+  * time series
+  * text, binary
+  * File system, Database
+  * graph
+* Understand that there exists a strong interdependency between storage and processing. 
 * Characteristics of classical database systems.
   * Combination of storage and query processing.
   * Focus on one query and processing model.
@@ -119,40 +134,30 @@ Retention time, latency, cloud storage, data lake, data mesh, data warehouse, on
 * Know that multiple representations of data can be stored.
 * Data lineage helps to trace the origins of the transformed representations.
 
-# Data analysis
+# Query and processing
 
 ## Terms and concepts
 
-Model, hypothesis, test, prediction, descriptive statistics
 
 ## Learning goals
 
-* Types of data analysises (-> Motivation and architectural challenges)
-  * Descriptive
-  * Diagnostic
-  * Predictive
-  * Prescriptive
-* exploratory vs confirmatory (Mode) (-> Motivation and architectural challenges)
-* Suitable data representations (references to storage)
-  * structured, semi structured, unstructured
-  * normalized vs denormalized
-  * multidimensional (star, snowflake)
-  * time series
-  * text, binary
-  * File system, Database
-  * graph
+* Know different types of query and processing languages and their characteristics:
+  * Relational query languages
+  * Graph query languages
+  * Other (embedded) domain specific languages like R, matlab.
+* Know examples of query languages, e.g.
+  * SQL
+  * MDX
+  * R, Julia
+  * Spark
+  * Query generation
+* Know the impact of different data representations on the performance of algorithms and ease of implementation ("impedance mismatch"). 
 * Processing
   * Batch
   * Micro-Batch
   * Stream
 * As-is vs As-was (Abbildung der Historie: SCD)
 * Indexing, Aggregation, Grouping, Filtering, Pivoting, Windowing, Sorting, Map-Reduce
-* Query languages
-  * SQL
-  * MDX
-  * R, Julia
-  * Spark
-  * Query generation
 * Interactive vs implemented
 * drill down, up, across, slice and dice
 * Roles
@@ -177,16 +182,6 @@ Model, hypothesis, test, prediction, descriptive statistics
   * Dashboards
 * Possible ways to transfer research model into production.
 
-# Query and processing engines
-
-## Terms and concepts
-
-## Learning goals
-
-* Know different types of query and processing languages and their characteristics:
-  * Relational query languages
-  * Graph query languages
-  * Other (embedded) domain specific languages like R, matlab.
 
 #  Data consumer
 
@@ -201,19 +196,11 @@ Predictive and descriptive data analysis, Data science, BI, Dashboards.
     * Models of real world systems can be used to predict future behaviour.
     * Based on the predicted behaviour organizations can implement actions.
     * Integration patterns of predictive models and automated decisions systems in control loops.
-
-# Systems for data analytics and model creation
-
-## Terms and concepts
-
-## Learning goals
-
 * Know the different categories of data analysis tools:
   * Query engines
   * Statistical analysis
   * Machine learning
 * Know typical uses cases for ML and statistical analysis.
-* Understand that tools
 .
 
 # Data ops
