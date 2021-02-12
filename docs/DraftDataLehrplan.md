@@ -67,6 +67,7 @@ ETL, ELT, batch processing, stream processing, event driven architecture, data l
 * Know about possibilities and implications of data transformation in the ingestion pipeline.
 * Know typical architectures and technologies for data ingestion and make informed choices.
   * Batch systems, ETL, ELT
+  * Micro batch processing
   * Stream processing
   * Event driven architecture
 * Understand what data lineage is, when it is needed and how to implement it.
