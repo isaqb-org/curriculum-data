@@ -1,4 +1,4 @@
-# TIMELINE: 1.02.2021 final version
+# TIMELINE: 28.02.2021 final version
 
 # Motivation and architectural challenges
 
@@ -7,12 +7,14 @@
 * Give an introduction to the field.
 * Know motifs to handle data as "first class citizen".
 * Delimitation to other iSAQB-Modules.
-* Know types of data analysises 
+* Know types of data analysises
   * Descriptive
   * Diagnostic
   * Predictive
   * Prescriptive
-* exploratory vs confirmatory (Mode) 
+* exploratory vs confirmatory (Mode)
+
+[TODO(RJ): BigData Buzzword]
 
 # Data sources
 
@@ -47,6 +49,9 @@ Data, information, master data, operational data
 * Know different solutions to manage metadata.
 * Understand the impact of legal and organizational constraints on data accessibility.
 * Understand that the nature of data the system has to deal with is a major driver for architectural decisions.
+
+[TODO(RJ): Understand impact of essential complexity of source data. Understand higher relevance of architectural decisions, if essential complexity of source data is lower.]
+
 
 # Ingestion and transformation
 
@@ -245,6 +250,7 @@ DataOps definition. DataOps Components: Catalog/Registry - Metadata Store, Movem
 * Cloud vs on premise infrastructure
 * Processor options: CPU, GPU, TPU
 * Parallelization middleware like MPI
+[TODO(RJ): DWH appliances , high end data processing systems]
 
 # Crosscutting concerns
 
