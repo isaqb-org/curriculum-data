@@ -156,6 +156,10 @@ Retention time, latency, cloud storage, data lake, data mesh, data warehouse, on
   * Batch
   * Micro-Batch
   * Stream
+* Data oriented programming principles:
+  * Separate code from data
+  * Represent data entities with generic data structures
+  * Data is immutable
 * As-is vs As-was (Abbildung der Historie: SCD)
 * Indexing, Aggregation, Grouping, Filtering, Pivoting, Windowing, Sorting, Map-Reduce
 * Interactive vs implemented
