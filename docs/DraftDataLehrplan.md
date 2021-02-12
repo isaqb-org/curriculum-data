@@ -107,7 +107,7 @@ Retention time, latency, cloud storage, data lake, data mesh, data warehouse, on
   * Technical storage formats: Parquet, Avro, ORC
   * Distributed file system: HDFS, Ceph, Lustre
   * Cloud storage: S3, Azure Blob, Google ?, IBM ?
-* Data Mesh
+* Data Mesh [TODO Diskutieren: Wahrscheinlich brauchen wir ein Kapitel "Architecting Data Platforms" und DWH, Data Lake und Data Mesh als Paradigmen gehören dazu]
   * When Centralization is an issue: DWH and Data Lake
   * Data Mesh Paradigm Shift Principles:
     * Decentralization (Decentralized Ownership)
