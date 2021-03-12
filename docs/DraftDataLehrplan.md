@@ -81,7 +81,7 @@ ETL, ELT, batch processing, stream processing, event driven architecture, data l
 * Understand what data lineage is, when it is needed and how to implement it.
 * Know ways how to detect and handle data errors during the ingestion.
 
-# Storage
+# Storage [HOLGER]
 
 ## Terms and concepts
 
@@ -224,7 +224,7 @@ Predictive and descriptive data analysis, Data science, BI, Dashboards.
 * Know typical uses cases for ML and statistical analysis. .
 * Search-enginges (special indices)
 
-# Data ops
+# DataOps [LARYSA]
 
 ## Terms and concepts
 
