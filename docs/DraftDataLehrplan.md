@@ -1,5 +1,3 @@
-# TIMELINE: 28.02.2021 final version
-
 # Motivation and architectural challenges
 
 ## Learning goals
@@ -291,26 +289,27 @@ This part provides a motivation and introduction to Data Mesh.
 The participants will learn when a decentralised data architecture is appropriate.
 Further, they will learn about the four foundational principles of Data Mesh.
 
-## Terms and concepts
-Data Mesh, Domain-driven Design, Domain Ownership, Data as a Product, Federated Computational Governance, Self-serve Data Platform
 
-? Bounded Context, Context Mapping, Product Thinking, Team Topologies
+## Terms and concepts
+Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies
+
 
 ## Learning goals
 
 LG X-1: Address the Issues of Centralised Data Architectures
 
-* The participants know and understand analytical vs. operational data models
-* The participants understand the scalability issues of central data teams 
-* The participants understand the mismatch of a central data team and decentralised domain teams
+* The participants know and understand the distinction between analytical and operational data models.
+* The participants understand the scalability issues of central data teams.
+* The participants understand the mismatch of a central data team and decentralised domain teams.
+
 
 LG X-2: Domain Ownership
 
-* The participants know the concepts of strategic domain-driven design such as domains, subdomains, bounded contexts, and context mapping patterns.
+* The participants know relevant concepts of strategic domain-driven design such as domains, subdomains, bounded contexts, and context mapping patterns.
 * The participants understand that the responsibility of the analytical data and its quality is shifted from the central data team to the particular domain teams.
-* The participants know that domain teams own the analytical data.
+* The participants know that domain teams own their analytical data.
 * The participants know that domain teams serve the domain's analytical data to the rest of the organization.
-* The participants know the distinction between three Domain Data Archetypes: source-aligned, aggregate, and consumer-aligned data
+* The participants know the distinction between three Domain Data Archetypes: source-aligned, aggregate, and consumer-aligned data.
 * The participants understand the concept of polyseme as a shared concept across different domains.
 
 
@@ -319,35 +318,32 @@ LG X-3: Data as a Product
 * The participants understand that domain teams provide data to other teams as data products.
 * The participants understand that data products are first-class citizens in the system architecture, similar to UI and API products.
 * The participants know characteristics of data products: data are discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, and valuable on its own.
-* The participants know the different forms of data products, including raw data, reports, dashboards, ML features or entire ML models.
+* The participants know the different forms of data products, including datasets, reports, dashboards, ML features or entire ML models.
+
 
 LG X-4: Self-serve Data Platform
 
-* The participants understand the key concepts of the domain-agnostic data infrastructure as a platform
-
-
+* The participants understand the key concepts of the domain-agnostic data infrastructure as a platform.
+* The participants know that the platform is managed by a data platform team.
+* The participants know typical components of a data platform, i.e. storage, data pipelines, data catalog, access management, monitoring, visualisation.
+* The participants have an idea of existing solutions provided by cloud vendors.
 
 
 LG X-5: Federated Computational Governance
 
+* The participants know that the governance group, typically called a "guild", consists of representatives of the domain teams and the data platform team.
+* The participants know that the governance group agrees on global policies of the data eco-systems, including interoperability, security and compliance.
+* The participants understand that the self-serve data platform may support, automate, or enforce the global policies.
 
-* Self-service Infrastructure as a Platform (Success Criteria: Reduced lead time to create new secure and discoverable data products)
-    * Distributed
-    * Data Pipelines are domain-agnostic (like cloud platforms)
-    * DataOps (Data Product CI/CD)
-    * Metadata (data-catalog)
-* Federated Ecosystem Governance
-    * Encryption
-    * ACLs
-    * Regulations
 
 ## References
 
-- "Data Mesh in Action" by Jacek Majchrzak, Sven Balnojan, and Marian Siwiak. Manning. Publication in Summer 2022
-- "Data Mesh" by Zhamak Dehghani. O'Reilly Media, Inc. April 2022
-- datamesh-architecture.com
-- "Data Management at Scale" by Piethein Strengholt
-- "Software Architecture: The Hard Parts" by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
+1. "Data Mesh in Action" by Jacek Majchrzak, Sven Balnojan, and Marian Siwiak. Manning. Publication in Summer 2022
+1. "Data Mesh" by Zhamak Dehghani. O'Reilly Media, Inc. April 2022
+1. datamesh-architecture.com
+1. "Data Management at Scale" by Piethein Strengholt
+1. "Software Architecture: The Hard Parts" by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
+
 
 
 # Examples of data processing pipelines
