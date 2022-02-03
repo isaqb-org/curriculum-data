@@ -125,29 +125,6 @@ Retention time, latency, cloud storage, data lake, data mesh, data warehouse, on
     * Technical storage formats: Parquet, Avro, ORC
     * Distributed file system: HDFS, Hadoop, Ceph, Lustre
     * Cloud storage: S3, Azure Blob, Google ?, IBM ?
-* Data
-  Mesh [TODO Diskutieren: Wahrscheinlich brauchen wir ein Kapitel "Architecting Data Platforms" und DWH, Data Lake und Data Mesh als Paradigmen gehören dazu]
-    * When Centralization is an issue: DWH and Data Lake
-    * Data Mesh Paradigm Shift Principles:
-        * Decentralization (Decentralized Ownership)
-            * Domain-driven data decomposition
-            * Domain data is a first-class concern
-            * Data pipelines are second class
-        * Product Thinking (Success Criteria: Decreased Lead time to discover and consume data product)
-            * Domain data as a product (data is consumed by Data Scientists)
-            * Characteristics: Data is discoverable, addressable, trustworthy (SLO), self-described, secure
-            * Publishing output data points (instead of getting data trough centralized data pipelines)
-            * Role: Domain Data Product Owner
-        * Self-service Infrastructure as a Platform (Success Criteria: Reduced lead time to create new secure and discoverable data products)
-            * Distributed
-            * Data Pipelines are domain-agnostic (like cloud platforms)
-            * DataOps (Data Product CI/CD)
-            * Metadata (data-catalog)
-        * Federated Ecosystem Governance
-            * Encryption
-            * ACLs
-            * Regulations
-
 
 * Understand that different types of workload require different adopted storage structures.
 * Know that multiple representations of data can be stored.
@@ -250,6 +227,7 @@ in Data, Data Integration, Publishing Data - (DaaS), Data Feedback, Data Governa
 
 * Know tools for definition and execution of data transformation.
 
+
 # Infrastructure
 
 ## Terms and concepts
@@ -302,6 +280,71 @@ Metadata Management, Data Quality Assurance, Security, Data and Systems Governan
 * Understand the data observability, monitoring, traceability, logging:
     * Dashboards
     * Logging
+
+
+
+# Decentralized Data Architectures: Data Mesh
+Teaching: 90 min  
+Exercises: 60 min
+
+This part provides a motivation and introduction to Data Mesh. 
+The participants will learn when a decentralised data architecture is appropriate.
+Further, they will learn about the four foundational principles of Data Mesh.
+
+## Terms and concepts
+Data Mesh, Domain-driven Design, Domain Ownership, Data as a Product, Federated Computational Governance, Self-serve Data Platform
+
+? Bounded Context, Context Mapping, Product Thinking, Team Topologies
+
+## Learning goals
+
+LG X-1: Address the Issues of Centralised Data Architectures
+
+* The participants know and understand analytical vs. operational data models
+* The participants understand the scalability issues of central data teams 
+* The participants understand the mismatch of a central data team and decentralised domain teams
+
+LG X-2: Domain Ownership
+
+* The participants know the concepts of strategic domain-driven design such as domains, subdomains, bounded contexts, and context mapping patterns.
+* The participants understand that the responsibility of the analytical data and its quality is shifted from the central data team to the particular domain teams.
+* The participants know that domain teams own the analytical data.
+* The participants know that domain teams serve the domain's analytical data to the rest of the organization.
+* The participants know the distinction between three Domain Data Archetypes: source-aligned, aggregate, and consumer-aligned data
+* The participants understand the concept of polyseme as a shared concept across different domains.
+
+
+LG X-3: Data as a Product
+
+* The participants understand that domain teams provide data to other teams as data products.
+* The participants understand that data products are first-class citizens in the system architecture, similar to UI and API products.
+* The participants know characteristics of data products: data are discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, and valuable on its own.
+* The participants know the different forms of data products, including raw data, reports, dashboards, ML features or entire ML models.
+
+LG X-4: Self-serve Data Platform
+
+
+LG X-5: Federated Computational Governance
+
+
+* Self-service Infrastructure as a Platform (Success Criteria: Reduced lead time to create new secure and discoverable data products)
+    * Distributed
+    * Data Pipelines are domain-agnostic (like cloud platforms)
+    * DataOps (Data Product CI/CD)
+    * Metadata (data-catalog)
+* Federated Ecosystem Governance
+    * Encryption
+    * ACLs
+    * Regulations
+
+## References
+
+- "Data Mesh in Action" by Jacek Majchrzak, Sven Balnojan, and Marian Siwiak. Manning. Publication in Summer 2022
+- "Data Mesh" by Zhamak Dehghani. O'Reilly Media, Inc. April 2022
+- datamesh-architecture.com
+- "Data Management at Scale" by Piethein Strengholt
+- "Software Architecture: The Hard Parts" by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
+
 
 # Examples of data processing pipelines
 
