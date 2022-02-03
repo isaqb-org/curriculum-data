@@ -323,6 +323,10 @@ LG X-3: Data as a Product
 
 LG X-4: Self-serve Data Platform
 
+* The participants understand the key concepts of the domain-agnostic data infrastructure as a platform
+
+
+
 
 LG X-5: Federated Computational Governance
 
