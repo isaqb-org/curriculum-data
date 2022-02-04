@@ -319,7 +319,7 @@ LG X-3: Data as a Product
 * Understand that domain teams provide data to other teams as data products.
 * Understand that data products are first-class citizens in the system architecture, similar to UI and API products.
 * Know characteristics of data products: data are discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, and valuable on their own.
-* Know the different forms of data products, including datasets, reports, dashboards, ML features or entire ML models.
+* Know the different forms of data products, including datasets, reports, dashboards, machine learning features or entire models.
 
 
 LG X-4: Self-serve Data Platform
