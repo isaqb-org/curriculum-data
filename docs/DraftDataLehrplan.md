@@ -287,7 +287,8 @@ Exercises: 60 min
 
 This part provides a motivation and introduction to Data Mesh. 
 The participants will learn when a decentralised data architecture is appropriate.
-Further, they will learn about the four foundational principles of Data Mesh.
+Further, they will learn about the four foundational principles of Data Mesh:
+Domain Ownership, Data as a Product, Self-serve Data Platform, and Federated Computational Governance.
 
 
 ## Terms and concepts
@@ -317,7 +318,7 @@ LG X-3: Data as a Product
 
 * The participants understand that domain teams provide data to other teams as data products.
 * The participants understand that data products are first-class citizens in the system architecture, similar to UI and API products.
-* The participants know characteristics of data products: data are discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, and valuable on its own.
+* The participants know characteristics of data products: data are discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, and valuable on their own.
 * The participants know the different forms of data products, including datasets, reports, dashboards, ML features or entire ML models.
 
 
