@@ -299,42 +299,42 @@ Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Pro
 
 LG X-1: Address the Issues of Centralised Data Architectures
 
-* The participants know and understand the distinction between analytical and operational data models.
-* The participants understand the scalability issues of central data teams.
-* The participants understand the mismatch of a central data team and decentralised domain teams.
+* Know and understand the distinction between analytical and operational data models.
+* Understand the scalability issues of central data teams.
+* Understand the mismatch of a central data team and decentralised domain teams.
 
 
 LG X-2: Domain Ownership
 
-* The participants know relevant concepts of strategic domain-driven design such as domains, subdomains, bounded contexts, and context mapping patterns.
-* The participants understand that the responsibility of the analytical data and its quality is shifted from the central data team to the particular domain teams.
-* The participants know that domain teams own their analytical data.
-* The participants know that domain teams serve the domain's analytical data to the rest of the organization.
-* The participants know the distinction between three Domain Data Archetypes: source-aligned, aggregate, and consumer-aligned data.
-* The participants understand the concept of polyseme as a shared concept across different domains.
+* Know relevant concepts of strategic domain-driven design such as domains, subdomains, bounded contexts, and context mapping patterns.
+* Understand that the responsibility of the analytical data and its quality is shifted from the central data team to the particular domain teams.
+* Know that domain teams own their analytical data.
+* Know that domain teams serve the domain's analytical data to the rest of the organization.
+* Know the distinction between three Domain Data Archetypes: source-aligned, aggregate, and consumer-aligned data.
+* Understand the concept of polyseme as a shared concept across different domains.
 
 
 LG X-3: Data as a Product
 
-* The participants understand that domain teams provide data to other teams as data products.
-* The participants understand that data products are first-class citizens in the system architecture, similar to UI and API products.
-* The participants know characteristics of data products: data are discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, and valuable on their own.
-* The participants know the different forms of data products, including datasets, reports, dashboards, ML features or entire ML models.
+* Understand that domain teams provide data to other teams as data products.
+* Understand that data products are first-class citizens in the system architecture, similar to UI and API products.
+* Know characteristics of data products: data are discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, and valuable on their own.
+* Know the different forms of data products, including datasets, reports, dashboards, ML features or entire ML models.
 
 
 LG X-4: Self-serve Data Platform
 
-* The participants understand the key concepts of the domain-agnostic data infrastructure as a platform.
-* The participants know that the platform is managed by a data platform team.
-* The participants know typical components of a data platform, i.e. storage, data pipelines, data catalog, access management, monitoring, visualisation.
+* Understand the key concepts of the domain-agnostic data infrastructure as a platform.
+* Know that the platform is managed by a data platform team.
+* Know typical components of a data platform, i.e. storage, data pipelines, data catalog, access management, monitoring, visualisation.
 * The participants have an idea of existing solutions provided by cloud vendors.
 
 
 LG X-5: Federated Computational Governance
 
-* The participants know that the governance group, typically called a "guild", consists of representatives of the domain teams and the data platform team.
-* The participants know that the governance group agrees on global policies of the data eco-systems, including interoperability, security and compliance.
-* The participants understand that the self-serve data platform may support, automate, or enforce the global policies.
+* Know that the governance group, typically called a "guild", consists of representatives of the domain teams and the data platform team.
+* Know that the governance group agrees on global policies of the data eco-systems, including interoperability, security and compliance.
+* Understand that the self-serve data platform may support, automate, or enforce the global policies.
 
 
 ## References
