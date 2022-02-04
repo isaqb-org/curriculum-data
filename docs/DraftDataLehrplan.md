@@ -327,7 +327,7 @@ LG X-4: Self-serve Data Platform
 * Understand the key concepts of the domain-agnostic data infrastructure as a platform.
 * Know that the platform is managed by a data platform team.
 * Know typical components of a data platform, i.e. storage, data pipelines, data catalog, access management, monitoring, visualisation.
-* The participants have an idea of existing solutions provided by cloud vendors.
+* Are aware of existing solutions provided by cloud vendors.
 
 
 LG X-5: Federated Computational Governance
