@@ -1,6 +1,16 @@
 # Fundamentals
+* Data related stakeholders, challenges and disciplines
+* Data Sources & Technical qualities of data: volume, velocity, variety, structure
+* Legal compliance and technical measurements regarding data security and Privacy
+* Data Lifecycle (Ingestion, Storage, Processing and Analysis, Exploration and Visualisation, Retention)
+* Data Modelling  (unified data model for all systems vs. one model per source, Access Patterns) and Communication patterns (batch, streaming, messaging)
 
 # Storing Data
+* Characteristics of different storage types (relational, nonrelational, NoSQL, Object Storage): schema, data structures, querying
+* Trade-offs regarding scaling: latency, throughput, transactions, consistency: ACID, CAP, BASE
+* Storage and Query Engines for analytical workloads
+* Data Formats & Data Quality
+* Infrastructure (Cloud-Provider, Kubernetes, on-Premise) and Operations
 
 # Managing Data
 
@@ -11,6 +21,8 @@
 # Architecting Analytics Platforms
 
 -----
+Old version:
+
 # Motivation and architectural challenges
 
 ## Learning goals
