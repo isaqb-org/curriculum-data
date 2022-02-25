@@ -1,3 +1,16 @@
+# Fundamentals
+
+# Storing Data
+
+# Managing Data
+
+# Building Pipelines
+
+# Using Data
+
+# Architecting Analytics Platforms
+
+-----
 # Motivation and architectural challenges
 
 ## Learning goals

@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Viertes Modul, das ist sein Titel
+== Pipelines erstellen
 // end::DE[]
 
 // tag::EN[]
-== Fourth Module, This is its Title
+== Building Pipelines
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

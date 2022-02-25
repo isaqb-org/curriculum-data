@@ -60,6 +60,9 @@ include::04-module-block-4/00-structure.adoc[{include_configuration}]
 include::05-module-block-5/00-structure.adoc[{include_configuration}]
 
 <<<
+include::06-module-block-6/00-structure.adoc[{include_configuration}]
+
+<<<
 include::98-examples/00-examples.adoc[{include_configuration}]
 
 <<<

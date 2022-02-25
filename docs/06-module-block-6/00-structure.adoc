@@ -1,16 +1,14 @@
-// header file for curriculum section 1: ERSTE LERNEINHEIT
+// header file for curriculum section 5: Lerneinheit 5
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
-
 // tag::DE[]
-== Grundlagen
+== Aufbau von Analyseplattformen
 // end::DE[]
 
 // tag::EN[]
-== Fundamentals
+== Architecting Analytics Platforms
 // end::EN[]
-
 
 include::01-duration-terms.adoc[{include_configuration}]
 
