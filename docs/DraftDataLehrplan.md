@@ -1,20 +1,26 @@
 # Fundamentals
-* Data related stakeholders, challenges and disciplines
+* Data related stakeholders, typical tasks & challenges and disciplines
 * Data Sources & Technical qualities of data: volume, velocity, variety, structure
-* Legal compliance and technical measurements regarding data security and Privacy
-* Data Lifecycle (Ingestion, Storage, Processing and Analysis, Exploration and Visualisation, Retention)
-* Data Modelling  (unified data model for all systems vs. one model per source, Access Patterns) and Communication patterns (batch, streaming, messaging)
+* Legal compliance and technical measurements regarding licensing, data security and Privacy
+* Data Lifecycle
+* Overall Data Modelling  (unified data model for all systems vs. one model per source, Access Patterns) and Communication patterns (batch, streaming, messaging)
 
 # Storing Data
-* Characteristics of different storage types (relational, nonrelational, NoSQL, Object Storage): schema, data structures, querying
-* Trade-offs regarding scaling: latency, throughput, transactions, consistency: ACID, CAP, BASE
-* Storage and Query Engines for analytical workloads
-* Data Formats & Data Quality
-* Infrastructure (Cloud-Provider, Kubernetes, on-Premise) and Operations
+* Storage requirements
+* Storage characteristics: schema, data structures, querying (relational, nonrelational, object storage, distributed file systems)
+* Challenges regarding scalability: latency, throughput, isolation, durability, transactions, (eventual) consistency
+* Storage Solutions
+* Infrastructure (Cloud-Provider, Kubernetes, on-Premise), specialized hardware and Operations
 
-# Managing Data
+# Data Governance
 
 # Building Pipelines
+* Analytical data processing blueprint (Ingestion, Storage, Processing and Analysis, Exploration and Visualisation, Retention)
+* Data Pipeline Patterns: ETL vs. EL(T)
+* Streaming vs. Batch
+* Transforming & Validating data
+* Orchestration: Automate creation, scheduling and monitoring of data pipelines
+* Pipeline Solutions, Infrastructure and Operations
 
 # Using Data
 
