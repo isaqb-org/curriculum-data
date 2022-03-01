@@ -1,20 +1,37 @@
 # Fundamentals
-* Data related stakeholders, typical tasks & challenges and disciplines
-* Data Sources & Technical qualities of data: volume, velocity, variety, structure
-* Legal compliance and technical measurements regarding licensing, data security and Privacy
-* Data Lifecycle
+* Data related stakeholders, typical tasks or use cases, challenges and disciplines
+* Data Sources & Technical qualities of data: volume, velocity, variety, structure, correctness, ...
+* Legal compliance and established measurements regarding licensing, data security and Privacy
+* Approaches for developing data centric solutions, e.g. DataOps
+* Data Lifecycle Management
 * Overall Data Modelling  (unified data model for all systems vs. one model per source, Access Patterns) and Communication patterns (batch, streaming, messaging)
 
-# Storing Data
+
+# Data Storage
 * Storage requirements
 * Storage characteristics: schema, data structures, querying (relational, nonrelational, object storage, distributed file systems)
 * Challenges regarding scalability: latency, throughput, isolation, durability, transactions, (eventual) consistency
 * Storage Solutions
 * Infrastructure (Cloud-Provider, Kubernetes, on-Premise), specialized hardware and Operations
 
-# Data Governance
 
-# Building Pipelines
+# Data Governance
+* Challenges when coordinating multiple data-centric systems 
+* Metadata Management: Representation, Acquisition, Categories, Systems/Frameworks, Schema Evolution
+* Ensuring Data Quality: Data Formats, Validation 
+* Ensuring Traceability: Data Versioning, Time travelling
+* Tracking Data Origin: Data Lineage (Understanding, recording, and visualizing data as it flows from data sources to consumption)
+* Ensuring Maintainability: Data Product Catalog, Metrics
+
+
+# Data Usage
+* Goals: Analyzing, testing hypotheses, predictions
+* Analysis - Backend: Reporting data, Data Science, Query optimization
+* Data Visualisation, Dashboards, Alerting, personalized information
+* Predictions: Machine Learning (Requirements, Infrastructure & Solutions, MLOps)
+* Integration in operative systems: Automated Decision Making,
+
+# Data Pipelines
 * Analytical data processing blueprint (Ingestion, Storage, Processing and Analysis, Exploration and Visualisation, Retention)
 * Data Pipeline Patterns: ETL vs. EL(T)
 * Streaming vs. Batch
@@ -22,10 +39,12 @@
 * Orchestration: Automate creation, scheduling and monitoring of data pipelines
 * Pipeline Solutions, Infrastructure and Operations
 
-# Using Data
 
-# Architecting Analytics Platforms
-
+# Data Architectures
+* Aspects and Building blocks for Data Architectures
+* Data Warehouse, Data Lake, Data Vault 
+* Data Mesh
+* "ML Architecture"
 -----
 Old version:
 
