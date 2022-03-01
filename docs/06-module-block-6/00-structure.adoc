@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Aufbau von Analyseplattformen
+== Datenzentrierte Architekturen
 // end::DE[]
 
 // tag::EN[]
-== Architecting Analytics Platforms
+== Data Architectures
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

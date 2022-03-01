@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Pipelines erstellen
+== Datennutzung
 // end::DE[]
 
 // tag::EN[]
-== Building Pipelines
+== Data Usage
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

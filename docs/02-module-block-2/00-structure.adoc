@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Daten speichern
+== Datenspeicher
 // end::DE[]
 
 // tag::EN[]
-== Storing Data
+== Data Storage
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]
