@@ -19,12 +19,25 @@ tbd.
 
 // tag::EN[]
 [[LG-2-1]]
-==== LG 2-1: TBD
+==== LG 2-1: Storage concepts
 tbd.
 
 [[LG-2-2]]
-==== LG 2-2: TBD
+==== LG 2-2: Challenges regarding scalability
 tbd.
+
+[[LG-2-3]]
+==== LG 2-3: Storage solutions
+tbd.
+
+[[LG-2-4]]
+==== LG 2-4: Infrastructure, specialized hardware and operations
+tbd.
+
+[[LG-2-5]]
+==== LG 2-5: Storage requirements
+tbd.
+
 // end::EN[]
 
 // tag::REMARK[]

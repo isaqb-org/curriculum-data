@@ -13,11 +13,19 @@
 
 
 # Data Storage
+* Storage concepts
+  * types of data leading to schema and data structures; querying (SQL, S3)
+* Challenges regarding scalability
+  * latency, throughput, isolation, durability, transactions, (eventual) consistency, sharding/partitioning, replication
+* Storage solutions
+  * Cloud Object Storage, Distributed Filesystem, virtual file system, databases, event stores, Open Table Formats and file formats (parquet, avro)
+* Infrastructure, specialized hardware and operations
+  * Data Warehouse Appliances
+  * Cloud-Provider, Kubernetes, on-Premise
+  * Monitoring, Backup, Configuration/Provisioning, Upgrades, operations of stateful system, ...
 * Storage requirements
-* Storage characteristics: schema, data structures, querying (relational, nonrelational, object storage, distributed file systems)
-* Challenges regarding scalability: latency, throughput, isolation, durability, transactions, (eventual) consistency
-* Storage Solutions
-* Infrastructure (Cloud-Provider, Kubernetes, on-Premise), specialized hardware and Operations
+  * Durability, Atomic operations on data, fault tolerance, access control, encryption, discoverable
+  * cost-efficency, hot/cold-storage, retention
 
 
 # Data Governance
