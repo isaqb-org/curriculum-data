@@ -16,8 +16,24 @@ wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Litera
 
 // tag::EN[]
 [[LG-1-1]]
-==== LG 1-1: The is the first learning goal, in category xy
+==== LG 1-1: Data related stakeholders and disciplines
 tbd.
+
+==== LG 1-2: Data sources & technical qualities of data
+tbd.
+
+==== LG 1-3: Legal compliance and established measurements regarding licensing, data security and privacy
+tbd.
+
+==== LG 1-4: Methods for developing data centric solutions
+tbd.
+
+==== LG 1-5: Data Lifecycle Management
+tbd.
+
+==== LG 1-6: Overall data modelling and communication patterns
+tbd.
+
 // end::EN[]
 
 // tag::REMARK[]

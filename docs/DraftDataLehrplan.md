@@ -1,10 +1,15 @@
 # Fundamentals
-* Data related stakeholders, typical tasks or use cases, challenges and disciplines
-* Data Sources & Technical qualities of data: volume, velocity, variety, structure, correctness, ...
-* Legal compliance and established measurements regarding licensing, data security and Privacy
-* Approaches for developing data centric solutions, e.g. DataOps
+* Data related stakeholders and disciplines
+  * Typical tasks or use cases, challenges
+* Data sources & technical qualities of data 
+  * volume, velocity, variety, structure, correctness, ...
+* Legal compliance and established measurements regarding licensing, data security and privacy
+* Methods for developing data centric solutions
+  * DataOps
 * Data Lifecycle Management
-* Overall Data Modelling  (unified data model for all systems vs. one model per source, Access Patterns) and Communication patterns (batch, streaming, messaging)
+* Overall data modelling and communication patterns
+ * unified data model for all systems vs. one model per source, Access Patterns
+ * batch, streaming, messaging
 
 
 # Data Storage
