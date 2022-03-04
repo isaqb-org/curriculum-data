@@ -8,8 +8,8 @@
   * DataOps
 * Data Lifecycle Management
 * Overall data modelling and communication patterns
- * unified data model for all systems vs. one model per source, Access Patterns
- * batch, streaming, messaging
+  * unified data model for all systems vs. one model per source, Access Patterns
+  * batch, streaming, messaging
 
 
 # Data Storage
@@ -45,12 +45,18 @@
 * Integration in operative systems: Automated Decision Making,
 
 # Data Pipelines
-* Analytical data processing blueprint (Ingestion, Storage, Processing and Analysis, Exploration and Visualisation, Retention)
-* Data Pipeline Patterns: ETL vs. EL(T)
-* Streaming vs. Batch
-* Transforming & Validating data
-* Orchestration: Automate creation, scheduling and monitoring of data pipelines
-* Pipeline Solutions, Infrastructure and Operations
+* Fundamental structure, building blocks & challenges 
+  * Ingestion, Storage, Processing and Analysis, Exploration and Visualisation, Retention
+  * Automation, Reproducibility and dissection of complex processes, Verweis auf Data Lineage
+  * Directed acyclic graph
+* Data Pipeline Patterns
+  * ETL vs. EL(T)
+  * Stream vs. batch processing
+  * Pipes & Filters
+* Data validation & transformation
+* Orchestration & Workflows 
+  * Automate creation, scheduling and monitoring of data pipelines
+* Solutions, infrastructure and operations
 
 
 # Data Architectures
