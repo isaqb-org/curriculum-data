@@ -20,11 +20,23 @@ tbd.
 
 // tag::EN[]
 [[LG-4-1]]
-==== LG 4-1: TBD
+==== LG 4-1: Categories of data consumers
 tbd.
 
 [[LG-4-2]]
-==== LG 4-2: TBD
+==== LG 4-2: Data providers
+tbd.
+
+[[LG-4-3]]
+==== LG 4-3: Data presentation patterns
+tbd.
+
+[[LG-4-4]]
+==== LG 4-4: Predictive techniques
+tbd.
+
+[[LG-4-5]]
+==== LG 4-5: Integration in operative systems
 tbd.
 // end::EN[]
 

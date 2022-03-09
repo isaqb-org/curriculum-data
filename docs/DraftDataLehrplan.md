@@ -38,11 +38,26 @@
 
 
 # Data Usage
-* Goals: Analyzing, testing hypotheses, predictions
-* Analysis - Backend: Reporting data, Data Science, Query optimization
-* Data Visualisation, Dashboards, Alerting, personalized information
-* Predictions: Machine Learning (Requirements, Infrastructure & Solutions, MLOps)
-* Integration in operative systems: Automated Decision Making,
+* Categories of data consumers 
+  * Analyzing, testing hypotheses, predictions
+  * ad-hoc vs. predefined
+  * Data-In-Rest vs. Data in Transit
+  * past vs. future
+  * explorative vs. exploitation
+* Data Providers
+  * Data Science, Query optimization
+* Data presentation patterns
+  * Data Visualisation, Dashboards, Alerting, personalized information
+* Predictive techniques
+  * Machine Learning (Requirements, Infrastructure & Solutions, MLOps)
+  * Tools: scikit-learn, tensorflow, PyTorch
+  * Statistical estimation methods, e.g. Monte-Carlo-Simulations
+  * predictive modelling
+* Integration in operative systems 
+  * Automated Decision Making
+  * Data driven systems
+  * Active Data Warehouses
+
 
 # Data Pipelines
 * Fundamental structure, building blocks & challenges 
