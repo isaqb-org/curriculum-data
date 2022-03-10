@@ -20,11 +20,27 @@ tbd.
 
 // tag::EN[]
 [[LG-3-1]]
-==== LG 3-1: TBD
+==== LG 3-1: General aspects
 tbd.
 
 [[LG-3-2]]
-==== LG 3-2: TBD
+==== LG 3-2: Policies
+tbd.
+
+[[LG-3-3]]
+==== LG 3-3: Metadata Management
+tbd.
+
+[[LG-3-4]]
+==== LG 3-4: Data Quality
+tbd.
+
+[[LG-3-5]]
+==== LG 3-5: Traceability
+tbd.
+
+[[LG-3-6]]
+==== LG 3-6: Maintainability
 tbd.
 // end::EN[]
 

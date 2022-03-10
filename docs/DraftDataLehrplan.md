@@ -28,13 +28,24 @@
   * cost-efficency, hot/cold-storage, retention
 
 
-# Data Governance
-* Challenges when coordinating multiple data-centric systems 
-* Metadata Management: Representation, Acquisition, Categories, Systems/Frameworks, Schema Evolution
-* Ensuring Data Quality: Data Formats, Validation 
-* Ensuring Traceability: Data Versioning, Time travelling
-* Tracking Data Origin: Data Lineage (Understanding, recording, and visualizing data as it flows from data sources to consumption)
-* Ensuring Maintainability: Data Product Catalog, Metrics
+# Data Governance & Data Management
+* General aspects
+  * Definitions
+  * Goals
+  * Roles
+* Policies
+  * Coordination, Monitoring, Controlling, cross-company
+* Metadata Management 
+  * Representation, Acquisition, Categories, Systems/Frameworks, Schema Evolution
+* Data Quality 
+  * Data Formats, Validation 
+* Traceability 
+  * Data Versioning, Time travelling
+  * Data Lineage (Understanding, recording, and visualizing data as it flows from data sources to consumption)
+* Maintainability 
+  * Feedback Loops
+  * Data Product Catalog
+  * Metrics, Leverage Points
 
 
 # Data Usage
@@ -75,10 +86,21 @@
 
 
 # Data Architectures
-* Aspects and Building blocks for Data Architectures
-* Data Warehouse, Data Lake, Data Vault 
+* Aspects and Building blocks
+* Central approaches
+  * Data Warehouse, Data Lake, Data Vault 
 * Data Mesh
-* "ML Architecture"
+  * Domain Ownership
+  * Data Products: Types, Interaction e.g. APIs & Functionality, Infrastructure/Plattforms
+  * Self-serve Data Platform
+  * Federated Computational Governance
+* Machine Learning
+  * MLOps
+  * specialized hardware (GPU, TPU)
+* Use Cases
+  * Scientific
+  * IoT
+  * E-Commerce
 -----
 Old version:
 
