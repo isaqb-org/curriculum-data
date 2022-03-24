@@ -2,14 +2,19 @@
 
 // tag::DE[]
 [[LZ-1-1]]
-==== LZ 1-1: Dies ist das erste Lernziel, in Kategorie xy
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
-
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+==== LZ 1-1: Datenbezogenen Stakeholder und Disziplinen
+* Wissen über unterschiedliche industrielle Einsatzbereiche von und daraus resultierend Sichtweisen auf Daten:
+** Gesundheitssektor
+** Versicherungs-/Finanzwesen
+** Telekommunikation
+** Automobilindustrie
+** Bildung, Wissenschaft, Forschung
+* Technologische Einsatzzwecke
+** Business/Customer Intelligence
+** Real-Time/Streaming Solutions
+** Data Warehousing
+** Datenintegration
+** Advanced Analytics
 
 
 // end::DE[]
@@ -17,7 +22,7 @@ wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Litera
 // tag::EN[]
 [[LG-1-1]]
 ==== LG 1-1: Data related stakeholders and disciplines
-tbd.
+
 
 [[LG-1-2]]
 ==== LG 1-2: Data sources & technical qualities of data
