@@ -1,10 +1,10 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 120 Min. | Übungszeit: Keine
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
+Datenintensive Anwendungen, Verfügbarkeit, Zuverlässigkeit, Wartbarkeit, CAP-Theorem, ACID, BASE
 
 // end::DE[]
 

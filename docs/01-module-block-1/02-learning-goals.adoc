@@ -2,20 +2,21 @@
 
 // tag::DE[]
 [[LZ-1-1]]
-==== LZ 1-1: Datenbezogenen Stakeholder und Disziplinen
-* Wissen über unterschiedliche industrielle Einsatzbereiche von und daraus resultierend Sichtweisen auf Daten:
-** Gesundheitssektor
-** Versicherungs-/Finanzwesen
-** Telekommunikation
-** Automobilindustrie
-** Bildung, Wissenschaft, Forschung
-* Technologische Einsatzzwecke
-** Business/Customer Intelligence
-** Real-Time/Streaming Solutions
-** Data Warehousing
-** Datenintegration
-** Advanced Analytics
-
+==== LZ 1-1: Datenbezogene Stakeholder und Disziplinen
+* Die Teilnehmer wissen, dass Daten für eine gegebene Aufgabenstellung (u.a. unter dem Gesichtspunkt einer datenintensiven
+Anwendung) eine zentrale Rolle einnehmen.
+* Die Teilnehmer kennen unterschiedliche Einsatzbereiche und daraus resultierend auch unterschiedliche Strategien für Daten und deren Persistenz.
+** Beispielhafte Use-Cases aus verschiedenen Bereichen: Gesundheitssektor, Versicherungs-/Finanzwesen,
+Telekommunikation, Automobil-/Fertigungsindustrie, Luft-/Raumfahrt, Bildung, Wissenschaft, Forschung
+* Die Teilnehmer wissen, dass Architekturen in Bezug auf die Qualitätsmerkmale optimiert werden können. Sie verstehen, warum
+die Merkmale _Verfügbarkeit, Zuverlässigkeit, Wartbarkeit_ wichtige Entscheidungskriterien für Datenstrategien darstellen.
+* Die Teilnehmer kennen das CAP-Theorem und können die Eigenschaften (A)tomicity\(C)onsistency(I)solation(D)urability oder
+(B)asically(A)vailable(S)oft State(E)ventual Consistency entsprechend einordnen.
+* Die Teilnehmer kennen unterschiedliche, technologische Aspekte zur Datenerhebung/-transfromation/-übertragung und -analyse
+und deren Einsatzzweck.
+** Beispielhafte technologische Einsatzzwecke: Business/Customer Intelligence, Real-Time/Streaming-Lösungen, Data Warehouse,
+Datenintegration, Advanced Analytics
+* Die Teilnehmer können die Stakeholder identifizieren und deren Anforderungen und Einfluss auf die Daten bewerten.
 
 // end::DE[]
 
