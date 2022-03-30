@@ -4,7 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-Datenintensive Anwendungen, Verfügbarkeit, Zuverlässigkeit, Wartbarkeit, CAP-Theorem, ACID, BASE
+Daten, Information, Masterdaten, Operationale Daten, Datenintensive Anwendungen, Verfügbarkeit, Zuverlässigkeit, Wartbarkeit, CAP-Theorem, ACID, BASE
 
 // end::DE[]
 

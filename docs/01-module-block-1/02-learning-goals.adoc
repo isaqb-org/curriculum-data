@@ -10,13 +10,43 @@ Anwendung) eine zentrale Rolle einnehmen.
 Telekommunikation, Automobil-/Fertigungsindustrie, Luft-/Raumfahrt, Bildung, Wissenschaft, Forschung
 * Die Teilnehmer wissen, dass Architekturen in Bezug auf die Qualitätsmerkmale optimiert werden können. Sie verstehen, warum
 die Merkmale _Verfügbarkeit, Zuverlässigkeit, Wartbarkeit_ wichtige Entscheidungskriterien für Datenstrategien darstellen.
+* Die Teilnehmer verstehen die Natur der einem System zugrunde liegenden Daten ein Hauptfaktor für Architekturentscheidungen darstellen kann.
 * Die Teilnehmer kennen das CAP-Theorem und können die Eigenschaften (A)tomicity\(C)onsistency(I)solation(D)urability oder
 (B)asically(A)vailable(S)oft State(E)ventual Consistency entsprechend einordnen.
+** Sie verstehen insbesondere wie Daten in unterschiedlichen Umgebungen (zentral oder verteilt) einen konsistenten Zustand erreichen (Erfüllung von Constraints).
 * Die Teilnehmer kennen unterschiedliche, technologische Aspekte zur Datenerhebung/-transfromation/-übertragung und -analyse
 und deren Einsatzzweck.
 ** Beispielhafte technologische Einsatzzwecke: Business/Customer Intelligence, Real-Time/Streaming-Lösungen, Data Warehouse,
 Datenintegration, Advanced Analytics
 * Die Teilnehmer können die Stakeholder identifizieren und deren Anforderungen und Einfluss auf die Daten bewerten.
+
+[[LG-1-2]]
+==== LG 1-2: Datenquellen & technische Datenqualitäten
+* Die Teilnehmer kennen die unterschiedlichen Datenqualitätscharakteristiken:
+** Korrektheit, Vollständigkeit, Aktualität, Datenvolumen, Änderungsrate (Stabilität der Informationen), strukturierte vs. unstrukturierte Daten und Datenformate.
+* Die Teilnehmer kennen unterschiedliche Typen und Charakteristiken verschiedener Datenquellen:
+** Datenbank(management)systeme, Dokumentenmanagementsysteme, Dateisysteme, Logs, Externe APIS (z.B. Finanzmarkt, Börse), SCADA, IoT-Systeme.
+* Die Teilnehmer verstehen die Wichtigkeit Daten aus unterschiedlichen Quellen zu erheben und diese an ihr System anzubinden.
+* Die Teilnehmer verstehen die Bedeutung der Bewertung der Datenqualität aus unterschiedlichen Quellen.
+* Die Teilnehmer verstehen, dass eine einzelne Entität, die jeweils vollständig in unterschiedlichen Datenquellen vorgehalten wird, zu Konflikten führen kann.
+* Die Teilnehmer kennen Vor- und Nachteile eines kanonischen Datenmodells über alle zugrundeliegenden Datenquellen im Vergleich zu dem Ansatz eines Modells pro Quelle
+oder dem eines facettierten Datenmodell.
+* Die Teilnehmer kennen verschiedene Lösungsstrategien zum Metadatenmanagement.
+** Die Teilnehmer wissen, was Metadaten sind und wie diese weitergehende Informationen über zugrundeliegende Daten beisteuern und wie diese abgefragt werden können.
+
+[[LG-1-3]]
+==== LG 1-3: Rechtskonformität und etablierte Messwerte bezüglich Lizensierung, Datensicherheit und Datenschutz
+* Die Teilnehmer verstehen wie organisatorische und rechtliche Gegebenheiten, Rahmenwerke und Bedingungen die Verfügbarkeit und Qualität von Daten beeinflussen.
+* Die Teilnehmer verstehen, warum die Datenqualität im zeitlichen Verlauf verändert wird sowie den daraus resultierenden Bedarf eines Monitorings.
+* Die Teilnehmer verstehen den Einfluss von rechtlichen und organisatorischen Bedingungen auf die Datenverfügbarkeit und -zugriffe (z.B. den Einfluss der DSGVO).
+* Die Teilnehmer verstehen die Wichtigkeit die Datenauthentizität sicherzustellen:
+** Ist die Datenquelle authentisch?
+** Ist der Datensatz manipuliert worden?
+
+[[LG-1-4]]
+==== LG 1-4: Methoden zur Entwicklung datenzentrierter Lösungen
+
+
 
 // end::DE[]
 
