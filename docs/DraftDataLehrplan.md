@@ -201,7 +201,7 @@ Die Teilnehmer verstehen die Bedeutung von Metadaten für die Nutzung von Datenq
 Die Teilnehmer wissen, dass es Verfahren gibt (Schema Inference), um Metadaten aus Daten abzuleiten. Ihnen ist bewusst, dass sich Metadaten über die Nutzungsdauer von Daten ändern können (Schema Evolution) und dass Verfahren existieren, diese Änderungen beim Zugriff auf die Daten zu erkennen.
 
 
-#  - Ingestion und Transport
+# 4 - Ingestion und Transport
 ## LZ 4-1 - Erkennen von Änderungen
 Den Teilnehmern sind Verfahren für das Identifizieren von Entitäten sowie für das Erkennen von Änderungen dieser Entitäten in Quellsystemen bekannt, wie etwa
 - Change Data Capture (CDC)
@@ -272,7 +272,7 @@ Die Teilnehmer wissen, dass Reverse ETL Tools mit Konnektoren für gängige oper
 ## LZ 5-1 - Speichersysteme
 Die Teilnehmer kennen die folgenden wesentlichen Systeme zum Speichern digitaler Daten und können die jeweiligen Besonderheiten erläutern:
 - Filesystem
-- Block-Storage system
+- Block-Storage System
 - Objekt-Storage System
 
 Die Teilnehmer kennen Kriterien zur Auswahl des passenden Systems, wie etwa
@@ -490,7 +490,7 @@ Statistics: summary statistics, hypothesis testing,...
 
 
 # 7 - Transformation
-## LZ 7-1 - Übersicht
+## LZ 7-1 - Aufbereitung
 Die Teilnehmer verstehen, dass (Daten-)Transformationen erforderlich sind, um Daten aus operativen Systemen für die Analyse aufzubreiten. Sie kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell
 - Umwandeln der Datenrepräsentation von Quell- in Zielformate
 - Bereinigen/Standardisieren der Daten (Data Cleansing)
