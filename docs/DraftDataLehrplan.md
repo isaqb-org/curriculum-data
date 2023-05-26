@@ -51,7 +51,8 @@ Die Teilnehmer können übliche Herausforderungen bei Konzeption, Umsetzung und 
 - Verfügbarkeit
 - Datensicherheit
 
-[Data as "first class citizen"]
+{Data as "first class citizen"}
+[Inmon, Kimball]
 
 ## LZ 1-3 - Kategorien analytischer Anwendungen
 Die Teilnehmer kennen die typischen Kategorien analytischer Anwendungen, können diese unterscheiden und jeweils Beispiele dazu nennen:
@@ -60,13 +61,15 @@ Die Teilnehmer kennen die typischen Kategorien analytischer Anwendungen, können
 - Inferentiell und prediktiv
 - Realtime, near realtime und batch
 
-[Model interpretability]
+{Model interpretability}
+[Inmon, Kimball]
 
 ## LZ 1-4 - Historie der Umsetzung analytischer Anwendungssysteme
 Die Teilnehmer haben einen Überblick, wie analytische Anwendungssysteme im Laufe der Zeit umgesetzt worden sind.
 Sie kennen Begriffe wie Reporting, DSS, EIS, DWH, Data Mart, Data Vault, Data Mining, ODS, Data Lake, Data Fabric, Data Mesh. Sie können diese Lösungsansätze unterscheiden und wissen, wie sie auseinander hervorgegangen sind.
 
-[Cloud, ML]
+{Cloud, ML}
+[Inmon, Kimball, ?]
 
 ## LZ 1-5 - Qualität von Daten
 Die Teilnehmer kennen typische Qualitätsmerkmale von Daten und können diese erläutern:
@@ -99,6 +102,7 @@ Die Teilnehmer verstehen, warum die Gewährleistung von Datenqualität bei analy
 - Beschreibende fachliche Metadaten
 - (Standard-) Datenaustauschformate
 - Erkennen von Ausreißern (Outlier Detection), fehlenden Werten und Widersprüchen 
+[Inmon, Kimball]
 
 # 2 Referenzarchitekturen für analytische Anwendungssysteme
 ## LZ 2-1 - Überblick zu Referenzarchitekturen
@@ -151,7 +155,7 @@ Die Teilnehmer können die folgenden Phasen der Datenverarbeitung zur Anwendung 
 ## LZ 2-4 - Architekturentscheidungen anhand von Referenzarchitekturen
 Die Teilnehmer können Architekturentscheidungen speziell zu den folgenden Fragestellungen anhand von Referenzarchitekturen diskutieren:
 - ob ein zentrales/monolithisches oder dezentrales/förderiertes System zu wählen ist 
-[Single Point of Truth, Canonical Data Model, Master Data Management]
+{Single Point of Truth, Canonical Data Model, Master Data Management}
 - ob ein Deployment in der Cloud (ggfs. Cloud-Ready), hybrid oder on-Premise vorzuziehen ist
 - ob ein einheitliches Schema für die auszuwertenden Daten vorgegeben werden soll
 - ob eine eigenständige Entwicklung von Komponenten erforderlich ist oder das Kaufen und Konfigurieren von Standardkomponenten ausreicht
@@ -181,12 +185,12 @@ Die Teilnehmer kennen Arten von Datenquellen und Quellsystemen, von denen analyt
 - Logging Systeme
 
 ## LZ 3-2 - Eigenschaften von Datenquellen und Quellsystemen
-Die Teilnehmer können unterscheiden, ob Datenquellen strukturierte, semi-strukturierte oder unstukturierte Daten liefern. Ihnen sind übliche Formate vertraut, in denen Datenquellen ihre Daten zur Verfügung stellen, wie etwa
+Die Teilnehmer können unterscheiden, ob Datenquellen strukturierte, semi-strukturierte oder unstukturierte Daten [] liefern. Ihnen sind übliche Formate vertraut, in denen Datenquellen ihre Daten zur Verfügung stellen, wie etwa
 - Dokument
 - Datenstrom
 - Liste von Datensätzen
 
-Die Teilnehmer wissen, dass Datenquellen den aktuellen Zustand der zuletzt geänderten Daten oder die Änderungen (Events) selbst wiedergeben können, mit denen dieser aktuelle Zustand erzeugt wurde. Sie wissen, dass ggfs. eine initiale Bereitstellung (initial Load) der Daten erforderlich ist. 
+Die Teilnehmer wissen, dass Datenquellen den aktuellen Zustand der zuletzt geänderten Daten (Snapshot) oder die Änderungen selbst (Increments/Events) wiedergeben können, mit denen dieser aktuelle Zustand erzeugt wurde. Sie wissen, dass ggfs. eine initiale Bereitstellung (initial Load) der Daten erforderlich ist. 
 Die Teilnehmer wissen, dass Datenquellen ihre Daten selbst aktiv liefern (Push) oder aber auf Anfrage bereitstellen (Pull) können.
 
 Den Teilnehmern ist bewusst, dass Quellsysteme in unterschiedlicher Weise und Qualität den Schutz der Daten sowie eine Kontrolle des Zugriffs auf die Daten unterstützen.
@@ -204,10 +208,10 @@ Die Teilnehmer wissen, dass es Verfahren gibt (Schema Inference), um Metadaten a
 # 4 - Ingestion und Transport
 ## LZ 4-1 - Erkennen von Änderungen
 Den Teilnehmern sind Verfahren für das Identifizieren von Entitäten sowie für das Erkennen von Änderungen dieser Entitäten in Quellsystemen bekannt, wie etwa
-- Change Data Capture (CDC)
+- Change Data Capture (CDC) []
 - DB-Trigger
-- Outbox Pattern
-- Event-Sourcing
+- Outbox Pattern []
+- Event-Sourcing []
 - Create und Update Timestamps
 - Audit Trail Reader
 - Datensatz-Hashes
@@ -218,9 +222,9 @@ Die Teilnehmer wissen, für welche Art von Quellsystemen welche dieser Verfahren
 
 Den Teilnehmern ist bewußt, dass das Löschen von Daten üblicherweise ebenfalls als Änderung geliefert wird, da auch gelöschte Daten für die Analyse ggfs. weiter benötigt werden.
 
-Den Teilnehmern ist bewußt, dass sich Änderungen von Entitäten auf den internen Zustand von Quellsystemen beziehen können und dass mit der Weitergabe dieser Änderungen das Prinzip des Information Hidings verletzt werden kann. Sie verstehen, wie etwa das Outbox Pattern dazu genutzt werden kann, die von Quellsystemen zur Verfügung gestellten Änderungen auf das erforderliche Maß zu beschränken. 
+Den Teilnehmern ist bewußt, dass sich Änderungen von Entitäten auf den internen Zustand von Quellsystemen beziehen können und dass mit der Weitergabe dieser Änderungen das Prinzip des Information Hidings [] verletzt werden kann. Sie verstehen, wie etwa das Outbox Pattern dazu genutzt werden kann, die von Quellsystemen zur Verfügung gestellten Änderungen auf das erforderliche Maß zu beschränken. 
 
-## LZ 4-2 - Konnektoren
+## LZ 4-2 - Konnektoren []
 Die Teilnehmer kennen Tools und Frameworks, die über vordefinierte Konnektoren einen vereinheitlichten Zugriff auf Quellsysteme zur Verfügung stellen. Sie wissen, dass diese Tools und Frameworks vorrangig für die folgenden Aufgaben eingesetzt werden:
 - Datenreplikation
 - Datenintegration
@@ -242,9 +246,9 @@ Die Teilnehmer kennen Beispiele für diese Tools, wie etwa
 - Collibra
 - Alation
 
-## LZ 4-3 - [File Transfer]
+## LZ 4-3 - {File Transfer}
 
-## LZ 4-4 - [Message Passing]
+## LZ 4-4 - {Message Passing}
 - Message Broker
 - Pub/Sub, Brodcast, Request/Response
 - Routing
@@ -255,7 +259,7 @@ Die Teilnehmer kennen Beispiele für Message Broker wie
 - Google Pub/Sub
 - Azure Event Hubs
 
-## LZ 4-5 - Event Streaming
+## LZ 4-5 - Event Streaming []
 Die Teilnehmer wissen, dass 
 - beim Event Streaming je Datenquelle idR ein Producer für das Lesen der Daten aus dieser Quelle und das Weiterleiten an eine entsprechende Middleware Komponente (Message Broker) verantwortlich ist.
 - beim Event Streaming je Datensenke idR ein Consumer für das Lesen der Daten vom Message Broker und das Schreiben in diese Senke verantwortlich ist.
@@ -263,13 +267,13 @@ Die Teilnehmer wissen, dass
 - Event Streaming nicht generell garantiert, dass jeder Datensatz genau einmal (exactly once) verarbeitet wird, sondern meist nur zusichert, dass jeder Datensatz höchstens (almost once) oder mindestens einmal (at least once) verarbeitet wird.
 - mit Event Streaming idR nur eventuelle Konsistenz der Daten in der Datensenke zusichert wird.
 
-## LZ 4-6 - Reverse ETL
+## LZ 4-6 - Reverse ETL []
 Den Teilnehmern ist das Konzept der Reverse ETL vertraut. Sie kennen Anwendungsfälle für die Integration von vereinheitlichten Daten oder von Ergebnissen analytischer Auswertungen in operative Anwendungen. 
 Die Teilnehmer wissen, dass Reverse ETL Tools mit Konnektoren für gängige operative Anwendungen existieren, die die Umsetzung entsprechender Integrationslösungen deutlich erleichtern. Sie kennen Beispiele für diese Tools. 
 
 
 # 5 - Storage
-## LZ 5-1 - Speichersysteme
+## LZ 5-1 - Speichersysteme []
 Die Teilnehmer kennen die folgenden wesentlichen Systeme zum Speichern digitaler Daten und können die jeweiligen Besonderheiten erläutern:
 - Filesystem
 - Block-Storage System
@@ -306,7 +310,7 @@ Die Teilnehmer wissen, dass Speichersysteme auf die folgenden unterschiedlichen 
 
 Die Teilnehmer wissen, dass Speichersysteme in der Cloud mit unterschiedlichen SLAs angeboten werden können (etwa Hot vs Cold Storage).
 
-## LZ 5-2 - Datenbanksysteme
+## LZ 5-2 - Datenbanksysteme []
 Die Teilnehmer verstehen, dass die Verwaltung von Daten Aufgaben umfasst, die von Speichersystemen nicht direkt unterstützt werden, wie etwa
 - Verwaltung der Metadaten zu den Daten
 - Vorgabe und Anwendung von Schema-Informationen zu den Daten
@@ -341,17 +345,17 @@ Die Teilnehmer verstehen, dass einige o.g. Aufgaben alleine durch die Verwendung
 - Tabellenformate (Open Table Formats): Delta, Iceberg, Hudi
 
 ## LZ 5-3 - Concurrency Control
-Die Teilnehmer verstehen, dass bei Multi-Threading und -Processing Systemen mit nebenläufiger Verarbeitung sowie redundanter Speicherung von Daten die Konsistenz von Daten explizit sichergestellt werden muss. Ihnen ist das Konzept von ACID Transaktionen und deren Serialisierbarkeit vertraut. Sie wissen, dass ACID Transaktionen auf unterschiedliche Weisen und mit unterschiedlichen Garantien für Konsistenz (Consistency) und Isolation umgesetzt werden können.
+Die Teilnehmer verstehen, dass bei Multi-Threading und -Processing Systemen mit nebenläufiger Verarbeitung sowie redundanter Speicherung von Daten die Konsistenz von Daten explizit sichergestellt werden muss. Ihnen ist das Konzept von ACID Transaktionen und deren Serialisierbarkeit vertraut []. Sie wissen, dass ACID Transaktionen auf unterschiedliche Weisen und mit unterschiedlichen Garantien für Konsistenz (Consistency) und Isolation umgesetzt werden können.
 
 Die Teilnehmer wissen, dass ACID Transaktionen üblicherweise von (relationalen) Datenbankmanagementsystemen zur Verfügung gestellt werden, dass sie aber nicht auf diese Systeme beschränkt sind.
 
-Den Teilnehmern ist bekannt, dass ACID Transaktionen speziell bei verteilten Anwendungen (mit dem dafür erforderlichen Two-Phase-Commit Protokoll) deren Verfügbarkeit idR zu stark einschränken. Ihnen ist das alternative Konzept der BASE-Eigenschaften sowie speziell der eventuellen Konsistenz (Eventual Consistency) verteilter Anwendungen vertraut.
+Den Teilnehmern ist bekannt, dass ACID Transaktionen speziell bei verteilten Anwendungen (mit dem dafür erforderlichen Two-Phase-Commit Protokoll) deren Verfügbarkeit idR zu stark einschränken. Ihnen ist das alternative Konzept der BASE-Eigenschaften sowie speziell der eventuellen Konsistenz (Eventual Consistency) verteilter Anwendungen vertraut [].
 
 Die Teilnehmer verstehen, dass es Verarbeitung großer Datenmengen (speziell im Batch) sinnvoll sein kann, auf ACID Transaktionen zu verzichten oder sie zumindest mit schwächeren Garantien für Consistency und Isolation zu verwenden.
 
-[Concurrent data structures]
+{Concurrent data structures}
 
-## LZ 5-4 - Versionierung von Daten
+## LZ 5-4 - Versionierung von Daten []
 Den Teilnehmern ist bewusst, dass bei veränderlichen Daten nicht nur der aktuelle Zustand, sondern auch die früheren Zustände (speziell für analytische Auswertungen) von Interesse sein können. Sie kennen die folgenden Verfahren für die Versionierung von Daten und verstehen, wie diese etwa in Form von Datenbanksystemen mit den o.g. Speichersystemen kombiniert werden:
 - Transaktionen (über die Serialisierbarkeit)
 - Versionskontrollsysteme
@@ -362,10 +366,11 @@ Die Teilnehmer kennen übliche Verfahren, um Speichersysteme bei steigender Last
 - Sharding
 - Partitionierung (vertikal/horizontal)
 - Indexierung
+- Reflections []
 - Caching
-- Append Only / Read Only
+- Append Only / Read Only []
 
-## LZ 5-6 Data Warehouse und Data Lake
+## LZ 5-6 Data Warehouse und Data Lake []
 Die Teilnehmer wissen, dass Data Warehouse (DWH) Systeme idR für die Vereinheitlichung und Integration analytischer Daten verwendet werden. Sie wissen, dass Data Lake (DL) Systeme neben dieser Vereinheitlichung und Integration analytischer Daten auch eher als DWH Systeme geeignet sind, die Anwendung von Verfahren der KI und des ML auf analytischen Daten zu ermöglichen.
 
 Die Teilnehmer wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL Systeme verwendet werden.
@@ -382,9 +387,9 @@ Die Teilnehmer kennen wesentliche Unterschiede zwischen DWH und DL Systemen, wie
 
 Die Teilnehmer kennen Lösungsansätze, um in DWH Systemen den Aufwand für Änderungen am Schema sowie für die Integration neuer Datenquellen zu reduzieren, wie etwa
 - Verwendung künstlicher Schlüssel (Surrogate Keys)
-- Multidimensionale Modellierung
-- Data Vault
-- Automatisierung der Schemaänderungen (Data Warehouse Automation)
+- Multidimensionale Modellierung []
+- Data Vault []
+- Automatisierung der Schemaänderungen (Data Warehouse Automation) []
 
 Die Teilnehmer kennen Lösungsansätze, um in DL Systemen den Aufwand für die Vereinheitlichung beim lesenden Zugriff zu reduzieren
 - Aufteilen des DL in Bereiche unterschiedlicher Datenqualität (etwa Bronze, Silber und Gold), wobei die Rohdaten im Bronze-Bereich und die vereinheitlichten, gut analysierbaren Daten im Gold-Bereich zu finden sind.
@@ -394,7 +399,7 @@ Die Teilnehmer kennen Lösungsansätze, um in DL Systemen den Aufwand für die V
 
 # 6 - Query und Processing
 ## LZ 6-1 - Queries
-Die Teilnehmer kennen den üblichen Aufbau analytischer Queries mit Angaben zu
+Die Teilnehmer kennen den üblichen Aufbau analytischer Queries [] mit Angaben zu
 - Filtern (Where)
 - Projektionen (Select)
 - Gruppierungen (Group by)
@@ -404,14 +409,14 @@ Die Teilnehmer kennen den üblichen Aufbau analytischer Queries mit Angaben zu
 - Fenstern/Windows (Over Partition by)
 - OLAP Operationen (Slice/Dice, Drill up/down/...)
 - Umformungen (Pivot, Transpose, ...)
-- Modularisierung ([Materialized] Views, Common Table Expressions, Stored Procedures, User Defined Functions)
+- Modularisierung (Views, Common Table Expressions, Stored Procedures, User Defined Functions)
 
 Die Teilnehmer verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen.
 Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.
 Die Teilnehmer wissen, dass analytische Queries oft auf verteilten Daten operieren müssen. Sie verstehen den Nutzen von Ausführungsplänen für analytische Queries und deren Optimierung.
 Die Teilnehmer verstehen, dass analytische Queries idR nicht komplett im Hauptspeicher verarbeitet werden können. Ihnen ist bekannt, dass analytische Queries daher eine separate Komponente (Engine / Platform) benötigen, die eine performante Ausführung insbesondere durch Lastverteilung auf parallel arbeitende Worker gewährleistet.
 Die Teilnehmer wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten. Sie wissen, dass diese Engines in der Cloud (public/private) und auch on-Premises betrieben werden können. 
-Die Teilnehmer wissen, dass unterschiedliche Programmiermodelle für analytische Queries eingesetzt werden. Ihnen sind wesentliche Programmiermodelle bekannt und sie können beurteilen, für welche Aufgaben sie speziell geeignet sind:
+Die Teilnehmer wissen, dass unterschiedliche Programmiermodelle für analytische Queries eingesetzt werden []. Ihnen sind wesentliche Programmiermodelle bekannt und sie können beurteilen, für welche Aufgaben sie speziell geeignet sind:
 - SQL
 - OLAP
 - Spark
@@ -420,7 +425,7 @@ Die Teilnehmer wissen, dass unterschiedliche Programmiermodelle für analytische
 - Dataframes
 - Numerical/Statistical
 
-Den Teilnehmern ist bewusst, dass diese Programmiermodelle idR miteinander kombiniert werden.
+Den Teilnehmern ist bewusst, dass diese Programmiermodelle oft miteinander kombiniert werden.
 
 Die Teilnehmer kennen für jedes dieser Programmiermodelle Beispiele zu Frameworks, Libraries und Tools für die Verarbeitung analytischer Queries wie etwa
 
@@ -441,10 +446,9 @@ Die Teilnehmer verstehen das Verfahren der Batch Verarbeitung (Batch Processing)
 - eine Batch-Verarbeitung üblicherweise die Konsistenz (s. LZ 5-3) der Daten in der Datensenke erhält
 - eine Batch-Verarbeitung komplexe Operationen zur Datenverarbeitung enthalten kann
 
-Die Teilnehmer verstehen das Verfahren der Micro-Batch Verarbeitung von Daten. Ihnen ist bewusst, dass sich die Micro-Batch Verarbeitung von der Batch Verarbeitung i.W. im folgenden Punkt unterscheidet:
-- Die Micro-Batch Verarbeitung wird sehr häufig am Tag ausgeführt: Jeweils nach Ablauf einer kurzen Zeitspanne seit der letzten Ausführung oder auch schon früher, wenn ausreichend Datensätze in der Datenquelle angefallen sind
+Die Teilnehmer verstehen das Verfahren der Micro-Batch Verarbeitung von Daten []. Sie kennen den Unterschied zwischen Batch und Micro-Batch Verarbeitung (Batches werden nur manuell oder zeitlich angestoßen, Micro-Batches auch dann, wenn ausreichend Datensätze in der Datenquelle angefallen sind).
 
-## LZ 6-3 - Stream Verarbeitung
+## LZ 6-3 - Stream Verarbeitung []
 Die Teilnehmer verstehen das Verfahren der Stream Verarbeitung (Stream Processing) von Daten. Sie wissen, dass Stream Verarbeitung auf der Basis des Event Streamings aufsetzt. 
 Die Teilnehmer wissen, dass bei der Stream Verarbeitung
 - die Daten mehrerer Streams miteinander zu einem weiteren Stream kombiniert werden können.
@@ -463,13 +467,13 @@ Die Teilnehmer kennen Frameworks oder Tools für die Stream Verarbeitung wie
 - Pulsar Functions
 - Spark Streaming
 
-## LZ 6-4 - Daten-orientierte Programmierung
+## LZ 6-4 - Daten-orientierte Programmierung []
 Die Teilnehmer kennen die Prinzipien einer Daten-orientierten Programmierung: 
 - Trennung von Code und Daten
 - Nutzung generischer Datenstrukturen für die Repräsentation von Daten
 - Verwendung unveränderbarer (immutable) Daten Repräsentationen
 
-## LZ 6-5 - [ML Processing]
+## LZ 6-5 - {ML Processing} []
 Classification: logistic regression, naive Bayes,...
 Regression: generalized linear regression, survival regression,...
 Decision trees, random forests, and gradient-boosted trees
@@ -526,7 +530,7 @@ Die Teilnehmer kennen typische Transformationen für die Aufbereitung analytisch
 - Historisieren (Slowly Changing Dimensions)
 - Ersetzen / Aussortieren unwahrscheinlicher Werte / Datensätze (Outlier)
 
-## LZ 7-3 - Staging Area
+## LZ 7-3 - Staging Area []
 Den Teilnehmern ist das Konzept der Staging Area vertraut. Sie wissen, dass
 - analytische Daten aus Datenquellen in einer Staging Area gesammelt und aufbereitet werden, bevor sie für die Analyse zur Verfügung gestellt werden
 - Staging Areas typischerweise für die Batch Verarbeitung von Daten zum Befüllen eines DWH Systems eingesetzt werden
@@ -549,16 +553,16 @@ Die Teilnehmer verstehen, dass die Umsetzung von Transformationen oft fragil ist
 - Zerlegen komplexer Transformationen
 - Auswahl geeigneter Programmiermodelle
 
-Die Teilnehmer kennen Verfahren zum Data Profiling, um die zu erwartenden Daten für die Umsetzung der Transformationen vorab zu analysieren.
+Die Teilnehmer kennen Verfahren zum Data Profiling [], um die zu erwartenden Daten für die Umsetzung der Transformationen vorab zu analysieren.
 Die Teilnehmer kennen Verfahren für die Überwachung (Monitoring) der Ausführung von Transformationen.
-Die Teilnehmer kennen das Konzept der Data Lineage für das Nachvollziehen der Abhängigkeiten zwischen Ein- und Ausgangsdaten von Transformationen.
+Die Teilnehmer kennen das Konzept der Data Lineage [] für das Nachvollziehen der Abhängigkeiten zwischen Ein- und Ausgangsdaten von Transformationen.
 
 ## LZ 7-5 - Qualitätsstufen
 Die Teilnehmer verstehen, dass über eine schrittweise Transformation eingehender Daten Qualitätsstufen (Quality-Gates) definiert werden können. Sie verstehen, dass damit je nach Art der Analyse Daten einer höheren (Clean Data) oder einer niedrigeren (Raw Data) herangezogen werden können.
 Die Teilnehmer verstehen, dass Staging Areas (s. LZ 7-3) ein Quality Gate darstellen, mit dem sichergestellt wird, dass nur qualitätsgesicherte Daten zur Analyse in einem Data Warehouse bereitgestellt werden.
-Die Teilnehmer verstehen, dass in einem Data Lake (s. LZ 7-3) Daten unterschiedlicher Qualitätsstufen gemeinsam aufbewahrt werden und dass es daher sinnvoll sein kann, Zonen unterschiedlicher Datenqualität (etwa Bronze, Silber, Gold) innerhalb von Data Lakes festzulegen.
+Die Teilnehmer verstehen, dass in einem Data Lake (s. LZ 7-3) Daten unterschiedlicher Qualitätsstufen gemeinsam aufbewahrt werden und dass es daher sinnvoll sein kann, Zonen unterschiedlicher Datenqualität (etwa Bronze, Silber, Gold) innerhalb von Data Lakes festzulegen [Medallion Architecture].
 
-# 8 - Presentation
+# 8 - Presentation []
 ## LZ - Personalisierung
 ## LZ - Auswertungen auf Data in Rest vs auf Data in Transit/Motion
 ## LZ - Ad-Hoc vs predefined Reports
@@ -573,27 +577,27 @@ Die Teilnehmer verstehen, dass in einem Data Lake (s. LZ 7-3) Daten unterschiedl
 ## LZ - Query Builder / Code Gen / Interactive Analytics
 
 # 9 - Schema und Modeling
-## LZ - Schema on write vs Schema on read
-## LZ - Data in Rest vs Data in Transit/Motion
+## LZ - Schema on write vs Schema on read []
+## LZ - Data in Rest vs Data in Transit/Motion []
 ## LZ - Event vs State
 ## LZ - Welches Datenmodell ist geeignet
 ## LZ - Historie der Metadaten, Metadata Tracking
 ## LZ - Historie der Daten, Data Versioning 
-## LZ - Schema Enforcement
-## LZ - Schema Registry
+## LZ - Schema Enforcement []
+## LZ - Schema Registry []
 ## LZ - Granularität der Daten
 ## LZ - Schema Detection / Schema on the fly
 ## LZ - Schema on Read Data migration
 Multiple Schemas, only last schema, lazy migration
-## LZ - Schema Evolution
+## LZ - Schema Evolution []
 ## LZ - Schema compatibility
-Backward, Forward, * Transitive
+Backward, Forward, * Transitive []
 ## LZ - Arten von Schema Änderungen
 Datensatz-Strukturen ergänzen oder entfernen, Attribute ergänzen oder entfernen, Datentyp Vergrößerung/Verkleinerung, Änderungen in Datensatz-Substrukturen
 ## LZ - ER vs Multidimensional (Data Vault) vs Document vs Graph 
 
 
-# 10 - Data Pipelines
+# 10 - Data Pipelines []
 ## LZ - Eigenschaften von Data Pipelines
 Accessible, Scalable, Monitored, Efficient
 ## LZ - Arten von Data Pipelines
@@ -617,7 +621,7 @@ Ingestion, Transport, Storage, Transformation, Presentation
 Edge-Computing
 
 
-# 11 - Data Governance
+# 11 - Data Governance []
 ## LZ - Was ist Data Governance
 Welche Regeln sind im gegebenen Kontext erforderlich, welche davon global und welche lokal, wie können sie überprüft werden, wann müssen sie angepasst werden
 ## LZ - Anforderungen an Datenschutz
@@ -627,6 +631,7 @@ GDPR, DSGVO, Personally Identifiable Information (PII)
 ## LZ - Pseudonymization
 ## LZ - Encryption
 ## LZ - Data Lineage / Metadata Tracking
+## LZ - Data Observability
 ## LZ - Access Control (Data, Metadata)
 Data-Centricity, Rich Access Policies, Scalability and Automation, Unified Visibility, Open / API-First Design, Hybrid and Multi-Cloud Ready
 ## LZ - Fine vs Course grained access control
@@ -641,7 +646,7 @@ Die Teilnehmer kennen Programmiersprachen für die Spezifikation von Metadaten, 
 
 Die Teilnehmer wissen, dass Metadaten oft in Datenkatalogen, Metadatenrepositories oder Metadaten-Registries verwaltet werden.
 
-# 12 - Data Mesh
+# 12 - Data Mesh []
 In diesem Modul wird das sozio-technische Konzept des Data Mesh erläutert und motiviert. Die Teilnehmer lernen, wann eine dezentralisierte Datenarchitektur angemesssen ist. Sie lernen zudem die vier grundlegenden Data Mesh Prinzipien kennen:
 - Domain Ownership
 - Data as a Product
