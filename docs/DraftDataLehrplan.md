@@ -595,28 +595,117 @@ Die Teilnehmer kennen Ansätze, wie mit entsprechenden Änderungen umgegangen we
 - Automatisierung der Modell-Änderungen (DWH Automation)
 
 
-# 10 - Data Pipelines []
+# 10 - Data Pipelines
 ## LZ - Eigenschaften von Data Pipelines
-Accessible, Scalable, Monitored, Efficient
+Bei "Stages" ist wichtig, dass Data Pipelines auf unterster Ebene idR nur einzelne Stages oder den Übergang dazwischen betreffen. Sie können entsprechend auch zu größeren Pipelines zusammengebaut werden. Den Punkt könnten wir vllt. auch in "Was sind Data Pipelines" unterbringen.
+
+Die Teilnehmer wissen aus welchen Bausteinen Data Pipelines bestehen und wozu sie verwendet werden. Die Teilnehmer kennen auch die wesentlichen Vorteile die Data Pipelines bieten:
+
+- Accessible
+- Scalable
+- Monitored
+- Efficient
+
 ## LZ - Arten von Data Pipelines
-ETL vs ELT, reverse ETL, Microbatches vs Stream
-Data Engineering, Analytics/ML Processing, Delivery 
+Die Teilnehmer wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind. Sie kennen daher die Unterscheidungen zwischen:
+
+- ETL vs ELT
+- reverse ETL
+- Microbatches vs Stream
+
+Außerdem kennen die Teilnehmer typische Anwendungsgebiete von Data Pipelines:
+
+- Data Engineering
+- Analytics/ML Processing
+- Delivery 
+
 ## LZ - Stateful vs Stateless processing
-## LZ - At least once vs Exactly once Processing
-## LZ - Data Pipline Qualitätskriterien
-Throughput, Reliability, Latency, Stability
-## LZ - Wiederanlauf
-Idempotenz, Append Only
+Die Teilnehmer kennen den Unterschied zwischen stateful und stateless processing. Sie wissen in welchen Fällen stateful processing gebraucht wird, jedoch wissen sie auch, dass das stateless processing Vorteile, wie z.B. der Unabhängigkeit von einer Datenbank, bietet und kennen Beispiele für passende Anwendungsgebiete.
+ 
+## LZ - At least once vs Exactly once (vs at most once?) Processing 
+Den Teilnehmern ist bewusst, dass bei der Datenverarbeitung die Daten verschieden oft "berührt" werden.  Sie kennen daher die Unterschiede zwischen der at least once, exactly once und at most once Verarbeitung. Den Teilnehmern dabei bewusst, welche Zusicherungen sie den Konsumenten der Data Pipeline machen können. 
+Die Teilnehmer wissen, dass diese Arten der Verarbeitung Auswirkungen auf den Konsumenten der Data Pipeline hat, da dieser die Daten ggfs. mehrmals oder unvollständig bekommen kann.
+
+Auf der Konsumentenseite kennen die Teilnehmer sowohl das Konzept der Idempotenz von Operationen als auch das Konzept von Append Only. Sie wissen welche Auswirkungen die obigen Verarbeitungen auf den Konsumenten haben und wie man mit den verschiedenen Verarbeitungsarten umgehen kann.
+
+Hierfür können sie Anwendungsfälle gegenüberstellen und Unterschiede, Vor- und Nachteile benennen.
+
+## LZ - Data Pipeline Qualitätskriterien
+
+Die Teilnehmer kennen Qualitätskriterien die die Güte einer Data Pipeline beschreiben. Sie verstehen daher die folgenden Eigenschaften und wissen was sie für eine Data Pipeline bedeuten:
+
+- Throughput
+- Reliability
+- Latency
+- Stability
+
 ## LZ - Building Blocks von Data Pipelines
-Scheduler, Workflow Engine, Query Engine, HTTP/MQTT Endpoints, Message Broker, Low Cost/High Volume Data Storage, Stream Processing Engine, Data Catalog, ML Framework
+Die Teilnehmer wissen aus welchen Building Blocks eine Data Pipelines besteht. Sie kennen Beispiele dieser Blocks und wissen wann welches Tooling für einen Anwendungsfall geeignet ist.
+
+Hierfür kennen sie die folgenden Begriffe, kennen Tools für diese und wissen mit welchen anderen Tools diese verwendet werden können:
+
+- Scheduler
+- Workflow Engine
+- Query Engine
+- HTTP/MQTT Endpoints
+- Message Broker
+- Low Cost/High Volume Data Storage
+- Stream Processing Engine
+- Data Catalog
+- ML Framework
+
 ## LZ - Technologien/Tools für Data Pipelines
-SQL, Dataframes, Spark
+Die Teilnehmer kennen Technologien, wie SQL, Python Dataframes oder Spark, mit denen Data Pipelines selbst erstellt werden können. Sie kennen aber auch Tools um Data Pipelines zu erstellen, wie z.B.:
+
+- Apache Airflow
+- Databricks
+- Fivetran 
+- Astera Centerprise
+- Skyvia
+
 ## LZ - Stages
-Ingestion, Transport, Storage, Transformation, Presentation
+Bei "Stages" ist wichtig, dass Data Pipelines auf unterster Ebene idR nur einzelne Stages oder den Übergang dazwischen betreffen. Sie können entsprechend auch zu größeren Pipelines zusammengebaut werden. Den Punkt könnten wir vllt. auch in "Was sind Data Pipelines" unterbringen.
+
+Die Teilnehmer wissen, dass Daten in Produktion vorher durch verschiedene Stages gelaufen sind. Sie kennen die üblichen Stage Bezeichnungen und wissen was typischerweise mit Data Pipelines in den Stages gemacht wird:
+
+- Ingestion
+- Transport
+- Storage
+- Transformation
+- Presentation
+
+Die Teilnehmer wissen auch, dass diese einzelnen an Data Pipelines der Stages zu größeren Data Pipelines zusammengesetzt werden können. 
+
 ## LZ - Monitoring
+Die Teilnehmer wissen, dass für die Data Pipeline ein Monitoring notwendig ist, um die Performanz und Qualität der Verarbeitung sicherzustellen.
+
+Die Teilnehmer verstehen, dass das Monitoring dabei relevante Buisness Metriken umfassen muss, welche von der Anwendung abhängig sind. Die Teilnehmer kennen aber auch allgemein zu testende Metriken, wie z.B.:
+
+- Anomalietests bzgl:
+ - Aktualität der Daten
+ - Volumen (Anzahl der Daten)
+ - Schemata
+ - NULL values
+ - uniques
+ - Verteilungen (e.g. data drift)
+- (Custom-)fixed data tests
+- Data Lineage and Metadaten
+
+Den Teilnehmern ist bewusst, dass neben diesem Data Monitoring in einer Cloud Umgebung zusätzliche Eigenschaften beobachtet werden müssen, wie z.B.:
+
+- Latenz
+- Häufigkeit von Systemfehlern
+- Datenmenge
+- Auslastung 
+
 ## LZ - Optimization
+Den Teilnehmern ist bewusst, dass Data Pipelines sehr häufig automatisiert laufen und wissen, dass Optimierung daher eine große Rolle für Data Pipelines spielt. Die Teilnehmer kennen daher Möglichkeiten eine Laufzeitanalyse für Data Pipelines aufzusetzen und wissen falls nötig dann wie sie die Laufzeiten der Operationen optimieren können.
+
 ## LZ - Cloud vs on-Premise
-Edge-Computing
+Bei "Cloud vs on-Premise" geht es i.W. um den starken Trend zu Cloud-Lösungen mit der Notwendigkeit der Edge-Verarbeitung. Hier ist insbesondere herauszuarbeiten, wie Data Pipelines ggfs. so gestaltet werden können, dass sie sowohl in der Cloud als auch on-premise ausführbar sind.
+
+Die Teilnehmer kennen die Vor- und Nachteile von Cloud vs on-Premise Datenverarbeitung. Zusätzlich kennen sie den Begriff Edge-Computing und wissen wie sich dieser auf die Verarbeitung auswirkt.
+
 
 
 # 11 - Data Mesh []
@@ -665,9 +754,15 @@ Die Teilnehmer verstehen, wie die Self-Serve Data Platform der Verwaltung, Autom
 References
 
 "Data Mesh in Action" by Jacek Majchrzak, Sven Balnojan, and Marian Siwiak. Manning. Publication in Summer 2022
-"Data Mesh" by Zhamak Dehghani. O'Reilly Media, Inc. April 2022 datamesh-architecture.com
+"Data Mesh" by Zhamak Dehghani. O'Reilly Media, Inc. April 2022 
+datamesh-architecture.com
+datamesh-governance.com
 "Data Management at Scale" by Piethein Strengholt
 "Software Architecture: The Hard Parts" by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
+
+
+------------------------------------------------------
+------------------------------------------------------
 
 # Geparkte Lernziele
 ## LZ - Daten-orientierte Programmierung []
