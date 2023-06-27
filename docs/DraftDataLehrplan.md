@@ -18,15 +18,14 @@ In vielen Spezialgebieten spielt die Verarbeitung großer Datenmengen ebenfalls 
 ## F 0-3 Zeiten 
 - Motivation und Übersicht: 60
 - Referenzarchitekturen für analytische Anwendungssysteme: 120
-- Sources: 45
-- Ingestion und Transport: 60
+- Data Sources: 60
+- Ingestion und Transport: 90
 - Storage: 120
 - Query und Processing: 120
-- Transformation: 45
-- Presentation und Downstream Integration: 90
-- Schema und Modeling: 120
+- Transformation: 90
+- Data Servicing: 90
+- Data modeling: 120
 - Data Pipelines: 120
-- Data Governance: 90
 - Data Mesh: 90
 
 
@@ -267,10 +266,6 @@ Die Teilnehmer wissen, dass
 - Event Streaming nicht generell garantiert, dass jeder Datensatz genau einmal (exactly once) verarbeitet wird, sondern meist nur zusichert, dass jeder Datensatz höchstens (almost once) oder mindestens einmal (at least once) verarbeitet wird.
 - mit Event Streaming idR nur eventuelle Konsistenz der Daten in der Datensenke zusichert wird.
 
-## LZ 4-6 - Reverse ETL []
-Den Teilnehmern ist das Konzept der Reverse ETL vertraut. Sie kennen Anwendungsfälle für die Integration von vereinheitlichten Daten oder von Ergebnissen analytischer Auswertungen in operative Anwendungen. 
-Die Teilnehmer wissen, dass Reverse ETL Tools mit Konnektoren für gängige operative Anwendungen existieren, die die Umsetzung entsprechender Integrationslösungen deutlich erleichtern. Sie kennen Beispiele für diese Tools. 
-
 
 # 5 - Storage
 ## LZ 5-1 - Speichersysteme []
@@ -413,9 +408,27 @@ Die Teilnehmer kennen den üblichen Aufbau analytischer Queries [] mit Angaben z
 
 Die Teilnehmer verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen.
 Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.
-Die Teilnehmer wissen, dass analytische Queries oft auf verteilten Daten operieren müssen. Sie verstehen den Nutzen von Ausführungsplänen für analytische Queries und deren Optimierung.
-Die Teilnehmer verstehen, dass analytische Queries idR nicht komplett im Hauptspeicher verarbeitet werden können. Ihnen ist bekannt, dass analytische Queries daher eine separate Komponente (Engine / Platform) benötigen, die eine performante Ausführung insbesondere durch Lastverteilung auf parallel arbeitende Worker gewährleistet.
-Die Teilnehmer wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten. Sie wissen, dass diese Engines in der Cloud (public/private) und auch on-Premises betrieben werden können. 
+
+## LZ 6-2 - Query Verarbeitung
+Den Teilnehmer ist bekannt, dass die Verarbeitung von Queries in den folgenden Schritten erfolgt:
+- Parsen der Query-Statements
+- Erstellen und Optimieren des Ausführungsplans
+- Ausführen der Query gemäß Ausführungsplan
+- Rückgabe der Ergebnisse
+
+Die Teilnehmer wissen, dass diese Aufgaben von der sog. Query-Engine übernommen werden. Die Teilnehmer wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten. Sie wissen, dass diese Engines in der Cloud (public/private) und auch on-Premises betrieben werden können.
+Den Teilnehmern ist bewusst, dass Query Engines auf unterschiedliche Aufgaben spezialisert sein können, etwa für das performante Lesen oder Schreiben von Daten oder für den Zeilen- oder Spalten-orientierten Zugriff auf die Daten.
+
+## LZ 6-3 - Query Optimierung
+Die Teilnehmer verstehen, dass analytische Queries idR nicht komplett im Hauptspeicher verarbeitet werden können und dass analytische Queries oft auf verteilten Daten operieren müssen. Sie wissen, dass eine performante Ausführung von der Engine insbesondere durch Lastverteilung auf parallel arbeitende Worker gewährleistet werden kann.
+Den Teilnehmern ist bewusst, dass Unterschiede in Ausführungsplänen zu drastischen Laufzeit-Unterschieden bei der Ausführung von Queries führen können. Sie kennen Beispiele wie Full Table Scans oder Full Outer Joins (Kreuzprodukte), die auf ungünstige Ausführungspläne hinweisen können.
+Die Teilnehmer kennen gängige Verfahren zur Optimierung (analytischer) Queries, wie etwa
+- die Vorgabe günstiger Join-Beziehungen im Star-Schema
+- das Vorberechnen von Teil-Queries in sog. Materialized Views
+- die Verwendung von Hinweisen an den Optimizer (Optimizer Hints) zur Bevorzugung gewünschter Ausführungspläne
+- die Vermeidung des Speicherns von Zwischenergebnissen durch die Verwendung von Common Table Expressions (CTE)
+
+## LZ 6-4 - Query Programmiermodelle
 Die Teilnehmer wissen, dass unterschiedliche Programmiermodelle für analytische Queries eingesetzt werden []. Ihnen sind wesentliche Programmiermodelle bekannt und sie können beurteilen, für welche Aufgaben sie speziell geeignet sind:
 - SQL
 - OLAP
@@ -437,65 +450,13 @@ Die Teilnehmer kennen für jedes dieser Programmiermodelle Beispiele zu Framewor
 - Dataframes - Pandas, Ray, Dask
 - Numerical/Statistical - SAS, STATA, SPSS
 
-## LZ 6-2 - Batch Verarbeitung
-Die Teilnehmer verstehen das Verfahren der Batch Verarbeitung (Batch Processing) von Daten. Ihnen ist bewusst, dass
-- die Batch Verarbeitung üblicherweise dazu dient, eine größere Anzahl Datensätze aus mehreren Datenquellen in einem Schritt zu verarbeiten und die Ergebnisse in eine Datensenke zu schreiben
-- alle (initial/complete load) oder nur die letzten Änderungen (incremental load) im Batch verarbeitet werden können
-- die Batch-Verarbeitung idR zeitlich geplant (scheduled) und wenige Male je Tag ausgeführt wird
-- eine Batch-Verarbeitung idR alle Datensätze verarbeitet oder (im Fehlerfalle) keine
-- eine Batch-Verarbeitung üblicherweise die Konsistenz (s. LZ 5-3) der Daten in der Datensenke erhält
-- eine Batch-Verarbeitung komplexe Operationen zur Datenverarbeitung enthalten kann
-
-Die Teilnehmer verstehen das Verfahren der Micro-Batch Verarbeitung von Daten []. Sie kennen den Unterschied zwischen Batch und Micro-Batch Verarbeitung (Batches werden nur manuell oder zeitlich angestoßen, Micro-Batches auch dann, wenn ausreichend Datensätze in der Datenquelle angefallen sind).
-
-## LZ 6-3 - Stream Verarbeitung []
-Die Teilnehmer verstehen das Verfahren der Stream Verarbeitung (Stream Processing) von Daten. Sie wissen, dass Stream Verarbeitung auf der Basis des Event Streamings aufsetzt. 
-Die Teilnehmer wissen, dass bei der Stream Verarbeitung
-- die Daten mehrerer Streams miteinander zu einem weiteren Stream kombiniert werden können.
-- Datensätze (etwa fehlerhafte oder unvollständige) im Stream voneinander getrennt und separat (in unterschiedlichen Streams) weiterverarbeitet werden können.
-- bei der Verarbeitung von Daten im Stream üblicherweise auf komplexe Operationen verzichtet wird.
-
-Die Teilnehmer verstehen, dass das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird (Verzicht auf Two-Phase-Commit).
-
-Die Teilnehmer können zustandslose (stateless) und zustandsbehaftete (stateful) Stream Verarbeitung unterscheiden.
-
-Die Teilnehmer verstehen, dass Operationen nicht auf allen Datensätzen eines Streams erfolgen können, sondern immer nur auf einzelnen oder einer Gruppe von aufeinanderfolgenden Datensätzen. Sie kennen dazu das Konzept der Fenster (Window) Funktionen.
-
-Die Teilnehmer kennen Frameworks oder Tools für die Stream Verarbeitung wie
-- Kafka Streams
-- Apache Flink
-- Pulsar Functions
-- Spark Streaming
-
-## LZ 6-4 - Daten-orientierte Programmierung []
-Die Teilnehmer kennen die Prinzipien einer Daten-orientierten Programmierung: 
-- Trennung von Code und Daten
-- Nutzung generischer Datenstrukturen für die Repräsentation von Daten
-- Verwendung unveränderbarer (immutable) Daten Repräsentationen
-
-## LZ 6-5 - {ML Processing} []
-Classification: logistic regression, naive Bayes,...
-Regression: generalized linear regression, survival regression,...
-Decision trees, random forests, and gradient-boosted trees
-Recommendation: alternating least squares (ALS)
-Clustering: K-means, Gaussian mixtures (GMMs),...
-Topic modeling: latent Dirichlet allocation (LDA)
-Frequent itemsets, association rules, and sequential pattern mining
-ML workflow utilities include:
-
-Feature transformations: standardization, normalization, hashing,...
-ML Pipeline construction
-Model evaluation and hyper-parameter tuning
-ML persistence: saving and loading models and Pipelines
-Other utilities include:
-
-Distributed linear algebra: SVD, PCA,...
-Statistics: summary statistics, hypothesis testing,...
-
 
 # 7 - Transformation
-## LZ 7-1 - Aufbereitung
-Die Teilnehmer verstehen, dass (Daten-)Transformationen erforderlich sind, um Daten aus operativen Systemen für die Analyse aufzubreiten. Sie kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell
+## LZ 7-1 - Unterscheidung von Queries
+Die Teilnehmer verstehen, dass (Daten-)Transformationen erforderlich sind, um Daten aus operativen Systemen für die Analyse aufzubreiten. Sie verstehen, dass Transformationen in Form von Queries beschrieben werden können, dass bei steigender Komplexität aber einzelne Queries zu unverständlich werden und Abfolgen von Queries (s. Data Pipelines in LZ 10) besser für die Umsetzung von Transformationen geeignet sind.
+
+## LZ 7-1 - Anwendungsfälle
+Die Teilnehmer kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell
 - Umwandeln der Datenrepräsentation von Quell- in Zielformate
 - Bereinigen/Standardisieren der Daten (Data Cleansing)
 - Identifizieren und Entfernen von Duplikaten
@@ -509,7 +470,6 @@ Die Teilnehmer verstehen, dass (Daten-)Transformationen erforderlich sind, um Da
 - (In Ausnahmen) Ausführen von Geschäftslogik (s. LZ 7-4)
 
 Die Teilnehmer verstehen, wie Transformationen Verfahren des Query und Processing (s. LZ 6) nutzen, um auf die Daten in den Speichersystemen (s. LZ 5) zuzugreifen.
-Sie verstehen auch, wie Transformationen in Data Pipelines (LZ 10) kombiniert werden, um komplexere Anforderungen an die Aufbereitung von Daten für die Analyse umzusetzen.
 
 Die Teilnehmer verstehen die Bedeutung von Schemas und Datenmodellen (s. LZ 9) für die Umsetzung von Transformationen.
 
@@ -562,39 +522,77 @@ Die Teilnehmer verstehen, dass über eine schrittweise Transformation eingehende
 Die Teilnehmer verstehen, dass Staging Areas (s. LZ 7-3) ein Quality Gate darstellen, mit dem sichergestellt wird, dass nur qualitätsgesicherte Daten zur Analyse in einem Data Warehouse bereitgestellt werden.
 Die Teilnehmer verstehen, dass in einem Data Lake (s. LZ 7-3) Daten unterschiedlicher Qualitätsstufen gemeinsam aufbewahrt werden und dass es daher sinnvoll sein kann, Zonen unterschiedlicher Datenqualität (etwa Bronze, Silber, Gold) innerhalb von Data Lakes festzulegen [Medallion Architecture].
 
-# 8 - Presentation []
-## LZ - Personalisierung
-## LZ - Auswertungen auf Data in Rest vs auf Data in Transit/Motion
-## LZ - Ad-Hoc vs predefined Reports
-## LZ - Dashboards / Pitchbooks
-## LZ - Alerts
-## LZ - Drill / Slice & Dice
-## LZ - Visualisierungen
-## LZ - Lastverteilung
-## LZ - SDK
-## LZ - Time Travelling
+## LZ 7-6 - Batch Verarbeitung
+Die Teilnehmer verstehen das Verfahren der Batch Verarbeitung (Batch Processing) für die Transformation von Daten. Ihnen ist bewusst, dass
+- die Batch Verarbeitung üblicherweise dazu dient, eine größere Anzahl Datensätze aus mehreren Datenquellen in einem Schritt zu verarbeiten und die Ergebnisse in eine Datensenke zu schreiben
+- alle (initial/complete load) oder nur die letzten Änderungen (incremental load) im Batch verarbeitet werden können
+- die Batch-Verarbeitung idR zeitlich geplant (scheduled) und wenige Male je Tag ausgeführt wird
+- eine Batch-Verarbeitung idR alle Datensätze verarbeitet oder (im Fehlerfalle) keine
+- eine Batch-Verarbeitung üblicherweise die Konsistenz (s. LZ 5-3) der Daten in der Datensenke erhält
+- eine Batch-Verarbeitung komplexe Operationen zur Datenverarbeitung enthalten kann
 
-## LZ - Query Builder / Code Gen / Interactive Analytics
+Die Teilnehmer verstehen das Verfahren der Micro-Batch Verarbeitung von Daten []. Sie kennen den Unterschied zwischen Batch und Micro-Batch Verarbeitung (Batches werden nur manuell oder zeitlich angestoßen, Micro-Batches auch dann, wenn ausreichend Datensätze in der Datenquelle angefallen sind).
 
-# 9 - Schema und Modeling
-## LZ - Schema on write vs Schema on read []
-## LZ - Data in Rest vs Data in Transit/Motion []
-## LZ - Event vs State
-## LZ - Welches Datenmodell ist geeignet
-## LZ - Historie der Metadaten, Metadata Tracking
-## LZ - Historie der Daten, Data Versioning 
-## LZ - Schema Enforcement []
-## LZ - Schema Registry []
-## LZ - Granularität der Daten
-## LZ - Schema Detection / Schema on the fly
-## LZ - Schema on Read Data migration
-Multiple Schemas, only last schema, lazy migration
-## LZ - Schema Evolution []
-## LZ - Schema compatibility
-Backward, Forward, * Transitive []
-## LZ - Arten von Schema Änderungen
-Datensatz-Strukturen ergänzen oder entfernen, Attribute ergänzen oder entfernen, Datentyp Vergrößerung/Verkleinerung, Änderungen in Datensatz-Substrukturen
-## LZ - ER vs Multidimensional (Data Vault) vs Document vs Graph 
+## LZ 7-7 - Stream Verarbeitung []
+Die Teilnehmer verstehen das Verfahren der Stream Verarbeitung (Stream Processing) von Daten. Sie wissen, dass Stream Verarbeitung auf der Basis des Event Streamings aufsetzt. 
+Die Teilnehmer wissen, dass bei der Stream Verarbeitung
+- die Daten mehrerer Streams miteinander zu einem weiteren Stream kombiniert werden können.
+- Datensätze (etwa fehlerhafte oder unvollständige) im Stream voneinander getrennt und separat (in unterschiedlichen Streams) weiterverarbeitet werden können.
+- bei der Verarbeitung von Daten im Stream üblicherweise auf komplexe Operationen verzichtet wird.
+
+Die Teilnehmer verstehen, dass das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird.
+
+Die Teilnehmer können zustandslose (stateless) und zustandsbehaftete (stateful) Stream Verarbeitung unterscheiden.
+
+Die Teilnehmer verstehen, dass Operationen nicht auf allen Datensätzen eines Streams erfolgen können, sondern immer nur auf einzelnen oder einer Gruppe von aufeinanderfolgenden Datensätzen. Sie kennen dazu das Konzept der Fenster (Window) Funktionen.
+
+Die Teilnehmer kennen Frameworks oder Tools für die Stream Verarbeitung wie
+- Kafka Streams
+- Apache Flink
+- Pulsar Functions
+- Spark Streaming
+
+# 8 - Serving Data []
+## LZ 8-1 - Anwendungsfälle
+Die Teilnehmer können die wesentlichen Anwendungsfälle für die Nutzung analytischer Daten unterscheiden:
+- Basis für Data Analytics und Business Intelligence (BI)
+- Test- und Trainingsdaten für das Erstellen und Verbessern von Maschine Learning Modellen
+- Bereitstellen der Ergebnisse analytischer Auswertungen für die Verwendung in operativen Anwendungen (Reverse ETL, Active/"Closed Loop" DWH)
+
+## LZ 8-2 - Repräsentation von Massendaten
+Die Teilnehmer kennen Verfahren für die Darstellung von Massendaten. Sie kennen Verfahren des Query-Processings wie Aggregation, Projektion, Filterung oder Cubes und verstehen, wie diese Verfahren für die Darstellung von Massendaten verwendet werden können. Sie wissen, dass neben den Daten selbst auch Information zu deren Schema, zum Umfang, zur Aktualität, zu den Datenquellen oder zur Qualität angeboten werden können und idR auch sollten.
+Die Teilnehmer kennen Tools zur Visualisierung von Massendaten. Sie kennen verfügbare Arten von Diagrammen (Heatmap, Ranking, Top, ...) und können sie geeignet einsetzen. Sie kennen BI-/Reporting Tools und können diese etwa für Slice & Dice, Drill (Down, Up, Across, Through) oder statistische Analysen einsetzen. Die Teilnehmer wissen, dass auf Basis dieser Tools auch Dashbords oder Notifikationen (Alerts) umgesetzt werden können.
+
+## LZ 8-3 - Datenprodukte
+Die Teilnehmer kennen das Konzept des Datenprodukts und speziell dessen Verwndung im Data Mesh Ansatz (s. LZ 11-3).
+
+## LZ 8-4 - Data Analytics und Business Intelligence []
+Den Teilnehmern sind Data Analytics und BI Anwendungen vertraut. Sie kennen Anwendungsfälle für die Analyse operativ anfallender Daten für die Unternehmenssteuerung. 
+Die Teilnehmer kennen Frameworks und Tools für die Umsetzung von Data Analytics und BI Anwendungen. 
+
+## LZ 8-5 - Maschine Learning []
+Den Teilnehmern wissen, wie Maschine Learning Modelle für den Einsatz im Unternehmen auf Basis operativ anfallender Daten trainiert, verbessert und getestet werden. Sie kennen Anwendungsfälle für die Nutzung solcher Modelle in operativen Anwendungen.
+Die Teilnehmer können beurteilen, welche Anwendungsfälle den Einsatz von ML Modellen erfordern und welche etwa bereits auf Basis statistischer Methoden umgesetzt weren können.
+Die Teilnehmer verstehen den Ansatz des Deep Learnings und können ihn von den (klassischen) Methoden des Maschine Learnings unterscheiden. Sie können beurteilen, in welchen Fällen, Deep Learning Ansätze sinnvoll eingesetzt werden können. 
+
+## LZ 8-6 - Reverse ETL []
+Den Teilnehmern ist das Konzept der Reverse ETL vertraut. Sie kennen Anwendungsfälle für die Integration von vereinheitlichten Daten oder von Ergebnissen analytischer Auswertungen in operative Anwendungen. 
+Die Teilnehmer wissen, dass Reverse ETL Tools mit Konnektoren für gängige operative Anwendungen existieren, die die Umsetzung entsprechender Integrationslösungen deutlich erleichtern. Sie kennen Beispiele für diese Tools. 
+
+# 9 - Daten Modellierung
+## LZ 9-1 Bedeutung von Datenmodellen
+Den Teilnehmern ist der Umgang mit Datenmodellen generell vertraut. Sie verstehen, wie Datenmodelle für die Arbeit mit analytischen Daten sich sowohl an den Datenmodellen der Quellsysteme als auch an den Anforderungen an die Datenanalyse orientieren müssen. Sie kennen die Unterscheidung konzeptioneller, logischer und physischer Datenmodelle.
+Die Teilnehmer verstehen den Begriff der Granularität eines Datenmodells.
+
+## LZ 9-2 Normalisierung von Datenmodellen
+Die Teilnehmer kennen das Konzept der Normalisierung von Datenmodellen. Sie verstehen, dass für die Arbeit mit analytischen Daten häufig auf die Normalisierung verzichtet wird und die Verwendung denormaliserter Datenmodelle in diesem Umfeld nicht unüblich ist.
+
+## LZ 9-3 Änderung von Datenmodellen
+Die Teilnehmer verstehen, dass Datenmodelle sowohl im Hinblick auf die verwendeten Quellsysteme als auch, noch weit deutlicher, im Hinblick auf die analytischen Anwendungen, Änderungen unterworfen sind.
+Die Teilnehmer kennen Ansätze, wie mit entsprechenden Änderungen umgegangen werden kann, wie etwa
+- Verwendung multidimensionaler Datenmodelle (Star, Snowflake, Data Vault)
+- Zerlegung in Teil-Modelle (s. LZ 11-2 - Domain Ownership)
+- Automatisierung der Modell-Änderungen (DWH Automation)
 
 
 # 10 - Data Pipelines []
@@ -621,8 +619,84 @@ Ingestion, Transport, Storage, Transformation, Presentation
 Edge-Computing
 
 
-# 11 - Data Governance []
+# 11 - Data Mesh []
+In diesem Modul wird das sozio-technische Konzept des Data Mesh erläutert und motiviert. Die Teilnehmer lernen, wann eine dezentralisierte Datenarchitektur angemesssen ist. Sie lernen zudem die vier grundlegenden Data Mesh Prinzipien kennen:
+- Domain Ownership
+- Data as a Product
+- Self-serve Data Platform
+- Federated Computational Governance
+
+Terms and concepts
+Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies
+
+Learning goals
+
+## LZ 11-1 - Probleme zentralisierter Datenarchitekturen
+Die Teilnehmer verstehen, aufgrund welcher Probleme zentrale Data-Teams nicht gut skalieren. Sie verstehen, warum dezentrale Domain-Teams nicht gut zu zentralen Data Teams passen.
+
+## LZ 11-2: Domain Ownership
+Die Teilnehmer kennen relevante Konzepte des Strategic Domain-Driven Design, wie Domains, Subdomains, Bounded Contexts und Context Mapping Patterns.
+Die Teilnehmer verstehen, dass die Verantwortung für analytische Daten und deren Qualität von den zentralen Data Teams an die einzelnen Domain Teams übergeht.
+Sie wissen, dass Domain Teams ihre eigenen analytischen Daten haben.
+Sie wissen, dass Domain Teams die analytischen Daten ihrer Domain ihrem Unternehmen in Form von Datenprodukten zur Verfügung stellen.
+Sie können die drei Archetypen von Datenprodukten in einem Data Mesh unterscheiden:
+- source-aligned
+- aggregate
+- consumer-aligned
+
+Die Teilnehmer verstehen die Bedeutung sowie das Problem von Polysemen als geteilte Konzepte zwischen unterschiedlichen Domains.
+
+## LZ 11-3: Data as a Product
+Die Teilnehmer verstehen, das Domain Teams ihre Daten anderen Teams in Form von Datenprodukten zur Verfügung stellen. Sie verstehen, dass Datenprodukte First-Class Citizens der Systemarchitektur darstellen, vergleichbar mit UI und API Komponenten.
+Die Teilnehmer kennen die Charakteristiken von Datenprodukten: Discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, valuable on their own.
+Die Teilnehmer kennen unterschiedliche Formen von Datenprodukten wie Datasets, Reports, Dashboards, Machine Learning Features / komplette Modelle.
+
+## LZ 11-4: Self-serve Data Platform
+Die Teilnehmer verstehen die wesentlichen Konzepte einer Domain-agnostischen Dateninfrastrukturplattform.
+Sie wissen, dass diese Plattform vom Data Platform Team verantwortet wird.
+Die Teilnehmer kennen typische Komponenten einer Datenplattform, wie Storage, Data Pipelines, Data Catalogs, Access Management, Monitoring, Visualisation.
+Ihnen sind bestehende Lösungen speziell der großen Cloud Provider bekannt.
+
+## LZ 11-5: Federated Computational Governance
+Die Teilnehmer wissen, dass die sog. Governance Group (im Sinne einer Gilde) aus Vertretern der einzelnen Domain Teams und dem Data Platform Team besteht.
+Die Teilnehmer wissen, dass sich die Governance Group auf global gültige Regel und Vorgaben des Data Mesh Ecosystems, speziell hinsichtlich Interoperability, Security und Compliance verständigt.
+Die Teilnehmer verstehen, wie die Self-Serve Data Platform der Verwaltung, Automatisierung und Durchsetzung der global vereinbarten Regeln und Vorgaben dient.
+
+References
+
+"Data Mesh in Action" by Jacek Majchrzak, Sven Balnojan, and Marian Siwiak. Manning. Publication in Summer 2022
+"Data Mesh" by Zhamak Dehghani. O'Reilly Media, Inc. April 2022 datamesh-architecture.com
+"Data Management at Scale" by Piethein Strengholt
+"Software Architecture: The Hard Parts" by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
+
+# Geparkte Lernziele
+## LZ - Daten-orientierte Programmierung []
+Die Teilnehmer kennen die Prinzipien einer Daten-orientierten Programmierung für die Umsetzung : 
+- Trennung von Code und Daten
+- Nutzung generischer Datenstrukturen für die Repräsentation von Daten
+- Verwendung unveränderbarer (immutable) Daten Repräsentationen
+
+## LZ - {ML Processing} []
+Classification: logistic regression, naive Bayes,...
+Regression: generalized linear regression, survival regression,...
+Decision trees, random forests, and gradient-boosted trees
+Recommendation: alternating least squares (ALS)
+Clustering: K-means, Gaussian mixtures (GMMs),...
+Topic modeling: latent Dirichlet allocation (LDA)
+Frequent itemsets, association rules, and sequential pattern mining
+ML workflow utilities include:
+
+Feature transformations: standardization, normalization, hashing,...
+ML Pipeline construction
+Model evaluation and hyper-parameter tuning
+ML persistence: saving and loading models and Pipelines
+Other utilities include:
+
+Distributed linear algebra: SVD, PCA,...
+Statistics: summary statistics, hypothesis testing,...
+
 ## LZ - Was ist Data Governance
+"Data governance is, first and foremost, a data management function to ensure the quality, integrity, security, and usability of the data collected by an organization." [Evren Eryurek et al., Data Governance: The Definitive Guide (Sebastopol, CA: O’Reilly, 2021)]
 Welche Regeln sind im gegebenen Kontext erforderlich, welche davon global und welche lokal, wie können sie überprüft werden, wann müssen sie angepasst werden
 ## LZ - Anforderungen an Datenschutz
 GDPR, DSGVO, Personally Identifiable Information (PII)
@@ -637,7 +711,7 @@ Data-Centricity, Rich Access Policies, Scalability and Automation, Unified Visib
 ## LZ - Fine vs Course grained access control
 ## LZ - Weitere iSAQB-Module
 
-## LZ- Metadaten
+## LZ - Metadaten
 Die Teilnehmer kennen Programmiersprachen für die Spezifikation von Metadaten, wie etwa
 - XML/JSON Schema
 - ASN.1
@@ -646,60 +720,31 @@ Die Teilnehmer kennen Programmiersprachen für die Spezifikation von Metadaten, 
 
 Die Teilnehmer wissen, dass Metadaten oft in Datenkatalogen, Metadatenrepositories oder Metadaten-Registries verwaltet werden.
 
-# 12 - Data Mesh []
-In diesem Modul wird das sozio-technische Konzept des Data Mesh erläutert und motiviert. Die Teilnehmer lernen, wann eine dezentralisierte Datenarchitektur angemesssen ist. Sie lernen zudem die vier grundlegenden Data Mesh Prinzipien kennen:
-- Domain Ownership
-- Data as a Product
-- Self-serve Data Platform
-- Federated Computational Governance
+## LZ - Personalisierung
+Die Teilnehmer verstehen, wie Personalisierung eingesetzt werden kann, um Anwendern eine passende Übersicht und Orientierung zu ermöglichen. 
+Die Teilnehmer verstehen zudem, wie Nutzerdaten verwendet werden, um möglichst relevante Daten personalisiert anbieten zu können. 
+## LZ - Auswertungen auf Data in Rest vs auf Data in Transit/Motion
+Die Teilnehmer wissen, dass für die Darstellung gepeicherter Daten (Data in Rest) und bewegter Daten (Data in Transit) unterschiedliche Verfahren existieren.
+## LZ - Time Travelling
 
-Terms and concepts
-Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies
+## LZ - Schema on write vs Schema on read []
+## LZ - Data in Rest vs Data in Transit/Motion []
+## LZ - Event vs State
+## LZ - Schema Enforcement []
+## LZ - Schema Registry []
+## LZ - Schema Detection / Schema on the fly
+## LZ - Schema on Read Data migration
+Multiple Schemas, only last schema, lazy migration
+## LZ - Schema Evolution []
+## LZ - Schema compatibility
+Backward, Forward, * Transitive []
+## LZ - Arten von Schema Änderungen
+Datensatz-Strukturen ergänzen oder entfernen, Attribute ergänzen oder entfernen, Datentyp Vergrößerung/Verkleinerung, Änderungen in Datensatz-Substrukturen
 
-Learning goals
-
-## LZ 12-1 - Probleme zentralisierter Datenarchitekturen
-Die Teilnehmer verstehen, aufgrund welcher Probleme zentrale Data-Teams nicht gut skalieren. Sie verstehen, warum dezentrale Domain-Teams nicht gut zu zentralen Data Teams passen.
-
-## LZ 12-2: Domain Ownership
-Die Teilnehmer kennen relevante Konzepte des Strategic Domain-Driven Design, wie Domains, Subdomains, Bounded Contexts und Context Mapping Patterns.
-Die Teilnehmer verstehen, dass die Verantwortung für analytische Daten und deren Qualität von den zentralen Data Teams an die einzelnen Domain Teams übergeht.
-Sie wissen, dass Domain Teams ihre eigenen analytischen Daten haben.
-Sie wissen, dass Domain Teams die analytischen Daten ihrer Domain ihrem Unternehmen in Form von Datenprodukten zur Verfügung stellen.
-Sie können die drei Archetypen von Datenprodukten in einem Data Mesh unterscheiden:
-- source-aligned
-- aggregate
-- consumer-aligned
-
-Die Teilnehmer verstehen die Bedeutung sowie das Problem von Polysemen als geteilte Konzepte zwischen unterschiedlichen Domains.
-
-## LZ 12-3: Data as a Product
-
-Understand that domain teams provide data to other teams as data products.
-Understand that data products are first-class citizens in the system architecture, similar to UI and API products.
-Know characteristics of data products: data are discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, and valuable on their own.
-Know the different forms of data products, including datasets, reports, dashboards, machine learning features or entire models.
-
-## LZ 12-4: Self-serve Data Platform
-
-Understand the key concepts of the domain-agnostic data infrastructure as a platform.
-Know that the platform is managed by a data platform team.
-Know typical components of a data platform, i.e. storage, data pipelines, data catalog, access management, monitoring, visualisation.
-Are aware of existing solutions provided by cloud vendors.
-
-## LZ 12-5: Federated Computational Governance
-
-Know that the governance group, typically called a "guild", consists of representatives of the domain teams and the data platform team.
-Know that the governance group agrees on global policies of the data eco-systems, including interoperability, security and compliance.
-Understand that the self-serve data platform may support, automate, or enforce the global policies.
-
-References
-
-"Data Mesh in Action" by Jacek Majchrzak, Sven Balnojan, and Marian Siwiak. Manning. Publication in Summer 2022
-"Data Mesh" by Zhamak Dehghani. O'Reilly Media, Inc. April 2022 datamesh-architecture.com
-"Data Management at Scale" by Piethein Strengholt
-"Software Architecture: The Hard Parts" by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani
-
+## LZ - Welches Datenmodell ist geeignet
+## LZ - Historie der Metadaten, Metadata Tracking
+## LZ - Historie der Daten, Data Versioning 
+## LZ - ER vs Multidimensional (Data Vault) vs Document vs Graph 
 
 ------------------------------------
 Maybe relevant stuff
