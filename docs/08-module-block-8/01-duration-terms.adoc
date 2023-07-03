@@ -4,7 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-operative Daten, analytische Daten, OLTP, OLAP, Datenqualität
+Data Analytics, Query-Processing, Machine Learning Modelle, Reverse ETL
 
 // end::DE[]
 
@@ -15,8 +15,8 @@ operative Daten, analytische Daten, OLTP, OLAP, Datenqualität
 
 === Terms and Principles
 Term 1, Term 2, Term 3
-// end::EN[]
 
+// end::EN[]
 
 // tag::REMARK[]
 [NOTE]

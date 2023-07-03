@@ -4,11 +4,11 @@
 
 
 // tag::DE[]
-== Grundlagen
+== Motivation und Übersicht
 // end::DE[]
 
 // tag::EN[]
-== Fundamentals
+== Motivation and overview
 // end::EN[]
 
 

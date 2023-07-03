@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Datennutzung
+== Ingestion und Transport
 // end::DE[]
 
 // tag::EN[]
-== Data Usage
+== Ingestion und Transport
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

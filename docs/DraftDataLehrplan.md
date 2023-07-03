@@ -196,7 +196,7 @@ Den Teilnehmern ist bewusst, dass Quellsysteme in unterschiedlicher Weise und Qu
 
 Den Teilnehmern ist bewusst, dass Quellsysteme z.T. sehr große Datenmengen bereitstellen, und dass geeignete Maßnahmen getroffen werden müssen, um diese Datenmengen transportieren zu können.
 
-Den Teilnehmern wissen, dass das zur Verfügung stellen analytischer Daten idR nicht der eigenliche Zweck von Quellsystemen ist. Sie wissen, dass dadurch zusätzliche Last für das jeweilige Quellsystem erzeugt werden kann und dass dies idR den eigentlichen Zweck eines Quellsystems nicht beeinträchtigen darf.
+Den Teilnehmern wissen, dass das zur Verfügung stellen analytischer Daten i.d.R. nicht der eigentliche Zweck von Quellsystemen ist. Sie wissen, dass dadurch zusätzliche Last für das jeweilige Quellsystem erzeugt werden kann und dass dies idR den eigentlichen Zweck eines Quellsystems nicht beeinträchtigen darf.
 
 ## LZ 3-3 - Metadaten
 Die Teilnehmer verstehen die Bedeutung von Metadaten für die Nutzung von Datenquellen. Sie können technische und fachliche Metadaten unterscheiden. Sie wissen, dass Quellsysteme oft umfassend Metadaten zu den von ihnen bereitgestellten Datenquellen zur Verfügung stellen.

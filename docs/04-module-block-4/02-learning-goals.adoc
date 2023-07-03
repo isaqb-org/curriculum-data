@@ -2,19 +2,71 @@
 
 // tag::DE[]
 [[LZ-4-1]]
-==== LZ 4-1: Dies ist das erste Lernziel in Kapitel 4, das mit xyz
+==== LZ 4-1 - Erkennen von Änderungen
+Den Teilnehmern sind Verfahren für das Identifizieren von Entitäten sowie für das Erkennen von Änderungen dieser Entitäten in Quellsystemen bekannt, wie etwa
 
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
+- Change Data Capture (CDC)
+- DB-Trigger
+- Outbox Pattern
+- Event-Sourcing
+- Create und Update Timestamps
+- Audit Trail Reader
+- Datensatz-Hashes
+- Primary Keys
+- (RSS-)Feeds
 
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+Die Teilnehmer wissen, für welche Art von Quellsystemen welche dieser Verfahren jeweils geeignet sind.
 
-[[LZ-4-2]]
-==== LZ 4-2: Hier ist ein zweites Lernziel in diesem Kapitel
-tbd.
+Den Teilnehmern ist bewusst, dass das Löschen von Daten üblicherweise ebenfalls als Änderung geliefert wird, da auch gelöschte Daten für die Analyse ggfs. weiter benötigt werden.
+
+Den Teilnehmern ist bewusst, dass sich Änderungen von Entitäten auf den internen Zustand von Quellsystemen beziehen können und dass mit der Weitergabe dieser Änderungen das Prinzip des Information Hidings verletzt werden kann. Sie verstehen, wie etwa das Outbox Pattern dazu genutzt werden kann, die von Quellsystemen zur Verfügung gestellten Änderungen auf das erforderliche Maß zu beschränken.
+
+==== LZ 4-2 - Konnektoren
+Die Teilnehmer kennen Tools und Frameworks, die über vordefinierte Konnektoren einen vereinheitlichten Zugriff auf Quellsysteme zur Verfügung stellen. Sie wissen, dass diese Tools und Frameworks vorrangig für die folgenden Aufgaben eingesetzt werden:
+
+- Datenreplikation
+- Datenintegration
+- Datenvirtualisierung
+- Datenorchestrierung
+- Metadatenmanagement
+
+Die Teilnehmer kennen Beispiele für diese Tools, wie etwa
+
+- Fivetran
+- Stitch
+- funnel
+- integrate.io
+- talend
+- airbyte
+- Kafka Connect
+- Pulsar IO
+- Trino / Presto
+- alluxio
+- Collibra
+- Alation
+
+==== LZ 4-4 - Message Passing
+
+- Message Broker
+- Pub/Sub, Brodcast, Request/Response
+- Routing
+
+Die Teilnehmer kennen Beispiele für Message Broker wie
+
+- Apache Kafka
+- Apache Pulsar
+- AWS Kinesis
+- Google Pub/Sub
+- Azure Event Hubs
+
+==== LZ 4-5 - Event Streaming
+Die Teilnehmer wissen, dass
+
+- beim Event Streaming je Datenquelle idR ein Producer für das Lesen der Daten aus dieser Quelle und das Weiterleiten an eine entsprechende Middleware Komponente (Message Broker) verantwortlich ist.
+- beim Event Streaming je Datensenke idR ein Consumer für das Lesen der Daten vom Message Broker und das Schreiben in diese Senke verantwortlich ist.
+- entsprechend die Daten einer Datenquelle von mehreren Consumern in mehrere Datensenken geschrieben werden können.
+- Event Streaming nicht generell garantiert, dass jeder Datensatz genau einmal (exactly once) verarbeitet wird, sondern meist nur zusichert, dass jeder Datensatz höchstens (almost once) oder mindestens einmal (at least once) verarbeitet wird.
+- mit Event Streaming idR nur eventuelle Konsistenz der Daten in der Datensenke zusichert wird.
 
 // end::DE[]
 

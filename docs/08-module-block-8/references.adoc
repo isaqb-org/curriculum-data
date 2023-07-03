@@ -1,7 +1,5 @@
 === {references}
 
-<<reis>>
-
 
 
 // tag::REMARK[]

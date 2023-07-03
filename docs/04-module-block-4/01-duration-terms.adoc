@@ -4,7 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
+Change Data Capture, Information Hiding, Konnektoren, Message Passing, Event Streaming
 
 
 // end::DE[]

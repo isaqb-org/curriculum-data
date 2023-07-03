@@ -2,19 +2,44 @@
 
 // tag::DE[]
 [[LZ-3-1]]
-==== LZ 3-1: Dies ist das erste Lernziel in Kapitel 3, das mit xyz
+==== LZ 3-1 - Arten von Datenquellen und Quellsystemen
+Die Teilnehmer kennen Arten von Datenquellen und Quellsystemen, von denen analytische Daten typischerweise übernommen werden, wie etwa
 
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
-
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+- Business Anwendungen
+- Legacy-Anwendungen
+- (REST-) APIs
+- Datenbanken
+- OLTP
+- Event-Stores
+- Messaging Systeme
+- Metrics Systeme
+- (Web-) Analytics
+- Sensordaten
+- (Cloud) Storage Systeme
+- Logging Systeme
 
 [[LZ-3-2]]
-==== LZ 3-2: Hier ist ein zweites Lernziel in diesem Kapitel
-tbd.
+==== LZ 3-2 - Eigenschaften von Datenquellen und Quellsystemen
+Die Teilnehmer können unterscheiden, ob Datenquellen strukturierte, semi-strukturierte oder unstukturierte Daten liefern. Ihnen sind übliche Formate vertraut, in denen Datenquellen ihre Daten zur Verfügung stellen, wie etwa
+
+- Dokument
+- Datenstrom
+- Liste von Datensätzen
+
+Die Teilnehmer wissen, dass Datenquellen den aktuellen Zustand der zuletzt geänderten Daten (Snapshot) oder die Änderungen selbst (Increments/Events) wiedergeben können, mit denen dieser aktuelle Zustand erzeugt wurde. Sie wissen, dass ggfs. eine initiale Bereitstellung (initial Load) der Daten erforderlich ist.
+Die Teilnehmer wissen, dass Datenquellen ihre Daten selbst aktiv liefern (Push) oder aber auf Anfrage bereitstellen (Pull) können.
+
+Den Teilnehmern ist bewusst, dass Quellsysteme in unterschiedlicher Weise und Qualität den Schutz der Daten sowie eine Kontrolle des Zugriffs auf die Daten unterstützen.
+
+Den Teilnehmern ist bewusst, dass Quellsysteme z.T. sehr große Datenmengen bereitstellen, und dass geeignete Maßnahmen getroffen werden müssen, um diese Datenmengen transportieren zu können.
+
+Den Teilnehmern wissen, dass das zur Verfügung stellen analytischer Daten i.d.R. nicht der eigentliche Zweck von Quellsystemen ist. Sie wissen, dass dadurch zusätzliche Last für das jeweilige Quellsystem erzeugt werden kann und dass dies i.d.R. den eigentlichen Zweck eines Quellsystems nicht beeinträchtigen darf.
+
+[[LZ-3-3]]
+==== LZ 3-3 - Metadaten
+Die Teilnehmer verstehen die Bedeutung von Metadaten für die Nutzung von Datenquellen. Sie können technische und fachliche Metadaten unterscheiden. Sie wissen, dass Quellsysteme oft umfassend Metadaten zu den von ihnen bereitgestellten Datenquellen zur Verfügung stellen.
+
+Die Teilnehmer wissen, dass es Verfahren gibt (Schema Inference), um Metadaten aus Daten abzuleiten. Ihnen ist bewusst, dass sich Metadaten über die Nutzungsdauer von Daten ändern können (Schema Evolution) und dass Verfahren existieren, diese Änderungen beim Zugriff auf die Daten zu erkennen.
 
 // end::DE[]
 

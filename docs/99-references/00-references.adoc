@@ -40,12 +40,15 @@ ATTENTION: labels have to be non-numeric.
 **B**
 
 - [[[bachmann, F. Bachmann et al. 2000]]] F. Bachmann, L. Bass, J. Carriere, P. Clements, D. Garlan, J. Ivers, R. Nord, and R. Little: Software architecture documentation in practice: Documenting architectural layers. tech. rep., Carnegie-Mellon University Pittsburgh PA Software Engineering Inst, 2000.
+- [[[bornstein, M. Bornstein 2020]]] M. Bornstein, J. Li, and M. Casado: Emerging Architectures for Modern Data Infrastructure. hhttps://future.com/emerging-architectures-modern-data-infrastructure/, 2020.
 
 **C**
 
 - [[[codd, E. F. Codd 1990]]] E. F. Codd: The relational model for database management: version 2. Addison-Wesley Longman Publishing Co., Inc., 1990.
 - [[[castagna, R. Castagna 2022]]] R. Castagna: Strukturierte und unstrukturierte Daten: Die Unterschiede. https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede, November 2022, [Online; Stand: 2.06.2023].
 - [[[carnes, B. Carnes 2020]]] B. Carnes: Basic SQL Commands - The List of Database Queries and Statements You Should Know. https://www.freecodecamp.org/news/basic-sql-commands/, 2020.
+- [[[christ, J. Christ 2018]]] J. Christ, L. Visengeriyeva, S. Harrer: Data Mesh Architecture - Data Mesh From an Engineering Perspective. https://www.datamesh-architecture.com, 2022.
+
 
 **D**
 
@@ -80,7 +83,7 @@ ATTENTION: labels have to be non-numeric.
 **M**
 
 - [[[mhatre, P. Mhatre 2021]]] P. Mhatre: Data Warehouse vs Data Vault vs Data Lake vs Delta Lake vs Data Fabric vs Data Mesh. https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961, 2021.
-
+- [[[majchrzak, J. Majchrzak 2022]]] J. Majchrzak, S. Balnojan, M. Siwiak, M. Sieraczkiewicz: Data Mesh in Action. Manning Publication, 2022.
 **P**
 
 - [[[pääkkönen, P. Pääkkönen 2015]]] P. Pääkkönen and D. Pakkala: Reference Architecture and Classification of Technologies, Products and Services for Big Data Systems. Big Data Research, vol. 2, no. 4, pp. 166–186, 2015.

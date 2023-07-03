@@ -2,18 +2,78 @@
 
 // tag::DE[]
 [[LZ-2-1]]
-==== LZ 2-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
+==== LZ 2-1 - Überblick zu Referenzarchitekturen
+Den Teilnehmern ist der generelle Nutzen von Referenzarchitekturen bewusst:
 
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+- eine Vorlage für eine funktionale Zerlegung in wesentliche Bestandteile zur Verfügung zu stellen
+- ein einheitliches Vorgehen für die Aufnahme, Verarbeitung und Verwendung von Daten vorzugeben
+- dadurch eine Vorlage für die Ausprägung konkreter Software-Architekturen zu bieten
+
+Die Teilnehmer verstehen, dass Referenzarchitekturen für analytische Anwendungssysteme generell unterschieden werden, je nachdem, ob eine Basis für
+
+- die Vereinheitlichung und Integration analytischer Daten
+- die Anwendung von Verfahren der KI und des ML auf analytischen Daten
+- beides zugleich
+
+geschaffen werden soll.
+
+Die Teilnehmer kennen Ansätze, ein einheitliches Framework für Referenzarchitekturen zu analytischen Anwendungssystemen zu beschreiben.
+
+Die Teilnehmer kennen Beispiele zu Referenzarchitekturen für analytische Anwendungssysteme wie etwa
+
+- Data Warehouse
+- Enterprise DWH
+- DWH
+- Scalable DWH / Data Vault
+- Data Lake
+- DL Architecture Framework
+- DL Lambda Architecture
+- Machine Learning
+- Reference Architecture for big data systems
 
 [[LZ-2-2]]
-==== LZ 2-2: Hier ist ein zweites Lernziel in diesem Kapitel
-tbd.
+==== LZ 2-2 - Referenzarchitekturen zur Vereinheitlichung analytischer Daten
+Die Teilnehmer können die folgenden Phasen der Datenverarbeitung zur Vereinheitlichung analytischer Daten unterscheiden und wissen, welche Komponenten in den jeweiligen Phasen typischerweise zum Einsatz kommen:
+
+- Sources - Das Erzeugen der Daten (ERP-Systeme, Logs, APIs, ...)
+- Ingestion und Transport - Das Extrahieren der Daten und deren Transport zum den Speichersystemen (Workflow Manager, Replikationslösungen, Streamprocessing Engines, ...)
+- Storage - Das Abspeichern der Daten (Data Lake, Data Warehouse, ...)
+- Query und Processing - Code zur Verarbeitung und Abfragen gegen die gespeicherten Daten (Spark, SQL, Dataframes, ...)
+- Transformation - Transformation der Daten in eine für die Analyse geeignete Form (Workflow Manager, SQL/Spark Code Generierung, ...)
+- Analysis und Output - Präsentation der Daten für die Analyse und deren Ergebnisse sowie Integration der Analysemöglichkeiten in Anwendungen (Dashboards, Embedded Analytics, Report-Engines, ...)
+
+Den Teilnehmern ist bewußt, dass Referenzarchitekturen begleitend zu diesen Phasen auch die folgenden Aufgabenbereiche mit geeigneten Komponenten abdecken müssen:
+
+- Data Discovery - Information bereitstellen, welche Daten es gibt, wie sie aufbereitet und wo sie zu finden sind
+- Data Governance - Erarbeiten und Überwachen allgemein gültiger Regeln für die Verarbeitung der Daten
+- Data Security - Gewährleisten eines angemessenen Grads an Datenschutz
+- Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität
+
+[[LZ-2-3]]
+==== LZ 2-3 - Referenzarchitekturen zur Anwendung von Verfahren der KI und des ML
+Die Teilnehmer können die folgenden Phasen der Datenverarbeitung zur Anwendung von Verfahren der KI und des ML unterscheiden und wissen, welche Komponenten in den jeweiligen Phasen typischerweise zum Einsatz kommen:
+
+- Data Transformation - Konvertieren der Rohdaten in ein geeignetes Format für das Model Training (Data Labeling, Data Science Libraries, ...)
+- Model Training und Development - Iteratives Trainieren der Modelle mit den Daten, Optimieren und Automatisieren der Abläufe für das Trainieren der Modelle (Feature Store, Model Registry, ML/DL Framework, Workflow Manager, ...)
+- Model Inference - Anwenden der Modelle auf die zu analysierenden Daten. Monitoring der Verarbeitung
+- Integration - Integration der Analyse-Verfahren und Ergebnisse in Anwendungen
+
+[[LZ-2-4]]
+==== LZ 2-4 - Architekturentscheidungen anhand von Referenzarchitekturen
+Die Teilnehmer können Architekturentscheidungen speziell zu den folgenden Fragestellungen anhand von Referenzarchitekturen diskutieren:
+
+- ob ein zentrales/monolithisches oder dezentrales/förderiertes System zu wählen ist {Single Point of Truth, Canonical Data Model, Master Data Management}
+- ob ein Deployment in der Cloud (ggfs. Cloud-Ready), hybrid oder on-Premise vorzuziehen ist
+- ob ein einheitliches Schema für die auszuwertenden Daten vorgegeben werden soll
+- ob eine eigenständige Entwicklung von Komponenten erforderlich ist oder das Kaufen und Konfigurieren von Standardkomponenten ausreicht
+- ob die Integration von Komponenten selbst vorgenommen oder auf die Verwendung bereits integrierter Komponenten vertraut wird
+- ob Stream-, Batch-Processing (ggfs Micro-Batch) oder beides unterstützt werden muss
+- welches Bezahlmodell (Pay as you go, subscription fee, buy) Vorteile bietet
+- welche Form der Skalierbarkeit konkret benötigt wird: Datenvolumen, Geschwindigkeit der Verarbeitung und des Datenzugriffs, Anzahl und Variabilität der Datenquellen, Anzahl der Nutzer, Anzahl und Variabilität der analytischen Auswertungen
+- inwieweit Daten repliziert/redundant gespeichert werden müssen
+- ob eine fachliche Modularisierung (im Sinne von DDD) erforderlich ist
+- welche Rollen und Verantwortlichkeiten vorgesehen werden müssen
+- wie groß Komponenten dimensioniert werden müssen
 
 // end::DE[]
 

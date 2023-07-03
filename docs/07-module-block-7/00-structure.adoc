@@ -1,13 +1,13 @@
-// header file for curriculum section 3: Lerneinheit 3
+// header file for curriculum section 5: Lerneinheit 5
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
 // tag::DE[]
-== Datenquellen
+== Datenzentrierte Architekturen
 // end::DE[]
 
 // tag::EN[]
-== Data Sources
+== Data Architectures
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

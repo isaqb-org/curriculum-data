@@ -4,8 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-operative Daten, analytische Daten, OLTP, OLAP, Datenqualität
-
+Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies
 // end::DE[]
 
 // tag::EN[]
@@ -15,8 +14,8 @@ operative Daten, analytische Daten, OLTP, OLAP, Datenqualität
 
 === Terms and Principles
 Term 1, Term 2, Term 3
-// end::EN[]
 
+// end::EN[]
 
 // tag::REMARK[]
 [NOTE]

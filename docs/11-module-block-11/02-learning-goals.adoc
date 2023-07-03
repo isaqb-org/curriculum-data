@@ -1,0 +1,71 @@
+=== {learning-goals}
+
+
+// tag::DE[]
+[[LZ-11-1]]
+## LZ 11-1 - Probleme zentralisierter Datenarchitekturen
+Die Teilnehmer verstehen, aufgrund welcher Probleme zentrale Data-Teams nicht gut skalieren. Sie verstehen, warum dezentrale Domain-Teams nicht gut zu zentralen Data Teams passen.
+
+[[LZ-11-2]]
+## LZ 11-2: Domain Ownership
+Die Teilnehmer kennen relevante Konzepte des Strategic Domain-Driven Design, wie Domains, Subdomains, Bounded Contexts und Context Mapping Patterns.
+Die Teilnehmer verstehen, dass die Verantwortung für analytische Daten und deren Qualität von den zentralen Data Teams an die einzelnen Domain Teams übergeht.
+Sie wissen, dass Domain Teams ihre eigenen analytischen Daten haben.
+Sie wissen, dass Domain Teams die analytischen Daten ihrer Domain ihrem Unternehmen in Form von Datenprodukten zur Verfügung stellen.
+Sie können die drei Archetypen von Datenprodukten in einem Data Mesh unterscheiden:
+- source-aligned
+- aggregate
+- consumer-aligned
+
+Die Teilnehmer verstehen die Bedeutung sowie das Problem von Polysemen als geteilte Konzepte zwischen unterschiedlichen Domains.
+
+[[LZ-11-3]]
+## LZ 11-3: Data as a Product
+Die Teilnehmer verstehen, das Domain Teams ihre Daten anderen Teams in Form von Datenprodukten zur Verfügung stellen. Sie verstehen, dass Datenprodukte First-Class Citizens der Systemarchitektur darstellen, vergleichbar mit UI und API Komponenten.
+Die Teilnehmer kennen die Charakteristiken von Datenprodukten: Discoverable, addressable, trustworthy, self-descriptive, secure, understandable, interoperable, natively accessible, valuable on their own.
+Die Teilnehmer kennen unterschiedliche Formen von Datenprodukten wie Datasets, Reports, Dashboards, Machine Learning Features / komplette Modelle.
+
+[[LZ-11-4]]
+## LZ 11-4: Self-serve Data Platform
+Die Teilnehmer verstehen die wesentlichen Konzepte einer Domain-agnostischen Dateninfrastrukturplattform.
+Sie wissen, dass diese Plattform vom Data Platform Team verantwortet wird.
+Die Teilnehmer kennen typische Komponenten einer Datenplattform, wie Storage, Data Pipelines, Data Catalogs, Access Management, Monitoring, Visualisation.
+Ihnen sind bestehende Lösungen speziell der großen Cloud Provider bekannt.
+
+[[LZ-11-5]]
+## LZ 11-5: Federated Computational Governance
+Die Teilnehmer wissen, dass die sog. Governance Group (im Sinne einer Gilde) aus Vertretern der einzelnen Domain Teams und dem Data Platform Team besteht.
+Die Teilnehmer wissen, dass sich die Governance Group auf global gültige Regel und Vorgaben des Data Mesh Ecosystems, speziell hinsichtlich Interoperability, Security und Compliance verständigt.
+Die Teilnehmer verstehen, wie die Self-Serve Data Platform der Verwaltung, Automatisierung und Durchsetzung der global vereinbarten Regeln und Vorgaben dient.
+
+// end::DE[]
+
+// tag::EN[]
+[[LG-6-1]]
+==== LG 6-1: Aspects and building blocks
+tbd.
+
+[[LG-6-2]]
+==== LG 6-2: Central approaches
+tbd.
+
+[[LG-6-3]]
+==== LG 6-3: Data Mesh
+tbd.
+
+[[LG-6-4]]
+==== LG 6-4: Machine Learning
+tbd.
+
+[[LG-6-5]]
+==== LG 6-5: Use Cases
+tbd.
+
+// end::EN[]
+
+// tag::REMARK[]
+[NOTE]
+====
+Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
+====
+// end::REMARK[]
