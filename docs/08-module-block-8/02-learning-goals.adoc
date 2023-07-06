@@ -37,23 +37,23 @@ Die Teilnehmer wissen, dass Reverse ETL Tools mit Konnektoren für gängige oper
 // end::DE[]
 
 // tag::EN[]
-[[LG-6-1]]
+[[LG-8-1]]
 ==== LG 6-1: Aspects and building blocks
 tbd.
 
-[[LG-6-2]]
+[[LG-8-2]]
 ==== LG 6-2: Central approaches
 tbd.
 
-[[LG-6-3]]
+[[LG-8-3]]
 ==== LG 6-3: Data Mesh
 tbd.
 
-[[LG-6-4]]
+[[LG-8-4]]
 ==== LG 6-4: Machine Learning
 tbd.
 
-[[LG-6-5]]
+[[LG-8-5]]
 ==== LG 6-5: Use Cases
 tbd.
 

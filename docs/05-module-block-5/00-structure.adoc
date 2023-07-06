@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Datenpipelines
+== Storage
 // end::DE[]
 
 // tag::EN[]
-== Data Pipelines
+== Storage
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

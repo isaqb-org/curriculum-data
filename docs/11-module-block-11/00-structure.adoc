@@ -1,4 +1,4 @@
-// header file for curriculum section 5: Lerneinheit 5
+// header file for curriculum section 11: Lerneinheit 11
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 

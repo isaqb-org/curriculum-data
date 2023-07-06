@@ -3,19 +3,65 @@
 
 // tag::DE[]
 [[LZ-6-1]]
-==== LZ 6-1: Dies ist das erste Lernziel in Kapitel 6, lorem ipsum sit dolor
+==== LZ 6-1 - Queries
+Die Teilnehmer kennen den üblichen Aufbau analytischer Queries [] mit Angaben zu
+- Filtern (Where)
+- Projektionen (Select)
+- Gruppierungen (Group by)
+- Sortierungen (Order by)
+- Joins (Inner, Outer, Left, Right, Full, ...)
+- Aggregationen (Sum, Count, Avg, ...)
+- Fenstern/Windows (Over Partition by)
+- OLAP Operationen (Slice/Dice, Drill up/down/...)
+- Umformungen (Pivot, Transpose, ...)
+- Modularisierung (Views, Common Table Expressions, Stored Procedures, User Defined Functions)
 
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
-
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+Die Teilnehmer verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen.
+Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.
 
 [[LZ-6-2]]
-==== LZ 6-2: Hier ist ein zweites Lernziel in diesem Kapitel
-tbd.
+==== LZ 6-2 - Query Verarbeitung
+Den Teilnehmer ist bekannt, dass die Verarbeitung von Queries in den folgenden Schritten erfolgt:
+- Parsen der Query-Statements
+- Erstellen und Optimieren des Ausführungsplans
+- Ausführen der Query gemäß Ausführungsplan
+- Rückgabe der Ergebnisse
+
+Die Teilnehmer wissen, dass diese Aufgaben von der sog. Query-Engine übernommen werden. Die Teilnehmer wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten. Sie wissen, dass diese Engines in der Cloud (public/private) und auch on-Premises betrieben werden können.
+Den Teilnehmern ist bewusst, dass Query Engines auf unterschiedliche Aufgaben spezialisert sein können, etwa für das performante Lesen oder Schreiben von Daten oder für den Zeilen- oder Spalten-orientierten Zugriff auf die Daten.
+
+[[LZ-6-3]]
+==== LZ 6-3 - Query Optimierung
+Die Teilnehmer verstehen, dass analytische Queries idR nicht komplett im Hauptspeicher verarbeitet werden können und dass analytische Queries oft auf verteilten Daten operieren müssen. Sie wissen, dass eine performante Ausführung von der Engine insbesondere durch Lastverteilung auf parallel arbeitende Worker gewährleistet werden kann.
+Den Teilnehmern ist bewusst, dass Unterschiede in Ausführungsplänen zu drastischen Laufzeit-Unterschieden bei der Ausführung von Queries führen können. Sie kennen Beispiele wie Full Table Scans oder Full Outer Joins (Kreuzprodukte), die auf ungünstige Ausführungspläne hinweisen können.
+Die Teilnehmer kennen gängige Verfahren zur Optimierung (analytischer) Queries, wie etwa
+- die Vorgabe günstiger Join-Beziehungen im Star-Schema
+- das Vorberechnen von Teil-Queries in sog. Materialized Views
+- die Verwendung von Hinweisen an den Optimizer (Optimizer Hints) zur Bevorzugung gewünschter Ausführungspläne
+- die Vermeidung des Speicherns von Zwischenergebnissen durch die Verwendung von Common Table Expressions (CTE)
+
+[[LZ-6-4]]
+==== LZ 6-4 - Query Programmiermodelle
+Die Teilnehmer wissen, dass unterschiedliche Programmiermodelle für analytische Queries eingesetzt werden []. Ihnen sind wesentliche Programmiermodelle bekannt und sie können beurteilen, für welche Aufgaben sie speziell geeignet sind:
+- SQL
+- OLAP
+- Spark
+- Map-Reduce
+- Stream Processing
+- Dataframes
+- Numerical/Statistical
+
+Den Teilnehmern ist bewusst, dass diese Programmiermodelle oft miteinander kombiniert werden.
+
+Die Teilnehmer kennen für jedes dieser Programmiermodelle Beispiele zu Frameworks, Libraries und Tools für die Verarbeitung analytischer Queries wie etwa
+
+- SQL - BigQuery, Oracle, Trino/Presto, Databricks SQL
+- OLAP - MS Analysis Services, ClickHouse, Apache Pinot
+- Spark - Databricks
+- Map-Reduce - Hadoop
+- Stream processing - Kafka Streams, Apache Flink, Databricks Structured Streaming
+- Dataframes - Pandas, Ray, Dask
+- Numerical/Statistical - SAS, STATA, SPSS
 // end::DE[]
 
 // tag::EN[]
