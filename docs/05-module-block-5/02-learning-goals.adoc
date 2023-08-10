@@ -4,14 +4,13 @@
 // tag::DE[]
 [[LZ-5-1]]
 ==== LZ 5-1 - Speichersysteme
-Die Teilnehmer kennen die folgenden wesentlichen Systeme zum Speichern digitaler Daten und können die jeweiligen
-Besonderheiten erläutern:
+Die Teilnehmer:innen kennen die folgenden wesentlichen Systeme zum Speichern digitaler Daten und können die jeweiligen Besonderheiten erläutern:
 
 - Filesystem
 - Block-Storage System
 - Objekt-Storage System
 
-Die Teilnehmer kennen Kriterien zur Auswahl des passenden Systems, wie etwa
+Die Teilnehmer:innen kennen Kriterien zur Auswahl des passenden Systems, wie etwa
 
 - Flüchtigkeit (Volatility) / Dauerhaftigkeit (Persistence)
 - Änderbarkeit (Mutality)
@@ -27,17 +26,15 @@ Die Teilnehmer kennen Kriterien zur Auswahl des passenden Systems, wie etwa
 - Datenschutz / Unterstützung für Verschlüsselung
 - Umweltbelastung / Nachhaltigkeit / Energiebedarf
 
-Die Teilnehmer verstehen den Unterschied zwischen blockierenden und nicht-blockierenden Zugriffen auf Speichersysteme.
+Die Teilnehmer:innen verstehen den Unterschied zwischen blockierenden und nicht-blockierenden Zugriffen auf Speichersysteme.
 
-Die Teilnehmer wissen, dass Speichersysteme unterschiedlich an Systeme zur Verarbeitung der Daten angebunden werden
-können:
+Die Teilnehmer:innen wissen, dass Speichersysteme unterschiedlich an Systeme zur Verarbeitung der Daten angebunden werden können:
 
 - Direkte Anbindung (Direct Attached Storage - DAS)
 - Speichernetzwerk (Storage-Area-Network - SAN)
 - Netzwerkspeicher (Network Attached Storage - NAS)
 
-Die Teilnehmer wissen, dass Speichersysteme auf die folgenden unterschiedlichen Weisen zur Verfügung gestellt werden
-können:
+Die Teilnehmer:innen wissen, dass Speichersysteme auf die folgenden unterschiedlichen Weisen zur Verfügung gestellt werden können:
 
 - Multi-Cloud
 - Public Cloud
@@ -45,13 +42,11 @@ können:
 - Hybrid Clouds
 - On-Premise
 
-Die Teilnehmer wissen, dass Speichersysteme in der Cloud mit unterschiedlichen SLAs angeboten werden können (etwa
-Hot vs Cold Storage).
+Die Teilnehmer:innen wissen, dass Speichersysteme in der Cloud mit unterschiedlichen SLAs angeboten werden können (etwa Hot vs Cold Storage).
 
 [[LZ-5-2]]
 ==== LZ 5-2 - Datenbanksysteme
-Die Teilnehmer verstehen, dass die Verwaltung von Daten Aufgaben umfasst, die von Speichersystemen nicht direkt
-unterstützt werden, wie etwa
+Die Teilnehmer:innen verstehen, dass die Verwaltung von Daten Aufgaben umfasst, die von Speichersystemen nicht direkt unterstützt werden, wie etwa
 
 - Verwaltung der Metadaten zu den Daten
 - Vorgabe und Anwendung von Schema-Informationen zu den Daten
@@ -63,9 +58,7 @@ unterstützt werden, wie etwa
 - Skalierbarkeit
 - Optimierung (Reduzierung) der Speichernutzung
 
-Die Teilnehmer wissen, dass Datenbanksysteme (DBS) diese Aufgaben übernehmen. Sie verstehen, dass DBS auf der Basis
-aller Speichersysteme umgesetzt werden können. Sie kennen die folgenden Typen von DBS und sind mit den jeweiligen
-Besonderheiten vertraut:
+Die Teilnehmer:innen wissen, dass Datenbanksysteme (DBS) diese Aufgaben übernehmen. Sie verstehen, dass DBS auf der Basis aller Speichersysteme umgesetzt werden können. Sie kennen die folgenden Typen von DBS und sind mit den jeweiligen Besonderheiten vertraut:
 
 - Relationale DBS
 - NoSQL DBS
@@ -74,11 +67,9 @@ Besonderheiten vertraut:
 - Document DBS
 - Graph DBS
 
-Die Teilnehmer kennen entsprechende Produkte zu diesen DBS-Typen und ihnen ist bewusst, dass Produkte auch mehrere
-dieser Typen abbilden können.
+Die Teilnehmer:innen kennen entsprechende Produkte zu diesen DBS-Typen und ihnen ist bewusst, dass Produkte auch mehrere dieser Typen abbilden können.
 
-Die Teilnehmer kennen Systeme, die lediglich einen Teil der o.g. Aufgaben von DBS übernehmen und sind mit deren
-jeweiligen Besonderheiten vertraut:
+Die Teilnehmer:innen kennen Systeme, die lediglich einen Teil der o.g. Aufgaben von DBS übernehmen und sind mit deren jeweiligen Besonderheiten vertraut:
 
 - Searchengines
 - Timeseries DBS
@@ -87,47 +78,30 @@ jeweiligen Besonderheiten vertraut:
 - Event Store DBS
 - Vector DBS
 
-Die Teilnehmer verstehen, dass einige o.g. Aufgaben alleine durch die Verwendung geeigneter Datei- oder
-Tabellenformate abgedeckt werden können. Sie kennen speziell die folgenden Formate:
+Die Teilnehmer:innen verstehen, dass einige o.g. Aufgaben alleine durch die Verwendung geeigneter Datei- oder Tabellenformate abgedeckt werden können. Sie kennen speziell die folgenden Formate:
 
 - Dateiformate: Avro, ORC, Parquet
 - Tabellenformate (Open Table Formats): Delta, Iceberg, Hudi
 
-Den Teilnehmern ist der Unterschied zwischen Cache und Memory-Based Storage Systemen bewusst und sie kennen deren
-Vor- und Nachteile.
+Den Teilnehmer:innen ist der Unterschied zwischen Cache und Memory-Based Storage Systemen bewusst und sie kennen deren Vor- und Nachteile.
 
-Die Teilnehmer wissen, was unter einem Streaming Storage zu verstehen ist und wissen, wann dieser einsetzbar ist.
+Die Teilnehmer:innen wissen, was unter einem Streaming Storage zu verstehen ist und wissen, wann dieser einsetzbar ist.
 
-Die Teilnehmer wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern
-zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller
-macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
+Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
 
 [[LZ-5-3]]
 ==== LZ 5-3 - Concurrency Control
-Die Teilnehmer verstehen, dass bei Multi-Threading und -Processing Systemen mit nebenläufiger Verarbeitung sowie
-redundanter Speicherung von Daten die Konsistenz von Daten explizit sichergestellt werden muss. Ihnen ist das
-Konzept von ACID Transaktionen und deren Serialisierbarkeit vertraut. Sie wissen, dass ACID Transaktionen auf
-unterschiedliche Weisen und mit unterschiedlichen Garantien für Konsistenz (Consistency) und Isolation umgesetzt
-werden können.
+Die Teilnehmer:innen verstehen, dass bei Multi-Threading und -Processing Systemen mit nebenläufiger Verarbeitung sowie redundanter Speicherung von Daten die Konsistenz von Daten explizit sichergestellt werden muss. Ihnen ist das Konzept von ACID Transaktionen und deren Serialisierbarkeit vertraut. Sie wissen, dass ACID Transaktionen auf unterschiedliche Weisen und mit unterschiedlichen Garantien für Konsistenz (Consistency) und Isolation umgesetzt werden können.
 
-Die Teilnehmer wissen, dass ACID Transaktionen üblicherweise von (relationalen) Datenbankmanagementsystemen zur
-Verfügung gestellt werden, dass sie aber nicht auf diese Systeme beschränkt sind.
+Die Teilnehmer:innen wissen, dass ACID Transaktionen üblicherweise von (relationalen) Datenbankmanagementsystemen zur Verfügung gestellt werden, dass sie aber nicht auf diese Systeme beschränkt sind.
 
-Den Teilnehmern ist bekannt, dass ACID Transaktionen speziell bei verteilten Anwendungen (mit dem dafür
-erforderlichen Two-Phase-Commit Protokoll) deren Verfügbarkeit i.d.R. zu stark einschränken. Ihnen ist das
-alternative Konzept der BASE-Eigenschaften sowie speziell der eventuellen Konsistenz (Eventual Consistency)
-verteilter Anwendungen vertraut.
+Den Teilnehmer:innen ist bekannt, dass ACID Transaktionen speziell bei verteilten Anwendungen (mit dem dafür erforderlichen Two-Phase-Commit Protokoll) deren Verfügbarkeit i.d.R. zu stark einschränken. Ihnen ist das alternative Konzept der BASE-Eigenschaften sowie speziell der eventuellen Konsistenz (Eventual Consistency) verteilter Anwendungen vertraut.
 
-Die Teilnehmer verstehen, dass es bei der Verarbeitung großer Datenmengen (speziell im Batch) sinnvoll sein kann, auf
-ACID Transaktionen zu verzichten oder sie zumindest mit schwächeren Garantien für Consistency und Isolation zu
-verwenden.
+Die Teilnehmer:innen verstehen, dass es bei der Verarbeitung großer Datenmengen (speziell im Batch) sinnvoll sein kann, auf ACID Transaktionen zu verzichten oder sie zumindest mit schwächeren Garantien für Consistency und Isolation zu verwenden.
 
 [[LZ-5-4]]
 ==== LZ 5-4 - Versionierung von Daten
-Den Teilnehmern ist bewusst, dass bei veränderlichen Daten nicht nur der aktuelle Zustand, sondern auch die früheren
-Zustände (speziell für analytische Auswertungen) von Interesse sein können. Sie kennen die folgenden Verfahren für
-die Versionierung von Daten und verstehen, wie diese etwa in Form von Datenbanksystemen mit den o.g.
-Speichersystemen kombiniert werden:
+Den Teilnehmer:innen ist bewusst, dass bei veränderlichen Daten nicht nur der aktuelle Zustand, sondern auch die früheren Zustände (speziell für analytische Auswertungen) von Interesse sein können. Sie kennen die folgenden Verfahren für die Versionierung von Daten und verstehen, wie diese etwa in Form von Datenbanksystemen mit den o.g. Speichersystemen kombiniert werden:
 
 - Transaktionen (über die Serialisierbarkeit)
 - Versionskontrollsysteme
@@ -135,8 +109,7 @@ Speichersystemen kombiniert werden:
 
 [[LZ-5-5]]
 ==== LZ 5-5 - Optimierung und Skalierung
-Die Teilnehmer kennen übliche Verfahren, um Speichersysteme bei steigender Last zu optimieren und zu skalieren, wie
-etwa
+Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigender Last zu optimieren und zu skalieren, wie etwa
 
 - Sharding
 - Partitionierung (vertikal/horizontal)
@@ -146,48 +119,33 @@ etwa
 - Append Only / Read Only
 
 [[LZ-5-6]]
-==== LZ 5-6 Data Warehouse und Data Lake
-Die Teilnehmer wissen, dass Data Warehouse (DWH) Systeme i.d.R. für die Vereinheitlichung und Integration
-analytischer Daten verwendet werden. Sie wissen, dass Data Lake (DL) Systeme neben dieser Vereinheitlichung und
-Integration analytischer Daten auch eher als DWH Systeme geeignet sind, die Anwendung von Verfahren der KI und des
-ML auf analytischen Daten zu ermöglichen.
+==== LZ 5-6 - Data Warehouse und Data Lake
+Die Teilnehmer:innen wissen, dass Data Warehouse (DWH) Systeme i.d.R. für die Vereinheitlichung und Integration analytischer Daten verwendet werden. Sie wissen, dass Data Lake (DL) Systeme neben dieser Vereinheitlichung und Integration analytischer Daten auch eher als DWH Systeme geeignet sind, die Anwendung von Verfahren der KI und des ML auf analytischen Daten zu ermöglichen.
 
-Die Teilnehmer wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL
-Systeme verwendet werden.
+Die Teilnehmer:innen wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL Systeme verwendet werden.
 
-Die Teilnehmer wissen, dass Cloud-basiert erweiterte Datenbanksysteme etwa von Snowflake, Google (BigQuery),
-Teradata (Vantage) oder AWS (Redshift) angeboten werden, mit denen kombinierte DWH und DL Systeme umgesetzt werden
-können.
+Die Teilnehmer:innen wissen, dass Cloud-basiert erweiterte Datenbanksysteme etwa von Snowflake, Google (BigQuery), Teradata (Vantage) oder AWS (Redshift) angeboten werden, mit denen kombinierte DWH und DL Systeme umgesetzt werden können.
 
-Die Teilnehmer kennen wesentliche Unterschiede zwischen DWH und DL Systemen, wie etwa
+Die Teilnehmer:innen kennen wesentliche Unterschiede zwischen DWH und DL Systemen, wie etwa
 
-- Ein definiertes Schema (Schema on Write) beim DWH (das sich im Laufe der Zeit ändern kann) gegenüber mehreren
-parallelen Schemata (etwa mit Schema on Read) beim DL.
+- Ein definiertes Schema (Schema on Write) beim DWH (das sich im Laufe der Zeit ändern kann) gegenüber mehreren parallelen Schemata (etwa mit Schema on Read) beim DL.
 - Nur vereinheitlichte Daten im DWH während im DL auch die ursprünglichen Quelldaten (Rohdaten) vorgehalten werden.
-- Optimierte Strukturen für den lesenden (analytischen) Zugriff beim DWH gegenüber vereinfachten schreibenden
-Zugriffen beim DL.
-- Begrenzung auf strukturierte Daten beim DWH während DL auch unstrukturierte und semi-strukturierte Daten aufnehmen
-können.
-- Hoher Aufwand für die Integration neuer Datenquellen beim DWH während neue Datenquellen in den DL direkt
-aufgenommen werden können.
-- Hoher Aufwand für die Vereinheitlichung von Daten beim lesenden (analytischen) Zugriff im DL während dies beim DWH
-in deutlich geringerem Umfang erforderlich ist.
+- Optimierte Strukturen für den lesenden (analytischen) Zugriff beim DWH gegenüber vereinfachten schreibenden Zugriffen beim DL.
+- Begrenzung auf strukturierte Daten beim DWH während DL auch unstrukturierte und semi-strukturierte Daten aufnehmen können.
+- Hoher Aufwand für die Integration neuer Datenquellen beim DWH während neue Datenquellen in den DL direkt aufgenommen werden können.
+- Hoher Aufwand für die Vereinheitlichung von Daten beim lesenden (analytischen) Zugriff im DL während dies beim DWH in deutlich geringerem Umfang erforderlich ist.
 
-Die Teilnehmer kennen Lösungsansätze, um in DWH Systemen den Aufwand für Änderungen am Schema sowie für die
-Integration neuer Datenquellen zu reduzieren, wie etwa
+Die Teilnehmer:innen kennen Lösungsansätze, um in DWH Systemen den Aufwand für Änderungen am Schema sowie für die Integration neuer Datenquellen zu reduzieren, wie etwa
 
 - Verwendung künstlicher Schlüssel (Surrogate Keys)
 - Multidimensionale Modellierung
 - Data Vault
 - Automatisierung der Schemaänderungen (Data Warehouse Automation)
 
-Die Teilnehmer kennen Lösungsansätze, um in DL Systemen den Aufwand für die Vereinheitlichung beim lesenden Zugriff
-zu reduzieren:
+Die Teilnehmer:innen kennen Lösungsansätze, um in DL Systemen den Aufwand für die Vereinheitlichung beim lesenden Zugriff zu reduzieren:
 
-- Aufteilen des DL in Bereiche unterschiedlicher Datenqualität (etwa Bronze, Silber und Gold), wobei die Rohdaten im
-Bronze-Bereich und die vereinheitlichten, gut analysierbaren Daten im Gold-Bereich zu finden sind.
-- Technische Aspekte der Vereinheitlichung direkt bei der Eingangsverarbeitung erledigen (einheitliche Zeichensätze,
-Null-Values, Datumsformate, ...)
+- Aufteilen des DL in Bereiche unterschiedlicher Datenqualität (etwa Bronze, Silber und Gold), wobei die Rohdaten im Bronze-Bereich und die vereinheitlichten, gut analysierbaren Daten im Gold-Bereich zu finden sind.
+- Technische Aspekte der Vereinheitlichung direkt bei der Eingangsverarbeitung erledigen (einheitliche Zeichensätze, Null-Values, Datumsformate, ...)
 - Modularisierung des DL etwa über die Verwendung von DDD
 // end::DE[]
 
@@ -217,6 +175,7 @@ tbd.
 // tag::REMARK[]
 [NOTE]
 ====
-Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
+Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können
+auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
 ====
 // end::REMARK[]

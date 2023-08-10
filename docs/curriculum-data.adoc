@@ -78,7 +78,4 @@ include::10-module-block-10/00-structure.adoc[{include_configuration}]
 include::11-module-block-11/00-structure.adoc[{include_configuration}]
 
 <<<
-include::98-examples/00-examples.adoc[{include_configuration}]
-
-<<<
 include::99-references/00-references.adoc[{include_configuration}]

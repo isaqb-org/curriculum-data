@@ -3,7 +3,7 @@
 // tag::DE[]
 [[LZ-4-1]]
 ==== LZ 4-1 - Erkennen von Änderungen
-Den Teilnehmern sind Verfahren für das Identifizieren von Entitäten sowie für das Erkennen von Änderungen dieser Entitäten in Quellsystemen bekannt, wie etwa
+Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten sowie für das Erkennen von Änderungen dieser Entitäten in Quellsystemen bekannt, wie etwa
 
 - Change Data Capture (CDC)
 - DB-Trigger
@@ -15,21 +15,15 @@ Den Teilnehmern sind Verfahren für das Identifizieren von Entitäten sowie für
 - Primary Keys
 - (RSS-)Feeds
 
-Die Teilnehmer wissen, für welche Art von Quellsystemen welche dieser Verfahren jeweils geeignet sind.
+Die Teilnehmer:innen wissen, für welche Art von Quellsystemen welche dieser Verfahren jeweils geeignet sind.
 
-Den Teilnehmern ist bewusst, dass das Löschen von Daten üblicherweise ebenfalls als Änderung geliefert wird, da auch
-gelöschte Daten für die Analyse ggfs. weiter benötigt werden.
+Den Teilnehmer:innen ist bewusst, dass das Löschen von Daten üblicherweise ebenfalls als Änderung geliefert wird, da auch gelöschte Daten für die Analyse ggfs. weiter benötigt werden.
 
-Den Teilnehmern ist bewusst, dass sich Änderungen von Entitäten auf den internen Zustand von Quellsystemen beziehen
-können und dass mit der Weitergabe dieser Änderungen das Prinzip des Information Hidings verletzt werden kann. Sie
-verstehen, wie etwa das Outbox Pattern dazu genutzt werden kann, die von Quellsystemen zur Verfügung gestellten
-Änderungen auf das erforderliche Maß zu beschränken.
+Den Teilnehmer:innen ist bewusst, dass sich Änderungen von Entitäten auf den internen Zustand von Quellsystemen beziehen können und dass mit der Weitergabe dieser Änderungen das Prinzip des Information Hidings verletzt werden kann. Sie verstehen, wie etwa das Outbox Pattern dazu genutzt werden kann, die von Quellsystemen zur Verfügung gestellten Änderungen auf das erforderliche Maß zu beschränken.
 
 [[LZ-4-2]]
 ==== LZ 4-2 - Konnektoren
-Die Teilnehmer kennen Tools und Frameworks, die über vordefinierte Konnektoren einen vereinheitlichten Zugriff auf
-Quellsysteme zur Verfügung stellen. Sie wissen, dass diese Tools und Frameworks vorrangig für die folgenden Aufgaben
-eingesetzt werden:
+Die Teilnehmer:innen kennen Tools und Frameworks, die über vordefinierte Konnektoren einen vereinheitlichten Zugriff auf Quellsysteme zur Verfügung stellen. Sie wissen, dass diese Tools und Frameworks vorrangig für die folgenden Aufgaben eingesetzt werden:
 
 - Datenreplikation
 - Datenintegration
@@ -37,7 +31,7 @@ eingesetzt werden:
 - Datenorchestrierung
 - Metadatenmanagement
 
-Die Teilnehmer kennen Beispiele für diese Tools, wie etwa
+Die Teilnehmer:innen kennen Beispiele für diese Tools, wie etwa
 
 - Fivetran
 - Stitch
@@ -53,38 +47,28 @@ Die Teilnehmer kennen Beispiele für diese Tools, wie etwa
 - Alation
 
 [[LZ-4-3]]
-==== LZ 4-3 Eigenschaften von Data Ingestion
+==== LZ 4-3 - Eigenschaften von Data Ingestion
+Die Teilnehmer:innen wissen, was die Frequenz der Data Ingestion ist. Sie wissen auch, dass die Frequenz der Data Ingestion sich von Frequenz der Datenverarbeitung unterscheiden kann, sodass auf eine Stream Ingestion ein Batch Processing folgen kann.
 
-Die Teilnehmer wissen, was die Frequenz der Data Ingestion ist. Sie wissen auch, dass die Frequenz sich von der
-Datenverarbeitung unterscheiden kann, sodass auf eine Stream Ingestion ein Batch Processing folgen kann.
+Die Teilnehmer:innen kennen die Unterschiede zwischen synchroner und asynchroner Ingestion und wissen, dass ältere ETL Systeme typische Beispiele für eine synchronen Workflow sind.
 
-Die Teilnehmer kennen die Unterschiede zwischen synchroner und asynchroner Ingestion und wissen, dass ältere ETL
-Systeme typische Beispiele für eine synchronen Workflow sind.
+Den Teilnehmer:innen ist bewusst, dass der Durchsatz und die Skalierbarkeit ein wichtiges Merkmal für die Toleranz der Data  Ingestion darstellt. Zum einen erzeugen Data Generation Sources meist nicht gleichmäßig ihre Daten und zum anderen werden sie benötigt, falls sich die Requirements ändern oder wenn die Source Database nicht erreichbar ist und die Daten nachgeholt werden müssen.
 
-Den Teilnehmern ist bewusst, dass der Durchsatz und die Skalierbarkeit ein wichtiges Merkmal für die Toleranz der
-Data  Ingestion darstellt. Zum einen erzeugen Data Generation Sources meist nicht gleichmäßig ihre Daten
-und zum anderen werden sie benötigt, falls sich die Requirements ändern oder wenn die Source Database nicht
-erreichbar ist und die Daten nachgeholt werden müssen.
+Die Teilnehmer:innen können einschätzen, wie wichtig die Zuverlässigkeit und Beständigkeit für die Ingestion in einem System sind und wissen, dass diese Eigenschaften mit einem hohen Tradeoff der Kosten durch Redundanz der Daten kommt.
 
-Die Teilnehmer können einschätzen, wie wichtig die Zuverlässigkeit und Beständigkeit für die Ingestion in einem
-System sind und wissen, dass diese Eigenschaften mit einem hohen Tradeoff der Kosten durch Redundanz der Daten kommt.
+Die Teilnehmer:innen wissen, dass Daten, sowohl über eine direkte Datenbankverbindung, wie JDBC, als auch als Datei, aus einer Datenbank extrahiert werden können.
 
-Die Teilnehmer wissen, dass Datenquellen den aktuellen Zustand der zuletzt geänderten Daten (Snapshot) oder die
-Änderungen selbst (Increments/Events) wiedergeben können, mit denen dieser aktuelle Zustand erzeugt wurde. Sie
-wissen, dass ggfs. eine initiale Bereitstellung (initial Load) der Daten erforderlich ist.
+Die Teilnehmer:innen wissen, dass die Datenquellen den aktuellen Zustand der zuletzt geänderten Daten (Snapshot) oder die Änderungen selbst (Increments/Events) wiedergeben können, mit denen dieser aktuelle Zustand erzeugt wurde. Sie wissen, dass ggfs. eine initiale Bereitstellung (initial Load) der Daten erforderlich ist.
 
-Die Teilnehmer wissen, dass Datenquellen ihre Daten selbst aktiv liefern (Push) oder aber auf Anfrage bereitstellen
-(Pull) können. Sie wissen hierzu was Push, Pull und Poll Patterns sind und wie sie sich unterscheiden.
+Die Teilnehmer:innen wissen, dass die Datenquellen ihre Daten selbst aktiv liefern (Push) oder aber auf Anfrage bereitstellen (Pull) können. Sie wissen hierzu was Push, Pull und Poll Patterns sind und wie sie sich unterscheiden.
 
 [[LZ-4-4]]
-==== LZ 4-4 Batch vs Stream Ingestion
+==== LZ 4-4 - Batch vs Stream Ingestion
+Den Teilnehmer:innen ist der grundlegende Unterschied zwischen Batch- und Stream-Verarbeitung bekannt.
 
-Den Teilnehmern ist der grundlegende Unterschied zwischen Batch- und Stream-Verarbeitung bekannt.
+Den Teilnehmer:innen ist bewusst, wie Batch Ingestion durch zeitliche oder größen-basierte Abschnitte aus einem Streaming Umfeld erstellt werden können.
 
-Den Teilnehmern ist bewusst, wie Batch Ingestion durch zeitliche oder größen-basierte Abschnitte aus einem Streaming
-Umfeld erstellt werden können.
-
-Die Teilnehmer kennen typische Batch-basierte Ingestion Patterns:
+Die Teilnehmer:innen kennen typische batch-basierte Ingestion Patterns:
 
 - Snapshots oder inkrementelle Extraktion
 - File-based export and ingestion
@@ -92,26 +76,15 @@ Die Teilnehmer kennen typische Batch-basierte Ingestion Patterns:
 - Inserts, updates, and batch size
 - Data migration
 
-Den Teilnehmern ist bewusst, dass es bei spalten-basierten Datenbanken ein schlechtes Vorgehen ist reihen-basierte
-Inserts zu machen.
+Den Teilnehmer:innen ist bewusst, dass es bei spalten-basierten Datenbanken ein schlechtes Vorgehen ist reihen-basierte Inserts zu machen.
+
+Den Teilnehmer:innen ist bei der Stream Ingestion bewusst, dass das Risiko von zu spät ankommenden Daten besteht und dass sich dies kritisch auf downstream Systeme auswirken kann.
 
 [[LZ-4-5]]
-==== LZ 4-5 TBD noch zuordnen
+==== LZ 4-5 - Metadaten
+Die Teilnehmer:innen verstehen die Bedeutung von Metadaten für die Nutzung von Datenquellen. Sie können technische und fachliche Metadaten unterscheiden. Sie wissen, dass Quellsysteme oft umfassend Metadaten zu den von ihnen bereitgestellten Datenquellen zur Verfügung stellen.
 
-Den Teilnehmern ist das Risiko von zu spät ankommenden Daten bei der Stream Ingestion bewusst und dass sich dies
-kritisch auf downstream Systeme auswirken kann.
-
-Die Teilnehmer wissen, dass Daten, sowohl über eine direkte Datenbankverbindung, wie JDBC, als auch als Datei, aus
-einer Datenbank extrahiert werden können.
-
-[[LZ-3-3]]
-==== LZ 3-3 - Metadaten
-Die Teilnehmer verstehen die Bedeutung von Metadaten für die Nutzung von Datenquellen. Sie können technische und
-fachliche Metadaten unterscheiden. Sie wissen, dass Quellsysteme oft umfassend Metadaten zu den von ihnen
-bereitgestellten Datenquellen zur Verfügung stellen.
-
-Die Teilnehmer wissen wie wichtig die Charakteristiken von Datasets sind. Sie wissen, dass folgende Informationen in
-Form von Metadaten z.B. für Folgesysteme von großem Nutzen sind und daher einem Datensatz mitgegeben werden sollten:
+Die Teilnehmer:innen wissen wie wichtig die Charakteristiken von Datasets sind. Sie wissen, dass folgende Informationen in Form von Metadaten z.B. für Folgesysteme von großem Nutzen sind und daher einem Datensatz mitgegeben werden sollten:
 
 - Typ (Tabelle, Bild, Text, ...)
 - Dateiformat
@@ -120,14 +93,9 @@ Form von Metadaten z.B. für Folgesysteme von großem Nutzen sind und daher eine
 - Schema und Datentypen
 - weitere Metadaten
 
-Die Teilnehmer wissen, dass es Verfahren gibt (Schema Inference), um Metadaten aus Daten abzuleiten. Ihnen ist
-bewusst, dass sich Metadaten über die Nutzungsdauer von Daten ändern können (Schema Evolution) und dass Verfahren
-existieren, diese Änderungen beim Zugriff auf die Daten zu erkennen.
+Die Teilnehmer:innen wissen, dass es Verfahren gibt (Schema Inference), um Metadaten aus Daten abzuleiten. Ihnen ist bewusst, dass sich Metadaten über die Nutzungsdauer von Daten ändern können (Schema Evolution) und dass Verfahren existieren, diese Änderungen beim Zugriff auf die Daten zu erkennen.
 
-Die Teilnehmer kennen das Konzept eines Data Catalogs. Sie wissen, dass ein Data Catalog die Übersichtlichkeit
-der darunter liegenden Daten deutlich erhöht und einen Einstiegspunkt für die Suche und Beziehungserkennung liefert.
-Sie wissen außerdem, dass im Data Catalog die Data Lineage integriert werden kann, in welchem die Beziehungen der
-Daten visualisiert werden.
+Die Teilnehmer:innen kennen das Konzept eines Data Catalogs. Sie wissen, dass ein Data Catalog die Übersichtlichkeit der darunter liegenden Daten deutlich erhöht und einen Einstiegspunkt für die Suche und Beziehungserkennung liefert. Sie wissen außerdem, dass im Data Catalog die Data Lineage integriert werden kann, in welchem die Beziehungen der Daten visualisiert werden.
 // end::DE[]
 
 // tag::EN[]

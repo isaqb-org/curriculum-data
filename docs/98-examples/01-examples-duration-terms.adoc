@@ -8,7 +8,7 @@ Dieser Abschnitt ist nicht prüfungsrelevant.
 === Begriffe und Konzepte
 Innerhalb jeder lizenzierten Schulung muss mindestens ein Beispiel für {curriculum-short} vorgestellt werden.
 
-Art und Ausprägung der vorgestellten Beispiele können von der Schulung bzw. den Interessen der Teilnehmer abhängen und werden seitens iSAQB nicht vorgegeben.
+Art und Ausprägung der vorgestellten Beispiele können von der Schulung bzw. den Interessen der Teilnehmenden abhängen und werden seitens iSAQB nicht vorgegeben.
 // end::DE[]
 
 

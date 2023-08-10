@@ -1,7 +1,7 @@
 # 0 Formales
 
 ## F 0-1 Übersicht
-Daten werden in modernen Anwendungssystemen zunehmend zu "First Class Citizens". Gründe dafür sind etwa der deutlich gestiegene und weiter steigende Einsatz mobiler Endgeräte, die massenweise Integration von Geräten über IoT, die universelle Verfügbarkeit von Anwendungen in der Cloud, der zunehmende Einsatz KI-basierter Lösungen und natürlich die Verfügbarkeit günstiger digitaler Speichertechnologie. Dies zeigt sich auch in Trends/Hypes wie "Big Data" oder "Data Driven". Entsprechend sind in den letzten Jahren die Anforderungen an Software-/ Systemarchitekten gestiegen, sich mit geeigneten Architekturen zur Verarbeitung großer Datenmengen zu befassen.
+Daten werden in modernen Anwendungssystemen zunehmend zu "First Class Citizens". Gründe dafür sind etwa der deutlich gestiegene und weiter steigende Einsatz mobiler Endgeräte, die massenweise Integration von Geräten über IoT, die universelle Verfügbarkeit von Anwendungen in der Cloud, der zunehmende Einsatz KI-basierter Lösungen und natürlich die Verfügbarkeit günstiger digitaler Speichertechnologie. Dies zeigt sich auch in Trends/Hypes wie "Big Data" oder "Data Driven". Entsprechend sind in den letzten Jahren die Anforderungen an Software-/ Systemarchitekt:innen gestiegen, sich mit geeigneten Architekturen zur Verarbeitung großer Datenmengen zu befassen.
 Der hier vorliegene iSAQB Lehrplan soll einen möglichst umfassenden Überblick über alle Aspekte bieten, die im Zusammenhang mit der Verarbeitung großer Datenmengen aus der Sicht von Software-/ Systemarchitekten Beachtung verdienen.
 
 ## F 0-2 Abgrenzung

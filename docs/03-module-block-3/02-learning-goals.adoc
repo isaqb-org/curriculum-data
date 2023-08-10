@@ -3,13 +3,12 @@
 // tag::DE[]
 [[LZ-3-1]]
 ==== LZ 3-1 - Arten von Datenquellen und Quellsystemen
-Die Teilnehmer kennen Arten von Datenquellen und Quellsystemen, von denen analytische Daten typischerweise
-übernommen werden, wie etwa
+Die Teilnehmer:innen kennen Arten von Datenquellen und Quellsystemen, von denen analytische Daten typischerweise übernommen werden, wie etwa
 
 - Standard Anwendungen
 - (REST-) APIs
 - Datenbanken
-- OLTP
+- OLTP Systeme
 - Event-Stores
 - Messaging Systeme
 - Metrics Systeme
@@ -20,53 +19,38 @@ Die Teilnehmer kennen Arten von Datenquellen und Quellsystemen, von denen analyt
 
 [[LZ-3-2]]
 ==== LZ 3-2 - Eigenschaften von Datenquellen und Quellsystemen
-Die Teilnehmer können unterscheiden, ob Datenquellen strukturierte, semi-strukturierte oder unstukturierte Daten
-liefern. Ihnen sind übliche Formate vertraut, in denen Datenquellen ihre Daten zur Verfügung stellen, wie etwa
+Die Teilnehmer:innen können unterscheiden, ob Datenquellen strukturierte, semi-strukturierte oder unstukturierte Daten liefern. Ihnen sind übliche Formate vertraut, in denen Datenquellen ihre Daten zur Verfügung stellen, wie etwa
 
 - Dokumente
 - Liste von Datensätzen
 - Key-value Paare
 
-Den Teilnehmern ist bewusst, dass Quellsysteme in unterschiedlicher Weise und Qualität den Schutz der Daten sowie
-eine Kontrolle des Zugriffs auf die Daten unterstützen.
+Den Teilnehmer:innen ist bewusst, dass Quellsysteme in unterschiedlicher Weise und Qualität den Schutz der Daten sowie eine Kontrolle des Zugriffs auf die Daten unterstützen.
 
-Den Teilnehmern ist bewusst, dass Quellsysteme z.T. sehr große Datenmengen bereitstellen, und dass geeignete
-Maßnahmen getroffen werden müssen, um diese Datenmengen transportieren zu können.
+Den Teilnehmer:innen ist bewusst, dass Quellsysteme z.T. sehr große Datenmengen bereitstellen, und dass geeignete Maßnahmen getroffen werden müssen, um diese Datenmengen transportieren zu können.
 
-Den Teilnehmern wissen, dass das zur Verfügung stellen analytischer Daten i.d.R. nicht der eigentliche Zweck von
-Quellsystemen ist. Sie wissen, dass dadurch zusätzliche Last für das jeweilige Quellsystem erzeugt werden kann und
-dass dies i.d.R. den eigentlichen Zweck eines Quellsystems nicht beeinträchtigen darf. Zusätzlich kann die
-Verfügbarkeit des Quellsystems eingeschränkt sein.
+Die Teilnehmer:innen wissen, dass das zur Verfügung stellen analytischer Daten i.d.R. nicht der eigentliche Zweck von Quellsystemen ist. Sie wissen, dass dadurch zusätzliche Last für das jeweilige Quellsystem erzeugt werden kann und dass dies i.d.R. den eigentlichen Zweck eines Quellsystems nicht beeinträchtigen darf. Zusätzlich kann die Verfügbarkeit des Quellsystems eingeschränkt sein.
 
-Die Teilnehmer wissen, dass Daten normalisiert oder denormalisiert sein können und können entsprechend mit ihnen
-umgehen.
+Die Teilnehmer:innen wissen, dass Daten normalisiert oder denormalisiert sein können und können entsprechend mit ihnen umgehen.
 
-Den Teilnehmern ist bewusst, dass die Daten in Quellsystemen partitioniert sein können und wissen, dass sie diese
-Partitionen für schnellere Abfragen nutzen können.
+Den Teilnehmer:innen ist bewusst, dass die Daten in Quellsystemen partitioniert sein können und wissen, dass sie diese Partitionen für schnellere Abfragen nutzen können.
 
-Den Teilnehmern ist bewusst, dass es bei technologisch veralteten Quellsystemen schwieriger ist auf die Daten
-zuzugreifen.
+Den Teilnehmer:innen ist bewusst, dass es bei technologisch veralteten Quellsystemen schwieriger ist auf die Daten zuzugreifen.
 
-Den Teilnehmern ist bewusst, welche Garantien, wie Consistent oder eventual Consistency, eine Datenquelle zur Verfügung
-stellen kann.
+Den Teilnehmer:innen ist bewusst, welche Garantien, wie Consistency oder eventual Consistency, eine Datenquelle zur Verfügung stellen kann.
 
-Die Teilnehmer wissen, dass eine Datenquelle z.B. eine SQL Schnittstelle oder vergleichbare Alternativen, zur Verfügung
-stellt, um auf die Daten zuzugreifen.
-Die Teilnehmer wissen auch, ob eine Datenquelle einen Batch oder eine Streamverarbeitung der Daten unterstützt.
+Die Teilnehmer:innen wissen, dass eine Datenquelle z.B. eine SQL Schnittstelle oder vergleichbare Alternativen, zur Verfügung stellt, um auf die Daten zuzugreifen. Die Teilnehmer:innen wissen auch, ob eine Datenquelle einen Batch oder eine Streamverarbeitung der Daten unterstützt.
 
-Die Teilnehmer wissen einzuschätzen, ob eine real time oder near real time Verarbeitung der Daten notwendig ist oder
-nicht.
+Die Teilnehmer:innen wissen einzuschätzen, ob eine real time oder near real time Verarbeitung der Daten notwendig ist oder nicht.
 
 [[LZ-3-3]]
-==== 3-3 - Eigenschaften von Datenbanksystemen
+==== LZ 3-3 - Eigenschaften von Datenbanksystemen
 
-Die Teilnehmer wissen, dass die Datenmodelle von Quellsystemen veränderbar sind. Ein direkter Zugriff auf diese
-Datenmodelle koppelt die Analysesysteme an die Quellsysteme.
+Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderbar sind. Ein direkter Zugriff auf diese Datenmodelle koppelt die Analysesysteme an die Quellsysteme.
 
-
-
-==== LZ 4-5 - Event Streaming Basics
-Die Teilnehmer wissen, dass
+[[LZ-3-4]]
+==== LZ 3-4 - Event Streaming Basics
+Die Teilnehmer:innen wissen, dass
 
 - beim Event Streaming je Datenquelle idR ein Producer für das Lesen der Daten aus dieser Quelle und das Weiterleiten an eine entsprechende Middleware Komponente (Message Broker) verantwortlich ist.
 - beim Event Streaming je Datensenke idR ein Consumer für das Lesen der Daten vom Message Broker und das Schreiben in diese Senke verantwortlich ist.
@@ -74,55 +58,24 @@ Die Teilnehmer wissen, dass
 - Event Streaming nicht generell garantiert, dass jeder Datensatz genau einmal (exactly once) verarbeitet wird, sondern meist nur zusichert, dass jeder Datensatz höchstens (almost once) oder mindestens einmal (at least once) verarbeitet wird.
 - mit Event Streaming idR nur eventuelle Konsistenz der Daten in der Datensenke zusichert wird.
 
-[[LZ-3-4]]
-==== 3-4 - Eigenschaften vom Event-Streaming
+[[LZ-3-5]]
+==== LZ 3-5 - Eigenschaften vom Event-Streaming
 
-Die Teilnehmer wissen, dass Message Queues in einem System genutzt werden, um Messages mit bestimmten
-Qualitätskriterien zu übertragen. Streams hingegen stellen ein geordnetes Log der übertragenen Daten dar, welches
-verarbeitet werden kann.
+Die Teilnehmer:innen wissen, dass Message Queues in einem System genutzt werden, um Messages mit bestimmten Qualitätskriterien zu übertragen. Streams hingegen stellen ein geordnetes Log der übertragenen Daten dar, welches verarbeitet werden kann.
 
-Die Teilnehmer wissen, dass die Types of Time bei der Streamverarbeitung eine besondere Rolle spielen, da sie die
-Zeitpunkte der Erstellung, Ingestion, den Start und die Dauer der Verarbeitung protokollieren.
+Die Teilnehmer:innen wissen, dass die Types of Time bei der Streamverarbeitung eine besondere Rolle spielen, da sie die Zeitpunkte der Erstellung, Ingestion, den Start und die Dauer der Verarbeitung protokollieren.
 
-Delivery frequency. Messages can be sent exactly once or at least once. Best idempotent.
-Die Teilnehmer wissen, dass die Eigenschaft der Häufigkeit der Übertragung für einen Stream eine große Rolle spielt.
-Im Speziellen wissen sie, dass die Idempotenz bei der Verarbeitung der Optimalfall ist.
+Die Teilnehmer:innen wissen, dass die Eigenschaft der Häufigkeit der Übertragung für einen Stream eine große Rolle spielt. Im Speziellen wissen sie, dass die Idempotenz bei der Verarbeitung der Optimalfall ist.
 
-Message Queues and Event-Streaming Platforms (are easier to set up and manage, the rise of data applications that
-directly integrate real-time analytics are growing from strength to strength. Event-driven architectures are ideal
-in this setting because events can both trigger work in the application and feed near real-time analytics)
-Die Teilnehmer wissen, dass eine Event Stream Plattform sehr gut für Applikationen geeignet ist, welche schnell auf
-Input reagieren müssen oder um near-real time Analysen zu machen.
+Die Teilnehmer:innen wissen, dass eine Event Streaming Plattform sehr gut für Applikationen geeignet ist, welche schnell auf Input reagieren müssen oder um near-real time Analysen zu machen.
 
-Die Teilnehmer wissen, dass eine Message Queue keine großen Datenmengen (in Kilobytes) beinhaltet, sondern nur kleine
-individuelle Nachrichten zwischen Systemen bewegt.
+Die Teilnehmer:innen wissen, dass eine Message Queue keine großen Datenmengen (in Kilobytes) beinhaltet, sondern nur kleine individuelle Nachrichten zwischen Systemen bewegt.
 
-Die Teilnehmer wissen, dass ein Producer die einzelnen Events an sogenannte Topics sendet, welche eine Sammlung der
-zusammenhängenden Events darstellen. Beispiele wären Betrugswarnungen, Kundenbestellungen oder Temperaturangaben.
+Die Teilnehmer:innen wissen, dass ein Producer die einzelnen Events an sogenannte Topics sendet, welche eine Sammlung der zusammenhängenden Events darstellen. Beispiele wären Betrugswarnungen, Kundenbestellungen oder Temperaturangaben.
 
-Den Teilnehmern wissen, dass Streams partitioniert werden können, sodass die Partitionen einzeln verarbeitet
-werden können. Den Teilnehmern ist dabei das Problem des hotspottings bewusst, bei dem zu viele Nachrichten einer
-Partition zugeordnet werden.
+Den Teilnehmer:innen ist bewusst, dass Streams partitioniert werden können, sodass die Partitionen einzeln verarbeitet werden. Den Teilnehmer:innen ist dabei das Problem des hotspottings bekannt, bei dem zu viele Nachrichten einer Partition zugeordnet werden.
 
-Die Teilnehmer kennen den Vorteil der Fehlertoleranz von Streaming Systemen, bei dem Systeme die Streams über
-mehrere Nodes verteilen, sodass falls eine Node ausfällt der Stream immernoch erreichbar bleibt, da eine andere Node
-einspringt.
-
-
-
-==== LZ 4-4 - TBD Message Passing noch notwendig?
-
-- Message Broker
-- Pub/Sub, Broadcast, Request/Response
-- Routing
-
-Die Teilnehmer kennen Beispiele für Message Broker wie
-
-- Apache Kafka
-- Apache Pulsar
-- AWS Kinesis
-- Google Pub/Sub
-- Azure Event Hubs
+Die Teilnehmer:innen kennen den Vorteil der Fehlertoleranz von Streaming Systemen, bei dem Systeme die Streams über mehrere Nodes verteilen, sodass falls eine Node ausfällt der Stream immernoch erreichbar bleibt, da eine andere Node einspringt.
 // end::DE[]
 
 // tag::EN[]

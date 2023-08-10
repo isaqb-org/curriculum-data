@@ -3,20 +3,21 @@
 // tag::DE[]
 [[LZ-1-1]]
 ==== LZ 1-1 - Unterscheidung operativer und analytischer Daten
-Die Teilnehmer können den Unterschied zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Sie kennen typische Beispiele für opreative Anwendungen und wissen, welche iSAQB Module sich spezifisch mit der Architektur operativer Anwendungssysteme befassen.
-Den Teilnehmern ist klar, warum operative und analytische Daten üblicherweise separat verarbeitet werden. Sie können die folgenden Eigenschaften analytischer Daten erläutern:
+Die Teilnehmer:innen können den Unterschied zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Sie kennen typische Beispiele für opreative Anwendungen und wissen, welche iSAQB Module sich spezifisch mit der Architektur operativer Anwendungssysteme befassen.
+Den Teilnehmer:innen ist klar, warum operative und analytische Daten üblicherweise separat verarbeitet werden. Sie können die folgenden Eigenschaften analytischer Daten erläutern:
 
 - subject-oriented
 - nonvolatile
 - integrated
 - time variant
 
-Die Teilnehmer kennen Beispiele, wie analytische Daten aus operativen Anwendungen entstehen. Sie kennen ebenfalls Beispiele, wie Ergebnisse von Analysen analytischer Daten in operativen Anwendungen genutzt werden können.
+Die Teilnehmer:innen kennen Beispiele, wie analytische Daten aus operativen Anwendungen entstehen. Sie kennen ebenfalls Beispiele, wie Ergebnisse von Analysen analytischer Daten in operativen Anwendungen genutzt werden können.
 
 [[LZ-1-2]]
 ==== LZ 1-2 - Analytische Anwendungen
-Die Teilnehmer kennen typische Beispiele für analytische Anwendungen (Berichtswesen, Markt- und Kundenanalyse, Operations Research, KPI, Warenkorbanalyse, Regressionsanalyse, Risikoanalyse, Trendanalyse, etc.) und können Typen von Nutzern (Farmer, Explorer, Miner, Tourist, ...) unterscheiden.
-Die Teilnehmer können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Aspekte bennenen:
+Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen (Berichtswesen, Markt- und Kundenanalyse, Operations Research, KPI, Warenkorbanalyse, Regressionsanalyse, Risikoanalyse, Trendanalyse, etc.) und können Typen von Nutzern (Farmer, Explorer, Miner, Tourist, ...) unterscheiden.
+
+Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Aspekte bennenen:
 
 - Umfang und Komplexität der zu verarbeitenen Daten
 - Komplexität und Anzahl der Analysen, Anfragen / Queries
@@ -25,22 +26,25 @@ Die Teilnehmer können übliche Herausforderungen bei Konzeption, Umsetzung und 
 
 [[LZ-1-3]]
 ==== LZ 1-3 - Kategorien analytischer Anwendungen
-Die Teilnehmer kennen die typischen Kategorien analytischer Anwendungen, können diese unterscheiden und jeweils Beispiele dazu nennen:
+Die Teilnehmer:innen kennen die typischen Kategorien analytischer Anwendungen, können diese unterscheiden und jeweils Beispiele dazu nennen:
 
-- Explorativ und konfirmatorisch
-- Deskriptiv, diagnostisch, prediktiv und preskriptiv
-- Inferentiell und prediktiv
-- Realtime, near realtime und batch
+- Explorativ vs konfirmatorisch
+- Deskriptiv, diagnostisch vs präskriptiv
+- Inferentiell vs prediktiv
+- Realtime, near realtime vs batch
 
 [[LZ-1-4]]
 ==== LZ 1-4 - Historie der Umsetzung analytischer Anwendungssysteme
-Die Teilnehmer haben einen Überblick, wie analytische Anwendungssysteme im Laufe der Zeit umgesetzt worden sind.
+Die Teilnehmer:innen haben einen Überblick, wie analytische Anwendungssysteme im Laufe der Zeit umgesetzt worden sind.
 Sie kennen Begriffe wie Reporting, DSS, EIS, DWH, Data Mart, Data Vault, Data Mining, ODS, Data Lake, Data Fabric, Data Mesh. Sie können diese Lösungsansätze unterscheiden und wissen, wie sie auseinander hervorgegangen sind.
 
 [[LZ-1-5]]
 ==== LZ 1-5 - Qualität von Daten
-Die Teilnehmer kennen typische Qualitätsmerkmale von Daten und können diese erläutern:
+Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können diese erläutern:
 
+[frame=none, grid=none]
+|===
+a|
 - Genauigkeit
 - Verfügbarkeit
 - Vollständigkeit
@@ -50,7 +54,7 @@ Die Teilnehmer kennen typische Qualitätsmerkmale von Daten und können diese er
 - Sicherheit
 - Vergleichbarkeit
 - Granularität
-- Glaubwürdigkeit
+- Glaubwürdigkeit a|
 - Plausibilität
 - Validität
 - Relevanz
@@ -61,8 +65,10 @@ Die Teilnehmer kennen typische Qualitätsmerkmale von Daten und können diese er
 - Einheitlichkeit
 - Dauerhaftigkeit
 - Interpretierbarkeit
+|===
 
-Die Teilnehmer verstehen, warum die Gewährleistung von Datenqualität bei analytischen Daten eine besondere Herausforderung ist. Sie kennen Beispiele für Verfahren zur Prüfung, Gewährleistung und Verbesserung analytischer Daten wie etwa:
+
+Die Teilnehmer:innen verstehen, warum die Gewährleistung von Datenqualität bei analytischen Daten eine besondere Herausforderung ist. Sie kennen Beispiele für Verfahren zur Prüfung, Gewährleistung und Verbesserung analytischer Daten wie etwa:
 
 - Identifikation von Entitäten und Deduplizierung
 - Rechtschreibprüfung und -korrektur
@@ -71,7 +77,6 @@ Die Teilnehmer verstehen, warum die Gewährleistung von Datenqualität bei analy
 - Beschreibende fachliche Metadaten
 - (Standard-) Datenaustauschformate
 - Erkennen von Ausreißern (Outlier Detection), fehlenden Werten und Widersprüchen
-
 // end::DE[]
 
 // tag::EN[]

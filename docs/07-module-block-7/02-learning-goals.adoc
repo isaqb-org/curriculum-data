@@ -4,11 +4,11 @@
 // tag::DE[]
 [[LZ-7-1]]
 ==== LZ 7-1 - Unterscheidung von Queries
-Die Teilnehmer verstehen, dass (Daten-)Transformationen erforderlich sind, um Daten aus operativen Systemen für die Analyse aufzubreiten. Sie verstehen, dass Transformationen in Form von Queries beschrieben werden können, dass bei steigender Komplexität aber einzelne Queries zu unverständlich werden und Abfolgen von Queries (s. Data Pipelines in LZ 10) besser für die Umsetzung von Transformationen geeignet sind.
+Die Teilnehmer:innen verstehen, dass (Daten-)Transformationen erforderlich sind, um Daten aus operativen Systemen für die Analyse aufzubreiten. Sie verstehen, dass Transformationen in Form von Queries beschrieben werden können, dass bei steigender Komplexität aber einzelne Queries zu unverständlich werden und Abfolgen von Queries (s. Data Pipelines in LZ 10) besser für die Umsetzung von Transformationen geeignet sind.
 
 [[LZ-7-2]]
 ==== LZ 7-2 - Anwendungsfälle
-Die Teilnehmer kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell
+Die Teilnehmer:innen kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell
 
 - Umwandeln der Datenrepräsentation von Quell- in Zielformate
 - Bereinigen/Standardisieren der Daten (Data Cleansing)
@@ -22,13 +22,13 @@ Die Teilnehmer kennen übliche Aufgaben, die von Transformationen übernommen we
 - Lokalisierung der Daten
 - (In Ausnahmen) Ausführen von Geschäftslogik (s. LZ 7-4)
 
-Die Teilnehmer verstehen, wie Transformationen Verfahren des Query und Processing (s. LZ 6) nutzen, um auf die Daten in den Speichersystemen (s. LZ 5) zuzugreifen.
+Die Teilnehmer:innen verstehen, wie Transformationen Verfahren des Query und Processing (s. LZ 6) nutzen, um auf die Daten in den Speichersystemen (s. LZ 5) zuzugreifen.
 
-Die Teilnehmer verstehen die Bedeutung von Schemas und Datenmodellen (s. LZ 9) für die Umsetzung von Transformationen.
+Die Teilnehmer:innen verstehen die Bedeutung von Schemas und Datenmodellen (s. LZ 9) für die Umsetzung von Transformationen.
 
 [[LZ-7-3]]
 ==== LZ 7-3 - Typische Transformationen
-Die Teilnehmer kennen typische Transformationen für die Aufbereitung analytischer Daten, wie etwa
+Die Teilnehmer:innen kennen typische Transformationen für die Aufbereitung analytischer Daten, wie etwa
 
 - Normalisierung / Denormalisierung von Datenstrukturen - Star/Snowflake Schema, Data Vault
 - Zuordnung von künstlichen IDs (surrogate keys) zu IDs der Quellsysteme
@@ -47,7 +47,7 @@ Die Teilnehmer kennen typische Transformationen für die Aufbereitung analytisch
 
 [[LZ-7-4]]
 ==== LZ 7-4 - Staging Area
-Den Teilnehmern ist das Konzept der Staging Area vertraut. Sie wissen, dass
+Den Teilnehmer:innen ist das Konzept der Staging Area vertraut. Sie wissen, dass
 
 - analytische Daten aus Datenquellen in einer Staging Area gesammelt und aufbereitet werden, bevor sie für die Analyse zur Verfügung gestellt werden
 - Staging Areas typischerweise für die Batch Verarbeitung von Daten zum Befüllen eines DWH Systems eingesetzt werden
@@ -55,11 +55,11 @@ Den Teilnehmern ist das Konzept der Staging Area vertraut. Sie wissen, dass
 - die Staging Area sowohl das vollständige Verarbeiten der Daten einer Datenquelle (initial load) als auch das Verarbeiten der Änderungsdaten (incremental load) unterstützen muss.
 - die Staging Area immer nur genau die Änderungsdaten erhält, die seit der letzten Batchverarbeitung in den Quellsystemen angefallen sind.
 
-Die Teilnehmer wissen, welche Transformationen typischerweise in einer Staging Area angewendet werden.
+Die Teilnehmer:innen wissen, welche Transformationen typischerweise in einer Staging Area angewendet werden.
 
 [[LZ-7-5]]
 ==== LZ 7-5 - Robuste Transformationen
-Die Teilnehmer verstehen, dass die Umsetzung von Transformationen oft fragil ist, da sich die zu verarbeitenden Daten von Ausführung zu Ausführung im Hinblick auf Umfang, Format oder Bedeutung ändern können. Die Teilnehmer kennen Lösungsansätze, um Transformationen robust zu gestalten:
+Die Teilnehmer:innen verstehen, dass die Umsetzung von Transformationen oft fragil ist, da sich die zu verarbeitenden Daten von Ausführung zu Ausführung im Hinblick auf Umfang, Format oder Bedeutung ändern können. Die Teilnehmer:innen kennen Lösungsansätze, um Transformationen robust zu gestalten:
 
 - Validieren der Eingangsdaten
 - Verwenden unstrukturierter oder semi-strukturierter Daten
@@ -72,19 +72,23 @@ Die Teilnehmer verstehen, dass die Umsetzung von Transformationen oft fragil ist
 - Zerlegen komplexer Transformationen
 - Auswahl geeigneter Programmiermodelle
 
-Die Teilnehmer kennen Verfahren zum Data Profiling [], um die zu erwartenden Daten für die Umsetzung der Transformationen vorab zu analysieren.
-Die Teilnehmer kennen Verfahren für die Überwachung (Monitoring) der Ausführung von Transformationen.
-Die Teilnehmer kennen das Konzept der Data Lineage [] für das Nachvollziehen der Abhängigkeiten zwischen Ein- und Ausgangsdaten von Transformationen.
+Die Teilnehmer:innen kennen Verfahren zum Data Profiling, um die zu erwartenden Daten für die Umsetzung der Transformationen vorab zu analysieren.
+
+Die Teilnehmer:innen kennen Verfahren für die Überwachung (Monitoring) der Ausführung von Transformationen.
+
+Die Teilnehmer:innen kennen das Konzept der Data Lineage für das Nachvollziehen der Abhängigkeiten zwischen Ein- und Ausgangsdaten von Transformationen.
 
 [[LZ-7-6]]
 ==== LZ 7-6 - Qualitätsstufen
-Die Teilnehmer verstehen, dass über eine schrittweise Transformation eingehender Daten Qualitätsstufen (Quality-Gates) definiert werden können. Sie verstehen, dass damit je nach Art der Analyse Daten einer höheren (Clean Data) oder einer niedrigeren (Raw Data) herangezogen werden können.
-Die Teilnehmer verstehen, dass Staging Areas (s. LZ 7-3) ein Quality Gate darstellen, mit dem sichergestellt wird, dass nur qualitätsgesicherte Daten zur Analyse in einem Data Warehouse bereitgestellt werden.
-Die Teilnehmer verstehen, dass in einem Data Lake (s. LZ 7-3) Daten unterschiedlicher Qualitätsstufen gemeinsam aufbewahrt werden und dass es daher sinnvoll sein kann, Zonen unterschiedlicher Datenqualität (etwa Bronze, Silber, Gold) innerhalb von Data Lakes festzulegen [Medallion Architecture].
+Die Teilnehmer:innen verstehen, dass über eine schrittweise Transformation eingehender Daten Qualitätsstufen (Quality-Gates) definiert werden können. Sie verstehen, dass damit je nach Art der Analyse Daten einer höheren (Clean Data) oder einer niedrigeren (Raw Data) herangezogen werden können.
+
+Die Teilnehmer:innen verstehen, dass Staging Areas (s. LZ 7-4) ein Quality Gate darstellen, mit dem sichergestellt wird, dass nur qualitätsgesicherte Daten zur Analyse in einem Data Warehouse bereitgestellt werden.
+
+Die Teilnehmer:innen verstehen, dass in einem Data Lake (s. LZ 5-6) Daten unterschiedlicher Qualitätsstufen gemeinsam aufbewahrt werden und dass es daher sinnvoll sein kann, Zonen unterschiedlicher Datenqualität (etwa Bronze, Silber, Gold) innerhalb von Data Lakes festzulegen (Medallion Architecture).
 
 [[LZ-7-7]]
 ==== LZ 7-7 - Batch Verarbeitung
-Die Teilnehmer verstehen das Verfahren der Batch Verarbeitung (Batch Processing) für die Transformation von Daten. Ihnen ist bewusst, dass
+Die Teilnehmer:innen verstehen das Verfahren der Batch Verarbeitung (Batch Processing) für die Transformation von Daten. Ihnen ist bewusst, dass
 
 - die Batch Verarbeitung üblicherweise dazu dient, eine größere Anzahl Datensätze aus mehreren Datenquellen in einem Schritt zu verarbeiten und die Ergebnisse in eine Datensenke zu schreiben
 - alle (initial/complete load) oder nur die letzten Änderungen (incremental load) im Batch verarbeitet werden können
@@ -93,24 +97,25 @@ Die Teilnehmer verstehen das Verfahren der Batch Verarbeitung (Batch Processing)
 - eine Batch-Verarbeitung üblicherweise die Konsistenz (s. LZ 5-3) der Daten in der Datensenke erhält
 - eine Batch-Verarbeitung komplexe Operationen zur Datenverarbeitung enthalten kann
 
-Die Teilnehmer verstehen das Verfahren der Micro-Batch Verarbeitung von Daten []. Sie kennen den Unterschied zwischen Batch und Micro-Batch Verarbeitung (Batches werden nur manuell oder zeitlich angestoßen, Micro-Batches auch dann, wenn ausreichend Datensätze in der Datenquelle angefallen sind).
+Die Teilnehmer:innen verstehen das Verfahren der Micro-Batch Verarbeitung von Daten []. Sie kennen den Unterschied zwischen Batch und Micro-Batch Verarbeitung (Batches werden nur manuell oder zeitlich angestoßen, Micro-Batches auch dann, wenn ausreichend Datensätze in der Datenquelle angefallen sind).
 
 [[LZ-7-8]]
 ==== LZ 7-8 - Stream Verarbeitung
-Die Teilnehmer verstehen das Verfahren der Stream Verarbeitung (Stream Processing) von Daten. Sie wissen, dass Stream Verarbeitung auf der Basis des Event Streamings aufsetzt.
-Die Teilnehmer wissen, dass bei der Stream Verarbeitung
+Die Teilnehmer:innen verstehen das Verfahren der Stream Verarbeitung (Stream Processing) von Daten. Sie wissen, dass Stream Verarbeitung auf der Basis des Event Streamings aufsetzt.
+
+Die Teilnehmer:innen wissen, dass bei der Stream Verarbeitung
 
 - die Daten mehrerer Streams miteinander zu einem weiteren Stream kombiniert werden können.
 - Datensätze (etwa fehlerhafte oder unvollständige) im Stream voneinander getrennt und separat (in unterschiedlichen Streams) weiterverarbeitet werden können.
 - bei der Verarbeitung von Daten im Stream üblicherweise auf komplexe Operationen verzichtet wird.
 
-Die Teilnehmer verstehen, dass das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird.
+Die Teilnehmer:innen verstehen, dass das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird.
 
-Die Teilnehmer können zustandslose (stateless) und zustandsbehaftete (stateful) Stream Verarbeitung unterscheiden.
+Die Teilnehmer:innen können zustandslose (stateless) und zustandsbehaftete (stateful) Stream Verarbeitung unterscheiden.
 
-Die Teilnehmer verstehen, dass Operationen nicht auf allen Datensätzen eines Streams erfolgen können, sondern immer nur auf einzelnen oder einer Gruppe von aufeinanderfolgenden Datensätzen. Sie kennen dazu das Konzept der Fenster (Window) Funktionen.
+Die Teilnehmer:innen verstehen, dass Operationen nicht auf allen Datensätzen eines Streams erfolgen können, sondern immer nur auf einzelnen oder einer Gruppe von aufeinanderfolgenden Datensätzen. Sie kennen dazu das Konzept der Fenster (Window) Funktionen.
 
-Die Teilnehmer kennen Frameworks oder Tools für die Stream Verarbeitung wie
+Die Teilnehmer:innen kennen Frameworks oder Tools für die Stream Verarbeitung wie
 
 - Kafka Streams
 - Apache Flink

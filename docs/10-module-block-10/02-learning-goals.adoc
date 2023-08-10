@@ -3,8 +3,8 @@
 
 // tag::DE[]
 [[LZ-10-1]]
-==== LZ 10-1 Was sind Data Pipelines
-Die Teilnehmer wissen, dass Daten in Produktion vorher durch verschiedene Stages gelaufen sind. Sie kennen die üblichen Stage Bezeichnungen und wissen was typischerweise mit Data Pipelines in den Stages gemacht wird:
+==== LZ 10-1 - Was sind Data Pipelines
+Die Teilnehmer:innen wissen, dass Daten in Produktion vorher durch verschiedene Stages gelaufen sind. Sie kennen die üblichen Stage Bezeichnungen und wissen was typischerweise mit Data Pipelines in den Stages gemacht wird:
 
 - Ingestion
 - Transport
@@ -12,9 +12,7 @@ Die Teilnehmer wissen, dass Daten in Produktion vorher durch verschiedene Stages
 - Transformation
 - Presentation
 
-Die Teilnehmer wissen auch, dass diese einzelnen an Data Pipelines der Stages zu größeren Data Pipelines zusammengesetzt werden können.
-
-Außerdem wissen die Teilnehmer wozu Data Pipelines verwendet werden. Die Teilnehmer kennen daher die wesentlichen Eigenschaften die Data Pipelines bieten:
+Die Teilnehmer:innen wissen auch, dass diese einzelnen an Data Pipelines der Stages zu größeren Data Pipelines zusammengesetzt werden können. Außerdem wissen Sie, wozu Data Pipelines verwendet werden. Sie kennen daher die wesentlichen Eigenschaften die Data Pipelines bieten:
 
 - Accessible
 - Scalable
@@ -22,22 +20,22 @@ Außerdem wissen die Teilnehmer wozu Data Pipelines verwendet werden. Die Teilne
 - Efficient
 
 [[LZ-10-2]]
-==== LZ 10-2 Arten von Data Pipelines
-Die Teilnehmer wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind. Sie kennen daher die Unterscheidungen zwischen:
+==== LZ 10-2 - Arten von Data Pipelines
+Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind. Sie kennen daher die Unterscheidungen zwischen:
 
 - ETL vs ELT
 - reverse ETL
 - Microbatches vs Stream
 
-Außerdem kennen die Teilnehmer typische Anwendungsgebiete von Data Pipelines:
+Außerdem kennen die Teilnehmer:innen typische Anwendungsgebiete von Data Pipelines:
 
 - Data Engineering
 - Analytics/ML Processing
 - Delivery
 
 [[LZ-10-3]]
-==== LZ 10-3 Data Pipeline Qualitätskriterien
-Die Teilnehmer kennen Qualitätskriterien, die die Güte einer Data Pipeline beschreiben. Sie verstehen daher die folgenden Begriffe und wissen, was diese für eine Data Pipeline bedeuten:
+==== LZ 10-3 - Data Pipeline Qualitätskriterien
+Die Teilnehmer:innen kennen Qualitätskriterien, die die Güte einer Data Pipeline beschreiben. Sie verstehen daher die folgenden Begriffe und wissen, was diese für eine Data Pipeline bedeuten:
 
 - Throughput
 - Reliability
@@ -45,8 +43,8 @@ Die Teilnehmer kennen Qualitätskriterien, die die Güte einer Data Pipeline bes
 - Stability
 
 [[LZ-10-4]]
-==== LZ 10-4 Building Blocks von Data Pipelines
-Die Teilnehmer wissen aus welchen Building Blocks eine Data Pipelines besteht. Sie kennen Beispiele dieser Blocks und wissen wann welches Tooling für einen Anwendungsfall geeignet ist.
+==== LZ 10-4 - Building Blocks von Data Pipelines
+Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht. Sie kennen Beispiele dieser Blocks und wissen wann welches Tooling für einen Anwendungsfall geeignet ist.
 
 Hierfür kennen sie die folgenden Begriffe, kennen Tools für diese und wissen in welchen Kombinationen diese mit anderen Tools verwendet werden können:
 
@@ -61,8 +59,8 @@ Hierfür kennen sie die folgenden Begriffe, kennen Tools für diese und wissen i
 - ML Framework
 
 [[LZ-10-5]]
-==== LZ 10-5 Technologien/Tools für Data Pipelines
-Die Teilnehmer kennen Technologien, wie SQL, Python Dataframes oder Spark, mit denen Data Pipelines selbst erstellt werden können. Sie kennen aber auch Tools um Data Pipelines zu erstellen, wie z.B.:
+==== LZ 10-5 - Technologien/Tools für Data Pipelines
+Die Teilnehmer:innen kennen Technologien, wie SQL, Python Dataframes oder Spark, mit denen Data Pipelines selbst erstellt werden können. Sie kennen aber auch Tools um Data Pipelines zu erstellen, wie z.B.:
 
 - Apache Airflow
 - Databricks
@@ -71,12 +69,12 @@ Die Teilnehmer kennen Technologien, wie SQL, Python Dataframes oder Spark, mit d
 - Skyvia
 
 [[LZ-10-6]]
-==== LZ 10-6 Monitoring
-Die Teilnehmer wissen, dass für die Data Pipeline ein Monitoring notwendig ist, um die Performanz und Qualität der Verarbeitung sicherzustellen.
+==== LZ 10-6 - Monitoring
+Die Teilnehmer:innen wissen, dass für die Data Pipeline ein Monitoring notwendig ist, um die Performanz und Qualität der Verarbeitung sicherzustellen.
 
-Die Teilnehmer verstehen, dass das Monitoring dabei relevante Buisness Metriken umfassen muss, welche von der Anwendung abhängig sind und an diese angepasst werden müssen.
+Die Teilnehmer:innen verstehen, dass das Monitoring dabei relevante Buisness Metriken umfassen muss, welche von der Anwendung abhängig sind und an diese angepasst werden müssen.
 
-Den Teilnehmern ist bewusst, dass in einer Cloud Umgebung zusätzliche Eigenschaften beobachtet werden müssen, wie z.B.:
+Den Teilnehmer:innen ist bewusst, dass in einer Cloud Umgebung zusätzliche Eigenschaften beobachtet werden müssen, wie z.B.:
 
 - Latenz
 - Häufigkeit von Systemfehlern
@@ -84,15 +82,16 @@ Den Teilnehmern ist bewusst, dass in einer Cloud Umgebung zusätzliche Eigenscha
 - Auslastung
 
 [[LZ-10-7]]
-==== LZ 10-7 Optimization
-Den Teilnehmern ist bewusst, dass Data Pipelines sehr häufig automatisiert laufen und wissen, dass Optimierung daher eine große Rolle für Data Pipelines spielt. Die Teilnehmer kennen daher Möglichkeiten eine Laufzeitanalyse für Data Pipelines aufzusetzen und wissen falls nötig dann wie sie die Laufzeiten der Operationen optimieren können.
+==== LZ 10-7 - Optimization
+Den Teilnehmer:innen ist bewusst, dass Data Pipelines sehr häufig automatisiert laufen und wissen, dass Optimierung daher eine große Rolle für Data Pipelines spielt. Die Teilnehmer:innen kennen daher Möglichkeiten eine Laufzeitanalyse für Data Pipelines aufzusetzen und wissen falls nötig dann wie sie die Laufzeiten der Operationen optimieren können.
 
 [[LZ-10-8]]
-==== LZ 10-8 Cloud vs on-Premise
-Den Teilnehmern ist bewusst, dass Data Pipelines sowohl in on-Premise als auch in Cloud Umgebungen etabliert werden können.
-Die Teilnehmer kennen die Vor- und Nachteile von Cloud vs on-Premise Datenverarbeitung. Zusätzlich kennen sie die Wirkung von Edge-Computing und wissen wie sich diese auf die Datenverarbeitung auswirkt.
+==== LZ 10-8 - Cloud vs on-Premise
+Den Teilnehmer:innen ist bewusst, dass Data Pipelines sowohl in on-Premise als auch in Cloud Umgebungen etabliert werden können.
 
-Die Teilnehmer wissen insbesondere, dass Data Pipelines so gestaltet werden können, dass sie sowohl in der Cloud als auch on-premise ausführbar sind, sodass ein Setup ggfs. in das andere übertragen werden kann.
+Die Teilnehmer:innen kennen die Vor- und Nachteile von Cloud vs on-Premise Datenverarbeitung. Zusätzlich kennen sie die Wirkung von Edge-Computing und wissen wie sich diese auf die Datenverarbeitung auswirkt.
+
+Die Teilnehmer:innen wissen insbesondere, dass Data Pipelines so gestaltet werden können, dass sie sowohl in der Cloud als auch on-premise ausführbar sind, sodass ein Setup ggfs. in das andere übertragen werden kann.
 // end::DE[]
 
 // tag::EN[]
