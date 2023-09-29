@@ -56,7 +56,7 @@ Die Teilnehmer:innen wissen, dass historisch gesehen ein großer Teil analytisch
 
 [[LZ 1-5]]
 ==== LZ 1-5 - Lebenszyklus analytischer Daten
-Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analytischer Daten benennen, also dren Generierung, Sammeln, Speichern und Transformieren bis hin zur Bereitstellung und Auswertung.
+Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analytischer Daten benennen, also dren Generierung, Sammeln, Speichern und Transformieren bis hin zur Bereitstellung und Auswertung. Sie wissen welche querschnittlichen Themen in allen Phasen zu beachten sind.
 
 [[LZ 1-6]]
 ==== LZ 1-6 - Abgrenzung von anderen iSAQB Modulen
