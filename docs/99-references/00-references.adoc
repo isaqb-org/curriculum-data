@@ -60,6 +60,7 @@ ATTENTION: labels have to be non-numeric.
 **G**
 
 - [[[giebler, C. Giebler et al. 2021]]] C. Giebler, C. Gröger, E. Hoos, R. Eichler, H. Schwarz, and B. Mitschang: The data lake architecture framework. BTW 2021, 2021.
+- [[[grellmann, M. Grellmann 2022]]] M. Grellmann: Die sechs Arten der Datenanalyse. https://martin-grellmann.de/die-sechs-arten-der-datenanalyse, 2022.
 
 **I**
 
