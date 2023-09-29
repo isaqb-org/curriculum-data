@@ -20,7 +20,7 @@ Die Teilnehmer:innen kennen Beispiele, wie analytische Daten aus operativen Anwe
 ==== LZ 1-2 - Kategorien analytischer Anwendungen
 Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen und können Typen von deren Nutzern unterscheiden.
 
-Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Aspekte bennenen:
+Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Voraussetzungen bennenen:
 
 - Umfang und Komplexität der zu verarbeitenen Daten
 - Komplexität und Anzahl der Analysen, Anfragen / Queries
@@ -49,8 +49,10 @@ Die Teilnehmer:innen kennen Modelle für Reifegrade von Organisationen, die mit 
 
 Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Data Science und Software Engineering abgrenzt.
 
-[[LZ 1-4]]
-==== LZ 1-4 - 
+==== LZ 1-4 - Monolithische und verteilte Datenarchitekturen
+Die Teilnehmer:innen verstehen die Vor- und Nachteile von monolithischen beziehungsweise verteilten Softwarearchitekturen für analytische Anwendungen. 
+
+Die Teilnehmer:innen wissen, dass historisch gesehen ein großer Teil analytischer Anwendungen eine monolithische Architektur haben, woher diese Entwicklung kommt und warum mit Data Mesh (Block 11) hier ein Paradigmenwandel stattfindet.
 
 // end::DE[]
 
