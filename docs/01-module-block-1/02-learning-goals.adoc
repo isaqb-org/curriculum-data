@@ -54,6 +54,14 @@ Die Teilnehmer:innen verstehen die Vor- und Nachteile von monolithischen beziehu
 
 Die Teilnehmer:innen wissen, dass historisch gesehen ein großer Teil analytischer Anwendungen eine monolithische Architektur haben, woher diese Entwicklung kommt und warum mit Data Mesh (Block 11) hier ein Paradigmenwandel stattfindet.
 
+[[LZ 1-5]]
+==== LZ 1-5 - Lebenszyklus analytischer Daten
+Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analytischer Daten benennen, also dren Generierung, Sammeln, Speichern und Transformieren bis hin zur Bereitstellung und Auswertung.
+
+[[LZ 1-6]]
+==== LZ 1-6 - Abgrenzung von anderen iSAQB Modulen
+Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Architekture für Data Science und Architektur operativer Anwendungssysteme abgrenzt.
+
 // end::DE[]
 
 // tag::EN[]
