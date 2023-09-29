@@ -18,7 +18,7 @@ Die Teilnehmer:innen kennen Beispiele, wie analytische Daten aus operativen Anwe
 
 [[LZ-1-2]]
 ==== LZ 1-2 - Kategorien analytischer Anwendungen
-Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen (Berichtswesen, Markt- und Kundenanalyse, Operations Research, KPI, Warenkorbanalyse, Regressionsanalyse, Risikoanalyse, Trendanalyse, etc.) und können Typen von Nutzern (Farmer, Explorer, Miner, Tourist, ...) unterscheiden.
+Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen und können Typen von deren Nutzern unterscheiden.
 
 Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Aspekte bennenen:
 
@@ -36,18 +36,21 @@ Die Teilnehmer:innen kennen die typischen Kategorien analytischer Anwendungen, k
 - Kausale Analyse
 - Mechanistische Analyse
 
-Die Teilnehmer:innen verstehen welche Unterschiede sich durch Datenweitergabe innerhalb und ausserhalb der eigenen Organisation ergeben.
+Die Teilnehmer:innen verstehen welche unterschiedlichen Herausforderungen sich durch Datenweitergabe innerhalb beziehungsweise ausserhalb der eigenen Organisation beziehungsweise an Endnutzer ergeben.
 
 Die Teilnehmer:innen kennen Beispiele für typische Anwendungen, in denen mit großen Datenmengen umgegangen wird.
 Sie können die verschiedenen Bedarfe von datenintensiven Anwendungen einordnen.
 
-Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen abgrenzt.
-
 [[LZ 1-3]]
-==== LZ 1-2 - Entwickler analytischer Anwendungen
+==== LZ 1-3 - Entwickler analytischer Anwendungen
 Die Teilnehmer:innen können die Rollen von Data Architects, Data Engineers und Data Scientists beschreiben und voneineander abgrenzen. 
 
 Die Teilnehmer:innen kennen Modelle für Reifegrade von Organisationen, die mit Daten arbeiten, sowie von deren Data Engineers und Data Architects.
+
+Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Data Science und Software Engineering abgrenzt.
+
+[[LZ 1-4]]
+==== LZ 1-4 - 
 
 // end::DE[]
 

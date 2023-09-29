@@ -4,7 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-operative Daten, analytische Daten, OLTP, OLAP, Datenqualität
+operative Daten, analytische Daten, OLTP, OLAP, Data Engineer, Data Architect, Data Scientist,
 
 // end::DE[]
 
