@@ -41,5 +41,11 @@
 
 // end::EN[]
 
-// tag::REMARK[]
-// end::REMARK[]
+[NOTE]
+====
+Bitte die oben angegebene Tabelle entsprechend anpassen.
+
+= = =
+
+Please adjust the table above according to your curriculum.
+====
