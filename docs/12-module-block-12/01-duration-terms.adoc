@@ -4,7 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies
+Data Governance, Datenqualität, Anonymisierung, Pseudonymisierung, Personalisierung, Metadaten, Verantwortlichkeit
 // end::DE[]
 
 // tag::EN[]

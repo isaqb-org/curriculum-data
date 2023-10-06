@@ -2,35 +2,14 @@
 
 
 // tag::DE[]
-[[LZ-1-5]]
+[[LZ-12-1]]
 ==== LZ 12-1 - Qualität von Daten
-Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können diese erläutern:
+Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können diese erläutern.
 
-[frame=none, grid=none]
-|===
-a|
-- Genauigkeit
-- Verfügbarkeit
-- Vollständigkeit
-- Aktualität
-- Konsistenz
-- Privatheit
+- Auffindbarkeit
 - Sicherheit
-- Vergleichbarkeit
-- Granularität
-- Glaubwürdigkeit a|
-- Plausibilität
-- Validität
-- Relevanz
-- Nützlichkeit
-- Eindeutigkeit
 - Zuverlässigkeit
-- Konformität
-- Einheitlichkeit
-- Dauerhaftigkeit
-- Interpretierbarkeit
-|===
-
+- Benutzbarkeit
 
 Die Teilnehmer:innen verstehen, warum die Gewährleistung von Datenqualität bei analytischen Daten eine besondere Herausforderung ist. Sie kennen Beispiele für Verfahren zur Prüfung, Gewährleistung und Verbesserung analytischer Daten wie etwa:
 
@@ -41,10 +20,36 @@ Die Teilnehmer:innen verstehen, warum die Gewährleistung von Datenqualität bei
 - Beschreibende fachliche Metadaten
 - (Standard-) Datenaustauschformate
 - Erkennen von Ausreißern (Outlier Detection), fehlenden Werten und Widersprüchen
+
+[[LZ-12-2]]
+==== LZ 12-2 - Anonymisierung und Pseudonymisierung
+Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und warum.
+Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.
+
+[[LZ-12-3]]
+==== LZ 12-3 - Personalisierung
+Die Teilnehmer:innen kennen Anwendungsfälle für die nutzerbezogene Personalisierung von Daten und haben Kenntnisse über deren Umsetzung.
+
+[[LZ-12-4]]
+==== LZ 12-4 - Metadata Tracking
+Die Teilnehmer:innen verstehen die Bedeutung von Metadaten im Lebenszyklus der Daten und kennen Möglichkeiten, diese zu erheben und festzuhalten.
+Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden:
+
+- Business Metadaten
+- Technische Metadaten
+- Betriebs-Metadaten
+- Referenzielle Metadaten
+
+Die Teilnehmer:innen kennen insbesondere die Bedeutung von Data-Lineage-Metadaten, sind sich der Bedeutung von Datenschemata bewusst und kennen die diesbezüglichen Unterschiede zwischen verschiedenen Speichersystemen, wie z.B. Object Store und Data Warehouse.
+
+[[LZ-12-5]]
+==== LZ 12-5 - Veranwortlichkeit über Daten
+Die Teilnehmer:innen wissen, dass es immer einen Datenverantwortlichen geben muss und welche Pflichten dieser hat.
+
 // end::DE[]
 
 // tag::EN[]
-[[LG-6-1]]
+[[LG-12-1]]
 ==== LG 12-1: Data Quality
 tbd.
 
