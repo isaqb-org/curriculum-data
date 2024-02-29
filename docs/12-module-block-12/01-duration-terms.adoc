@@ -1,0 +1,32 @@
+// tag::DE[]
+|===
+| Dauer: 60 Min. | Übungszeit: 0 Min.
+|===
+
+=== Begriffe und Konzepte
+Data Governance, Datenqualität, Anonymisierung, Pseudonymisierung, Personalisierung, Metadaten, Verantwortlichkeit
+// end::DE[]
+
+// tag::EN[]
+|===
+| Duration: 60 min | Practice time: 0 min
+|===
+
+=== Terms and Principles
+Data Governance, Data Quality, Anonymization, Pseudonymization, Personalization, Metadata, Responsibility
+
+// end::EN[]
+
+// tag::REMARK[]
+[NOTE]
+====
+Überschrift in 00-structure.adoc ersetzen
+====
+// end::REMARK[]
+
+// tag::REMARK[]
+[NOTE]
+====
+Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
+====
+// end::REMARK[]

@@ -1,13 +1,13 @@
-// header file for curriculum section 5: Lerneinheit 5
+// header file for curriculum section 8: Lerneinheit 8
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
 // tag::DE[]
-== Storage
+== Serving Data
 // end::DE[]
 
 // tag::EN[]
-== Storage
+== Serving Data
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

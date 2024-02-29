@@ -4,8 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
-
+Filesystem, Block-Storage, Objekt-Storage, Datenbanksysteme, Relationale DBS, NoSQL DBS, Key-Value DBS, Graph DBS
 // end::DE[]
 
 // tag::EN[]

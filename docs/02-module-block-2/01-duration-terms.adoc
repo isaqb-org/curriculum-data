@@ -4,7 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
+Referenzarchitekturen, Cloud, Cloud-Ready, hybrid, on-Premise, zentrales/monolithisches System, dezentrales/förderiertes System
 
 
 // end::DE[]

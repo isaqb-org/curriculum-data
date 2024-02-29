@@ -1,0 +1,72 @@
+=== {learning-goals}
+
+
+// tag::DE[]
+[[LZ-8-1]]
+==== LZ 8-1 - Anwendungsfälle
+Die Teilnehmer:innen können die wesentlichen Anwendungsfälle für die Nutzung analytischer Daten unterscheiden:
+
+- Basis für Data Analytics und Business Intelligence (BI)
+- Test- und Trainingsdaten für das Erstellen und Verbessern von Maschine Learning Modellen
+- Bereitstellen der Ergebnisse analytischer Auswertungen für die Verwendung in operativen Anwendungen (Reverse ETL, Active/"Closed Loop" DWH)
+
+[[LZ-8-2]]
+==== LZ 8-2 - Repräsentation von Massendaten
+Die Teilnehmer:innen kennen Verfahren für die Darstellung von Massendaten. Sie kennen Verfahren des Query-Processings wie Aggregation, Projektion, Filterung oder Cubes und verstehen, wie diese Verfahren für die Darstellung von Massendaten verwendet werden können. Sie wissen, dass neben den Daten selbst auch Information zu deren Schema, zum Umfang, zur Aktualität, zu den Datenquellen oder zur Qualität angeboten werden können und i.d.R. auch sollten.
+
+Die Teilnehmer:innen kennen Tools zur Visualisierung von Massendaten. Sie kennen verfügbare Arten von Diagrammen (Heatmap, Ranking, Top, ...) und können sie geeignet einsetzen. Sie kennen BI-/Reporting Tools und können diese etwa für Slice & Dice, Drill (Down, Up, Across, Through) oder statistische Analysen einsetzen. Die Teilnehmer:innen wissen, dass auf Basis dieser Tools auch Dashbords oder Notifikationen (Alerts) umgesetzt werden können.
+
+[[LZ-8-3]]
+==== LZ 8-3 - Datenprodukte
+Die Teilnehmer:innen kennen das Konzept des Datenprodukts und speziell dessen Verwendung im Data Mesh Ansatz (s. LZ 11-3).
+
+[[LZ-8-4]]
+==== LZ 8-4 - Data Analytics und Business Intelligence
+Den Teilnehmer:innen sind Data Analytics und BI Anwendungen vertraut. Sie kennen Anwendungsfälle für die Analyse operativ anfallender Daten für die Unternehmenssteuerung.
+
+Die Teilnehmer:innen kennen Frameworks und Tools für die Umsetzung von Data Analytics und BI Anwendungen.
+
+[[LZ-8-5]]
+==== LZ 8-5 - Maschine Learning
+Die Teilnehmer:innen wissen, wie Maschine Learning Modelle für den Einsatz im Unternehmen auf Basis operativ anfallender Daten trainiert, verbessert und getestet werden. Sie kennen Anwendungsfälle für die Nutzung solcher Modelle in operativen Anwendungen.
+
+Die Teilnehmer:innen können beurteilen, welche Anwendungsfälle den Einsatz von ML Modellen erfordern und welche etwa bereits auf Basis statistischer Methoden umgesetzt weren können.
+
+Die Teilnehmer:innen verstehen den Ansatz des Deep Learnings und können ihn von den (klassischen) Methoden des Maschine Learnings unterscheiden. Sie können beurteilen, in welchen Fällen, Deep Learning Ansätze sinnvoll eingesetzt werden können.
+
+[[LZ-8-6]]
+==== LZ 8-6 - Reverse ETL
+Den Teilnehmer:innen ist das Konzept der Reverse ETL vertraut. Sie kennen Anwendungsfälle für die Integration von vereinheitlichten Daten oder von Ergebnissen analytischer Auswertungen in operative Anwendungen.
+
+Die Teilnehmer:innen wissen, dass Reverse ETL Tools mit Konnektoren für gängige operative Anwendungen existieren, die die Umsetzung entsprechender Integrationslösungen deutlich erleichtern. Sie kennen Beispiele für diese Tools.
+// end::DE[]
+
+// tag::EN[]
+[[LG-8-1]]
+==== LG 6-1: Aspects and building blocks
+tbd.
+
+[[LG-8-2]]
+==== LG 6-2: Central approaches
+tbd.
+
+[[LG-8-3]]
+==== LG 6-3: Data Mesh
+tbd.
+
+[[LG-8-4]]
+==== LG 6-4: Machine Learning
+tbd.
+
+[[LG-8-5]]
+==== LG 6-5: Use Cases
+tbd.
+
+// end::EN[]
+
+// tag::REMARK[]
+[NOTE]
+====
+Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
+====
+// end::REMARK[]

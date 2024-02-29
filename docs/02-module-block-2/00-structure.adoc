@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Datenspeicher
+== Referenzarchitekturen für analytische Anwendungssysteme
 // end::DE[]
 
 // tag::EN[]
-== Data Storage
+== Reference architectures for analytical application systems
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

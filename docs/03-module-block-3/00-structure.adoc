@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Data Governance & Data Management
+== Data Sources
 // end::DE[]
 
 // tag::EN[]
-== Data Governance & Data Management
+== Data Sources
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

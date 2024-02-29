@@ -4,8 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-Datenquellen, Quellsysteme, strukturierte-, semi-strukturierte-, unstukturierte Daten, Daten-Snapshots, Increments/Events, technische-, fachliche Metadaten, Schema Inference
-
+Data Pipelines, Qualitätskriterien, Monitoring, Edge-Computing
 
 // end::DE[]
 
@@ -19,9 +18,16 @@ Term 1, Term 2, Term 3
 
 // end::EN[]
 
+// tag::REMARK[]
+[NOTE]
+====
+Überschrift in 00-structure.adoc ersetzen
+====
+// end::REMARK[]
 
-
+// tag::REMARK[]
 [NOTE]
 ====
 Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
 ====
+// end::REMARK[]

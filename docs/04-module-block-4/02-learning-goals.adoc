@@ -2,20 +2,100 @@
 
 // tag::DE[]
 [[LZ-4-1]]
-==== LZ 4-1: Dies ist das erste Lernziel in Kapitel 4, das mit xyz
+==== LZ 4-1 - Erkennen von Änderungen
+Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten sowie für das Erkennen von Änderungen dieser Entitäten in Quellsystemen bekannt, wie etwa
 
-Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
-in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
-wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
+- Change Data Capture (CDC)
+- DB-Trigger
+- Outbox Pattern
+- Event-Sourcing
+- Create und Update Timestamps
+- Audit Trail Reader
+- Datensatz-Hashes
+- Primary Keys
+- (RSS-)Feeds
 
-* Erstes Teilziel
-* Zweites Unterthema
-* Dritter Aspekt
+Die Teilnehmer:innen wissen, für welche Art von Quellsystemen welche dieser Verfahren jeweils geeignet sind.
+
+Den Teilnehmer:innen ist bewusst, dass das Löschen von Daten üblicherweise ebenfalls als Änderung geliefert wird, da auch gelöschte Daten für die Analyse ggfs. weiter benötigt werden.
+
+Den Teilnehmer:innen ist bewusst, dass sich Änderungen von Entitäten auf den internen Zustand von Quellsystemen beziehen können und dass mit der Weitergabe dieser Änderungen das Prinzip des Information Hidings verletzt werden kann. Sie verstehen, wie etwa das Outbox Pattern dazu genutzt werden kann, die von Quellsystemen zur Verfügung gestellten Änderungen auf das erforderliche Maß zu beschränken.
 
 [[LZ-4-2]]
-==== LZ 4-2: Hier ist ein zweites Lernziel in diesem Kapitel
-tbd.
+==== LZ 4-2 - Konnektoren
+Die Teilnehmer:innen kennen Tools und Frameworks, die über vordefinierte Konnektoren einen vereinheitlichten Zugriff auf Quellsysteme zur Verfügung stellen. Sie wissen, dass diese Tools und Frameworks vorrangig für die folgenden Aufgaben eingesetzt werden:
 
+- Datenreplikation
+- Datenintegration
+- Datenvirtualisierung
+- Datenorchestrierung
+- Metadatenmanagement
+
+Die Teilnehmer:innen kennen Beispiele für diese Tools, wie etwa
+
+- Fivetran
+- Stitch
+- funnel
+- integrate.io
+- talend
+- airbyte
+- Kafka Connect
+- Pulsar IO
+- Trino / Presto
+- alluxio
+- Collibra
+- Alation
+
+[[LZ-4-3]]
+==== LZ 4-3 - Eigenschaften von Data Ingestion
+Die Teilnehmer:innen wissen, was die Frequenz der Data Ingestion ist. Sie wissen auch, dass die Frequenz der Data Ingestion sich von Frequenz der Datenverarbeitung unterscheiden kann, sodass auf eine Stream Ingestion ein Batch Processing folgen kann.
+
+Die Teilnehmer:innen kennen die Unterschiede zwischen synchroner und asynchroner Ingestion und wissen, dass ältere ETL Systeme typische Beispiele für eine synchronen Workflow sind.
+
+Den Teilnehmer:innen ist bewusst, dass der Durchsatz und die Skalierbarkeit ein wichtiges Merkmal für die Toleranz der Data  Ingestion darstellt. Zum einen erzeugen Data Generation Sources meist nicht gleichmäßig ihre Daten und zum anderen werden sie benötigt, falls sich die Requirements ändern oder wenn die Source Database nicht erreichbar ist und die Daten nachgeholt werden müssen.
+
+Die Teilnehmer:innen können einschätzen, wie wichtig die Zuverlässigkeit und Beständigkeit für die Ingestion in einem System sind und wissen, dass diese Eigenschaften mit einem hohen Tradeoff der Kosten durch Redundanz der Daten kommt.
+
+Die Teilnehmer:innen wissen, dass Daten, sowohl über eine direkte Datenbankverbindung, wie JDBC, als auch als Datei, aus einer Datenbank extrahiert werden können.
+
+Die Teilnehmer:innen wissen, dass die Datenquellen den aktuellen Zustand der zuletzt geänderten Daten (Snapshot) oder die Änderungen selbst (Increments/Events) wiedergeben können, mit denen dieser aktuelle Zustand erzeugt wurde. Sie wissen, dass ggfs. eine initiale Bereitstellung (initial Load) der Daten erforderlich ist.
+
+Die Teilnehmer:innen wissen, dass die Datenquellen ihre Daten selbst aktiv liefern (Push) oder aber auf Anfrage bereitstellen (Pull) können. Sie wissen hierzu was Push, Pull und Poll Patterns sind und wie sie sich unterscheiden.
+
+[[LZ-4-4]]
+==== LZ 4-4 - Batch vs Stream Ingestion
+Den Teilnehmer:innen ist der grundlegende Unterschied zwischen Batch- und Stream-Verarbeitung bekannt.
+
+Den Teilnehmer:innen ist bewusst, wie Batch Ingestion durch zeitliche oder größen-basierte Abschnitte aus einem Streaming Umfeld erstellt werden können.
+
+Die Teilnehmer:innen kennen typische batch-basierte Ingestion Patterns:
+
+- Snapshots oder inkrementelle Extraktion
+- File-based export and ingestion
+- ETL versus ELT
+- Inserts, updates, and batch size
+- Data migration
+
+Den Teilnehmer:innen ist bewusst, dass es bei spalten-basierten Datenbanken ein schlechtes Vorgehen ist reihen-basierte Inserts zu machen.
+
+Den Teilnehmer:innen ist bei der Stream Ingestion bewusst, dass das Risiko von zu spät ankommenden Daten besteht und dass sich dies kritisch auf downstream Systeme auswirken kann.
+
+[[LZ-4-5]]
+==== LZ 4-5 - Metadaten
+Die Teilnehmer:innen verstehen die Bedeutung von Metadaten für die Nutzung von Datenquellen. Sie können technische und fachliche Metadaten unterscheiden. Sie wissen, dass Quellsysteme oft umfassend Metadaten zu den von ihnen bereitgestellten Datenquellen zur Verfügung stellen.
+
+Die Teilnehmer:innen wissen wie wichtig die Charakteristiken von Datasets sind. Sie wissen, dass folgende Informationen in Form von Metadaten z.B. für Folgesysteme von großem Nutzen sind und daher einem Datensatz mitgegeben werden sollten:
+
+- Typ (Tabelle, Bild, Text, ...)
+- Dateiformat
+- Dimension (Tabellen: Zeilen x Spalten, JSON: key-value Paare, Bilder: Größe in Pixeln x RGB)
+- Größe (Bytes, Gigabytes, Terabytes, ...)
+- Schema und Datentypen
+- weitere Metadaten
+
+Die Teilnehmer:innen wissen, dass es Verfahren gibt (Schema Inference), um Metadaten aus Daten abzuleiten. Ihnen ist bewusst, dass sich Metadaten über die Nutzungsdauer von Daten ändern können (Schema Evolution) und dass Verfahren existieren, diese Änderungen beim Zugriff auf die Daten zu erkennen.
+
+Die Teilnehmer:innen kennen das Konzept eines Data Catalogs. Sie wissen, dass ein Data Catalog die Übersichtlichkeit der darunter liegenden Daten deutlich erhöht und einen Einstiegspunkt für die Suche und Beziehungserkennung liefert. Sie wissen außerdem, dass im Data Catalog die Data Lineage integriert werden kann, in welchem die Beziehungen der Daten visualisiert werden.
 // end::DE[]
 
 // tag::EN[]
