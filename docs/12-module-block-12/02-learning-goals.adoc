@@ -2,8 +2,20 @@
 
 
 // tag::DE[]
+
 [[LZ-12-1]]
-==== LZ 12-1 - Qualität von Daten
+==== LZ 12-1 - Begriffsdefinition
+
+
+
+[[LZ-12-2]]
+==== LZ 12-2 - Datenschutz, Compliance, Datensicherheit
+Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und warum.
+Sie kennen die Unterschiede zwischen Anonymisierung und Pseudonymisierung und kennen die jeweiligen Nutzungsszenarien.
+Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.
+
+[[LZ-12-3]]
+==== LZ 12-3 - Qualität von Daten
 Die Teilnehmer:innen verstehen, warum die Gewährleistung von Datenqualität bei analytischen Daten eine besondere Herausforderung ist. 
 Sie verstehen dass sich die Data Governance darum kümmert die Datenqualität zu gewährleisten.
 Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können diese erläutern.
@@ -12,18 +24,6 @@ Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können di
 - Benutzbarkeit
 - Zuverlässigkeit
 - Verfügbarkeit
-
-[[LZ-12-2]]
-==== LZ 12-2 - Sicherheit und Privacy
-Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und warum.
-Sie kennen die Unterschiede zwischen Anonymisierung und Pseudonymisierung und kennen die jeweiligen Nutzungsszenarien.
-Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.
-
-[[LZ-12-3]]
-==== LZ 12-3 - Benutzbarkeit
-Die Teilnehmer:innen verstehen wie die Benutzbarkeit von Daten gewährleistet werden kann.
-Die Teilnehmer:innen kennen Konzepte für die Beherrschbarkeit und Überschaubarkeit von Daten.
-Die Teilnehmer:innen kennen Anwendungsfälle für die nutzerbezogene Personalisierung von Daten und haben Kenntnisse über deren Umsetzung.
 
 [[LZ-12-4]]
 ==== LZ 12-4 - Zuverlässigkeit
@@ -34,12 +34,6 @@ Sie kennen Beispiele für Verfahren zur Prüfung, Gewährleistung und Verbesseru
 - Rechtschreibprüfung und -korrektur
 - Erkennen von Ausreißern (Outlier Detection), fehlenden Werten und Widersprüchen
 - Schemaüberprüfung
-
-[[LZ-12-5]]
-==== LZ 12-5 - Verfügbarkeit
-Die Teilnehmer:innen kennen Verfahren um die erforderliche Verfügbarkeit von Daten zu vereinbaren und zu gewährleisten.
-Sie kennen die Begriffe Service-Level-Objective und Service-Level-Agreement und können diese anwenden.
-Die Teilnehmer:innen verstehen wie sie vereinbarte Verfügbarkeiten überwachen.
 
 [[LZ-12-6]]
 ==== LZ 12-6 - Data Contracts
@@ -75,23 +69,19 @@ Die Teilnehmer:innen wissen, dass es immer einen Datenverantwortlichen geben mus
 
 // tag::EN[]
 [[LG-12-1]]
-==== LG 12-1: Data Quality
+==== LG 12-1: Definition
 tbd.
 
 [[LG-12-2]]
-==== LG 12-2 - Security and Privacy
+==== LG 12-2 - Privacy, Compliance, Data Security
 tbd.
 
 [[LG-12-3]]
-==== LG 12-3 - Usability
+==== LG 12-3 - Data Quality
 tbd.
 
 [[LG-12-4]]
 ==== LG 12-4 - Reliability
-tbd.
-
-[[LG-12-5]]
-==== LG 12-5 - Availability
 tbd.
 
 [[LG-12-6]]
