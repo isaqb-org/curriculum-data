@@ -11,8 +11,9 @@ Benutzbarkeit umfasst, die sicherstellen, dass Daten im gesamten Lebenszyklus vo
 
 [[LZ-12-2]]
 ==== LZ 12-2 - Datenschutz, Compliance, Datensicherheit
-Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.
-Die Teilnehmer:innen kennen  gesetzliche und regulatorischer Anforderungen wie die Datenschutz-Grundverordnung (DSGVO) in der EU, das Bundesdatenschutzgesetz (BDSG) in Deutschland oder den California Consumer Privacy Act (CCPA) in den USA.
+Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.    
+Die Teilnehmer:innen kennen  gesetzliche und regulatorischer Anforderungen wie die Datenschutz-Grundverordnung (DSGVO) in der EU, das Bundesdatenschutzgesetz (BDSG) in Deutschland oder den California Consumer Privacy Act (CCPA) in den USA.    
+Die Teilnehmer:innen kennen Mechanismen zum Schutz von Daten vor unbefugtem Zugriff, Verlust oder Diebstahl. Dies umfasst Verschlüsselungsmaßnahmen, Firewalls und anderen Sicherheitstechnologien.    
 Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und kennen die jeweiligen Nutzungsszenarien.
 Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.
 
@@ -36,7 +37,6 @@ Die Teilnehmer:innen wissen, wie Daten auditiert und gemonitored werden können 
 ==== LZ 12-5 - Data Stewardship und Ownership
 Die Teilnehmer:innen verstehen die Notwendigkeit von dedizierten Verantwortlichen für Datenpflege und -verwaltung. Dies beinhaltet die Definition von Verantwortlichkeiten für Datenqualität, Datenschutz und andere Governance-Aspekte.
 Die Teilnehmer:innen können die verschiedenen Rollen und Verantwortungsbereiche in der Data Governence nennen und beschreiben.
-Die Teilnehmer:innen wissen, dass es immer einen Datenverantwortlichen geben muss und welche Pflichten dieser hat.
 
 [[LZ-12-6]]
 ==== LZ 12-6 - Data Contracts
