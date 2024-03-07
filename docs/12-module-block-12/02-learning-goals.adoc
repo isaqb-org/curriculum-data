@@ -12,6 +12,7 @@ Benutzbarkeit umfasst, die sicherstellen, dass Daten im gesamten Lebenszyklus vo
 [[LZ-12-2]]
 ==== LZ 12-2 - Datenschutz, Compliance, Datensicherheit
 Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.
+Die Teilnehmer:innen kennen  gesetzliche und regulatorischer Anforderungen wie die Datenschutz-Grundverordnung (DSGVO) in der EU, das Bundesdatenschutzgesetz (BDSG) in Deutschland oder den California Consumer Privacy Act (CCPA) in den USA.
 Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und kennen die jeweiligen Nutzungsszenarien.
 Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.
 
