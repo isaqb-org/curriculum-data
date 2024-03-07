@@ -46,7 +46,7 @@ Die Teilnehmer:innen kennen Data Contracts und verstehen wie sie beim Abgleich d
 
 [[LZ-12-7]]
 ==== LZ 12-7 - Richtlinien
-Die Teilnehmer:innen kennen lokale und globale Policies für Daten und wissen wie sie diese festlegen und dokumentieren.
+Die Teilnehmer:innen kennen lokale und globale Policies für alle Phasen des Datenlebenszyklus und wissen wie sie diese festlegen und dokumentieren.
 
 [[LZ-12-8]]
 ==== LZ 12-8 - Metadaten
