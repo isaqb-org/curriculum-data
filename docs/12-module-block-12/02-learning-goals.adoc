@@ -11,8 +11,8 @@ Benutzbarkeit umfasst, die sicherstellen, dass Daten im gesamten Lebenszyklus vo
 
 [[LZ-12-2]]
 ==== LZ 12-2 - Datenschutz, Compliance, Datensicherheit
-Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und warum.
-Sie kennen die Unterschiede zwischen Anonymisierung und Pseudonymisierung und kennen die jeweiligen Nutzungsszenarien.
+Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.
+Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und kennen die jeweiligen Nutzungsszenarien.
 Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.
 
 [[LZ-12-3]]
@@ -28,7 +28,7 @@ Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können di
 
 [[LZ-12-4]] 
 ==== LZ 12-4 - Datenzugriff und -berechtigungen
-Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.
+Die Teilnehmer:innen kennen die Notwendigkeit einer Definition, wer Zugang zu welchen Daten hat und unter welchen Bedingungen.
 Die Teilnehmer:innen wissen, wie Daten auditiert und gemonitored werden können und kennen die Wichtigkeit der Auditierung für die Bereiche Security, Privacy, Benutzbarkeit und Zuverlässigkeit.
 
 [[LZ-12-5]]
