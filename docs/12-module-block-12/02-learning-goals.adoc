@@ -2,8 +2,25 @@
 
 
 // tag::DE[]
+
 [[LZ-12-1]]
-==== LZ 12-1 - Qualität von Daten
+==== LZ 12-1 - Begriffsdefinition
+Die Teilnehmer:innen verstehen, dass Data Governance eine Vielzahl von Prinzipien und Praktiken hinsichtlich Qualität, Integrität, Daten- schutz und sicherheit, und
+Benutzbarkeit umfasst, die sicherstellen, dass Daten im gesamten Lebenszyklus von der Erstellung bis zur Löschung sicher, effektiv und effizient verwaltet werden.
+
+
+[[LZ-12-2]]
+==== LZ 12-2 - Datenschutz, Compliance, Datensicherheit
+Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.
+
+Die Teilnehmer:innen kennen  gesetzliche und regulatorischer Anforderungen wie die Datenschutz-Grundverordnung (DSGVO) in der EU, das Bundesdatenschutzgesetz (BDSG) in Deutschland oder den California Consumer Privacy Act (CCPA) in den USA.    
+
+Die Teilnehmer:innen kennen Mechanismen zum Schutz von Daten vor unbefugtem Zugriff, Verlust oder Diebstahl. Dies umfasst Verschlüsselungsmaßnahmen, Firewalls und anderen Sicherheitstechnologien.    
+Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und kennen die jeweiligen Nutzungsszenarien.
+Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.
+
+[[LZ-12-3]]
+==== LZ 12-3 - Qualität von Daten
 Die Teilnehmer:innen verstehen, warum die Gewährleistung von Datenqualität bei analytischen Daten eine besondere Herausforderung ist. 
 Sie verstehen dass sich die Data Governance darum kümmert die Datenqualität zu gewährleisten.
 Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können diese erläutern.
@@ -13,48 +30,26 @@ Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können di
 - Zuverlässigkeit
 - Verfügbarkeit
 
-[[LZ-12-2]]
-==== LZ 12-2 - Sicherheit und Privacy
-Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und warum.
-Sie kennen die Unterschiede zwischen Anonymisierung und Pseudonymisierung und kennen die jeweiligen Nutzungsszenarien.
-Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.
-
-[[LZ-12-3]]
-==== LZ 12-3 - Benutzbarkeit
-Die Teilnehmer:innen verstehen wie die Benutzbarkeit von Daten gewährleistet werden kann.
-Die Teilnehmer:innen kennen Konzepte für die Beherrschbarkeit und Überschaubarkeit von Daten.
-Die Teilnehmer:innen kennen Anwendungsfälle für die nutzerbezogene Personalisierung von Daten und haben Kenntnisse über deren Umsetzung.
-
-[[LZ-12-4]]
-==== LZ 12-4 - Zuverlässigkeit
-Die Teilnehmer:innen wissen wie die Zuverlässigkeit von Daten gewährleistet und dokumentiert werden kann.
-Sie kennen Beispiele für Verfahren zur Prüfung, Gewährleistung und Verbesserung analytischer Daten wie etwa:
-
-- Identifikation von Entitäten und Deduplizierung
-- Rechtschreibprüfung und -korrektur
-- Erkennen von Ausreißern (Outlier Detection), fehlenden Werten und Widersprüchen
-- Schemaüberprüfung
+[[LZ-12-4]] 
+==== LZ 12-4 - Datenzugriff und -berechtigungen
+Die Teilnehmer:innen kennen die Notwendigkeit einer Definition, wer Zugang zu welchen Daten hat und unter welchen Bedingungen.
+Die Teilnehmer:innen wissen, wie Daten auditiert und gemonitored werden können und kennen die Wichtigkeit der Auditierung für die Bereiche Security, Privacy, Benutzbarkeit und Zuverlässigkeit.
 
 [[LZ-12-5]]
-==== LZ 12-5 - Verfügbarkeit
-Die Teilnehmer:innen kennen Verfahren um die erforderliche Verfügbarkeit von Daten zu vereinbaren und zu gewährleisten.
-Sie kennen die Begriffe Service-Level-Objective und Service-Level-Agreement und können diese anwenden.
-Die Teilnehmer:innen verstehen wie sie vereinbarte Verfügbarkeiten überwachen.
+==== LZ 12-5 - Data Stewardship und Ownership
+Die Teilnehmer:innen verstehen die Notwendigkeit von dedizierten Verantwortlichen für Datenpflege und -verwaltung. Dies beinhaltet die Definition von Verantwortlichkeiten für Datenqualität, Datenschutz und andere Governance-Aspekte.
+Die Teilnehmer:innen können die verschiedenen Rollen und Verantwortungsbereiche in der Data Governence nennen und beschreiben.
 
 [[LZ-12-6]]
 ==== LZ 12-6 - Data Contracts
 Die Teilnehmer:innen kennen Data Contracts und verstehen wie sie beim Abgleich der Anforderungen von Datenkonsumenten und Datenproduzenten verwendet werden können.
 
 [[LZ-12-7]]
-==== LZ 12-7 - Policies
-Die Teilnehmer:innen kennen lokale und globale Policies für Daten und wissen wie sie diese festlegen und dokumentieren.
+==== LZ 12-7 - Richtlinien
+Die Teilnehmer:innen kennen lokale und globale Policies für alle Phasen des Datenlebenszyklus und wissen wie sie diese festlegen und dokumentieren.
 
 [[LZ-12-8]]
-==== LZ 12-8 - Auditierung
-Die Teilnehmer:innen wissen, wie Daten auditiert werden können und kennen die Wichtigkeit der Auditierung für die Bereiche Security, Privacy, Benutzbarkeit und Zuverlässigkeit.
-
-[[LZ-12-9]]
-==== LZ 12-9 - Metadaten
+==== LZ 12-8 - Metadaten
 Die Teilnehmer:innen verstehen die Bedeutung von Metadaten im Lebenszyklus der Daten und kennen Möglichkeiten, diese zu erheben und festzuhalten.
 Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden:
 
@@ -66,32 +61,27 @@ Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden
 Die Teilnehmer:innen kennen insbesondere die Bedeutung von Data-Lineage-Metadaten.
 Sie sind sich der Bedeutung von Datenschemata bewusst und kennen die diesbezüglichen Unterschiede zwischen verschiedenen Speichersystemen, wie z.B. Object Store und Data Warehouse.
 
-[[LZ-12-10]]
-==== LZ 12-10 - Rollen im Bereich der Data Governance
-Die Teilnehmer:innen können die verschiedenen Rollen und Verantwortungsbereiche in der Data Governence nennen und beschreiben.
-Die Teilnehmer:innen wissen, dass es immer einen Datenverantwortlichen geben muss und welche Pflichten dieser hat.
 
 // end::DE[]
 
 // tag::EN[]
 [[LG-12-1]]
-==== LG 12-1: Data Quality
+==== LG 12-1: Definition
 tbd.
 
 [[LG-12-2]]
-==== LG 12-2 - Security and Privacy
+==== LG 12-2 - Privacy, Compliance, Data Security
 tbd.
 
 [[LG-12-3]]
-==== LG 12-3 - Usability
+==== LG 12-3 - Data Quality
 tbd.
 
 [[LG-12-4]]
-==== LG 12-4 - Reliability
-tbd.
+==== LG 12-4 - Data Access and Privileges
 
 [[LG-12-5]]
-==== LG 12-5 - Availability
+==== LG 12-5 - Data Stewardship und Ownership
 tbd.
 
 [[LG-12-6]]
@@ -103,16 +93,9 @@ tbd.
 tbd.
 
 [[LG-12-8]]
-==== LG 12-8 - Auditing
+==== LG 12-8 - Metadata
 tbd.
 
-[[LG-12-9]]
-==== LG 12-9 - Metadatea
-tbd.
-
-[[LG-12-10]]
-==== LG 12-10 - Data Governance Roles
-tbd.
 
 // end::EN[]
 
