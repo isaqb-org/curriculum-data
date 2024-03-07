@@ -28,6 +28,7 @@ Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können di
 
 [[LZ-12-4]] 
 ==== LZ 12-4 - Datenzugriff und -berechtigungen
+Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.
 
 [[LZ-12-5]]
 ==== LZ 12-5 - Data Stewardship und Ownership
