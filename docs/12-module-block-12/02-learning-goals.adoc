@@ -5,7 +5,8 @@
 
 [[LZ-12-1]]
 ==== LZ 12-1 - Begriffsdefinition
-
+Die Teilnehmer:innen verstehen, dass Data Governance eine Vielzahl von Prinzipien und Praktiken hinsichtlich Qualität, Integrität, Daten- schutz und sicherheit, und
+Benutzbarkeit umfasst, die sicherstellen, dass Daten im gesamten Lebenszyklus sicher, effektiv und effizient verwaltet werden.
 
 
 [[LZ-12-2]]
