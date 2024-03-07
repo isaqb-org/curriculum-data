@@ -29,6 +29,7 @@ Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können di
 [[LZ-12-4]] 
 ==== LZ 12-4 - Datenzugriff und -berechtigungen
 Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.
+Die Teilnehmer:innen wissen, wie Daten auditiert und gemonitored werden können und kennen die Wichtigkeit der Auditierung für die Bereiche Security, Privacy, Benutzbarkeit und Zuverlässigkeit.
 
 [[LZ-12-5]]
 ==== LZ 12-5 - Data Stewardship und Ownership
@@ -45,11 +46,7 @@ Die Teilnehmer:innen kennen Data Contracts und verstehen wie sie beim Abgleich d
 Die Teilnehmer:innen kennen lokale und globale Policies für Daten und wissen wie sie diese festlegen und dokumentieren.
 
 [[LZ-12-8]]
-==== LZ 12-8 - Auditierung
-Die Teilnehmer:innen wissen, wie Daten auditiert werden können und kennen die Wichtigkeit der Auditierung für die Bereiche Security, Privacy, Benutzbarkeit und Zuverlässigkeit.
-
-[[LZ-12-9]]
-==== LZ 12-9 - Metadaten
+==== LZ 12-8 - Metadaten
 Die Teilnehmer:innen verstehen die Bedeutung von Metadaten im Lebenszyklus der Daten und kennen Möglichkeiten, diese zu erheben und festzuhalten.
 Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden:
 
@@ -78,6 +75,9 @@ tbd.
 ==== LG 12-3 - Data Quality
 tbd.
 
+[[LG-12-5]]
+==== LG 12-5 - Data Stewardship und Ownership
+tbd.
 
 [[LG-12-6]]
 ==== LG 12-6 - Data Contracts
@@ -88,16 +88,9 @@ tbd.
 tbd.
 
 [[LG-12-8]]
-==== LG 12-8 - Auditing
+==== LG 12-8 - Metadata
 tbd.
 
-[[LG-12-9]]
-==== LG 12-9 - Metadatea
-tbd.
-
-[[LG-12-10]]
-==== LG 12-10 - Data Stewardship und Ownership
-tbd.
 
 // end::EN[]
 
