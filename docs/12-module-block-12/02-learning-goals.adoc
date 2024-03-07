@@ -29,6 +29,12 @@ Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können di
 [[LZ-12-4]] 
 ==== LZ 12-4 - Datenzugriff und -berechtigungen
 
+[[LZ-12-5]]
+==== LZ 12-5 - Data Stewardship und Ownership
+Die Teilnehmer:innen verstehen die Notwendigkeit von dedizierten Verantwortlichen für Datenpflege und -verwaltung. Dies beinhaltet die Definition von Verantwortlichkeiten für Datenqualität, Datenschutz und andere Governance-Aspekte.
+Die Teilnehmer:innen können die verschiedenen Rollen und Verantwortungsbereiche in der Data Governence nennen und beschreiben.
+Die Teilnehmer:innen wissen, dass es immer einen Datenverantwortlichen geben muss und welche Pflichten dieser hat.
+
 [[LZ-12-6]]
 ==== LZ 12-6 - Data Contracts
 Die Teilnehmer:innen kennen Data Contracts und verstehen wie sie beim Abgleich der Anforderungen von Datenkonsumenten und Datenproduzenten verwendet werden können.
@@ -55,10 +61,6 @@ Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden
 Die Teilnehmer:innen kennen insbesondere die Bedeutung von Data-Lineage-Metadaten.
 Sie sind sich der Bedeutung von Datenschemata bewusst und kennen die diesbezüglichen Unterschiede zwischen verschiedenen Speichersystemen, wie z.B. Object Store und Data Warehouse.
 
-[[LZ-12-10]]
-==== LZ 12-10 - Data Stewardship und Ownership
-Die Teilnehmer:innen können die verschiedenen Rollen und Verantwortungsbereiche in der Data Governence nennen und beschreiben.
-Die Teilnehmer:innen wissen, dass es immer einen Datenverantwortlichen geben muss und welche Pflichten dieser hat.
 
 // end::DE[]
 
