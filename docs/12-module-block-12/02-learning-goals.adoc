@@ -45,7 +45,7 @@ Die Teilnehmer:innen können die verschiedenen Rollen und Verantwortungsbereiche
 Die Teilnehmer:innen kennen Data Contracts und verstehen wie sie beim Abgleich der Anforderungen von Datenkonsumenten und Datenproduzenten verwendet werden können.
 
 [[LZ-12-7]]
-==== LZ 12-7 - Policies
+==== LZ 12-7 - Richtlinien
 Die Teilnehmer:innen kennen lokale und globale Policies für Daten und wissen wie sie diese festlegen und dokumentieren.
 
 [[LZ-12-8]]
@@ -57,7 +57,6 @@ Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden
 - Technische Metadaten
 - Betriebs-Metadaten
 - Referenzielle Metadaten
-- Data Lineage
 
 Die Teilnehmer:innen kennen insbesondere die Bedeutung von Data-Lineage-Metadaten.
 Sie sind sich der Bedeutung von Datenschemata bewusst und kennen die diesbezüglichen Unterschiede zwischen verschiedenen Speichersystemen, wie z.B. Object Store und Data Warehouse.
@@ -77,6 +76,9 @@ tbd.
 [[LG-12-3]]
 ==== LG 12-3 - Data Quality
 tbd.
+
+[[LG-12-4]]
+==== LG 12-4 - Data Access and Privileges
 
 [[LG-12-5]]
 ==== LG 12-5 - Data Stewardship und Ownership
