@@ -45,7 +45,7 @@ Die Teilnehmer:innen verstehen welche unterschiedlichen Herausforderungen sich d
 Die Teilnehmer:innen kennen Beispiele für typische Anwendungen, in denen mit großen Datenmengen umgegangen wird.
 Sie können die verschiedenen Bedarfe von datenintensiven Anwendungen einordnen.
 
-[[LZ 1-4]]
+[[LZ-1-4]]
 ==== LZ 1-4 - Entwickler analytischer Anwendungen
 Die Teilnehmer:innen können die Rollen von Data Architects, Data Engineers und Data Scientists beschreiben und voneineander abgrenzen. 
 
@@ -53,17 +53,17 @@ Die Teilnehmer:innen kennen Modelle für Reifegrade von Organisationen, die mit 
 
 Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Data Science und Software Engineering abgrenzt.
 
-[[LZ 1-5]]
+[[LZ-1-5]]
 ==== LZ 1-5 - Monolithische und verteilte Datenarchitekturen
 Die Teilnehmer:innen verstehen die Vor- und Nachteile von monolithischen beziehungsweise verteilten Softwarearchitekturen für analytische Anwendungen. 
 
 Die Teilnehmer:innen wissen, dass historisch gesehen ein großer Teil analytischer Anwendungen eine monolithische Architektur haben, woher diese Entwicklung kommt und warum mit Data Mesh (Block 11) hier ein Paradigmenwandel stattfindet.
 
-[[LZ 1-6]]
+[[LZ-1-6]]
 ==== LZ 1-6 - Lebenszyklus analytischer Daten
 Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analytischer Daten benennen, also dren Generierung, Sammeln, Speichern und Transformieren bis hin zur Bereitstellung und Auswertung. Sie wissen welche querschnittlichen Themen in allen Phasen zu beachten sind.
 
-[[LZ 1-7]]
+[[LZ-1-7]]
 ==== LZ 1-7 - Abgrenzung von anderen iSAQB Modulen
 Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Architekture für Data Science und Architektur operativer Anwendungssysteme abgrenzt.
 
