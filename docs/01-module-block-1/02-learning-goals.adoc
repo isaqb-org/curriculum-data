@@ -1,11 +1,15 @@
 === {learning-goals}
 
 ## LZ 1
-### Allgemein
+### Grundlagen
 
 // tag::DE[]
 [[LZ-1-1]]
-==== LZ 1-1 - Unterscheidung operativer und analytischer Daten
+==== LZ 1-1 - Data Engineering
+Die Teilnehmer:innen können erläutern was Data Engineering ist und kennen übliche Definitionen.
+
+[[LZ-1-2]]
+==== LZ 1-2 - Unterscheidung operativer und analytischer Daten
 Die Teilnehmer:innen können den Unterschied zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Sie kennen typische Beispiele für opreative Anwendungen und wissen, welche iSAQB Module sich spezifisch mit der Architektur operativer Anwendungssysteme befassen.
 Den Teilnehmer:innen ist klar, warum operative und analytische Daten üblicherweise separat verarbeitet werden. Sie können die folgenden Eigenschaften analytischer Daten erläutern:
 
@@ -16,8 +20,8 @@ Den Teilnehmer:innen ist klar, warum operative und analytische Daten üblicherwe
 
 Die Teilnehmer:innen kennen Beispiele, wie analytische Daten aus operativen Anwendungen entstehen. Sie kennen ebenfalls Beispiele, wie Ergebnisse von Analysen analytischer Daten in operativen Anwendungen genutzt werden können.
 
-[[LZ-1-2]]
-==== LZ 1-2 - Kategorien analytischer Anwendungen
+[[LZ-1-3]]
+==== LZ 1-3 - Kategorien analytischer Anwendungen
 Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen und können Typen von deren Nutzern unterscheiden.
 
 Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Voraussetzungen bennenen:
@@ -41,25 +45,26 @@ Die Teilnehmer:innen verstehen welche unterschiedlichen Herausforderungen sich d
 Die Teilnehmer:innen kennen Beispiele für typische Anwendungen, in denen mit großen Datenmengen umgegangen wird.
 Sie können die verschiedenen Bedarfe von datenintensiven Anwendungen einordnen.
 
-[[LZ 1-3]]
-==== LZ 1-3 - Entwickler analytischer Anwendungen
+[[LZ 1-4]]
+==== LZ 1-4 - Entwickler analytischer Anwendungen
 Die Teilnehmer:innen können die Rollen von Data Architects, Data Engineers und Data Scientists beschreiben und voneineander abgrenzen. 
 
 Die Teilnehmer:innen kennen Modelle für Reifegrade von Organisationen, die mit Daten arbeiten, sowie von deren Data Engineers und Data Architects.
 
 Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Data Science und Software Engineering abgrenzt.
 
-==== LZ 1-4 - Monolithische und verteilte Datenarchitekturen
+[[LZ 1-5]]
+==== LZ 1-5 - Monolithische und verteilte Datenarchitekturen
 Die Teilnehmer:innen verstehen die Vor- und Nachteile von monolithischen beziehungsweise verteilten Softwarearchitekturen für analytische Anwendungen. 
 
 Die Teilnehmer:innen wissen, dass historisch gesehen ein großer Teil analytischer Anwendungen eine monolithische Architektur haben, woher diese Entwicklung kommt und warum mit Data Mesh (Block 11) hier ein Paradigmenwandel stattfindet.
 
-[[LZ 1-5]]
-==== LZ 1-5 - Lebenszyklus analytischer Daten
+[[LZ 1-6]]
+==== LZ 1-6 - Lebenszyklus analytischer Daten
 Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analytischer Daten benennen, also dren Generierung, Sammeln, Speichern und Transformieren bis hin zur Bereitstellung und Auswertung. Sie wissen welche querschnittlichen Themen in allen Phasen zu beachten sind.
 
-[[LZ 1-6]]
-==== LZ 1-6 - Abgrenzung von anderen iSAQB Modulen
+[[LZ 1-7]]
+==== LZ 1-7 - Abgrenzung von anderen iSAQB Modulen
 Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Architekture für Data Science und Architektur operativer Anwendungssysteme abgrenzt.
 
 // end::DE[]
