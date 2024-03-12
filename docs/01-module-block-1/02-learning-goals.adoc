@@ -10,9 +10,10 @@ Die Teilnehmer:innen können erläutern was Data Engineering ist und kennen übl
 
 [[LZ-1-2]]
 ==== LZ 1-2 - Unterscheidung operativer und analytischer Daten
-Die Teilnehmer:innen können den Unterschied zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Sie kennen typische Beispiele für opreative Anwendungen und wissen, welche iSAQB Module sich spezifisch mit der Architektur operativer Anwendungssysteme befassen.
+Die Teilnehmer:innen können die Unterschiede hinsichtlich Verwendung, Struktur und Kontext zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Sie kennen typische Beispiele für opreative Anwendungen und wissen, welche iSAQB Module sich spezifisch mit der Architektur operativer Anwendungssysteme befassen.
 Den Teilnehmer:innen ist klar, warum operative und analytische Daten üblicherweise separat verarbeitet werden. Sie können die folgenden Eigenschaften analytischer Daten erläutern:
 
+- aggregiert
 - subject-oriented
 - nonvolatile
 - integrated
@@ -22,7 +23,7 @@ Die Teilnehmer:innen kennen Beispiele, wie analytische Daten aus operativen Anwe
 
 [[LZ-1-3]]
 ==== LZ 1-3 - Kategorien analytischer Anwendungen
-Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen und können Typen von deren Nutzern unterscheiden.
+Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen, insbesondere Business Intelligence Systeme, Datenvisualisierung, CRM Analytics, IoT Analytics sowie Compliance-Prüfungen und können Typen von deren Nutzern unterscheiden.
 
 Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Voraussetzungen bennenen:
 
@@ -42,7 +43,6 @@ Die Teilnehmer:innen kennen die typischen Kategorien analytischer Anwendungen, k
 
 Die Teilnehmer:innen verstehen welche unterschiedlichen Herausforderungen sich durch Datenweitergabe innerhalb beziehungsweise ausserhalb der eigenen Organisation beziehungsweise an Endnutzer ergeben.
 
-Die Teilnehmer:innen kennen Beispiele für typische Anwendungen, in denen mit großen Datenmengen umgegangen wird.
 Sie können die verschiedenen Bedarfe von datenintensiven Anwendungen einordnen.
 
 [[LZ-1-4]]
@@ -61,7 +61,7 @@ Die Teilnehmer:innen wissen, dass historisch gesehen ein großer Teil analytisch
 
 [[LZ-1-6]]
 ==== LZ 1-6 - Lebenszyklus analytischer Daten
-Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analytischer Daten benennen, also dren Generierung, Sammeln, Speichern und Transformieren bis hin zur Bereitstellung und Auswertung. Sie wissen welche querschnittlichen Themen in allen Phasen zu beachten sind.
+Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analytischer Daten benennen, also deren Generierung, Sammlung, Speicherung und Transformation bis hin zur Bereitstellung und Auswertung. Sie wissen welche querschnittlichen Themen in allen Phasen zu beachten sind.
 
 [[LZ-1-7]]
 ==== LZ 1-7 - Abgrenzung von anderen iSAQB Modulen
