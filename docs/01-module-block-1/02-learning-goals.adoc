@@ -48,11 +48,9 @@ Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzun
 
 [[LZ-1-5]]
 ==== LZ 1-5 - Entwickler analytischer Anwendungen
-Die Teilnehmer:innen können die Rollen von Data Architects, Data Engineers und Data Scientists beschreiben und voneineander abgrenzen. 
+Die Teilnehmer:innen können die Rollen von Data Architects, Data Engineers und Data Scientists beschreiben und voneinander abgrenzen. 
 
-Die Teilnehmer:innen kennen Modelle für Reifegrade von Organisationen, die mit Daten arbeiten, sowie von deren Data Engineers und Data Architects.
-
-Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Data Science und Software Engineering abgrenzt.
+Den Teilnehmer:innen ist bewusst, dass die Tätigkeiten der jeweiligen Rollen von der Effektivität und Professionalität der jeweiligen Organisationen im Hinblick auf die Arbeit mit Daten abhängen.
 
 [[LZ-1-6]]
 ==== LZ 1-6 - Monolithische und verteilte Datenarchitekturen
