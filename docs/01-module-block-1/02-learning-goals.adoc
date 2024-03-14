@@ -37,12 +37,10 @@ Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzun
 
 Die Teilnehmer:innen kennen die typischen Kategorien analytischer Anwendungen, können diese unterscheiden und jeweils Beispiele dazu nennen:
 
-- Deskriptive Analyse
-- Explorative Analyse
-- Inferentielle Analyse
-- Prädiktive Analyse
-- Kausale Analyse
-- Mechanistische Analyse
+- periodische Erstellung vordefinierter Reports
+- Ad-hoc Reporting
+- Mustererkennung
+- Monitoring & Alerting
 
 Die Teilnehmer:innen verstehen welche unterschiedlichen Herausforderungen sich durch Datenweitergabe innerhalb beziehungsweise ausserhalb der eigenen Organisation beziehungsweise an Endnutzer ergeben.
 
