@@ -44,10 +44,6 @@ Die Teilnehmer:innen kennen die typischen Kategorien von Datenanalyse, können d
 - Kausale Analyse: Erkennung von Ursache-Wirkung-Beziehungen
 - Mechanistische Analyse: Integration spezifischen Fachwissens, z.B. physikalischer, biologischer oder chemischer Modelle
 
-Die Teilnehmer:innen verstehen welche unterschiedlichen Herausforderungen sich durch Datenweitergabe innerhalb beziehungsweise ausserhalb der eigenen Organisation beziehungsweise an Endnutzer ergeben.
-
-Sie können die verschiedenen Bedarfe von datenintensiven Anwendungen einordnen.
-
 [[LZ-1-4]]
 ==== LZ 1-4 - Entwickler analytischer Anwendungen
 Die Teilnehmer:innen können die Rollen von Data Architects, Data Engineers und Data Scientists beschreiben und voneineander abgrenzen. 
