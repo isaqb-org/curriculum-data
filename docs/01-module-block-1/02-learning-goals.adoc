@@ -6,11 +6,11 @@
 // tag::DE[]
 [[LZ-1-1]]
 ==== LZ 1-1 - Data Engineering
-Die Teilnehmer:innen können erläutern was Data Engineering ist und kennen übliche Definitionen. Die Teilnehmer:innen können erklären, wie sich die Data Engineering entwickelt hat um den Anforderungen von Data Science und Data Analytics hinsichtlich Datensammlung, -speicherung, -verarbeitung und -analyse zu entsprechen.
+Die Teilnehmer:innen können erläutern, was Data Engineering ist und kennen übliche Definitionen. Die Teilnehmer:innen können erklären, wie sich die Data Engineering entwickelt hat, um den Anforderungen von Data Science und Data Analytics hinsichtlich Datensammlung, -speicherung, -verarbeitung und -analyse zu entsprechen.
 
 [[LZ-1-2]]
 ==== LZ 1-2 - Unterscheidung operativer und analytischer Daten
-Die Teilnehmer:innen können die Unterschiede hinsichtlich Verwendung, Struktur und Kontext zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Ihnen ist klar, warum operative und analytische Daten üblicherweise separat verarbeitet werden und sie kennen typische Beispiele für operative Anwendungen.     
+Die Teilnehmer:innen können die Unterschiede hinsichtlich Verwendung, Struktur und Kontext zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Ihnen ist klar, warum operative und analytische Daten üblicherweise separat verarbeitet werden und sie kennen typische Beispiele für operative und analytische Anwendungen.     
 Sie können die folgenden Eigenschaften analytischer Daten erläutern:
 
 - subjektorientiert
@@ -21,14 +21,8 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:
 Die Teilnehmer:innen kennen Beispiele, wie analytische Daten aus operativen Anwendungen entstehen. Sie kennen ebenfalls Beispiele, wie Ergebnisse von Analysen analytischer Daten in operativen Anwendungen genutzt werden können.
 
 [[LZ-1-3]]
-==== LZ 1-3 - Kategorien analytischer Anwendungen
-Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen, insbesondere:
-
-- Business Intelligence wie etwa Messung der Kundenzufriedenheit, Datenvisualisierung, sowie Fraud Detection und Compliance-Prüfungen 
-- IoT Analytics wie etwa Zeitreihenanalyse und Real Time Monitoring
-- Datengetriebene Anwendungsentwicklung
-
-Die Teilnehmer:innen kennen die typischen Kategorien von Datenanalyse, können diese unterscheiden und jeweils Beispiele dazu nennen:
+==== LZ 1-3 - Kategorien der Datenanalyse
+Die Teilnehmer:innen kennen die typischen Kategorien der Datenanalyse, können diese unterscheiden und jeweils Beispiele dazu nennen:
 
 - Deskriptive Analyse z.B. Berichtswesen
 - Explorative Analyse z.B. Ad-Hoc Reporting
@@ -47,50 +41,58 @@ Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzun
 - Datensicherheit
 
 [[LZ-1-5]]
-==== LZ 1-5 - Entwickler analytischer Anwendungen
-Die Teilnehmer:innen können die Rollen von Data Architects, Data Engineers und Data Scientists beschreiben und voneinander abgrenzen. 
+==== LZ 1-5 - Rollen im Data Engineering
+Die Teilnehmer:innen können Rollen wie Data Architect, Data Analyst, Machine Learning Engineer und Data Scientist beschreiben und voneinander abgrenzen. 
 
-Den Teilnehmer:innen ist bewusst, dass die jeweiligen Rollen von der Effektivität und Professionalität der jeweiligen Organisationen im Hinblick auf die Arbeit mit Daten abhängen.
+Den Teilnehmer:innen ist bewusst, dass die Ausprägung der jeweiligen Rollen von der Effizienz und Professionalität der jeweiligen Organisationen im Hinblick auf die Arbeit mit Daten abhängen.
 
 [[LZ-1-6]]
 ==== LZ 1-6 - Monolithische und verteilte Datenarchitekturen
-Die Teilnehmer:innen verstehen die Vor- und Nachteile von monolithischen beziehungsweise verteilten Softwarearchitekturen für analytische Anwendungen. 
+Die Teilnehmer:innen verstehen die Vor- und Nachteile monolithischer und verteilter Softwarearchitekturen für analytische Anwendungen. 
 
-Die Teilnehmer:innen wissen, dass historisch gesehen ein großer Teil analytischer Anwendungen eine monolithische Architektur haben, woher diese Entwicklung kommt und warum mit Data Mesh (Block 11) hier ein Paradigmenwandel stattfindet.
+Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine monolithische Architektur haben und dass mit der Diskussion um Data Mesh (s. LZ 11) aktuell ein Paradigmenwandel stattfindet.
 
 [[LZ-1-7]]
 ==== LZ 1-7 - Lebenszyklus analytischer Daten
-Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analytischer Daten benennen, also deren Generierung, Sammlung, Speicherung und Transformation bis hin zur Bereitstellung und Auswertung. Sie wissen welche querschnittlichen Themen in allen Phasen zu beachten sind.
+Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebenszyklus analytischer Daten benennen, also deren Generierung, Sammlung, Speicherung und Transformation bis hin zur Bereitstellung und Auswertung. Sie kennen die querschnittlichen Themen, die in allen Phasen zu beachten sind.
 
 [[LZ-1-8]]
 ==== LZ 1-8 - Abgrenzung von anderen iSAQB Modulen
-Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Architekturen für Data Science und Architektur operativer Anwendungssysteme abgrenzt.
+Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen speziell im Hinblick auf Architekturen für Data Science und Architekturen für operative Anwendungssysteme abgrenzt.
 
 // end::DE[]
 
 // tag::EN[]
 [[LG-1-1]]
-==== LG 1-1: Data related stakeholders and disciplines
+==== LG 1-1: Data engineering
 tbd.
 
 [[LG-1-2]]
-==== LG 1-2: Data sources & technical qualities of data
+==== LG 1-2: Differentiation beween operative and analytical data 
 tbd.
 
 [[LG-1-3]]
-==== LG 1-3: Legal compliance and established measurements regarding licensing, data security and privacy
+==== LG 1-3: Categories of data analysis
 tbd.
 
 [[LG-1-4]]
-==== LG 1-4: Methods for developing data centric solutions
+==== LG 1-4: Challenges of analytical applications
 tbd.
 
 [[LG-1-5]]
-==== LG 1-5: Data Lifecycle Management
+==== LG 1-5: Roles in  data engineering
 tbd.
 
 [[LG-1-6]]
-==== LG 1-6: Overall data modelling and communication patterns
+==== LG 1-6: Monolitic and distributed data architectures
+tbd.
+
+[[LG-1-7]]
+==== LG 1-7: Lifecycle of analytical data
+tbd.
+
+[[LG-1-8]]
+==== LG 1-8: Distinction from other iSAQB modules
 tbd.
 
 // end::EN[]
