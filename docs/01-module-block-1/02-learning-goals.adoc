@@ -35,7 +35,7 @@ Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzun
 - Verfügbarkeit
 - Datensicherheit
 
-Die Teilnehmer:innen kennen die typischen Kategorien analytischer Anwendungen, können diese unterscheiden und jeweils Beispiele dazu nennen:
+Die Teilnehmer:innen kennen die typischen Kategorien von Datenanalyse, können diese unterscheiden und jeweils Beispiele dazu nennen:
 
 - Deskriptive Analyse z.B. Berichtswesen
 - Explorative Analyse z.B. Ad-Hoc Reporting
