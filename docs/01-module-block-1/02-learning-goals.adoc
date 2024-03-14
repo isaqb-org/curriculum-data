@@ -41,11 +41,8 @@ Die Teilnehmer:innen kennen die typischen Kategorien analytischer Anwendungen, k
 - Explorative Analyse z.B. Ad-Hoc Reporting
 - Inferentielle Analyse: Ableitung von Aussagen aus Stichproben, z.B. Wirksamkeitsanalyse von Medikamenten 
 - Prädiktive Analyse: zukünftige Vorhersagen basierend auf historische Daten, z.B. Kreditrisikobewertung
-- Kausale Analyse
-- Mechanistische Analyse
-
-- Mustererkennung
-- Monitoring & Alerting
+- Kausale Analyse: Erkennung von Ursache-Wirkung-Beziehungen
+- Mechanistische Analyse: Integration spezifischen Fachwissens, z.B. physikalischer, biologischer oder chemischer Modelle
 
 Die Teilnehmer:innen verstehen welche unterschiedlichen Herausforderungen sich durch Datenweitergabe innerhalb beziehungsweise ausserhalb der eigenen Organisation beziehungsweise an Endnutzer ergeben.
 
