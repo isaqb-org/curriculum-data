@@ -50,7 +50,7 @@ Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzun
 ==== LZ 1-5 - Entwickler analytischer Anwendungen
 Die Teilnehmer:innen können die Rollen von Data Architects, Data Engineers und Data Scientists beschreiben und voneinander abgrenzen. 
 
-Den Teilnehmer:innen ist bewusst, dass die Tätigkeiten der jeweiligen Rollen von der Effektivität und Professionalität der jeweiligen Organisationen im Hinblick auf die Arbeit mit Daten abhängen.
+Den Teilnehmer:innen ist bewusst, dass die jeweiligen Rollen von der Effektivität und Professionalität der jeweiligen Organisationen im Hinblick auf die Arbeit mit Daten abhängen.
 
 [[LZ-1-6]]
 ==== LZ 1-6 - Monolithische und verteilte Datenarchitekturen
