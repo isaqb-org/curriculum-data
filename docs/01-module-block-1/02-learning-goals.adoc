@@ -37,8 +37,13 @@ Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzun
 
 Die Teilnehmer:innen kennen die typischen Kategorien analytischer Anwendungen, können diese unterscheiden und jeweils Beispiele dazu nennen:
 
-- periodische Erstellung vordefinierter Reports
-- Ad-hoc Reporting
+- Deskriptive Analyse z.B. Berichtswesen
+- Explorative Analyse z.B. Ad-Hoc Reporting
+- Inferentielle Analyse: Ableitung von Aussagen aus Stichproben, z.B. Wirksamkeitsanalyse von Medikamenten 
+- Prädiktive Analyse: zukünftige Vorhersagen basierend auf historische Daten, z.B. Kreditrisikobewertung
+- Kausale Analyse
+- Mechanistische Analyse
+
 - Mustererkennung
 - Monitoring & Alerting
 
