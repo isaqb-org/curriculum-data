@@ -28,13 +28,6 @@ Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen, ins
 - IoT Analytics wie etwa Zeitreihenanalyse und Real Time Monitoring
 - Datengetriebene Anwendungsentwicklung
 
-Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Voraussetzungen bennenen:
-
-- Umfang und Komplexität der zu verarbeitenen Daten
-- Komplexität und Anzahl der Analysen, Anfragen / Queries
-- Verfügbarkeit
-- Datensicherheit
-
 Die Teilnehmer:innen kennen die typischen Kategorien von Datenanalyse, können diese unterscheiden und jeweils Beispiele dazu nennen:
 
 - Deskriptive Analyse z.B. Berichtswesen
@@ -45,25 +38,34 @@ Die Teilnehmer:innen kennen die typischen Kategorien von Datenanalyse, können d
 - Mechanistische Analyse: Integration spezifischen Fachwissens, z.B. physikalischer, biologischer oder chemischer Modelle
 
 [[LZ-1-4]]
-==== LZ 1-4 - Entwickler analytischer Anwendungen
+==== LZ 1-4 - Herausforderungen analytischer Anwendungen
+Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Voraussetzungen bennenen:
+
+- Umfang und Komplexität der zu verarbeitenen Daten
+- Komplexität und Anzahl der Analysen, Anfragen / Queries
+- Verfügbarkeit
+- Datensicherheit
+
+[[LZ-1-5]]
+==== LZ 1-5 - Entwickler analytischer Anwendungen
 Die Teilnehmer:innen können die Rollen von Data Architects, Data Engineers und Data Scientists beschreiben und voneineander abgrenzen. 
 
 Die Teilnehmer:innen kennen Modelle für Reifegrade von Organisationen, die mit Daten arbeiten, sowie von deren Data Engineers und Data Architects.
 
 Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Data Science und Software Engineering abgrenzt.
 
-[[LZ-1-5]]
-==== LZ 1-5 - Monolithische und verteilte Datenarchitekturen
+[[LZ-1-6]]
+==== LZ 1-6 - Monolithische und verteilte Datenarchitekturen
 Die Teilnehmer:innen verstehen die Vor- und Nachteile von monolithischen beziehungsweise verteilten Softwarearchitekturen für analytische Anwendungen. 
 
 Die Teilnehmer:innen wissen, dass historisch gesehen ein großer Teil analytischer Anwendungen eine monolithische Architektur haben, woher diese Entwicklung kommt und warum mit Data Mesh (Block 11) hier ein Paradigmenwandel stattfindet.
 
-[[LZ-1-6]]
-==== LZ 1-6 - Lebenszyklus analytischer Daten
+[[LZ-1-7]]
+==== LZ 1-7 - Lebenszyklus analytischer Daten
 Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analytischer Daten benennen, also deren Generierung, Sammlung, Speicherung und Transformation bis hin zur Bereitstellung und Auswertung. Sie wissen welche querschnittlichen Themen in allen Phasen zu beachten sind.
 
-[[LZ-1-7]]
-==== LZ 1-7 - Abgrenzung von anderen iSAQB Modulen
+[[LZ-1-8]]
+==== LZ 1-8 - Abgrenzung von anderen iSAQB Modulen
 Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Architekture für Data Science und Architektur operativer Anwendungssysteme abgrenzt.
 
 // end::DE[]
