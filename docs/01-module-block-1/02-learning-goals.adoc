@@ -6,7 +6,7 @@
 // tag::DE[]
 [[LZ-1-1]]
 ==== LZ 1-1 - Data Engineering
-Die Teilnehmer:innen können erläutern was Data Engineering ist und kennen übliche Definitionen.
+Die Teilnehmer:innen können erläutern was Data Engineering ist und kennen übliche Definitionen. Die Teilnehmer:innen können erklären wie sich die Data Engineering entwickelt hat um den Anforderungen von Data Science und Data Analytics zu entsprechen.
 
 [[LZ-1-2]]
 ==== LZ 1-2 - Unterscheidung operativer und analytischer Daten
