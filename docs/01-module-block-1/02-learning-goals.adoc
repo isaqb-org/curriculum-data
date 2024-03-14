@@ -10,8 +10,8 @@ Die Teilnehmer:innen können erläutern was Data Engineering ist und kennen übl
 
 [[LZ-1-2]]
 ==== LZ 1-2 - Unterscheidung operativer und analytischer Daten
-Die Teilnehmer:innen können die Unterschiede hinsichtlich Verwendung, Struktur und Kontext zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Sie kennen typische Beispiele für opreative Anwendungen und wissen, welche iSAQB Module sich spezifisch mit der Architektur operativer Anwendungssysteme befassen.
-Den Teilnehmer:innen ist klar, warum operative und analytische Daten üblicherweise separat verarbeitet werden. Sie können die folgenden Eigenschaften analytischer Daten erläutern:
+Die Teilnehmer:innen können die Unterschiede hinsichtlich Verwendung, Struktur und Kontext zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Ihnen ist klar, warum operative und analytische Daten üblicherweise separat verarbeitet werden und sie kennen typische Beispiele für operative Anwendungen.     
+Sie können die folgenden Eigenschaften analytischer Daten erläutern:
 
 - subjektorientiert
 - beständig
