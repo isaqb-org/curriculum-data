@@ -64,7 +64,7 @@ Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebesnszyklus analyt
 
 [[LZ-1-8]]
 ==== LZ 1-8 - Abgrenzung von anderen iSAQB Modulen
-Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Architekture für Data Science und Architektur operativer Anwendungssysteme abgrenzt.
+Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen in Hinsicht auf Architekturen für Data Science und Architektur operativer Anwendungssysteme abgrenzt.
 
 // end::DE[]
 
