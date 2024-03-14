@@ -22,7 +22,11 @@ Die Teilnehmer:innen kennen Beispiele, wie analytische Daten aus operativen Anwe
 
 [[LZ-1-3]]
 ==== LZ 1-3 - Kategorien analytischer Anwendungen
-Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen, insbesondere aus dem Bereich Business Intelligence wie etwa Messung der Kundenzufriedenheit, Datenvisualisierung, IoT Analytics sowie Fraud Detection und Compliance-Prüfungen und können Typen von deren Nutzern unterscheiden.
+Die Teilnehmer:innen kennen typische Beispiele für analytische Anwendungen, insbesondere:
+
+- Business Intelligence wie etwa Messung der Kundenzufriedenheit, Datenvisualisierung, sowie Fraud Detection und Compliance-Prüfungen 
+- IoT Analytics wie etwa Zeitreihenanalyse und Real Time Monitoring
+- Datengetriebene Anwendungsentwicklung
 
 Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Voraussetzungen bennenen:
 
