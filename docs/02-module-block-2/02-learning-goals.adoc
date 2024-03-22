@@ -19,7 +19,7 @@ geschaffen werden soll.
 
 Die Teilnehmer:innen kennen Ansätze, ein einheitliches Framework für Referenzarchitekturen zu analytischen Anwendungssystemen zu beschreiben.
 
-Die Teilnehmer:innen verstehen, dass Referenzarchitekturen sowohl mit monolithischen als auch mit verteilten Ansätzen wie Data Mesh umgesetzt werden können.
+Die Teilnehmer:innen verstehen, dass Referenzarchitekturen sowohl in monolithischen Ansätzen für die Architektur des Gesamtsystem herangezogen werden können, als auch in verteilten Ansätzen wie Data Mesh für die Architektur jedes Teilsystems eingesetzt werden können.
 
 Die Teilnehmer:innen kennen Beispiele zur konkreten Umsetzung von Referenzarchitekturen für analytische Anwendungssysteme wie etwa
 
