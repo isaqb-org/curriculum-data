@@ -49,23 +49,15 @@ Die Teilnehmer:innen können Architekturentscheidungen etwa zu den folgenden Fra
 
 // tag::EN[]
 [[LG-2-1]]
-==== LG 2-1: Storage concepts
+==== LG 2-1: Overview architectural patterns
 tbd.
 
 [[LG-2-2]]
-==== LG 2-2: Challenges regarding scalability
+==== LG 2-2: Architectural patterns for for unifying analytical data
 tbd.
 
 [[LG-2-3]]
-==== LG 2-3: Storage solutions
-tbd.
-
-[[LG-2-4]]
-==== LG 2-4: Infrastructure, specialized hardware and operations
-tbd.
-
-[[LG-2-5]]
-==== LG 2-5: Storage requirements
+==== LG 2-3: Architecture decisions based on architectural patterns
 tbd.
 
 // end::EN[]
