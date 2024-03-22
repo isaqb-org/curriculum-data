@@ -34,14 +34,6 @@ Die Teilnehmer:innen kennen Beispiele zur konkreten Umsetzung von Referenzarchit
 
 [[LZ-2-2]]
 ==== LZ 2-2 - Referenzarchitekturen zur Vereinheitlichung analytischer Daten
-Die Teilnehmer:innen können die folgenden Phasen der Datenverarbeitung zur Vereinheitlichung analytischer Daten unterscheiden und wissen, welche Komponenten in den jeweiligen Phasen typischerweise zum Einsatz kommen:
-
-- Sources - Das Erzeugen der Daten (ERP-Systeme, Logs, APIs, ...)
-- Ingestion und Transport - Das Extrahieren der Daten und deren Transport zum den Speichersystemen (Workflow Manager, Replikationslösungen, Streamprocessing Engines, ...)
-- Storage - Das Abspeichern der Daten (Data Lake, Data Warehouse, ...)
-- Query und Processing - Code zur Verarbeitung und Abfragen gegen die gespeicherten Daten (Spark, SQL, Dataframes, ...)
-- Transformation - Transformation der Daten in eine für die Analyse geeignete Form (Workflow Manager, SQL/Spark Code Generierung, ...)
-- Analysis und Output - Präsentation der Daten für die Analyse und deren Ergebnisse sowie Integration der Analysemöglichkeiten in Anwendungen (Dashboards, Embedded Analytics, Report-Engines, ...)
 
 Den Teilnehmer:innen ist bewußt, dass Referenzarchitekturen begleitend zu diesen Phasen auch die folgenden Aufgabenbereiche mit geeigneten Komponenten abdecken müssen:
 
