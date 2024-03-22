@@ -21,7 +21,7 @@ Die Teilnehmer:innen kennen Ansätze, ein einheitliches Framework für Referenza
 
 Die Teilnehmer:innen verstehen, dass Referenzarchitekturen sowohl in monolithischen Ansätzen für die Architektur des Gesamtsystem herangezogen werden können, als auch in verteilten Ansätzen wie Data Mesh für die Architektur jedes Teilsystems eingesetzt werden können.
 
-Die Teilnehmer:innen kennen Beispiele zur konkreten Umsetzung von Referenzarchitekturen für analytische Anwendungssysteme wie etwa
+Die Teilnehmer:innen kennen Beispiele von Referenzarchitekturen für analytische Anwendungssysteme wie etwa
 
 - Data Warehouse
 - Enterprise DWH
