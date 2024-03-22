@@ -54,7 +54,21 @@ Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine mo
 
 [[LZ-1-7]]
 ==== LZ 1-7 - Lebenszyklus analytischer Daten
-Die Teilnehmer:innen können die grundsätzlichen Phasen im Lebenszyklus analytischer Daten benennen, also deren Generierung, Sammlung, Speicherung und Transformation bis hin zur Bereitstellung und Auswertung. Sie kennen die querschnittlichen Themen, die in allen Phasen zu beachten sind.
+Die Teilnehmer:innen können die folgenden Phasen der Datenverarbeitung zur Vereinheitlichung analytischer Daten unterscheiden:
+
+- Sources - Das Erzeugen der Daten
+- Ingestion und Transport - Das Extrahieren der Daten und deren Transport zum den Speichersystemen
+- Storage - Das Abspeichern der Daten
+- Query und Processing - Code zur Verarbeitung und Abfragen gegen die gespeicherten Daten
+- Transformation - Transformation der Daten in eine für die Analyse geeignete Form
+- Analysis und Output - Präsentation der Daten für die Analyse und deren Ergebnisse sowie Integration der Analysemöglichkeiten in Anwendungen
+
+Den Teilnehmer:innen ist bewußt, dass begleitend zu diesen Phasen auch die folgenden Querschnittsthemen zu beachten sind:
+
+- Data Discovery - Information bereitstellen, welche Daten es gibt, wie sie aufbereitet und wo sie zu finden sind
+- Data Governance - Erarbeiten und Überwachen allgemein gültiger Regeln für die Verarbeitung der Daten
+- Data Security - Gewährleisten eines angemessenen Grads an Datenschutz
+- Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität
 
 [[LZ-1-8]]
 ==== LZ 1-8 - Abgrenzung von anderen iSAQB Modulen
