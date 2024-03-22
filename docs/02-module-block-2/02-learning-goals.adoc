@@ -36,20 +36,15 @@ Die Teilnehmer:innen kennen Komponenten die zur Abdeckung querschnittlicher Them
 
 [[LZ-2-3]]
 ==== LZ 2-3 - Architekturentscheidungen anhand von Referenzarchitekturen
-Die Teilnehmer:innen können Architekturentscheidungen speziell zu den folgenden Fragestellungen anhand von Referenzarchitekturen diskutieren:
+Die Teilnehmer:innen können Architekturentscheidungen etwa zu den folgenden Fragestellungen anhand von Referenzarchitekturen diskutieren:
 
-- ob ein zentrales/monolithisches oder dezentrales/förderiertes System zu wählen ist {Single Point of Truth, Canonical Data Model, Master Data Management}
+- ob ein zentrales/monolithisches oder dezentrales/förderiertes System zu wählen ist
 - ob ein Deployment in der Cloud (ggfs. Cloud-Ready), hybrid oder on-Premise vorzuziehen ist
-- ob ein einheitliches Schema für die auszuwertenden Daten vorgegeben werden soll
 - ob eine eigenständige Entwicklung von Komponenten erforderlich ist oder das Kaufen und Konfigurieren von Standardkomponenten ausreicht
 - ob die Integration von Komponenten selbst vorgenommen oder auf die Verwendung bereits integrierter Komponenten vertraut wird
 - ob Stream-, Batch-Processing (ggfs Micro-Batch) oder beides unterstützt werden muss
-- welches Bezahlmodell (Pay as you go, subscription fee, buy) Vorteile bietet
-- welche Form der Skalierbarkeit konkret benötigt wird: Datenvolumen, Geschwindigkeit der Verarbeitung und des Datenzugriffs, Anzahl und Variabilität der Datenquellen, Anzahl der Nutzer, Anzahl und Variabilität der analytischen Auswertungen
-- inwieweit Daten repliziert/redundant gespeichert werden müssen
-- ob eine fachliche Modularisierung (im Sinne von DDD) erforderlich ist
+- welche Form der Skalierbarkeit konkret benötigt wird, z.B. Datenvolumen, Anzahl der Nutzer
 - welche Rollen und Verantwortlichkeiten vorgesehen werden müssen
-- wie groß Komponenten dimensioniert werden müssen
 // end::DE[]
 
 // tag::EN[]
