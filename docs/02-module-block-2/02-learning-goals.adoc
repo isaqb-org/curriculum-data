@@ -19,7 +19,7 @@ geschaffen werden soll.
 
 Die Teilnehmer:innen kennen Ansätze, ein einheitliches Framework für Referenzarchitekturen zu analytischen Anwendungssystemen zu beschreiben.
 
-Die Teilnehmer:innen verstehen, dass Referenzarchitekturen sowohl mit monolithischen als auch mit verteilten Ansätzen umgesetzt werden können.
+Die Teilnehmer:innen verstehen, dass Referenzarchitekturen sowohl mit monolithischen als auch mit verteilten Ansätzen wie Data Mesh umgesetzt werden können.
 
 Die Teilnehmer:innen kennen Beispiele zur konkreten Umsetzung von Referenzarchitekturen für analytische Anwendungssysteme wie etwa
 
@@ -31,8 +31,6 @@ Die Teilnehmer:innen kennen Beispiele zur konkreten Umsetzung von Referenzarchit
 - DL Lambda Architecture
 - Machine Learning
 - Reference Architecture for big data systems
-- Data Mesh
-- Event-Driven Architecture 
 
 [[LZ-2-2]]
 ==== LZ 2-2 - Referenzarchitekturen zur Vereinheitlichung analytischer Daten
