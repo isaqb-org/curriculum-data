@@ -29,7 +29,7 @@ Die Teilnehmer:innen kennen Beispiele von Referenzarchitekturen für analytische
 
 [[LZ-2-2]]
 ==== LZ 2-2 - Referenzarchitekturen zur Vereinheitlichung analytischer Daten
-Die Teilnehmer:innen kennen die Phasen der Datenverarbeitung und wissen, welche Komponenten in den jeweiligen Phasen typischerweise zum Einsatz kommen.
+Die Teilnehmer:innen kennen die Phasen der Datenverarbeitung und wissen, welche Toolkategorien in den jeweiligen Phasen typischerweise zum Einsatz kommen.
 
 Die Teilnehmer:innen kennen Komponenten die zur Abdeckung querschnittlicher Themen geeignet sind.
 
