@@ -63,7 +63,7 @@ Die Teilnehmer:innen können die folgenden Phasen der Datenverarbeitung zur Vere
 - Transformation - Transformation der Daten in eine für die Analyse geeignete Form
 - Analysis und Output - Präsentation der Daten für die Analyse und deren Ergebnisse sowie Integration der Analysemöglichkeiten in Anwendungen
 
-Den Teilnehmer:innen ist bewußt, dass Referenzarchitekturen begleitend zu diesen Phasen auch die folgenden Querschnittsthemen mit geeigneten Komponenten abdecken müssen:
+Den Teilnehmer:innen ist bewußt, dass begleitend zu diesen Phasen auch die folgenden Querschnittsthemen mit geeigneten Komponenten abdecken müssen:
 
 - Data Discovery - Information bereitstellen, welche Daten es gibt, wie sie aufbereitet und wo sie zu finden sind
 - Data Governance - Erarbeiten und Überwachen allgemein gültiger Regeln für die Verarbeitung der Daten
