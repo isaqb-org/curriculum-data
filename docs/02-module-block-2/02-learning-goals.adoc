@@ -24,13 +24,8 @@ Die Teilnehmer:innen verstehen, dass Referenzarchitekturen sowohl in monolithisc
 Die Teilnehmer:innen kennen Beispiele von Referenzarchitekturen für analytische Anwendungssysteme wie etwa
 
 - Data Warehouse
-- Enterprise DWH
-- Scalable DWH / Data Vault
 - Data Lake
-- DL Architecture Framework
-- DL Lambda Architecture
-- Machine Learning
-- Reference Architecture for big data systems
+- Lambda Architecture
 
 [[LZ-2-2]]
 ==== LZ 2-2 - Referenzarchitekturen zur Vereinheitlichung analytischer Daten
