@@ -36,7 +36,7 @@ Die Teilnehmer:innen wissen, dass das zur Verfügung stellen analytischer Daten 
 
 Die Teilnehmer:innen wissen, dass Quellsysteme Daten unter Umständen redundant bereitstellen und können entsprechend mit ihnen umgehen.
 
-Den Teilnehmer:innen ist bewusst, welche Garantien, wie Consistency oder eventual Consistency, eine Datenquelle zur Verfügung stellen kann.
+Den Teilnehmer:innen ist bewusst, welche Garantien, wie Konsistenz, Integrität, Aktualität, Korrektheit eine Datenquelle zur Verfügung stellen kann.
 
 Die Teilnehmer:innen wissen, dass eine Datenquelle z.B. eine SQL Schnittstelle oder vergleichbare Alternativen, zur Verfügung stellt, um auf die Daten zuzugreifen. Die Teilnehmer:innen wissen auch, ob eine Datenquelle einen Batch oder eine Streamverarbeitung der Daten unterstützt.
 
