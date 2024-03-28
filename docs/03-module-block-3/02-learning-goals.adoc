@@ -3,19 +3,22 @@
 // tag::DE[]
 [[LZ-3-1]]
 ==== LZ 3-1 - Arten von Datenquellen und Quellsystemen
-Die Teilnehmer:innen kennen Arten von Datenquellen und Quellsystemen, von denen analytische Daten typischerweise übernommen werden, wie etwa
+Die Teilnehmer:innen kennen Beispiele für inhaltliche und technische Arten von Datenquellen und Quellsystemen, von denen analytische Daten typischerweise übernommen werden, wie etwa:
 
+inhaltliche Quellen
+- Sensordaten
 - Standard Anwendungen
+- Logging Systeme
+- (Web-) Analytics
+- Metrics Systeme
+
+technische Quellen
 - (REST-) APIs
 - Datenbanken
-- OLTP Systeme
-- Event-Stores
+- Event-Feed
 - Messaging Systeme
-- Metrics Systeme
-- (Web-) Analytics
-- Sensordaten
 - (Cloud) Storage Systeme
-- Logging Systeme
+
 
 [[LZ-3-2]]
 ==== LZ 3-2 - Eigenschaften von Datenquellen und Quellsystemen
