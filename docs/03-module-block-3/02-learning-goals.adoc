@@ -40,12 +40,13 @@ Den Teilnehmer:innen ist bewusst, welche Garantien, wie Konsistenz, Integrität,
 
 Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderbar sind.
 
+
 [[LZ-3-3]]
 ==== LZ 3-3 - Eigenschaften von APIs
 
 Den Teilnehmer:innen ist bewusst, das APIs dazu dienen das interne Datenmodell zu abstrahieren und zu definieren was extern bereitgestellt werden soll. Sie kennen zentrale Aspekte beim Entwurf von APIs wie Versionierung und Schemata.
 
-Den Teilnehmer:innen ist bewusst, das APIs üblicherweise vom Quellsystem bereitgestellt werden, aber auch vom Zielsystem angeboten werden können (reverse APIs). Sie kennen unterschiedliche Ansätze von APIs wie beispielsweise REST und RPC, sowie Ansätze für reverse APIs wie beispielsweise Webhooks. 
+Den Teilnehmer:innen ist bewusst, das APIs üblicherweise vom Quellsystem bereitgestellt werden, aber auch vom Zielsystem angeboten werden können (reverse APIs). Sie kennen Arten von APIs die zur Bereitstellung von Daten dienen wie beispielsweise REST und RPC, Ansätze die Daten direkt transformieren wie GraphQL, sowie Ansätze für reverse APIs wie beispielsweise Webhooks.  
 
 
 [[LZ-3-4]]
