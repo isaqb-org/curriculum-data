@@ -61,23 +61,18 @@ Die Teilnehmer:innen kennen den Unterschied zwischen relationalen nicht-relation
 ==== LZ 3-5 - Eigenschaften von Dateisystemen
 
 
-[[LZ-3-5]]
-==== LZ 3-5 - Eigenschaften von Message Queues und Event-Streaming
+[[LZ-3-6]]
+==== LZ 3-6 - Eigenschaften von Message Queues und Event-Streaming
 
 Die Teilnehmer:innen wissen, dass beide Ansätzen auf einer asynchronen Bereitstellung von Daten durch das Quellsystem basieren und ein synchroner Zugriff auf das Quellsystem üblicherweise nicht möglich ist. 
 
 Die Teilnehmer:innen kennen den Unterschied zwischen Messaging Systemen und Streaming Ansätzen. Die Teilnehmer:innen wissen, dass Event Streams ein geordnetes Log der bereitgestellten Daten darstellen, welches von verschiedenen Zielsystemen abonniert werden kann aber nicht muss (Publish Subscribe), wohingegen Messaging Systeme die Daten solagen vorhalten, bis sie von einem Zielsystem explizit abgeholt wurden. 
 
+Die Teilnehmer:innen sind sich der Problematik der Übertragung des initialen Zustandes bewusst und kennen Ansätze wie z.B. Snapshots um das Thema zu adressieren.
 
-Push vs. Pull
-
-initialer State - Snapshot
-
+Die Teilnehmer:innen wissen, dass die Eigenschaft der Häufigkeit der Übertragung für einen Stream eine große Rolle spielt. Sie wissen, dass die Idempotenz bei der Verarbeitung der Optimalfall ist.
 
 
-Die Teilnehmer:innen wissen, dass die Types of Time bei der Streamverarbeitung eine besondere Rolle spielen, da sie die Zeitpunkte der Erstellung, Ingestion, den Start und die Dauer der Verarbeitung protokollieren.
-
-Die Teilnehmer:innen wissen, dass die Eigenschaft der Häufigkeit der Übertragung für einen Stream eine große Rolle spielt. Im Speziellen wissen sie, dass die Idempotenz bei der Verarbeitung der Optimalfall ist.
 
 Die Teilnehmer:innen wissen, dass eine Event Streaming Plattform sehr gut für Applikationen geeignet ist, welche schnell auf Input reagieren müssen oder um near-real time Analysen zu machen.
 
