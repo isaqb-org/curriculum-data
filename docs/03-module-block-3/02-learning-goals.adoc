@@ -70,7 +70,7 @@ Die Teilnehmer:innen kennen den Unterschied zwischen Messaging Systemen und Stre
 
 Die Teilnehmer:innen sind sich der Problematik der Übertragung des initialen Zustandes bewusst und kennen Ansätze wie z.B. Snapshots um das Thema zu adressieren.
 
-Den Teilnehmer:innen ist bewusst, dass Daten mehrfach gesendet werden können. Sie wissen, dass bei der Verarbeitung auf Idempotenz geachtet werden sollte und kennen Patterns wie dies umgesetzt werden kann.
+Den Teilnehmer:innen ist bewusst, dass Daten mehrfach gesendet werden können, da es aufwendig ist sicherzustellen, dass Daten tatsächlich verarbeitet wurden. Sie wissen, dass bei der Verarbeitung auf Idempotenz geachtet werden sollte und kennen Patterns wie dies umgesetzt werden kann.
 
 
 
