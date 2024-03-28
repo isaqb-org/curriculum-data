@@ -6,6 +6,7 @@
 Die Teilnehmer:innen kennen Beispiele für inhaltliche und technische Arten von Datenquellen und Quellsystemen, von denen analytische Daten typischerweise übernommen werden, wie etwa:
 
 inhaltliche Quellen
+
 - Sensordaten
 - Standard Anwendungen
 - Logging Systeme
@@ -13,6 +14,7 @@ inhaltliche Quellen
 - Metrics Systeme
 
 technische Quellen
+
 - (REST-) APIs
 - Datenbanken
 - Event-Feed
