@@ -34,7 +34,7 @@ Den Teilnehmer:innen ist bewusst, dass Quellsysteme z.T. sehr große Datenmengen
 
 Die Teilnehmer:innen wissen, dass das zur Verfügung stellen analytischer Daten zusätzliche Last für das jeweilige Quellsystem erzeugt werden kann und dass dies i.d.R. den eigentlichen Zweck eines Quellsystems nicht beeinträchtigen darf. Den Teilnehmer:innen ist bewusst, dass es durch spezifische technologische oder organisatorische Rahmenbedingungen schwierig sein kann auf die Daten zuzugreifen.
 
-Die Teilnehmer:innen wissen, dass Daten normalisiert oder denormalisiert sein können und können entsprechend mit ihnen umgehen.
+Die Teilnehmer:innen wissen, dass Quellsysteme Daten unter Umständen redundant bereitstellen und können entsprechend mit ihnen umgehen.
 
 Den Teilnehmer:innen ist bewusst, welche Garantien, wie Consistency oder eventual Consistency, eine Datenquelle zur Verfügung stellen kann.
 
