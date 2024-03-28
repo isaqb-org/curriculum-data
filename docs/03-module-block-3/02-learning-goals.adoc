@@ -38,14 +38,7 @@ Die Teilnehmer:innen wissen, dass Quellsysteme Daten unter Umständen redundant 
 
 Den Teilnehmer:innen ist bewusst, welche Garantien, wie Konsistenz, Integrität, Aktualität, Korrektheit eine Datenquelle zur Verfügung stellen kann.
 
-Die Teilnehmer:innen wissen, dass eine Datenquelle z.B. eine SQL Schnittstelle oder vergleichbare Alternativen, zur Verfügung stellt, um auf die Daten zuzugreifen. Die Teilnehmer:innen wissen auch, ob eine Datenquelle einen Batch oder eine Streamverarbeitung der Daten unterstützt.
-
-Die Teilnehmer:innen wissen einzuschätzen, ob eine real time oder near real time Verarbeitung der Daten notwendig ist oder nicht.
-
-[[LZ-3-3]]
-==== LZ 3-3 - Eigenschaften von Datenbanksystemen
-
-Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderbar sind. Ein direkter Zugriff auf diese Datenmodelle koppelt die Analysesysteme an die Quellsysteme.
+Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderbar sind.
 
 [[LZ-3-4]]
 ==== LZ 3-4 - Event Streaming Basics
