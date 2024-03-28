@@ -45,7 +45,7 @@ Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderba
 
 Den Teilnehmer:innen ist bewusst, das APIs dazu dienen das interne Datenmodell zu abstrahieren und zu definieren was extern bereitgestellt werden soll. Sie kennen zentrale Aspekte beim Entwurf von APIs wie Versionierung und Schemata.
 
-Den Teilnehmer:innen kennen unterschiedliche Arten von APIs gibt wie beispielsweise REST, GRAPHQL und RPC.
+Den Teilnehmer:innen kennen unterschiedliche Ansätze von APIs wie beispielsweise REST, GRAPHQL und RPC, sowie Ansätze für reverse APIs wie beispielsweise Webhooks. 
 
 
 [[LZ-3-4]]
