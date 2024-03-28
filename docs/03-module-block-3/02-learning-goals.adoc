@@ -40,23 +40,23 @@ Den Teilnehmer:innen ist bewusst, welche Garantien, wie Konsistenz, Integrität,
 
 Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderbar sind.
 
-[[LZ-3-5]]
-==== LZ 3-5 - Eigenschaften von APIs
+[[LZ-3-3]]
+==== LZ 3-3 - Eigenschaften von APIs
 
-Den Teilnehmer:innen ist bewusst, das APIs dazu dienen das interne Datenmodell zu abstrahieren und kennen zentrale Aspekte beim Entwurf von APIs wie Versioerung und Schemata.
+Den Teilnehmer:innen ist bewusst, das APIs dazu dienen das interne Datenmodell zu abstrahieren und zu definieren was extern bereitgestellt werden soll. Sie kennen zentrale Aspekte beim Entwurf von APIs wie Versionierung und Schemata.
 
 Den Teilnehmer:innen kennen unterschiedliche Arten von APIs gibt wie beispielsweise REST, GRAPHQL und RPC.
 
 
-[[LZ-3-3]]
-==== LZ 3-3 - Eigenschaften von Datenbanksysteme
+[[LZ-3-4]]
+==== LZ 3-4 - Eigenschaften von Datenbanksysteme
 Die Teilnehmer:innen wissen, dass Datenbanken durch ein Datenbankmanagementsystem verwaltet werden, welches beispielsweise Schemaverwaltung, Datenzugriff, Query-Optimizer, Datenverteilung bereitstellen. Ihnen ist bewusst, das Datenbanken vorrangig für die Verwaltung strukturierter Daten verwendet werden.
 
 Die Teilnehmer:innen kennen den Unterschied zwischen relationalen nicht-relationalen Datenbanken und kennen Beispiele für nicht-reationale Datenbanken wie Zeitreihen-, Graph- oder Dokumentendatenbanken. 
 
 
-[[LZ-3-4]]
-==== LZ 3-4 - Eigenschaften von Dateisystemen
+[[LZ-3-5]]
+==== LZ 3-5 - Eigenschaften von Dateisystemen
 
 
 [[LZ-3-5]]
