@@ -72,18 +72,7 @@ Die Teilnehmer:innen sind sich der Problematik der Übertragung des initialen Zu
 
 Den Teilnehmer:innen ist bewusst, dass Daten mehrfach gesendet werden können, da es aufwendig ist sicherzustellen, dass Daten tatsächlich verarbeitet wurden. Sie wissen, dass bei der Verarbeitung auf Idempotenz geachtet werden sollte und kennen Patterns wie dies umgesetzt werden kann.
 
-
-
-Die Teilnehmer:innen wissen, dass eine Event Streaming Plattform sehr gut für Applikationen geeignet ist, welche schnell auf Input reagieren müssen oder um near-real time Analysen zu machen.
-
-Die Teilnehmer:innen wissen, dass eine Message Queue keine großen Datenmengen (in Kilobytes) beinhaltet, sondern nur kleine individuelle Nachrichten zwischen Systemen bewegt.
-
-Die Teilnehmer:innen wissen, dass ein Producer die einzelnen Events an sogenannte Topics sendet, welche eine Sammlung der zusammenhängenden Events darstellen. Beispiele wären Betrugswarnungen, Kundenbestellungen oder Temperaturangaben.
-
-Den Teilnehmer:innen ist bewusst, dass Streams partitioniert werden können, sodass die Partitionen einzeln verarbeitet werden. Den Teilnehmer:innen ist dabei das Problem des hotspottings bekannt, bei dem zu viele Nachrichten einer Partition zugeordnet werden.
-
-Die Teilnehmer:innen kennen den Vorteil der Fehlertoleranz von Streaming Systemen, bei dem Systeme die Streams über mehrere Nodes verteilen, sodass falls eine Node ausfällt der Stream immernoch erreichbar bleibt, da eine andere Node einspringt.
-
+Den Teilnehmer:innen ist bewusst, dass die Verwendung von Streams zu temporären Inkonsistenzen im Datenbestand führen kann (eventual consistency).
 
 
 // end::DE[]
