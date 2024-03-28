@@ -43,7 +43,7 @@ Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderba
 [[LZ-3-4]]
 ==== LZ 3-4 - Eigenschaften vom Event-Streaming
 
-Die Teilnehmer:innen wissen, dass Streams ein geordnetes Log der bereitgestellten Daten darstellen, welches verarbeitet werden kann.
+Die Teilnehmer:innen wissen, dass Streams ein geordnetes Log der bereitgestellten Daten darstellen, welches von Zielsystemen abonniert werden kann (Publish Subscribe).
 
 Die Teilnehmer:innen wissen, dass die Types of Time bei der Streamverarbeitung eine besondere Rolle spielen, da sie die Zeitpunkte der Erstellung, Ingestion, den Start und die Dauer der Verarbeitung protokollieren.
 
