@@ -40,6 +40,13 @@ Den Teilnehmer:innen ist bewusst, welche Garantien, wie Konsistenz, Integrität,
 
 Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderbar sind.
 
+[[LZ-3-5]]
+==== LZ 3-5 - Eigenschaften von APIs
+
+Den Teilnehmer:innen ist bewusst, das APIs dazu dienen das interne Datenmodell zu abstrahieren und kennen zentrale Aspekte beim Entwurf von APIs wie Versioerung und Schemata.
+
+Den Teilnehmer:innen kennen unterschiedliche Arten von APIs gibt wie beispielsweise REST, GRAPHQL und RPC.
+
 
 [[LZ-3-3]]
 ==== LZ 3-3 - Eigenschaften von Datenbanksysteme
@@ -72,11 +79,6 @@ Den Teilnehmer:innen ist bewusst, dass Streams partitioniert werden können, sod
 Die Teilnehmer:innen kennen den Vorteil der Fehlertoleranz von Streaming Systemen, bei dem Systeme die Streams über mehrere Nodes verteilen, sodass falls eine Node ausfällt der Stream immernoch erreichbar bleibt, da eine andere Node einspringt.
 
 
-[[LZ-3-5]]
-==== LZ 3-5 - Eigenschaften von APIs
-REST
-GRAPHQL
-RPC
 
 // end::DE[]
 
