@@ -60,6 +60,15 @@ Die Teilnehmer:innen kennen den Unterschied zwischen relationalen nicht-relation
 [[LZ-3-5]]
 ==== LZ 3-5 - Eigenschaften von Dateisystemen
 
+Den Teilnehmer:innen ist bewusst ... Datenstruktur durch Dateiformat festgelegt.
+
+Einzeldatenzugriff vs.  Zusammengefasst
+
+Dateiübertragung/Zugriff
+Replikationsmechanismen
+Versionierung
+Batch-Verarbeitung
+
 
 [[LZ-3-6]]
 ==== LZ 3-6 - Eigenschaften von Message Queues und Event-Streaming
