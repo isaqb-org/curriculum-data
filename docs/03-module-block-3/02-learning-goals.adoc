@@ -69,9 +69,12 @@ Replikationsmechanismen
 Versionierung
 Batch-Verarbeitung
 
-
 [[LZ-3-6]]
-==== LZ 3-6 - Eigenschaften von Message Queues und Event-Streaming
+==== LZ 3-6 - Eigenschaften von Object Stores
+
+
+[[LZ-3-7]]
+==== LZ 3-7 - Eigenschaften von Message Queues und Event-Streaming
 
 Die Teilnehmer:innen wissen, dass beide Ansätzen auf einer asynchronen Bereitstellung von Daten durch das Quellsystem basieren und ein synchroner Zugriff auf das Quellsystem üblicherweise nicht möglich ist. 
 
