@@ -63,16 +63,11 @@ Die Teilnehmer:innen wissen, dass Dateisysteme hierarchisch oder als Blockspeich
 
 Den Teilnehmer:innen ist bewusst, dass die Datenstruktur durch das Dateiformat festgelegt ist.
 
-Die Teilnehmer:innen ist bewusst, dass der Zugriff über Systemaufrufe auf Betriebssystemebene erfolgt und ... Zugriffsberechtigungen
+Die Teilnehmer:innen ist bewusst, dass der Datenzugriff über Systemaufrufe auf Betriebssystemebene erfolgt und die Zugriffsberechtigungen ebenfalls vom Betriebssystem verwaltet wird.
 
-Einzeldatenzugriff vs.  Zusammengefasst
-
-append-only
-Replikationsmechanismen
-Versionierung
 Batch-Verarbeitung
 
-Die Teilnehmer:innen kennen Beispiele für Disk-basierte und verteilte Dateisysteme, sowie für Blockspeicher.
+Die Teilnehmer:innen kennen Beispiele für Disk-basierte und verteilte Dateisysteme, sowie für Blockspeicher. Sie kennen die Möglichkeiten moderner Dateisysteme hinsichtlich Kompression, Snapshots, Verschlüsselung und Datenintegrität
 
 
 [[LZ-3-6]]
