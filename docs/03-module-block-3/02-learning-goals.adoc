@@ -59,19 +59,15 @@ Die Teilnehmer:innen kennen den Unterschied zwischen relationalen und nicht-rela
 
 [[LZ-3-5]]
 ==== LZ 3-5 - Eigenschaften von Dateisystemen
-Die Teilnehmer:innen wissen, dass der Zugriff über Systemaufrufe auf Betriebssystemebene erfolgt. Sie wissen, dass Dateisysteme hierarchisch oder als Blockspeicher organisiert sein können. 
+Die Teilnehmer:innen wissen, dass Dateisysteme hierarchisch oder als Blockspeicher organisiert sein können. Sie wissen, dass der Speicherplatz bei hierarchischen Dateisystemen durch Verzeichnisse strukturiert wird, während er bei Blockspeichern in Blöcke fester Größe eingeteilt ist und sind sich der Konsequenzen für die Navigation durch das jeweilige Dateisystem bewusst. 
 
-Den Teilnehmer:innen ist bewusst ... Datenstruktur durch Dateiformat festgelegt.
+Den Teilnehmer:innen ist bewusst, dass die Datenstruktur durch das Dateiformat festgelegt ist.
 
-Speicherplatz bei Blockspeichern in Blöcke fester Größe eingeteilt
-
-Navigation durch Dateisystem
+Die Teilnehmer:innen ist bewusst, dass der Zugriff über Systemaufrufe auf Betriebssystemebene erfolgt und ... Zugriffsberechtigungen
 
 Einzeldatenzugriff vs.  Zusammengefasst
 
-Zugriffsberechtigungen
-
-Dateiübertragung/Zugriff
+append-only
 Replikationsmechanismen
 Versionierung
 Batch-Verarbeitung
@@ -82,6 +78,8 @@ Die Teilnehmer:innen kennen Beispiele für Disk-basierte und verteilte Dateisyst
 [[LZ-3-6]]
 ==== LZ 3-6 - Eigenschaften von Object Stores
 Die Teilnehmer:innen wissen, das der Zugriff auf die Daten typischerweise durch RESTful APIs erfolgt. Sie wissen, dass Object Stores für die Speicherung großer Mengen unstrukturierter Daten konzipiert sind und sich üblicherweise horizontal sehr gut skalieren lassen.
+
+Den Teilnehmer:innen ist bewusst, dass die Datenstruktur durch das Dateiformat festgelegt ist.
 
 Garantien - Nebenläufigkeit
 
