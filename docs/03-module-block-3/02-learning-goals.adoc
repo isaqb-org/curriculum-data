@@ -63,6 +63,8 @@ Die Teilnehmer:innen wissen, dass der Zugriff über Systemaufrufe auf Betriebssy
 
 Den Teilnehmer:innen ist bewusst ... Datenstruktur durch Dateiformat festgelegt.
 
+Navigation durch Dateisystem
+
 Einzeldatenzugriff vs.  Zusammengefasst
 
 Dateiübertragung/Zugriff
@@ -70,9 +72,15 @@ Replikationsmechanismen
 Versionierung
 Batch-Verarbeitung
 
-
 [[LZ-3-6]]
-==== LZ 3-6 - Eigenschaften von Object Stores
+==== LZ 3-6 - Eigenschaften von Blockspeicher
+Die Teilnehmer:innen wissen, dass der Speicherplatz bei Blockspeichern in Blöcke fester Größe eingeteilt ist.
+
+Die Teilnehmer:innen kennen Beispiele für Object Stores für den Cloud und on-Premise Betrieb. 
+
+
+[[LZ-3-7]]
+==== LZ 3-7 - Eigenschaften von Object Stores
 Die Teilnehmer:innen wissen, das der Zugriff auf die Daten typischerweise durch RESTful APIs erfolgt. Sie wissen, dass Object Stores für die Speicherung großer Mengen unstrukturierter Daten konzipiert sind und sich üblicherweise horizontal sehr gut skalieren lassen.
 
 Garantien - Nebenläufigkeit
