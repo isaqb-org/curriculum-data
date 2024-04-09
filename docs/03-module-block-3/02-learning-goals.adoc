@@ -59,6 +59,7 @@ Die Teilnehmer:innen kennen den Unterschied zwischen relationalen nicht-relation
 
 [[LZ-3-5]]
 ==== LZ 3-5 - Eigenschaften von Dateisystemen
+Die Teilnehmer:innen wissen, dass der Zugriff über Systemaufrufe auf Betriebssystemebene erfolgt.
 
 Den Teilnehmer:innen ist bewusst ... Datenstruktur durch Dateiformat festgelegt.
 
@@ -69,8 +70,15 @@ Replikationsmechanismen
 Versionierung
 Batch-Verarbeitung
 
+
 [[LZ-3-6]]
 ==== LZ 3-6 - Eigenschaften von Object Stores
+Garantien - Nebenläufigkeit
+
+* Zugriff mittels APIs
+* Metadaten: Relativ flexibel
+
+Replkation, Indixierung
 
 
 [[LZ-3-7]]
