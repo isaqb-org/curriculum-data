@@ -52,9 +52,9 @@ Den Teilnehmer:innen ist bewusst, das APIs üblicherweise vom Quellsystem bereit
 [[LZ-3-4]]
 ==== LZ 3-4 - Eigenschaften von Datenbanksystemen
 
-Die Teilnehmer:innen wissen, dass Datenbanken durch ein Datenbankmanagementsystem verwaltet werden, welches beispielsweise Schemaverwaltung, Datenzugriff, Query-Optimizer, Datenverteilung bereitstellen. Ihnen ist bewusst, das Datenbanken vorrangig für die Verwaltung strukturierter Daten verwendet werden.
+Die Teilnehmer:innen wissen, dass Datenbanken durch ein Datenbankmanagementsystem verwaltet werden, welches beispielsweise Schemaverwaltung, Datenzugriff, Query-Optimizer, Datenverteilung bereitstellt. Ihnen ist bewusst, das Datenbanken vorrangig für die Verwaltung strukturierter Daten verwendet werden. Sie sind sich auch der Problematik einer starken Kopplung der Datenmodelle bei direktem Zugriff auf die Datenbank bewusst. 
 
-Die Teilnehmer:innen kennen den Unterschied zwischen relationalen nicht-relationalen Datenbanken und kennen Beispiele für nicht-reationale Datenbanken wie Zeitreihen-, Graph- oder Dokumentendatenbanken. 
+Die Teilnehmer:innen kennen den Unterschied zwischen relationalen und nicht-relationalen Datenbanken und kennen Beispiele für nicht-reationale Datenbanken wie Zeitreihen-, Graph- oder Dokumentendatenbanken. 
 
 
 [[LZ-3-5]]
@@ -73,6 +73,8 @@ Batch-Verarbeitung
 
 [[LZ-3-6]]
 ==== LZ 3-6 - Eigenschaften von Object Stores
+Die Teilnehmer:innen wissen, das der Zugriff auf die Daten typischerweise durch RESTful APIs erfolgt.
+
 Garantien - Nebenläufigkeit
 
 * Zugriff mittels APIs
