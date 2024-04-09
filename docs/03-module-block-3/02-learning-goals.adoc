@@ -42,7 +42,7 @@ Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderba
 
 
 [[LZ-3-3]]
-==== LZ 3-3 - Zugriff über anwendungspezifischen APIs
+==== LZ 3-3 - Bereitstellung durch anwendungspezifische APIs
 
 Den Teilnehmer:innen ist bewusst, das APIs dazu dienen das interne Datenmodell zu abstrahieren und zu definieren was extern bereitgestellt werden soll. Sie kennen zentrale Aspekte beim Entwurf von APIs wie Versionierung und Schemata.
 
@@ -50,7 +50,7 @@ Den Teilnehmer:innen ist bewusst, das APIs üblicherweise vom Quellsystem bereit
 
 
 [[LZ-3-4]]
-==== LZ 3-4 - Zugriff über Datenbanksystemen
+==== LZ 3-4 - Bereitstellung durch Datenbanksysteme
 
 Die Teilnehmer:innen wissen, dass Datenbanken durch ein Datenbankmanagementsystem verwaltet werden, welches beispielsweise Schemaverwaltung, Datenzugriff, Query-Optimizer, Datenverteilung bereitstellt. Ihnen ist bewusst, das Datenbanken vorrangig für die Verwaltung strukturierter Daten verwendet werden. Sie sind sich auch der Problematik einer starken Kopplung der Datenmodelle bei direktem Datenbank-Zugriff bewusst. 
 
@@ -58,7 +58,7 @@ Die Teilnehmer:innen kennen den Unterschied zwischen relationalen und nicht-rela
 
 
 [[LZ-3-5]]
-==== LZ 3-5 - Zugriff über Dateisysteme
+==== LZ 3-5 - Bereitstellung durch Dateisysteme
 Die Teilnehmer:innen wissen, dass Dateisysteme hierarchisch oder als Blockspeicher organisiert sein können. Sie wissen, dass der Speicherplatz bei hierarchischen Dateisystemen durch Verzeichnisse strukturiert wird, während er bei Blockspeichern in Blöcke fester Größe eingeteilt ist und sind sich der Konsequenzen für die Navigation durch das jeweilige Dateisystem bewusst. 
 
 Den Teilnehmer:innen ist bewusst, dass die Datenstruktur durch das Dateiformat festgelegt ist.
@@ -72,7 +72,7 @@ Die Teilnehmer:innen kennen Beispiele für Disk-basierte und verteilte Dateisyst
 
 
 [[LZ-3-6]]
-==== LZ 3-6 - Zugriff über Object Stores
+==== LZ 3-6 - Bereitstellung durch Object Stores
 Die Teilnehmer:innen wissen, das der Zugriff auf die Daten typischerweise durch RESTful APIs erfolgt. Sie wissen, dass Object Stores für die Speicherung großer Mengen unstrukturierter Daten konzipiert sind und sich üblicherweise horizontal sehr gut skalieren lassen.
 
 Den Teilnehmer:innen ist bewusst, dass die Datenstruktur durch das Dateiformat festgelegt ist.
