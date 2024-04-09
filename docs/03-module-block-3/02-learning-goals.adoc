@@ -81,6 +81,8 @@ Garantien - Nebenläufigkeit
 
 Replkation, Indixierung
 
+Die Teilnehmer:innen kennen Beispiele für Object Stores für den Cloud und on-Premise Betrieb. 
+
 
 [[LZ-3-7]]
 ==== LZ 3-7 - Eigenschaften von Message Queues und Event-Streaming
