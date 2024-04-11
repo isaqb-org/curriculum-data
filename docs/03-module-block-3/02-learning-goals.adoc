@@ -84,13 +84,13 @@ Die Teilnehmer:innen kennen Beispiele für Object Stores für den Cloud und on-P
 [[LZ-3-7]]
 ==== LZ 3-7 - Bereitstellung durch Message Queues und Event-Streaming
 
-Die Teilnehmer:innen wissen, dass beide Ansätzen auf einer asynchronen Bereitstellung von Daten durch das Quellsystem basieren und ein synchroner Zugriff auf das Quellsystem üblicherweise nicht möglich ist. 
+Die Teilnehmer:innen wissen, dass beide Ansätze auf einer asynchronen Bereitstellung von Daten durch das Quellsystem basieren und ein synchroner Zugriff auf das Quellsystem üblicherweise nicht möglich ist. 
 
-Die Teilnehmer:innen kennen den Unterschied zwischen Messaging Systemen und Streaming Ansätzen. Die Teilnehmer:innen wissen, dass Event Streams ein geordnetes Log der bereitgestellten Daten darstellen, welches von verschiedenen Zielsystemen abonniert werden kann aber nicht muss (Publish Subscribe), wohingegen Messaging Systeme die Daten solagen vorhalten, bis sie von einem Zielsystem explizit abgeholt wurden. 
+Die Teilnehmer:innen kennen den Unterschied zwischen Messaging Systemen und Streaming Ansätzen. Die Teilnehmer:innen wissen, dass Event Streams ein geordnetes Log der bereitgestellten Daten darstellen, welches von verschiedenen Zielsystemen abonniert werden kann aber nicht muss (Publish Subscribe), wohingegen Messaging Systeme die Daten solange vorhalten, bis sie von einem Zielsystem explizit abgeholt wurden. 
 
 Die Teilnehmer:innen sind sich der Problematik der Übertragung des initialen Zustandes bewusst und kennen Ansätze wie z.B. Snapshots um das Thema zu adressieren.
 
-Den Teilnehmer:innen ist bewusst, dass Daten mehrfach gesendet werden können, da es aufwendig ist sicherzustellen, dass Daten tatsächlich verarbeitet wurden. Sie wissen, dass bei der Verarbeitung auf Idempotenz geachtet werden sollte und kennen Patterns wie dies umgesetzt werden kann.
+Den Teilnehmer:innen ist bewusst, dass Daten mehrfach gesendet werden können, da es aufwendig ist sicherzustellen, dass Daten tatsächlich verarbeitet wurden. Sie kennen die Vorteile einer idempotenten Verarbeitung.
 
 Den Teilnehmer:innen ist bewusst, dass die Verwendung von Streams zu temporären Inkonsistenzen im Datenbestand führen kann (eventual consistency).
 
@@ -98,15 +98,15 @@ Den Teilnehmer:innen ist bewusst, dass die Verwendung von Streams zu temporären
 
 // tag::EN[]
 [[LG-3-1]]
-==== LG 3-1: General aspects
+==== LG 3-1: Types of data sources and source systems
 tbd.
 
 [[LG-3-2]]
-==== LG 3-2: Policies
+==== LG 3-2: Properties of data sources and source systems
 tbd.
 
 [[LG-3-3]]
-==== LG 3-3: Metadata Management
+==== LG 3-3: Provisioning through application-specific APIs
 tbd.
 
 [[LG-3-4]]
