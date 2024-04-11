@@ -1,9 +1,15 @@
 === {learning-goals}
 
 // tag::DE[]
+
 [[LZ-4-1]]
-==== LZ 4-1 - Erkennen von Änderungen
-Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten sowie für das Erkennen von Änderungen dieser Entitäten in Quellsystemen bekannt, wie etwa
+==== LZ 4-1 - Identifizieren von Entitäten
+Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten in Quellsystemen bekannt, wie etwa
+- Primary Keys
+
+[[LZ-4-2]]
+==== LZ 4-2 - Erkennen von Änderungen
+Den Teilnehmer:innen sind Verfahren für das Erkennen von Änderungen dieser Entitäten in Quellsystemen bekannt, wie etwa
 
 - Change Data Capture (CDC)
 - DB-Trigger
@@ -12,7 +18,6 @@ Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten sowie
 - Create und Update Timestamps
 - Audit Trail Reader
 - Datensatz-Hashes
-- Primary Keys
 - (RSS-)Feeds
 
 Die Teilnehmer:innen wissen, für welche Art von Quellsystemen welche dieser Verfahren jeweils geeignet sind.
