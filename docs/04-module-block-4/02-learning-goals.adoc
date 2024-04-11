@@ -19,8 +19,6 @@ Die Teilnehmer:innen wissen, für welche Art von Quellsystemen welche dieser Ver
 
 Den Teilnehmer:innen ist bewusst, dass das Löschen von Daten üblicherweise ebenfalls als Änderung geliefert wird, da auch gelöschte Daten für die Analyse ggfs. weiter benötigt werden.
 
-Den Teilnehmer:innen ist bewusst, dass sich Änderungen von Entitäten auf den internen Zustand von Quellsystemen beziehen können und dass mit der Weitergabe dieser Änderungen das Prinzip des Information Hidings verletzt werden kann. Sie verstehen, wie etwa das Outbox Pattern dazu genutzt werden kann, die von Quellsystemen zur Verfügung gestellten Änderungen auf das erforderliche Maß zu beschränken.
-
 Den Teilnehmer:innen ist bewusst, dass durch den Zugriff auf interne Änderungen des Quellsystems das Prinzip des Information Hidings verletzt werden kann.  Sie verstehen, wie das Outbox Pattern dazu genutzt werden kann, dieses Problem zu adressieren.
 
 [[LZ-4-2]]
