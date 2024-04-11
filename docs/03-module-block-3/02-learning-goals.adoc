@@ -90,7 +90,7 @@ Die Teilnehmer:innen kennen den Unterschied zwischen Messaging Systemen und Stre
 
 Die Teilnehmer:innen sind sich der Problematik der Übertragung des initialen Zustandes bewusst und kennen Ansätze wie z.B. Snapshots um das Thema zu adressieren.
 
-Den Teilnehmer:innen ist bewusst, dass Daten mehrfach gesendet werden können (exactly once, at least once), da es aufwendig ist sicherzustellen, dass Daten tatsächlich verarbeitet wurden. Sie kennen die Vorteile einer idempotenten Verarbeitung.
+Den Teilnehmer:innen ist bewusst, dass Daten mehrfach (at least once) gesendet werden können, da es aufwendig ist sicherzustellen, dass Daten genau einmal bereitgestellt wurden (exactly once). Sie kennen die Vorteile einer idempotenten Verarbeitung.
 
 Den Teilnehmer:innen ist bewusst, dass die Verwendung von Streams zu temporären Inkonsistenzen im Datenbestand führen kann (eventual consistency).
 
