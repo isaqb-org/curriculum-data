@@ -114,11 +114,15 @@ tbd.
 tbd.
 
 [[LG-3-5]]
-==== LG 3-5: Provisioning through
+==== LG 3-5: Provisioning through file systems
 tbd.
 
 [[LG-3-6]]
-==== LG 3-6: Provisioning through
+==== LG 3-6: Provisioning through object stores
+tbd.
+
+[[LG-3-7]]
+==== LG 3-7: Provisioning through Message Queues and Event-Streaming
 tbd.
 // end::EN[]
 
