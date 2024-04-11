@@ -38,7 +38,7 @@ Die Teilnehmer:innen wissen, dass Quellsysteme Daten unter Umständen redundant 
 
 Den Teilnehmer:innen ist bewusst, welche Garantien, wie Konsistenz, Integrität, Aktualität, Korrektheit eine Datenquelle zur Verfügung stellen kann.
 
-Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderbar sind.
+Die Teilnehmer:innen wissen, dass die Datenhoheit bei den Quellsystemen liegt und Datenmodelle durch diese geändert werden können.
 
 Den Teilnehmer:innen ist bewusst, dass Quellsysteme Daten in einem internen Format verwalten, deren Bereitstellung nach aussen problematisch sein kann, weil es dabei zu einer engen Kopplung der Datenmodelle kommen kann.
 
