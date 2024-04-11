@@ -3,19 +3,24 @@
 // tag::DE[]
 [[LZ-3-1]]
 ==== LZ 3-1 - Arten von Datenquellen und Quellsystemen
-Die Teilnehmer:innen kennen Arten von Datenquellen und Quellsystemen, von denen analytische Daten typischerweise übernommen werden, wie etwa
+Die Teilnehmer:innen kennen Beispiele für inhaltliche und technische Arten von Datenquellen und Quellsystemen, von denen analytische Daten typischerweise übernommen werden, wie etwa:
 
-- Standard Anwendungen
-- (REST-) APIs
-- Datenbanken
-- OLTP Systeme
-- Event-Stores
-- Messaging Systeme
-- Metrics Systeme
-- (Web-) Analytics
+inhaltliche Quellen
+
 - Sensordaten
-- (Cloud) Storage Systeme
+- Standard Anwendungen
 - Logging Systeme
+- (Web-) Analytics
+- Metrics Systeme
+
+technische Quellen
+
+- APIs
+- Datenbanken
+- Event-Feed
+- Messaging Systeme
+- (Cloud) Storage Systeme
+
 
 [[LZ-3-2]]
 ==== LZ 3-2 - Eigenschaften von Datenquellen und Quellsystemen
@@ -25,82 +30,99 @@ Die Teilnehmer:innen können unterscheiden, ob Datenquellen strukturierte, semi-
 - Liste von Datensätzen
 - Key-value Paare
 
-Den Teilnehmer:innen ist bewusst, dass Quellsysteme in unterschiedlicher Weise und Qualität den Schutz der Daten sowie eine Kontrolle des Zugriffs auf die Daten unterstützen.
-
 Den Teilnehmer:innen ist bewusst, dass Quellsysteme z.T. sehr große Datenmengen bereitstellen, und dass geeignete Maßnahmen getroffen werden müssen, um diese Datenmengen transportieren zu können.
 
-Die Teilnehmer:innen wissen, dass das zur Verfügung stellen analytischer Daten i.d.R. nicht der eigentliche Zweck von Quellsystemen ist. Sie wissen, dass dadurch zusätzliche Last für das jeweilige Quellsystem erzeugt werden kann und dass dies i.d.R. den eigentlichen Zweck eines Quellsystems nicht beeinträchtigen darf. Zusätzlich kann die Verfügbarkeit des Quellsystems eingeschränkt sein.
+Die Teilnehmer:innen wissen, dass das zur Verfügung stellen analytischer Daten zusätzliche Last für das jeweilige Quellsystem erzeugt werden kann und dass dies i.d.R. den eigentlichen Zweck eines Quellsystems nicht beeinträchtigen darf. Den Teilnehmer:innen ist bewusst, dass es durch spezifische technologische oder organisatorische Rahmenbedingungen schwierig sein kann auf die Daten zuzugreifen.
 
-Die Teilnehmer:innen wissen, dass Daten normalisiert oder denormalisiert sein können und können entsprechend mit ihnen umgehen.
+Die Teilnehmer:innen wissen, dass Quellsysteme Daten unter Umständen redundant bereitstellen und können entsprechend mit ihnen umgehen.
 
-Den Teilnehmer:innen ist bewusst, dass die Daten in Quellsystemen partitioniert sein können und wissen, dass sie diese Partitionen für schnellere Abfragen nutzen können.
+Den Teilnehmer:innen ist bewusst, welche Garantien, wie Konsistenz, Integrität, Aktualität, Korrektheit eine Datenquelle zur Verfügung stellen kann.
 
-Den Teilnehmer:innen ist bewusst, dass es bei technologisch veralteten Quellsystemen schwieriger ist auf die Daten zuzugreifen.
+Die Teilnehmer:innen wissen, dass die Datenhoheit bei den Quellsystemen liegt und Datenmodelle durch diese geändert werden können.
 
-Den Teilnehmer:innen ist bewusst, welche Garantien, wie Consistency oder eventual Consistency, eine Datenquelle zur Verfügung stellen kann.
+Den Teilnehmer:innen ist bewusst, dass Quellsysteme Daten in einem internen Format verwalten, deren Bereitstellung nach aussen problematisch sein kann, weil es dabei zu einer engen Kopplung der Datenmodelle kommen kann.
 
-Die Teilnehmer:innen wissen, dass eine Datenquelle z.B. eine SQL Schnittstelle oder vergleichbare Alternativen, zur Verfügung stellt, um auf die Daten zuzugreifen. Die Teilnehmer:innen wissen auch, ob eine Datenquelle einen Batch oder eine Streamverarbeitung der Daten unterstützt.
-
-Die Teilnehmer:innen wissen einzuschätzen, ob eine real time oder near real time Verarbeitung der Daten notwendig ist oder nicht.
 
 [[LZ-3-3]]
-==== LZ 3-3 - Eigenschaften von Datenbanksystemen
+==== LZ 3-3 - Bereitstellung durch anwendungspezifische APIs
 
-Die Teilnehmer:innen wissen, dass die Datenmodelle von Quellsystemen veränderbar sind. Ein direkter Zugriff auf diese Datenmodelle koppelt die Analysesysteme an die Quellsysteme.
+Den Teilnehmer:innen ist bewusst, das APIs dazu dienen das interne Datenmodell zu abstrahieren und zu definieren was extern bereitgestellt werden soll. Sie kennen zentrale Aspekte beim Entwurf von APIs wie Versionierung und Schemata.
+
+Den Teilnehmer:innen ist bewusst, das APIs üblicherweise vom Quellsystem bereitgestellt werden, aber auch vom Zielsystem angeboten werden können (reverse APIs). Sie kennen Arten von APIs die zur Bereitstellung von Daten dienen wie beispielsweise REST und RPC, Ansätze die Daten direkt transformieren wie GraphQL, sowie Ansätze für reverse APIs wie beispielsweise Webhooks.  
+
 
 [[LZ-3-4]]
-==== LZ 3-4 - Event Streaming Basics
-Die Teilnehmer:innen wissen, dass
+==== LZ 3-4 - Bereitstellung durch Datenbanksysteme
 
-- beim Event Streaming je Datenquelle idR ein Producer für das Lesen der Daten aus dieser Quelle und das Weiterleiten an eine entsprechende Middleware Komponente (Message Broker) verantwortlich ist.
-- beim Event Streaming je Datensenke idR ein Consumer für das Lesen der Daten vom Message Broker und das Schreiben in diese Senke verantwortlich ist.
-- entsprechend die Daten einer Datenquelle von mehreren Consumern in mehrere Datensenken geschrieben werden können.
-- Event Streaming nicht generell garantiert, dass jeder Datensatz genau einmal (exactly once) verarbeitet wird, sondern meist nur zusichert, dass jeder Datensatz höchstens (almost once) oder mindestens einmal (at least once) verarbeitet wird.
-- mit Event Streaming idR nur eventuelle Konsistenz der Daten in der Datensenke zusichert wird.
+Die Teilnehmer:innen wissen, dass Datenbanken durch ein Datenbankmanagementsystem verwaltet werden, welches beispielsweise Schemaverwaltung, Datenzugriff, Query-Optimizer, Datenverteilung bereitstellt. Ihnen ist bewusst, das Datenbanken vorrangig für die Verwaltung strukturierter Daten verwendet werden. 
+
+Die Teilnehmer:innen kennen Open-Table-Formate, welche einen datenbankähnlichen Zugriff auf Dateisysteme und Object Stores erlauben, als Alternative zu traditionellen, monolithischen Datenbankmanagementsystemen. 
+
+Die Teilnehmer:innen kennen den Unterschied zwischen relationalen und nicht-relationalen Datenbanken und kennen Beispiele für nicht-reationale Datenbanken wie Zeitreihen-, Graph- oder Dokumentendatenbanken. 
+
 
 [[LZ-3-5]]
-==== LZ 3-5 - Eigenschaften vom Event-Streaming
+==== LZ 3-5 - Bereitstellung durch Dateisysteme
+Die Teilnehmer:innen wissen, dass Dateisysteme hierarchisch oder als Blockspeicher organisiert sein können. Sie wissen, dass der Speicherplatz bei hierarchischen Dateisystemen durch Verzeichnisse strukturiert wird, während er bei Blockspeichern in Blöcke fester Größe eingeteilt ist und sind sich der Konsequenzen für die Navigation durch das jeweilige Dateisystem bewusst. 
 
-Die Teilnehmer:innen wissen, dass Message Queues in einem System genutzt werden, um Messages mit bestimmten Qualitätskriterien zu übertragen. Streams hingegen stellen ein geordnetes Log der übertragenen Daten dar, welches verarbeitet werden kann.
+Den Teilnehmer:innen ist bewusst, dass die Datenstruktur durch das Dateiformat festgelegt ist. Sie kennen Dateiformate die für den Einsatz mit großen Datenmengen optimiert sind.
 
-Die Teilnehmer:innen wissen, dass die Types of Time bei der Streamverarbeitung eine besondere Rolle spielen, da sie die Zeitpunkte der Erstellung, Ingestion, den Start und die Dauer der Verarbeitung protokollieren.
+Die Teilnehmer:innen ist bewusst, dass der Datenzugriff über Systemaufrufe auf Betriebssystemebene erfolgt und die Zugriffsberechtigungen ebenfalls vom Betriebssystem verwaltet werden.
 
-Die Teilnehmer:innen wissen, dass die Eigenschaft der Häufigkeit der Übertragung für einen Stream eine große Rolle spielt. Im Speziellen wissen sie, dass die Idempotenz bei der Verarbeitung der Optimalfall ist.
+Die Teilnehmer:innen kennen Beispiele für Disk-basierte und verteilte Dateisysteme, sowie für Blockspeicher. Sie kennen die Möglichkeiten moderner Dateisysteme hinsichtlich Kompression, Snapshots, Verschlüsselung und Datenintegrität
 
-Die Teilnehmer:innen wissen, dass eine Event Streaming Plattform sehr gut für Applikationen geeignet ist, welche schnell auf Input reagieren müssen oder um near-real time Analysen zu machen.
 
-Die Teilnehmer:innen wissen, dass eine Message Queue keine großen Datenmengen (in Kilobytes) beinhaltet, sondern nur kleine individuelle Nachrichten zwischen Systemen bewegt.
+[[LZ-3-6]]
+==== LZ 3-6 - Bereitstellung durch Object Stores
+Die Teilnehmer:innen wissen, das der Zugriff auf die Daten typischerweise durch RESTful APIs erfolgt. Sie wissen, dass Object Stores für die Speicherung großer Mengen unstrukturierter Daten konzipiert sind und sich üblicherweise horizontal sehr gut skalieren lassen.
 
-Die Teilnehmer:innen wissen, dass ein Producer die einzelnen Events an sogenannte Topics sendet, welche eine Sammlung der zusammenhängenden Events darstellen. Beispiele wären Betrugswarnungen, Kundenbestellungen oder Temperaturangaben.
+Den Teilnehmer:innen sind die Möglichkeiten hinsichtlich Metadaten für Kategorisierung und Verwaltung, sowie einer flexiblen Verwaltung von Zugriffsberechtigungen bewusst. Sie kennen Möglichkeiten um einen Object Store als Dateisystem zu verwenden. 
 
-Den Teilnehmer:innen ist bewusst, dass Streams partitioniert werden können, sodass die Partitionen einzeln verarbeitet werden. Den Teilnehmer:innen ist dabei das Problem des hotspottings bekannt, bei dem zu viele Nachrichten einer Partition zugeordnet werden.
+Die Teilnehmer:innen kennen Beispiele für Object Stores für den Cloud und on-Premise Betrieb. 
 
-Die Teilnehmer:innen kennen den Vorteil der Fehlertoleranz von Streaming Systemen, bei dem Systeme die Streams über mehrere Nodes verteilen, sodass falls eine Node ausfällt der Stream immernoch erreichbar bleibt, da eine andere Node einspringt.
+
+[[LZ-3-7]]
+==== LZ 3-7 - Bereitstellung durch Message Queues und Event-Streaming
+
+Die Teilnehmer:innen wissen, dass beide Ansätze auf einer asynchronen Bereitstellung von Daten durch das Quellsystem basieren und ein synchroner Zugriff auf das Quellsystem üblicherweise nicht möglich ist. 
+
+Die Teilnehmer:innen kennen den Unterschied zwischen Messaging Systemen und Streaming Ansätzen. Die Teilnehmer:innen wissen, dass Event Streams ein geordnetes Log der bereitgestellten Daten darstellen, welches von verschiedenen Zielsystemen abonniert werden kann aber nicht muss (Publish Subscribe), wohingegen Messaging Systeme die Daten solange vorhalten, bis sie von einem Zielsystem explizit abgeholt wurden. 
+
+Die Teilnehmer:innen sind sich der Problematik der Übertragung des initialen Zustandes bewusst und kennen Ansätze wie z.B. Snapshots um das Thema zu adressieren.
+
+Den Teilnehmer:innen ist bewusst, dass Daten mehrfach (at least once) gesendet werden können, da es aufwendig ist sicherzustellen, dass Daten genau einmal bereitgestellt wurden (exactly once). Sie kennen die Vorteile einer idempotenten Verarbeitung.
+
+Den Teilnehmer:innen ist bewusst, dass die Verwendung von Streams zu temporären Inkonsistenzen im Datenbestand führen kann (eventual consistency).
+
 // end::DE[]
 
 // tag::EN[]
 [[LG-3-1]]
-==== LG 3-1: General aspects
+==== LG 3-1: Types of data sources and source systems
 tbd.
 
 [[LG-3-2]]
-==== LG 3-2: Policies
+==== LG 3-2: Properties of data sources and source systems
 tbd.
 
 [[LG-3-3]]
-==== LG 3-3: Metadata Management
+==== LG 3-3: Provisioning through application-specific APIs
 tbd.
 
 [[LG-3-4]]
-==== LG 3-4: Data Quality
+==== LG 3-4: Provisioning through database systems
 tbd.
 
 [[LG-3-5]]
-==== LG 3-5: Traceability
+==== LG 3-5: Provisioning through file systems
 tbd.
 
 [[LG-3-6]]
-==== LG 3-6: Maintainability
+==== LG 3-6: Provisioning through object stores
+tbd.
+
+[[LG-3-7]]
+==== LG 3-7: Provisioning through Message Queues and Event-Streaming
 tbd.
 // end::EN[]
 
