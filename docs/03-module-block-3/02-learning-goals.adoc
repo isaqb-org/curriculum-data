@@ -56,7 +56,7 @@ Den Teilnehmer:innen ist bewusst, das APIs üblicherweise vom Quellsystem bereit
 
 Die Teilnehmer:innen wissen, dass Datenbanken durch ein Datenbankmanagementsystem verwaltet werden, welches beispielsweise Schemaverwaltung, Datenzugriff, Query-Optimizer, Datenverteilung bereitstellt. Ihnen ist bewusst, das Datenbanken vorrangig für die Verwaltung strukturierter Daten verwendet werden. 
 
-Die Die Teilnehmer:innen kennen Open-Table-Formate als Alternative zu traditionellen, monolithischen Datenbankmanagementsystemen.
+Die Teilnehmer:innen kennen Open-Table-Formate, welche einen datenbankähnlichen Zugriff auf Dateisysteme und Object Stores erlauben, als Alternative zu traditionellen, monolithischen Datenbankmanagementsystemen.
 
 Die Teilnehmer:innen kennen den Unterschied zwischen relationalen und nicht-relationalen Datenbanken und kennen Beispiele für nicht-reationale Datenbanken wie Zeitreihen-, Graph- oder Dokumentendatenbanken. 
 
@@ -75,8 +75,6 @@ Die Teilnehmer:innen kennen Beispiele für Disk-basierte und verteilte Dateisyst
 [[LZ-3-6]]
 ==== LZ 3-6 - Bereitstellung durch Object Stores
 Die Teilnehmer:innen wissen, das der Zugriff auf die Daten typischerweise durch RESTful APIs erfolgt. Sie wissen, dass Object Stores für die Speicherung großer Mengen unstrukturierter Daten konzipiert sind und sich üblicherweise horizontal sehr gut skalieren lassen.
-
-Den Teilnehmer:innen ist bewusst, dass die Datenstruktur durch das Dateiformat festgelegt ist.
 
 Den Teilnehmer:innen sind die Möglichkeiten hinsichtlich Metadaten für Kategorisierung und Verwaltung, sowie einer flexiblen Verwaltung von Zugriffsberechtigungen bewusst. 
 
