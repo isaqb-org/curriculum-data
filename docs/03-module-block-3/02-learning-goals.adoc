@@ -54,8 +54,6 @@ Den Teilnehmer:innen ist bewusst, das APIs üblicherweise vom Quellsystem bereit
 [[LZ-3-4]]
 ==== LZ 3-4 - Bereitstellung durch Datenbanksysteme
 
-Die Teilnehmer:innen sind sich der Problematik einer starken Kopplung der Datenmodelle bei direktem Datenbank-Zugriff bewusst. 
-
 Die Teilnehmer:innen wissen, dass Datenbanken durch ein Datenbankmanagementsystem verwaltet werden, welches beispielsweise Schemaverwaltung, Datenzugriff, Query-Optimizer, Datenverteilung bereitstellt. Ihnen ist bewusst, das Datenbanken vorrangig für die Verwaltung strukturierter Daten verwendet werden. 
 
 Die Teilnehmer:innen kennen den Unterschied zwischen relationalen und nicht-relationalen Datenbanken und kennen Beispiele für nicht-reationale Datenbanken wie Zeitreihen-, Graph- oder Dokumentendatenbanken. 
