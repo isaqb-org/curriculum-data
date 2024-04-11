@@ -5,7 +5,7 @@
 [[LZ-4-1]]
 ==== LZ 4-1 - Identifizieren von Entitäten
 Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten in Quellsystemen bekannt, wie etwa
-- Primary Keys
+- Primary Keys (technische vs. fachliche Schlüssel)
 
 [[LZ-4-2]]
 ==== LZ 4-2 - Erkennen von Änderungen
@@ -13,12 +13,8 @@ Den Teilnehmer:innen sind Verfahren für das Erkennen von Änderungen dieser Ent
 
 - Change Data Capture (CDC)
 - DB-Trigger
-- Outbox Pattern
-- Event-Sourcing
 - Create und Update Timestamps
 - Audit Trail Reader
-- Datensatz-Hashes
-- (RSS-)Feeds
 
 Die Teilnehmer:innen wissen, für welche Art von Quellsystemen welche dieser Verfahren jeweils geeignet sind.
 
