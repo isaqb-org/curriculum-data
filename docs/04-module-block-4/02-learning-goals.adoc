@@ -35,7 +35,7 @@ Die Teilnehmer:innen kennen Beispiele für diese Tools.
 
 [[LZ-4-3]]
 ==== LZ 4-3 - Eigenschaften von Data Ingestion
-Die Teilnehmer:innen wissen, was die Frequenz der Data Ingestion ist. Sie wissen auch, dass die Frequenz der Data Ingestion sich von Frequenz der Datenverarbeitung unterscheiden kann, sodass auf eine Stream Ingestion ein Batch Processing folgen kann.
+Die Teilnehmer:innen wissen, das die Data Ingestion unabhängig von der nachfolgenden Datenverarbeitung erfolgt, z.B. hinsichtlich Frequenz des Abrufs.
 
 Die Teilnehmer:innen kennen die Unterschiede zwischen synchroner und asynchroner Ingestion und wissen, dass ältere ETL Systeme typische Beispiele für eine synchronen Workflow sind.
 
