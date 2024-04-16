@@ -50,14 +50,6 @@ Die Teilnehmer:innen wissen, dass Datenbanksysteme (DBS) diese Aufgaben überneh
 
 Die Teilnehmer:innen kennen entsprechende Produkte zu diesen DBS-Typen und ihnen ist bewusst, dass Produkte auch mehrere dieser Typen abbilden können.
 
-
-
-Den Teilnehmer:innen ist der Unterschied zwischen Cache und Memory-Based Storage Systemen bewusst und sie kennen deren Vor- und Nachteile.
-
-Die Teilnehmer:innen wissen, was unter einem Streaming Storage zu verstehen ist und wissen, wann dieser einsetzbar ist.
-
-Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
-
 [[LZ-5-3]]
 ==== LZ 5-3 - Datenbanksysteme für analytische Anwendungen
 
@@ -93,6 +85,8 @@ Den Teilnehmer:innen ist bewusst, dass bei veränderlichen Daten nicht nur der a
 - Versionskontrollsysteme
 - Event-Sourcing
 
+Die Teilnehmer:innen wissen, was unter einem Streaming Storage zu verstehen ist und wissen, wann dieser einsetzbar ist.
+
 [[LZ-5-5]]
 ==== LZ 5-5 - Optimierung und Skalierung
 Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigender Last zu optimieren und zu skalieren, wie etwa
@@ -105,6 +99,8 @@ Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigende
 - Append Only / Read Only
 
 Die Teilnehmer:innen verstehen den Unterschied zwischen blockierenden und nicht-blockierenden Zugriffen auf Speichersysteme.
+
+Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
 
 [[LZ-5-6]]
 ==== LZ 5-6 - Data Warehouse und Data Lake
