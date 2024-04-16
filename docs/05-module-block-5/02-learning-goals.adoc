@@ -94,11 +94,9 @@ Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigende
 - Sharding
 - Partitionierung (vertikal/horizontal)
 - Indexierung
-- Reflections
 - Caching
 - Append Only / Read Only
-
-Die Teilnehmer:innen verstehen den Unterschied zwischen blockierenden und nicht-blockierenden Zugriffen auf Speichersysteme.
+- Blockierender vs. nich-blockierender Zugriff
 
 Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
 
