@@ -86,8 +86,6 @@ Den Teilnehmer:innen ist bewusst, dass bei veränderlichen Daten nicht nur der a
 - Versionskontrollsysteme
 - Event-Sourcing
 
-Die Teilnehmer:innen wissen, was unter einem Streaming Storage zu verstehen ist und wissen, wann dieser einsetzbar ist.
-
 [[LZ-5-5]]
 ==== LZ 5-5 - Optimierung und Skalierung
 Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigender Last zu optimieren und zu skalieren, wie etwa
