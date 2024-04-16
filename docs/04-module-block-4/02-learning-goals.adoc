@@ -4,8 +4,9 @@
 
 [[LZ-4-1]]
 ==== LZ 4-1 - Identifizieren von Entitäten
-Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten in Quellsystemen bekannt, wie etwa
-- Primary Keys (technische vs. fachliche Schlüssel)
+Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten in Quellsystemen bekannt, wie etwa Primary Keys (technische vs. fachliche Schlüssel)
+
+Das Erkennen von Duplikaten ist Bestandteil von Modul 7.
 
 [[LZ-4-2]]
 ==== LZ 4-2 - Erkennen von Änderungen
