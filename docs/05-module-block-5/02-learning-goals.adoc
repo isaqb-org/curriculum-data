@@ -94,6 +94,7 @@ Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigende
 - Sharding
 - Partitionierung (vertikal/horizontal)
 - Indexierung
+- Reflections
 - Caching
 - Append Only / Read Only
 - Blockierender vs. nich-blockierender Zugriff
@@ -105,8 +106,6 @@ Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und 
 Die Teilnehmer:innen wissen, dass Data Warehouse (DWH) Systeme i.d.R. für die Vereinheitlichung und Integration analytischer Daten verwendet werden. Sie wissen, dass Data Lake (DL) Systeme neben dieser Vereinheitlichung und Integration analytischer Daten auch eher als DWH Systeme geeignet sind, die Anwendung von Verfahren der KI und des ML auf analytischen Daten zu ermöglichen.
 
 Die Teilnehmer:innen wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL Systeme verwendet werden.
-
-Die Teilnehmer:innen wissen, dass Cloud-basiert erweiterte Datenbanksysteme etwa von Snowflake, Google (BigQuery), Teradata (Vantage) oder AWS (Redshift) angeboten werden, mit denen kombinierte DWH und DL Systeme umgesetzt werden können.
 
 Die Teilnehmer:innen kennen wesentliche Unterschiede zwischen DWH und DL Systemen, wie etwa
 
