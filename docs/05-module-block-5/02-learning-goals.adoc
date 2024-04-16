@@ -23,6 +23,8 @@ Die Teilnehmer:innen wissen, dass Speichersysteme unterschiedlich an Systeme zur
 - Speichernetzwerk (Storage-Area-Network - SAN)
 - Netzwerkspeicher (Network Attached Storage - NAS)
 
+Die Teilnehmer:innen kennen die Vor- und Nachteile des jeweiligen Ansatzes.
+
 [[LZ-5-2]]
 ==== LZ 5-2 - Datenbanksysteme
 Die Teilnehmer:innen verstehen, dass die Verwaltung von Daten Aufgaben umfasst, die von Speichersystemen nicht direkt unterstützt werden, wie etwa
