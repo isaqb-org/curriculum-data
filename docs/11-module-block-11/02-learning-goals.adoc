@@ -44,6 +44,34 @@ Die Teilnehmer:innen verstehen die wesentlichen Konzepte einer Domain-agnostisch
 
 Die Teilnehmer:innen kennen typische Komponenten einer Datenplattform, wie Storage, Data Pipelines, Data Catalogs, Access Management, Monitoring, Visualisation. Ihnen sind bestehende Lösungen speziell der großen Cloud Provider bekannt.
 
+[[LZ-5-6]]
+==== LZ 5-6 - Data Warehouse und Data Lake
+Die Teilnehmer:innen wissen, dass Data Warehouse (DWH) Systeme i.d.R. für die Vereinheitlichung und Integration analytischer Daten verwendet werden. Sie wissen, dass Data Lake (DL) Systeme neben dieser Vereinheitlichung und Integration analytischer Daten auch eher als DWH Systeme geeignet sind, die Anwendung von Verfahren der KI und des ML auf analytischen Daten zu ermöglichen.
+
+Die Teilnehmer:innen wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL Systeme verwendet werden.
+
+Die Teilnehmer:innen kennen wesentliche Unterschiede zwischen DWH und DL Systemen, wie etwa
+
+- Ein definiertes Schema (Schema on Write) beim DWH (das sich im Laufe der Zeit ändern kann) gegenüber mehreren parallelen Schemata (etwa mit Schema on Read) beim DL.
+- Nur vereinheitlichte Daten im DWH während im DL auch die ursprünglichen Quelldaten (Rohdaten) vorgehalten werden.
+- Optimierte Strukturen für den lesenden (analytischen) Zugriff beim DWH gegenüber vereinfachten schreibenden Zugriffen beim DL.
+- Begrenzung auf strukturierte Daten beim DWH während DL auch unstrukturierte und semi-strukturierte Daten aufnehmen können.
+- Hoher Aufwand für die Integration neuer Datenquellen beim DWH während neue Datenquellen in den DL direkt aufgenommen werden können.
+- Hoher Aufwand für die Vereinheitlichung von Daten beim lesenden (analytischen) Zugriff im DL während dies beim DWH in deutlich geringerem Umfang erforderlich ist.
+
+Die Teilnehmer:innen kennen Lösungsansätze, um in DWH Systemen den Aufwand für Änderungen am Schema sowie für die Integration neuer Datenquellen zu reduzieren, wie etwa
+
+- Verwendung künstlicher Schlüssel (Surrogate Keys)
+- Multidimensionale Modellierung
+- Data Vault
+- Automatisierung der Schemaänderungen (Data Warehouse Automation)
+
+Die Teilnehmer:innen kennen Lösungsansätze, um in DL Systemen den Aufwand für die Vereinheitlichung beim lesenden Zugriff zu reduzieren:
+
+- Aufteilen des DL in Bereiche unterschiedlicher Datenqualität (etwa Bronze, Silber und Gold), wobei die Rohdaten im Bronze-Bereich und die vereinheitlichten, gut analysierbaren Daten im Gold-Bereich zu finden sind.
+- Technische Aspekte der Vereinheitlichung direkt bei der Eingangsverarbeitung erledigen (einheitliche Zeichensätze, Null-Values, Datumsformate, ...)
+- Modularisierung des DL etwa über die Verwendung von DDD
+
 [[LZ-11-5]]
 ==== LZ 11-5 - Federated Computational Governance
 Die Teilnehmer:innen wissen, dass die sog. Governance Group (im Sinne einer Gilde) aus Vertretern der einzelnen Domain Teams und dem Data Platform Team besteht.
