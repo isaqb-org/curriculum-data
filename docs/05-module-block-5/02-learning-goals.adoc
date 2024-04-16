@@ -74,7 +74,7 @@ Die Teilnehmer:innen verstehen, dass bei Multi-Threading und -Processing Systeme
 
 Die Teilnehmer:innen wissen, dass ACID Transaktionen üblicherweise von (relationalen) Datenbankmanagementsystemen zur Verfügung gestellt werden, dass sie aber nicht auf diese Systeme beschränkt sind.
 
-Den Teilnehmer:innen ist bekannt, dass ACID Transaktionen speziell bei verteilten Anwendungen (mit dem dafür erforderlichen Two-Phase-Commit Protokoll) deren Verfügbarkeit i.d.R. zu stark einschränken. Ihnen ist das alternative Konzept der BASE-Eigenschaften sowie speziell der eventuellen Konsistenz (Eventual Consistency) verteilter Anwendungen vertraut.
+Den Teilnehmer:innen ist das alternative Konzept der BASE-Transaktionen sowie speziell der eventuellen Konsistenz (Eventual Consistency) verteilter Anwendungen vertraut.
 
 Die Teilnehmer:innen verstehen, dass es bei der Verarbeitung großer Datenmengen (speziell im Batch) sinnvoll sein kann, auf ACID Transaktionen zu verzichten oder sie zumindest mit schwächeren Garantien für Consistency und Isolation zu verwenden um die Verarbeitungsgeschwindigkeit zu verbessern. Sie verstehen, dass beim Einsatz von Streaming Systemen eine nebenläufige Verarbeitung stattfindet, bei der der Einsatz von Transaktionen sinnvoll sein kann.
 
