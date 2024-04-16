@@ -61,6 +61,7 @@ Die Teilnehmer:innen kennen Systeme, die für spezielle Anwendungsfälle mit gro
 - In-Memory DBS
 - Event Store DBS
 - Vector DBS
+- Stream Storage
 
 Die Teilnehmer:innen verstehen, dass einige o.g. Aufgaben alleine durch die Verwendung geeigneter Datei- oder Tabellenformate abgedeckt werden können. Sie kennen speziell die folgenden Formate:
 
