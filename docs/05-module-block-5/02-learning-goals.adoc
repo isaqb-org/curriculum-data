@@ -50,7 +50,18 @@ Die Teilnehmer:innen wissen, dass Datenbanksysteme (DBS) diese Aufgaben überneh
 
 Die Teilnehmer:innen kennen entsprechende Produkte zu diesen DBS-Typen und ihnen ist bewusst, dass Produkte auch mehrere dieser Typen abbilden können.
 
-Die Teilnehmer:innen kennen Systeme, die lediglich einen Teil der o.g. Aufgaben von DBS übernehmen und sind mit deren jeweiligen Besonderheiten vertraut:
+
+
+Den Teilnehmer:innen ist der Unterschied zwischen Cache und Memory-Based Storage Systemen bewusst und sie kennen deren Vor- und Nachteile.
+
+Die Teilnehmer:innen wissen, was unter einem Streaming Storage zu verstehen ist und wissen, wann dieser einsetzbar ist.
+
+Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
+
+[[LZ-5-3]]
+==== LZ 5-3 - Datenbanksysteme für analytische Anwendungen
+
+Die Teilnehmer:innen kennen Systeme, die für spezielle Anwendungsfälle mit großen Datenmengen optimiert sind:
 
 - Searchengines
 - Timeseries DBS
@@ -64,14 +75,8 @@ Die Teilnehmer:innen verstehen, dass einige o.g. Aufgaben alleine durch die Verw
 - Dateiformate: Avro, ORC, Parquet
 - Tabellenformate (Open Table Formats): Delta, Iceberg, Hudi
 
-Den Teilnehmer:innen ist der Unterschied zwischen Cache und Memory-Based Storage Systemen bewusst und sie kennen deren Vor- und Nachteile.
-
-Die Teilnehmer:innen wissen, was unter einem Streaming Storage zu verstehen ist und wissen, wann dieser einsetzbar ist.
-
-Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
-
-[[LZ-5-3]]
-==== LZ 5-3 - Concurrency Control
+[[LZ-5-4]]
+==== LZ 5-4 - Concurrency Control
 Die Teilnehmer:innen verstehen, dass bei Multi-Threading und -Processing Systemen mit nebenläufiger Verarbeitung sowie redundanter Speicherung von Daten die Konsistenz von Daten explizit sichergestellt werden muss. Ihnen ist das Konzept von ACID Transaktionen und deren Serialisierbarkeit vertraut. Sie wissen, dass ACID Transaktionen auf unterschiedliche Weisen und mit unterschiedlichen Garantien für Konsistenz (Consistency) und Isolation umgesetzt werden können.
 
 Die Teilnehmer:innen wissen, dass ACID Transaktionen üblicherweise von (relationalen) Datenbankmanagementsystemen zur Verfügung gestellt werden, dass sie aber nicht auf diese Systeme beschränkt sind.
