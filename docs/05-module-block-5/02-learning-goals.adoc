@@ -85,7 +85,7 @@ Den Teilnehmer:innen ist bewusst, dass bei veränderlichen Daten nicht nur der a
 - Transaktionen (über die Serialisierbarkeit)
 - Versionskontrollsysteme
 - Event-Sourcing
-- Hybride Datenbanken mit nativem Versionsmanagement
+- Hybride Datenbanken mit inkludiertem Versionsmanagement
 
 [[LZ-5-5]]
 ==== LZ 5-5 - Optimierung und Skalierung
