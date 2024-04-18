@@ -51,21 +51,11 @@ Die Teilnehmer:innen wissen, dass die Datenquellen ihre Daten selbst aktiv liefe
 
 [[LZ-4-4]]
 ==== LZ 4-4 - Batch vs Stream Ingestion
-Den Teilnehmer:innen ist der grundlegende Unterschied zwischen Batch- und Stream-Verarbeitung bekannt.
+Den Teilnehmer:innen sind die Verfahren zur Batch- und Stream-Verarbeitung bekannt. Ihnen ist bewusst, wie Batch Verfahren durch zeitliche oder größen-basierte Pakete aus einem Streaming Umfeld erstellt werden können.
 
-Den Teilnehmer:innen ist bewusst, wie Batch Ingestion durch zeitliche oder größen-basierte Abschnitte aus einem Streaming Umfeld erstellt werden können.
+Die Teilnehmer:innen kennen den Unterschied zwischen dem ELT und dem ETL Pattern.
 
-Die Teilnehmer:innen kennen typische batch-basierte Ingestion Patterns:
-
-- Snapshots oder inkrementelle Extraktion
-- File-based export and ingestion
-- ETL versus ELT
-- Inserts, updates, and batch size
-- Data migration
-
-Den Teilnehmer:innen ist bewusst, dass es bei spalten-basierten Datenbanken ein schlechtes Vorgehen ist reihen-basierte Inserts zu machen.
-
-Den Teilnehmer:innen ist bei der Stream Ingestion bewusst, dass das Risiko von zu spät ankommenden Daten besteht und dass sich dies kritisch auf downstream Systeme auswirken kann.
+Den Teilnehmer:innen ist bei der Stream Ingestion bewusst, dass Daten zu spät ankommen können und dass downstream Systeme dies handhaben können müssen.
 
 [[LZ-4-5]]
 ==== LZ 4-5 - Metadaten
