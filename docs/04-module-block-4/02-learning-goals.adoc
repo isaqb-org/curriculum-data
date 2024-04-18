@@ -61,14 +61,11 @@ Den Teilnehmer:innen ist bei der Stream Ingestion bewusst, dass Daten zu spät a
 ==== LZ 4-5 - Metadaten
 Die Teilnehmer:innen verstehen die Bedeutung von Metadaten für die Nutzung von Datenquellen. Sie können technische und fachliche Metadaten unterscheiden. Sie wissen, dass Quellsysteme oft umfassend Metadaten zu den von ihnen bereitgestellten Datenquellen zur Verfügung stellen.
 
-Die Teilnehmer:innen wissen wie wichtig die Charakteristiken von Datasets sind. Sie wissen, dass folgende Informationen in Form von Metadaten z.B. für Folgesysteme von großem Nutzen sind und daher einem Datensatz mitgegeben werden sollten:
+Die Teilnehmer:innen wissen wie wichtig die Charakteristiken von Datasets sind. Sie wissen, dass folgende Informationen in Form von Metadaten z.B. für Folgesysteme von großem Nutzen sind und daher einem Datensatz mitgegeben werden sollten, etwa:
 
 - Typ (Tabelle, Bild, Text, ...)
-- Dateiformat
-- Dimension (Tabellen: Zeilen x Spalten, JSON: key-value Paare, Bilder: Größe in Pixeln x RGB)
 - Größe (Bytes, Gigabytes, Terabytes, ...)
 - Schema und Datentypen
-- weitere Metadaten
 
 Die Teilnehmer:innen wissen, dass es Verfahren gibt (Schema Inference), um Metadaten aus Daten abzuleiten. Ihnen ist bewusst, dass sich Metadaten über die Nutzungsdauer von Daten ändern können (Schema Evolution) und dass Verfahren existieren, diese Änderungen beim Zugriff auf die Daten zu erkennen.
 
