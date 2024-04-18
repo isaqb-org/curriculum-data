@@ -36,7 +36,10 @@ Die Teilnehmer:innen kennen Beispiele für diese Tools.
 
 [[LZ-4-3]]
 ==== LZ 4-3 - Eigenschaften von Data Ingestion
+
 Die Teilnehmer:innen wissen, das die Data Ingestion unabhängig von der nachfolgenden Datenverarbeitung erfolgt, z.B. hinsichtlich Frequenz des Abrufs.
+
+Die Teilnehmer:innen wissen, das Daten in der Regel kontinuierlich erzeugt werden und für die Verarbeitung in Pakete zerlegt werden können.
 
 Die Teilnehmer:innen kennen die Unterschiede zwischen synchroner und asynchroner Ingestion und wissen, dass ältere ETL Systeme typische Beispiele für eine synchronen Workflow sind.
 
