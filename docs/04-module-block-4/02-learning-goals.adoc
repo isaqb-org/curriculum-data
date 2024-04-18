@@ -74,23 +74,23 @@ Die Teilnehmer:innen wissen, dass Data Catalogs zur Verwaltung der Metadaten ver
 
 // tag::EN[]
 [[LG-4-1]]
-==== LG 4-1: Categories of data consumers
+==== LG 4-1: Identifying entities
 tbd.
 
 [[LG-4-2]]
-==== LG 4-2: Data providers
+==== LG 4-2: Detecting changes
 tbd.
 
 [[LG-4-3]]
-==== LG 4-3: Data presentation patterns
+==== LG 4-3: Connectors
 tbd.
 
 [[LG-4-4]]
-==== LG 4-4: Predictive techniques
+==== LG 4-4: Batch vs Stream Ingestion
 tbd.
 
 [[LG-4-5]]
-==== LG 4-5: Integration in operative systems
+==== LG 4-5: Meta Data
 tbd.
 // end::EN[]
 
