@@ -69,7 +69,7 @@ Die Teilnehmer:innen wissen dass beispielsweise folgende Informationen in Form v
 
 Die Teilnehmer:innen wissen, dass es Verfahren gibt (Schema Inference), um Metadaten aus Daten abzuleiten. Ihnen ist bewusst, dass sich Metadaten über die Nutzungsdauer von Daten ändern können (Schema Evolution) und dass Verfahren existieren, diese Änderungen beim Zugriff auf die Daten zu erkennen.
 
-Die Teilnehmer:innen kennen das Konzept eines Data Catalogs. Sie wissen, dass ein Data Catalog die Übersichtlichkeit der darunter liegenden Daten deutlich erhöht und einen Einstiegspunkt für die Suche und Beziehungserkennung liefert. Sie wissen außerdem, dass im Data Catalog die Data Lineage integriert werden kann, in welchem die Beziehungen der Daten visualisiert werden.
+Die Teilnehmer:innen wissen, dass Data Catalogs zur Verwaltung der Metadaten verwendet werden können. Sie wissen, dass neben den Metadaten der Datenquelle auch die Ausführung der Ingestion in Data Catalogs festgehalten werden.
 // end::DE[]
 
 // tag::EN[]
