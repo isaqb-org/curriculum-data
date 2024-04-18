@@ -51,7 +51,7 @@ Die Teilnehmer:innen wissen, dass die Datenquellen ihre Daten selbst aktiv liefe
 
 [[LZ-4-4]]
 ==== LZ 4-4 - Batch vs Stream Ingestion
-Den Teilnehmer:innen sind die Verfahren zur Batch- und Stream-Verarbeitung bekannt. Ihnen ist bewusst, wie Batch Verfahren durch zeitliche oder größen-basierte Pakete aus einem Streaming Umfeld erstellt werden können.
+Den Teilnehmer:innen sind die Verfahren zur Batch- und Stream-Verarbeitung bekannt. Ihnen ist bewusst, wie Batch Verfahren durch zeitliche (Batch) oder größen-basierte (Micro Batch) Pakete aus einem kontinuierlichen Datenstrom der Quellsysteme erstellt werden können.
 
 Die Teilnehmer:innen kennen den Unterschied zwischen dem ELT und dem ETL Pattern.
 
