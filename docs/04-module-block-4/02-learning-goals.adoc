@@ -45,9 +45,9 @@ Die Teilnehmer:innen kennen die Unterschiede zwischen synchronisierter und nicht
 
 Den Teilnehmer:innen ist bewusst, dass Abläufe für die Ingestion skalierbar gestaltet werden sollte, da diese Prozesse häufig große Datenmengen betreffen und ggf. wiederholt ausgeführt werden müssen.
 
-Die Teilnehmer:innen wissen, dass die Datenquellen den aktuellen Zustand der zuletzt geänderten Daten (Snapshot) oder die Änderungen selbst (Increments/Events) wiedergeben können, mit denen dieser aktuelle Zustand erzeugt wurde. Sie wissen, dass ggfs. eine initiale Bereitstellung (initial Load) der Daten erforderlich ist.
+Die Teilnehmer:innen wissen, dass die Ingestion den aktuellen Zustand der zuletzt geänderten Daten (Snapshot) oder die Änderungen selbst (Increments/Events) betreffen kann, mit denen dieser aktuelle Zustand erzeugt wurde. Sie wissen, dass ggfs. eine initiale Bereitstellung (initial Load) der Daten erforderlich ist.
 
-Die Teilnehmer:innen wissen, dass die Datenquellen ihre Daten selbst aktiv liefern (Push) oder aber auf Anfrage bereitstellen (Pull) können. Sie wissen hierzu was Push, Pull und Poll Patterns sind und wie sie sich unterscheiden.
+Die Teilnehmer:innen wissen, dass die Datenquellen ihre Daten selbst aktiv liefern können (Push), auf Anfrage einmalig bereitstellen (Pull), oder periodisch bereitstellen können (Poll).
 
 [[LZ-4-4]]
 ==== LZ 4-4 - Batch vs Stream Ingestion
