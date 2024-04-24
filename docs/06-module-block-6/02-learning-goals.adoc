@@ -4,7 +4,7 @@
 // tag::DE[]
 
 [[LZ-6-1]]
-==== LZ 6-1 - Analytische queries
+==== LZ 6-1 - Analytische Queries
 Die Teilnehmer:innen verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen. Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.
 
 Die Teilnehmer:innen kennen spezifische Muster für analytischer Queries etwa
