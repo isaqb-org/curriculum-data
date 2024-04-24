@@ -4,7 +4,19 @@
 // tag::DE[]
 
 [[LZ-6-1]]
-==== LZ 6-1 - Query Programmiermodelle
+==== LZ 6-1 - Analytische Querys
+Die Teilnehmer:innen verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen. Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.
+
+Die Teilnehmer:innen kennen spezifische Muster für analytischer Queries etwa
+
+- Aggregationen (Sum, Count, Avg, ...)
+- Fenstern/Windows (Over Partition by)
+- OLAP Operationen (Slice/Dice, Drill up/down/...)
+- Umformungen (Pivot, Transpose, ...)
+- Modularisierung (Views, Common Table Expressions, Stored Procedures, User Defined Functions)
+
+[[LZ-6-2]]
+==== LZ 6-2 - Query Programmiermodelle
 Die Teilnehmer:innen wissen, dass unterschiedliche Programmiermodelle für analytische Queries eingesetzt werden. Ihnen sind wesentliche Programmiermodelle bekannt und sie können beurteilen, für welche Aufgaben sie speziell geeignet sind:
 
 - SQL
@@ -18,23 +30,6 @@ Die Teilnehmer:innen wissen, dass unterschiedliche Programmiermodelle für analy
 Den Teilnehmer:innen ist bewusst, dass die Art des benötigten Datenzugriffs zentral für die Wahl einer Datenarchitektur ist.
 
 Die Teilnehmer:innen kennen für jedes dieser Programmiermodelle Beispiele zu Frameworks, Libraries und Tools für die Verarbeitung analytischer Queries.
-
-[[LZ-6-1]]
-==== LZ 6-1 - Queries
-Die Teilnehmer:innen kennen den üblichen Aufbau analytischer Queries mit Angaben zu
-
-- Filtern (Where)
-- Projektionen (Select)
-- Gruppierungen (Group by)
-- Sortierungen (Order by)
-- Joins (Inner, Outer, Left, Right, Full, ...)
-- Aggregationen (Sum, Count, Avg, ...)
-- Fenstern/Windows (Over Partition by)
-- OLAP Operationen (Slice/Dice, Drill up/down/...)
-- Umformungen (Pivot, Transpose, ...)
-- Modularisierung (Views, Common Table Expressions, Stored Procedures, User Defined Functions)
-
-Die Teilnehmer:innen verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen. Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.
 
 [[LZ-6-2]]
 ==== LZ 6-2 - Query Verarbeitung
