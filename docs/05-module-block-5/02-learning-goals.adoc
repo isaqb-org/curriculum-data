@@ -97,13 +97,13 @@ Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigende
 - Reflections
 - Caching
 - Append Only / Read Only
-- Blockierender vs. nich-blockierender Zugriff
+- Blockierender vs. nicht-blockierender Zugriff
 
 Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
 
 [[LZ-5-7]]
 ==== LZ 5-7 - Data Warehouse und Data Lake
-Die Teilnehmer:innen wissen, dass Data Warehouse (DWH) Systeme i.d.R. für die Vereinheitlichung und Integration analytischer Daten verwendet werden. Sie wissen, dass Data Lake (DL) Systeme neben dieser Vereinheitlichung und Integration analytischer Daten auch eher als DWH Systeme geeignet sind, die Anwendung von Verfahren der KI und des ML auf analytischen Daten zu ermöglichen.
+
 
 Die Teilnehmer:innen wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL Systeme verwendet werden.
 
