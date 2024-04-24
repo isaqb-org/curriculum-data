@@ -103,7 +103,7 @@ Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und 
 
 [[LZ-5-7]]
 ==== LZ 5-7 - Data Warehouse und Data Lake
-
+Die Teilnehmer:innen wissen, dass Data Warehouses und Data Lakes Daten aus verschiedenen Speichersystemen zusammenführen, einen einheitliche Zugriff auf diese Daten bieten und für OLAP-basierte Zugriffsmuster optimiert sind.
 
 Die Teilnehmer:innen wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL Systeme verwendet werden.
 
@@ -115,6 +115,7 @@ Die Teilnehmer:innen kennen wesentliche Unterschiede zwischen DWH und DL Systeme
 - Begrenzung auf strukturierte Daten beim DWH während DL auch unstrukturierte und semi-strukturierte Daten aufnehmen können.
 - Hoher Aufwand für die Integration neuer Datenquellen beim DWH während neue Datenquellen in den DL direkt aufgenommen werden können.
 - Hoher Aufwand für die Vereinheitlichung von Daten beim lesenden (analytischen) Zugriff im DL während dies beim DWH in deutlich geringerem Umfang erforderlich ist.
+- Die bessere Eignung von Data Lakes für analytische und Machine Learning Szenarien, da dort noch die ursprünglichen Quelldaten vorhanden sind
 
 Die Teilnehmer:innen kennen Lösungsansätze, um in DWH Systemen den Aufwand für Änderungen am Schema sowie für die Integration neuer Datenquellen zu reduzieren, wie etwa
 
