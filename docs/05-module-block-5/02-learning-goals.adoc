@@ -101,6 +101,11 @@ Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigende
 
 Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
 
+Die Teilnehmer:innen kennen Lösungsansätze, für Data Retention:
+
+- Wahl der Speichertechnologie abhängig von der Häufigkeit des Datenzugriffs
+- Automatisches Löschen von Daten nach vorgebenen Kriterien, z.B. Ablauf einer Speicherfrist
+
 [[LZ-5-7]]
 ==== LZ 5-7 - Data Warehouse und Data Lake
 Die Teilnehmer:innen wissen, dass Data Warehouses und Data Lakes Ansätze sind, um Daten aus verschiedenen Quellsystemen zusammenführen und um einen vereinheitlichten Zugriff auf diese Daten bieten zu können. Sie wissen, dass die beiden Ansätze für OLAP Anwendungen optimiert sind.
@@ -129,11 +134,6 @@ Die Teilnehmer:innen kennen Lösungsansätze, um in DL Systemen den Aufwand für
 - Aufteilen des DL in Bereiche unterschiedlicher Datenqualität – etwa Bronze, Silber und Gold –, wobei die Rohdaten im Bronze-Bereich und die vereinheitlichten, gut analysierbaren Daten im Gold-Bereich zu finden sind  (Data Lakehouse).
 - Technische Aspekte der Vereinheitlichung direkt bei der Eingangsverarbeitung erledigen (einheitliche Zeichensätze, Null-Values, Datumsformate, ...)
 - Modularisierung des DL etwa über die Verwendung von DDD.
-
-Die Teilnehmer:innen kennen Lösungsansätze, für Data Retention:
-
-- Wahl der Speichertechnologie abhängig von der Häufigkeit des Datenzugriffs
-- Automatisches Löschen von Daten nach vorgebenen Kriterien, z.B. Ablauf einer Speicherfrist
 
 // end::DE[]
 
