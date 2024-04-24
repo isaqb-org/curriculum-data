@@ -103,7 +103,7 @@ Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und 
 
 [[LZ-5-7]]
 ==== LZ 5-7 - Data Warehouse und Data Lake
-Die Teilnehmer:innen wissen, dass Data Warehouses und Data Lakes Daten aus verschiedenen Speichersystemen zusammenführen, einen einheitliche Zugriff auf diese Daten bieten und für OLAP-basierte Zugriffsmuster optimiert sind.
+Die Teilnehmer:innen wissen, dass Data Warehouses und Data Lakes Ansätze sind um Daten aus verschiedenen Quellsystemen zusammenführen um einen vereinheitlichten Zugriff auf diese Daten bieten zu können. Sie wissen, dass die beiden Ansätze für OLAP Anwendungen optimiert sind.
 
 Die Teilnehmer:innen wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL Systeme verwendet werden.
 
