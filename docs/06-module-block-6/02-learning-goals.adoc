@@ -4,7 +4,7 @@
 // tag::DE[]
 
 [[LZ-6-1]]
-==== LZ 6-1 - Analytische Querys
+==== LZ 6-1 - Analytische queries
 Die Teilnehmer:innen verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen. Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.
 
 Die Teilnehmer:innen kennen spezifische Muster für analytischer Queries etwa
@@ -31,8 +31,8 @@ Den Teilnehmer:innen ist bewusst, dass die Art des benötigten Datenzugriffs zen
 
 Die Teilnehmer:innen kennen für jedes dieser Programmiermodelle Beispiele zu Frameworks, Libraries und Tools für die Verarbeitung analytischer Queries.
 
-[[LZ-6-2]]
-==== LZ 6-2 - Query Verarbeitung & Optimierung
+[[LZ-6-3]]
+==== LZ 6-3 - Query Verarbeitung & Optimierung
 Die Teilnehmer:innen wissen, dass die Verarbeitung der Queries von der sog. Query-Engine übernommen werden. Die Teilnehmer:innen wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten.
 
 Den Teilnehmer:innen ist bekannt, dass die Verarbeitung von Queries in den folgenden Schritten erfolgt:
@@ -52,23 +52,15 @@ Die Teilnehmer:innen kennen gängige Verfahren zur Optimierung (analytischer) Qu
 
 // tag::EN[]
 [[LG-6-1]]
-==== LG 6-1: Aspects and building blocks
+==== LG 6-1: Analytical queries
 tbd.
 
 [[LG-6-2]]
-==== LG 6-2: Central approaches
+==== LG 6-2: Query programming models
 tbd.
 
 [[LG-6-3]]
-==== LG 6-3: Data Mesh
-tbd.
-
-[[LG-6-4]]
-==== LG 6-4: Machine Learning
-tbd.
-
-[[LG-6-5]]
-==== LG 6-5: Use Cases
+==== LG 6-3: Query processing & optimization
 tbd.
 
 // end::EN[]
