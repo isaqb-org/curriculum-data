@@ -117,7 +117,6 @@ Die Teilnehmer:innen kennen wesentliche Unterschiede zwischen DWH und DL Systeme
 - Hoher Aufwand für die Integration neuer Datenquellen beim DWH während neue Datenquellen in den DL direkt aufgenommen werden können.
 - Hoher Aufwand für die Vereinheitlichung von Daten beim lesenden (analytischen) Zugriff im DL während dies beim DWH in deutlich geringerem Umfang erforderlich ist.
 
-
 Die Teilnehmer:innen kennen Lösungsansätze, um in DWH Systemen den Aufwand für Änderungen am Schema sowie für die Integration neuer Datenquellen zu reduzieren, wie etwa
 
 - Verwendung künstlicher Schlüssel (Surrogate Keys)
@@ -127,7 +126,7 @@ Die Teilnehmer:innen kennen Lösungsansätze, um in DWH Systemen den Aufwand fü
 
 Die Teilnehmer:innen kennen Lösungsansätze, um in DL Systemen den Aufwand für die Vereinheitlichung beim lesenden Zugriff zu reduzieren:
 
-- Aufteilen des DL in Bereiche unterschiedlicher Datenqualität (etwa Bronze, Silber und Gold), wobei die Rohdaten im Bronze-Bereich und die vereinheitlichten, gut analysierbaren Daten im Gold-Bereich zu finden sind.
+- Aufteilen des DL in Bereiche unterschiedlicher Datenqualität – etwa Bronze, Silber und Gold –, wobei die Rohdaten im Bronze-Bereich und die vereinheitlichten, gut analysierbaren Daten im Gold-Bereich zu finden sind  (Data Lakehouse).
 - Technische Aspekte der Vereinheitlichung direkt bei der Eingangsverarbeitung erledigen (einheitliche Zeichensätze, Null-Values, Datumsformate, ...)
 - Modularisierung des DL etwa über die Verwendung von DDD.
 
