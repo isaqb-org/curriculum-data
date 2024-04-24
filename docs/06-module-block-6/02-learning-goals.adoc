@@ -32,7 +32,9 @@ Den Teilnehmer:innen ist bewusst, dass die Art des benötigten Datenzugriffs zen
 Die Teilnehmer:innen kennen für jedes dieser Programmiermodelle Beispiele zu Frameworks, Libraries und Tools für die Verarbeitung analytischer Queries.
 
 [[LZ-6-2]]
-==== LZ 6-2 - Query Verarbeitung
+==== LZ 6-2 - Query Verarbeitung & Optimierung
+Die Teilnehmer:innen wissen, dass die Verarbeitung der Queries von der sog. Query-Engine übernommen werden. Die Teilnehmer:innen wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten.
+
 Den Teilnehmer:innen ist bekannt, dass die Verarbeitung von Queries in den folgenden Schritten erfolgt:
 
 - Parsen der Query-Statements
@@ -40,12 +42,6 @@ Den Teilnehmer:innen ist bekannt, dass die Verarbeitung von Queries in den folge
 - Ausführen der Query gemäß Ausführungsplan
 - Rückgabe der Ergebnisse
 
-Die Teilnehmer:innen wissen, dass diese Aufgaben von der sog. Query-Engine übernommen werden. Die Teilnehmer:innen wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten. Sie wissen, dass diese Engines in der Cloud (public/private) und auch on-Premises betrieben werden können.
-
-Den Teilnehmer:innen ist bewusst, dass Query Engines auf unterschiedliche Aufgaben spezialisert sein können, etwa für das performante Lesen oder Schreiben von Daten oder für den Zeilen- oder Spalten-orientierten Zugriff auf die Daten.
-
-[[LZ-6-3]]
-==== LZ 6-3 - Query Optimierung
 Die Teilnehmer:innen verstehen, dass analytische Queries i.d.R. nicht komplett im Hauptspeicher verarbeitet werden können und dass analytische Queries oft auf verteilten Daten operieren müssen. Sie wissen, dass eine performante Ausführung von der Engine insbesondere durch Lastverteilung auf parallel arbeitende Worker gewährleistet werden kann.
 
 Den Teilnehmer:innen ist bewusst, dass Unterschiede in Ausführungsplänen zu drastischen Laufzeit-Unterschieden bei der Ausführung von Queries führen können. Sie kennen Beispiele wie Full Table Scans oder Full Outer Joins (Kreuzprodukte), die auf ungünstige Ausführungspläne hinweisen können.
