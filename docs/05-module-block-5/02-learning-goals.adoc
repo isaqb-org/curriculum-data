@@ -130,6 +130,10 @@ Die Teilnehmer:innen kennen Lösungsansätze, um in DL Systemen den Aufwand für
 - Technische Aspekte der Vereinheitlichung direkt bei der Eingangsverarbeitung erledigen (einheitliche Zeichensätze, Null-Values, Datumsformate, ...)
 - Modularisierung des DL etwa über die Verwendung von DDD.
 
+Die Teilnehmer:innen kennen Lösungsansätze, für Data Retention:
+- Wahl der Speichertechnologie abhängig von der Häufigkeit des Datenzugriffs
+- Automatisches Löschen von Daten nach vorgebenen Kriterien, z.B. Ablauf einer Speicherfrist
+
 // end::DE[]
 
 // tag::EN[]
