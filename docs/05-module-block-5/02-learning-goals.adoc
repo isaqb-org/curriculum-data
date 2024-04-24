@@ -78,8 +78,8 @@ Den Teilnehmer:innen ist das alternative Konzept der BASE-Transaktionen sowie sp
 
 Die Teilnehmer:innen verstehen, dass es bei der Verarbeitung großer Datenmengen (speziell im Batch) sinnvoll sein kann, auf ACID Transaktionen zu verzichten oder sie zumindest mit schwächeren Garantien für Consistency und Isolation zu verwenden um die Verarbeitungsgeschwindigkeit zu verbessern. Sie verstehen, dass beim Einsatz von Streaming Systemen eine nebenläufige Verarbeitung stattfindet, bei der der Einsatz von Transaktionen sinnvoll sein kann.
 
-[[LZ-5-4]]
-==== LZ 5-4 - Versionierung von Daten
+[[LZ-5-5]]
+==== LZ 5-5 - Versionierung von Daten
 Den Teilnehmer:innen ist bewusst, dass bei veränderlichen Daten nicht nur der aktuelle Zustand, sondern auch die früheren Zustände (speziell für analytische Auswertungen) von Interesse sein können. Sie kennen die folgenden Verfahren für die Versionierung von Daten und verstehen, wie diese etwa in Form von Datenbanksystemen mit den o.g. Speichersystemen kombiniert werden:
 
 - Transaktionen (über die Serialisierbarkeit)
@@ -87,8 +87,8 @@ Den Teilnehmer:innen ist bewusst, dass bei veränderlichen Daten nicht nur der a
 - Event-Sourcing
 - Hybride Datenbanken mit inkludiertem Versionsmanagement
 
-[[LZ-5-5]]
-==== LZ 5-5 - Optimierung und Skalierung
+[[LZ-5-6]]
+==== LZ 5-6 - Optimierung und Skalierung
 Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigender Last zu optimieren und zu skalieren, wie etwa
 
 - Sharding
@@ -101,8 +101,8 @@ Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigende
 
 Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.
 
-[[LZ-5-6]]
-==== LZ 5-6 - Data Warehouse und Data Lake
+[[LZ-5-7]]
+==== LZ 5-7 - Data Warehouse und Data Lake
 Die Teilnehmer:innen wissen, dass Data Warehouse (DWH) Systeme i.d.R. für die Vereinheitlichung und Integration analytischer Daten verwendet werden. Sie wissen, dass Data Lake (DL) Systeme neben dieser Vereinheitlichung und Integration analytischer Daten auch eher als DWH Systeme geeignet sind, die Anwendung von Verfahren der KI und des ML auf analytischen Daten zu ermöglichen.
 
 Die Teilnehmer:innen wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL Systeme verwendet werden.
@@ -133,23 +133,31 @@ Die Teilnehmer:innen kennen Lösungsansätze, um in DL Systemen den Aufwand für
 
 // tag::EN[]
 [[LG-5-1]]
-==== LG 5-1: Fundamental structure, building blocks & challenges
+==== LG 5-1: Storage systems
 tbd.
 
 [[LG-5-2]]
-==== LG 5-2: Data pipeline patterns
+==== LG 5-2: Database systems
 tbd.
 
 [[LG-5-3]]
-==== LG 5-2: Data validation & transformation
+==== LG 5-2: Database systems for analytical applications
 tbd.
 
 [[LG-5-4]]
-==== LG 5-2: Orchestration & Workflows
+==== LG 5-2: Concurrency Control
 tbd.
 
 [[LG-5-5]]
 ==== LG 5-2: Solutions, infrastructure and operations
+tbd.
+
+[[LG-5-6]]
+==== LG 5-6: Solutions, infrastructure and operations
+tbd.
+
+[[LG-5-7]]
+==== LG 5-7: Solutions, infrastructure and operations
 tbd.
 
 // end::EN[]
