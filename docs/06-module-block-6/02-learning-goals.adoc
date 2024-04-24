@@ -46,13 +46,7 @@ Die Teilnehmer:innen verstehen, dass analytische Queries i.d.R. nicht komplett i
 
 Den Teilnehmer:innen ist bewusst, dass Unterschiede in Ausführungsplänen zu drastischen Laufzeit-Unterschieden bei der Ausführung von Queries führen können. Sie kennen Beispiele wie Full Table Scans oder Full Outer Joins (Kreuzprodukte), die auf ungünstige Ausführungspläne hinweisen können.
 
-Die Teilnehmer:innen kennen gängige Verfahren zur Optimierung (analytischer) Queries, wie etwa
-
-- die Vorgabe günstiger Join-Beziehungen im Star-Schema
-- das Vorberechnen von Teil-Queries in sog. Materialized Views
-- die Verwendung von Hinweisen an den Optimizer (Optimizer Hints) zur Bevorzugung gewünschter Ausführungspläne
-- die Vermeidung des Speicherns von Zwischenergebnissen durch die Verwendung von Common Table Expressions (CTE)
-
+Die Teilnehmer:innen kennen gängige Verfahren zur Optimierung (analytischer) Queries, wie etwa die Vorgabe günstiger Join-Beziehungen im Star-Schema.
 
 // end::DE[]
 
