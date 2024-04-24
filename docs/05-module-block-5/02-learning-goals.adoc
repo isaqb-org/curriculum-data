@@ -149,15 +149,15 @@ tbd.
 tbd.
 
 [[LG-5-5]]
-==== LG 5-2: Solutions, infrastructure and operations
+==== LG 5-2: Versioning of data
 tbd.
 
 [[LG-5-6]]
-==== LG 5-6: Solutions, infrastructure and operations
+==== LG 5-6: Optimization and scaling
 tbd.
 
 [[LG-5-7]]
-==== LG 5-7: Solutions, infrastructure and operations
+==== LG 5-7: Data Warehouse und Data Lake
 tbd.
 
 // end::EN[]
