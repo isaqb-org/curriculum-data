@@ -11,18 +11,16 @@ Die Teilnehmer:innen verstehen, dass (Daten-)Transformationen erforderlich sind,
 Die Teilnehmer:innen kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell
 
 - Umwandeln der Datenrepräsentation von Quell- in Zielformate
-- Bereinigen/Standardisieren der Daten (Data Cleansing)
+- Bereinigen der Daten (Data Cleansing)
 - Identifizieren und Entfernen von Duplikaten
 - Ergänzung der Daten (Enhancement)
-- Entkopplung der Daten der Quell- von denen der Zielsysteme
-- Vereinheitlichung von Daten mehrerer Quellsysteme
-- Optimierte Speicherung und Verteilung von Daten für performante Queries
+- Vereinheitlichung/Standardisierung von Daten mehrerer Quellsysteme, z.B. Lokalisierung
 - Reduktion des Datenumfangs, Komprimierung
 - Anonymisierung, Pseudonomisierung, Verschlüsselung
-- Lokalisierung der Daten
-- (In Ausnahmen) Ausführen von Geschäftslogik (s. LZ 7-4)
 
 Die Teilnehmer:innen verstehen, wie Transformationen Verfahren des Query und Processing (s. LZ 6) nutzen, um auf die Daten in den Speichersystemen (s. LZ 5) zuzugreifen.
+
+Die Teilnehmer:innen verstehen, wie Transformationen bei verteilten Daten parallel ausgeführt werden.
 
 Die Teilnehmer:innen verstehen die Bedeutung von Schemas und Datenmodellen (s. LZ 9) für die Umsetzung von Transformationen.
 
