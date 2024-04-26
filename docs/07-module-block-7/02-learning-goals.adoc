@@ -30,16 +30,8 @@ Die Teilnehmer:innen kennen typische Transformationen für die Aufbereitung anal
 
 - Normalisierung / Denormalisierung von Datenstrukturen - Star/Snowflake Schema, Data Vault
 - Zuordnung von künstlichen IDs (surrogate keys) zu IDs der Quellsysteme
-- Zuordnung von Enum-Werten
-- Rechtschreibkorrektur
 - (Multidimensionale) Aggregation (Cubes)
-- Pivotisieren
-- Transponieren
 - Umwandlung zwischen flachen und geschachtelten Datenstrukturen
-- Normierung skalarer Werte
-- Ergänzen
-- Parsen und Zusammenfügen von Text
-- Sortieren und Gruppieren
 - Historisieren (Slowly Changing Dimensions)
 - Ersetzen / Aussortieren unwahrscheinlicher Werte / Datensätze (Outlier)
 
