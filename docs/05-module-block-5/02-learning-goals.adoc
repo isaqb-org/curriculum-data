@@ -102,7 +102,7 @@ Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und 
 
 Die Teilnehmer:innen verstehen, dass Daten oft nicht unbefristet aufbewahrt werden können. Sie kennen Ansätze für Data Retention, wie:
 
-- Wahl der Speichertechnologie abhängig von der Häufigkeit des Datenzugriffs
+- Wahl der Speichertechnologie abhängig von der Häufigkeit des Datenzugriffs  ("Hot" und "Cold" Storage)
 - Automatisches Löschen von Daten nach vorgebenen Kriterien, z.B. Ablauf einer Speicherfrist
 
 [[LZ-5-7]]
@@ -115,7 +115,7 @@ Die Teilnehmer:innen kennen wesentliche Unterschiede zwischen DWH und DL Systeme
 
 - Ein definiertes Schema (Schema on Write) beim DWH (das sich im Laufe der Zeit ändern kann) gegenüber mehreren parallelen Schemata (etwa mit Schema on Read) beim DL.
 - Nur vereinheitlichte Daten im DWH während im DL auch die ursprünglichen Quelldaten (Rohdaten) vorgehalten werden.
-- Die bessere Eignung von Data Lakes für analytische und Machine Learning Szenarien, da dort noch die ursprünglichen Quelldaten vorhanden sind
+- Die bessere Eignung von Data Lakes für Künstliche Intelligenz und Machine Learning Szenarien, da dort noch die ursprünglichen Quelldaten vorhanden sind
 - Optimierte Strukturen für den lesenden (analytischen) Zugriff beim DWH gegenüber vereinfachten schreibenden Zugriffen beim DL.
 - Begrenzung auf strukturierte Daten beim DWH während DL auch unstrukturierte und semi-strukturierte Daten aufnehmen können.
 - Hoher Aufwand für die Integration neuer Datenquellen beim DWH während neue Datenquellen in den DL direkt aufgenommen werden können.
@@ -162,7 +162,7 @@ tbd.
 tbd.
 
 [[LG-5-7]]
-==== LG 5-7: Data Warehouse und Data Lake
+==== LG 5-7: Data Warehouse and Data Lake
 tbd.
 
 // end::EN[]
