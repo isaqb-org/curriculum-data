@@ -44,7 +44,6 @@ Die Teilnehmer:innen verstehen die wesentlichen Konzepte einer Domain-agnostisch
 
 Die Teilnehmer:innen kennen typische Komponenten einer Datenplattform, wie Storage, Data Pipelines, Data Catalogs, Access Management, Monitoring, Visualisation. Ihnen sind bestehende Lösungen speziell der großen Cloud Provider bekannt.
 
-
 [[LZ-11-5]]
 ==== LZ 11-5 - Federated Computational Governance
 Die Teilnehmer:innen wissen, dass die sog. Governance Group (im Sinne einer Gilde) aus Vertretern der einzelnen Domain Teams und dem Data Platform Team besteht.
