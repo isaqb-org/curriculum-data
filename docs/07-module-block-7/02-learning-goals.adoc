@@ -91,18 +91,14 @@ Die Teilnehmer:innen wissen, dass bei der Stream Verarbeitung
 - die Daten mehrerer Streams miteinander zu einem weiteren Stream kombiniert werden können.
 - Datensätze (etwa fehlerhafte oder unvollständige) im Stream voneinander getrennt und separat (in unterschiedlichen Streams) weiterverarbeitet werden können.
 
-Die Teilnehmer:innen verstehen, dass das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird.
+Die Teilnehmer:innen verstehen, warum das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird.
 
 Die Teilnehmer:innen können zustandslose (stateless) und zustandsbehaftete (stateful) Stream Verarbeitung unterscheiden.
 
 Die Teilnehmer:innen verstehen, dass Operationen nicht auf allen Datensätzen eines Streams erfolgen können, sondern immer nur auf einzelnen oder einer Gruppe von aufeinanderfolgenden Datensätzen. Sie kennen dazu das Konzept der Fenster (Window) Funktionen.
 
-Die Teilnehmer:innen kennen Frameworks oder Tools für die Stream Verarbeitung wie
+Die Teilnehmer:innen kennen Frameworks oder Tools für die Stream Verarbeitung, wie Kafka Streams.
 
-- Kafka Streams
-- Apache Flink
-- Pulsar Functions
-- Spark Streaming
 // end::DE[]
 
 // tag::EN[]
