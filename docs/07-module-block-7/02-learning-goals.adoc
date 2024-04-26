@@ -75,14 +75,12 @@ Die Teilnehmer:innen verstehen, dass in einem Data Lake (s. LZ 5-6) Daten unters
 ==== LZ 7-7 - Batch Verarbeitung
 Die Teilnehmer:innen verstehen das Verfahren der Batch Verarbeitung (Batch Processing) für die Transformation von Daten. Sie wissen, dass die Transformation ein Teil der übergreifenden ETL (Extract-Transform-Load) oder ELT (Extract-Load-Transform) Prozesse ist. Ihnen ist bewusst, dass
 
-- die Batch Verarbeitung üblicherweise dazu dient, eine größere Anzahl Datensätze aus mehreren Datenquellen in einem Schritt zu verarbeiten und die Ergebnisse in eine Datensenke zu schreiben
+- die Batch Verarbeitung üblicherweise dazu dient, eine größere Anzahl Datensätze aus mehreren Datenquellen zu verarbeiten und die Ergebnisse in eine Datensenke (z.B. Staging Area) zu schreiben
 - alle (initial/complete load) oder nur die letzten Änderungen (incremental load) im Batch verarbeitet werden können
 - die Batch-Verarbeitung idR zeitlich geplant (scheduled) und wenige Male je Tag ausgeführt wird
 - eine Batch-Verarbeitung idR alle Datensätze verarbeitet oder (im Fehlerfalle) keine
-- eine Batch-Verarbeitung üblicherweise die Konsistenz (s. LZ 5-3) der Daten in der Datensenke erhält
-- eine Batch-Verarbeitung komplexe Operationen zur Datenverarbeitung enthalten kann
 
-Die Teilnehmer:innen verstehen das Verfahren der Micro-Batch Verarbeitung von Daten []. Sie kennen den Unterschied zwischen Batch und Micro-Batch Verarbeitung (Batches werden nur manuell oder zeitlich angestoßen, Micro-Batches auch dann, wenn ausreichend Datensätze in der Datenquelle angefallen sind).
+Die Teilnehmer:innen verstehen das Verfahren der Micro-Batch Verarbeitung von Daten []. Sie wissen, dass Micro-Batches im Gegensatz zu Batches auch dann, wenn ausreichend Datensätze in der Datenquelle angefallen sind.
 
 [[LZ-7-8]]
 ==== LZ 7-8 - Stream Verarbeitung
@@ -92,7 +90,6 @@ Die Teilnehmer:innen wissen, dass bei der Stream Verarbeitung
 
 - die Daten mehrerer Streams miteinander zu einem weiteren Stream kombiniert werden können.
 - Datensätze (etwa fehlerhafte oder unvollständige) im Stream voneinander getrennt und separat (in unterschiedlichen Streams) weiterverarbeitet werden können.
-- bei der Verarbeitung von Daten im Stream üblicherweise auf komplexe Operationen verzichtet wird.
 
 Die Teilnehmer:innen verstehen, dass das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird.
 
