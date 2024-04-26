@@ -102,24 +102,36 @@ Die Teilnehmer:innen kennen Frameworks oder Tools für die Stream Verarbeitung, 
 // end::DE[]
 
 // tag::EN[]
-[[LG-6-1]]
-==== LG 6-1: Aspects and building blocks
+[[LG-7-1]]
+==== LG 7-1: Differentiation between queries
 tbd.
 
-[[LG-6-2]]
-==== LG 6-2: Central approaches
+[[LG-7-2]]
+==== LG 7-2: Applications
 tbd.
 
-[[LG-6-3]]
-==== LG 6-3: Data Mesh
+[[LG-7-3]]
+==== LG 7-3: Typical transformations
 tbd.
 
-[[LG-6-4]]
-==== LG 6-4: Machine Learning
+[[LG-7-4]]
+==== LG 7-4: Staging Area
 tbd.
 
-[[LG-6-5]]
-==== LG 6-5: Use Cases
+[[LG-7-5]]
+==== LG 7-5: Robust transformations
+tbd.
+
+[[LG-7-6]]
+==== LG 7-6: Quality levels
+tbd.
+
+[[LG-7-7]]
+==== LG 7-7: Batch processing
+tbd.
+
+[[LG-7-8]]
+==== LG 7-8: Stream processing
 tbd.
 
 // end::EN[]
