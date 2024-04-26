@@ -41,7 +41,7 @@ Den Teilnehmer:innen ist das Konzept der Staging Area vertraut. Sie wissen, dass
 
 - analytische Daten aus Datenquellen in einer Staging Area gesammelt und aufbereitet werden, bevor sie für die Analyse zur Verfügung gestellt werden
 - Staging Areas typischerweise für die Batch Verarbeitung von Daten zum Befüllen eines DWH Systems eingesetzt werden
-- das tatsächliche Befüllen des DWH keine komplexen Operationen mehr erfordert
+- das tatsächliche Befüllen des DWH keine komplexen Operationen mehr erfordert und üblicherweise ganz oder gar nicht erfolgt (atomar)
 - die Staging Area sowohl das vollständige Verarbeiten der Daten einer Datenquelle (initial load) als auch das Verarbeiten der Änderungsdaten (incremental load) unterstützen muss.
 - die Staging Area immer nur genau die Änderungsdaten erhält, die seit der letzten Batchverarbeitung in den Quellsystemen angefallen sind.
 
@@ -51,15 +51,10 @@ Die Teilnehmer:innen wissen, welche Transformationen typischerweise in einer Sta
 ==== LZ 7-5 - Robuste Transformationen
 Die Teilnehmer:innen verstehen, dass die Umsetzung von Transformationen oft fragil ist, da sich die zu verarbeitenden Daten von Ausführung zu Ausführung im Hinblick auf Umfang, Format oder Bedeutung ändern können. Die Teilnehmer:innen kennen Lösungsansätze, um Transformationen robust zu gestalten:
 
-- Validieren der Eingangsdaten
-- Verwenden unstrukturierter oder semi-strukturierter Daten
-- Verwenden generischer Transformationen
 - Vermeiden der Umsetzung von Geschäftslogik
-- Geschäftslogik von Domain-Teams umsetzen lassen (s. Data Mesh, LZ 12)
 - Gewährleisten der Wiederholbarkeit - Idempotente Transformationen
 - Verwendung von Standards
 - Einsatz von Verfahren zur Code-Generierung für eine automatisierte Anpassung von Transformationen bei Schema-Änderungen
-- Zerlegen komplexer Transformationen
 - Auswahl geeigneter Programmiermodelle
 
 Die Teilnehmer:innen kennen Verfahren zum Data Profiling, um die zu erwartenden Daten für die Umsetzung der Transformationen vorab zu analysieren.
