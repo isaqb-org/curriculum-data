@@ -12,7 +12,7 @@ Die Teilnehmer:innen können die wesentlichen Anwendungsfälle für die Nutzung 
 
 [[LZ-8-2]]
 ==== LZ 8-2 - Repräsentation von Massendaten
-Die Teilnehmer:innen kennen Verfahren für die Darstellung von Massendaten. Sie kennen Verfahren des Query-Processings wie Aggregation oder Cubes und verstehen, wie diese Verfahren für die Darstellung von Massendaten verwendet werden können. Sie wissen, dass neben den Daten selbst auch Information zu deren Schema, zum Umfang, zur Aktualität, zu den Datenquellen oder zur Qualität angeboten werden können und i.d.R. auch sollten.
+Die Teilnehmer:innen wissen wie die Verfahren des Query-Processings wie Aggregation oder Cubes für die Darstellung von Massendaten verwendet werden können. Sie wissen, dass neben den Daten selbst auch Information zu deren Schema, zum Umfang, zur Aktualität, zu den Datenquellen oder zur Qualität angeboten werden können.
 
 Die Teilnehmer:innen kennen Tools zur Visualisierung von Massendaten. Sie kennen verfügbare Arten von Diagrammen (Heatmap, Ranking, Top, ...) und können sie geeignet einsetzen. Sie kennen BI-/Reporting Tools und können diese etwa für Slice & Dice, Drill (Down, Up, Across, Through) oder statistische Analysen einsetzen. Die Teilnehmer:innen wissen, dass auf Basis dieser Tools auch Dashbords oder Notifikationen (Alerts) umgesetzt werden können.
 
