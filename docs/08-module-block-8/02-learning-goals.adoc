@@ -29,12 +29,12 @@ Den Teilnehmer:innen sind Data Analytics und BI Anwendungen vertraut. Sie kennen
 Die Teilnehmer:innen kennen Frameworks und Tools für die Umsetzung von Data Analytics und BI Anwendungen.
 
 [[LZ-8-5]]
-==== LZ 8-5 - Maschine Learning
-Die Teilnehmer:innen wissen, wie Maschine Learning Modelle für den Einsatz im Unternehmen auf Basis operativ anfallender Daten trainiert, verbessert und getestet werden. Sie kennen Anwendungsfälle für die Nutzung solcher Modelle in operativen Anwendungen.
+==== LZ 8-5 - Machine Learning
+Die Teilnehmer:innen wissen, wie Mschine Learning Modelle für den Einsatz im Unternehmen auf Basis operativ anfallender Daten trainiert, verbessert und getestet werden. Sie kennen Anwendungsfälle für die Nutzung solcher Modelle in operativen Anwendungen.
 
 Die Teilnehmer:innen können beurteilen, welche Anwendungsfälle den Einsatz von ML Modellen erfordern und welche etwa bereits auf Basis statistischer Methoden umgesetzt weren können.
 
-Die Teilnehmer:innen verstehen den Ansatz des Deep Learnings und können ihn von den (klassischen) Methoden des Maschine Learnings unterscheiden. Sie können beurteilen, in welchen Fällen, Deep Learning Ansätze sinnvoll eingesetzt werden können.
+Die Teilnehmer:innen verstehen den Ansatz des Deep Learnings und können ihn von den (klassischen) Methoden des Machine Learnings unterscheiden. Sie können beurteilen, in welchen Fällen, Deep Learning Ansätze sinnvoll eingesetzt werden können.
 
 [[LZ-8-6]]
 ==== LZ 8-6 - Reverse ETL
