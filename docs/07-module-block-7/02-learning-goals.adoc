@@ -80,7 +80,7 @@ Die Teilnehmer:innen verstehen das Verfahren der Batch Verarbeitung (Batch Proce
 - die Batch-Verarbeitung idR zeitlich geplant (scheduled) und wenige Male je Tag ausgeführt wird
 - eine Batch-Verarbeitung idR alle Datensätze verarbeitet oder (im Fehlerfalle) keine
 
-Die Teilnehmer:innen verstehen das Verfahren der Micro-Batch Verarbeitung von Daten []. Sie wissen, dass Micro-Batches im Gegensatz zu Batches auch dann, wenn ausreichend Datensätze in der Datenquelle angefallen sind.
+Die Teilnehmer:innen verstehen das Verfahren der Micro-Batch Verarbeitung von Daten. Sie wissen, dass Micro-Batches im Gegensatz zu Batches auch dann angestoßen werden, wenn ausreichend Datensätze in der Datenquelle angefallen sind.
 
 [[LZ-7-8]]
 ==== LZ 7-8 - Stream Verarbeitung
