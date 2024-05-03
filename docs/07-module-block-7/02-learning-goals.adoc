@@ -11,18 +11,16 @@ Die Teilnehmer:innen verstehen, dass (Daten-)Transformationen erforderlich sind,
 Die Teilnehmer:innen kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell
 
 - Umwandeln der Datenrepräsentation von Quell- in Zielformate
-- Bereinigen/Standardisieren der Daten (Data Cleansing)
+- Bereinigen der Daten (Data Cleansing)
 - Identifizieren und Entfernen von Duplikaten
 - Ergänzung der Daten (Enhancement)
-- Entkopplung der Daten der Quell- von denen der Zielsysteme
-- Vereinheitlichung von Daten mehrerer Quellsysteme
-- Optimierte Speicherung und Verteilung von Daten für performante Queries
+- Vereinheitlichung/Standardisierung von Daten mehrerer Quellsysteme, z.B. Lokalisierung
 - Reduktion des Datenumfangs, Komprimierung
 - Anonymisierung, Pseudonomisierung, Verschlüsselung
-- Lokalisierung der Daten
-- (In Ausnahmen) Ausführen von Geschäftslogik (s. LZ 7-4)
 
 Die Teilnehmer:innen verstehen, wie Transformationen Verfahren des Query und Processing (s. LZ 6) nutzen, um auf die Daten in den Speichersystemen (s. LZ 5) zuzugreifen.
+
+Die Teilnehmer:innen verstehen, wie Transformationen bei verteilten Daten parallel ausgeführt werden.
 
 Die Teilnehmer:innen verstehen die Bedeutung von Schemas und Datenmodellen (s. LZ 9) für die Umsetzung von Transformationen.
 
@@ -32,16 +30,8 @@ Die Teilnehmer:innen kennen typische Transformationen für die Aufbereitung anal
 
 - Normalisierung / Denormalisierung von Datenstrukturen - Star/Snowflake Schema, Data Vault
 - Zuordnung von künstlichen IDs (surrogate keys) zu IDs der Quellsysteme
-- Zuordnung von Enum-Werten
-- Rechtschreibkorrektur
 - (Multidimensionale) Aggregation (Cubes)
-- Pivotisieren
-- Transponieren
 - Umwandlung zwischen flachen und geschachtelten Datenstrukturen
-- Normierung skalarer Werte
-- Ergänzen
-- Parsen und Zusammenfügen von Text
-- Sortieren und Gruppieren
 - Historisieren (Slowly Changing Dimensions)
 - Ersetzen / Aussortieren unwahrscheinlicher Werte / Datensätze (Outlier)
 
@@ -51,7 +41,7 @@ Den Teilnehmer:innen ist das Konzept der Staging Area vertraut. Sie wissen, dass
 
 - analytische Daten aus Datenquellen in einer Staging Area gesammelt und aufbereitet werden, bevor sie für die Analyse zur Verfügung gestellt werden
 - Staging Areas typischerweise für die Batch Verarbeitung von Daten zum Befüllen eines DWH Systems eingesetzt werden
-- das tatsächliche Befüllen des DWH keine komplexen Operationen mehr erfordert
+- das tatsächliche Befüllen des DWH keine komplexen Operationen mehr erfordert und üblicherweise ganz oder gar nicht erfolgt (atomar)
 - die Staging Area sowohl das vollständige Verarbeiten der Daten einer Datenquelle (initial load) als auch das Verarbeiten der Änderungsdaten (incremental load) unterstützen muss.
 - die Staging Area immer nur genau die Änderungsdaten erhält, die seit der letzten Batchverarbeitung in den Quellsystemen angefallen sind.
 
@@ -61,15 +51,10 @@ Die Teilnehmer:innen wissen, welche Transformationen typischerweise in einer Sta
 ==== LZ 7-5 - Robuste Transformationen
 Die Teilnehmer:innen verstehen, dass die Umsetzung von Transformationen oft fragil ist, da sich die zu verarbeitenden Daten von Ausführung zu Ausführung im Hinblick auf Umfang, Format oder Bedeutung ändern können. Die Teilnehmer:innen kennen Lösungsansätze, um Transformationen robust zu gestalten:
 
-- Validieren der Eingangsdaten
-- Verwenden unstrukturierter oder semi-strukturierter Daten
-- Verwenden generischer Transformationen
 - Vermeiden der Umsetzung von Geschäftslogik
-- Geschäftslogik von Domain-Teams umsetzen lassen (s. Data Mesh, LZ 12)
 - Gewährleisten der Wiederholbarkeit - Idempotente Transformationen
 - Verwendung von Standards
 - Einsatz von Verfahren zur Code-Generierung für eine automatisierte Anpassung von Transformationen bei Schema-Änderungen
-- Zerlegen komplexer Transformationen
 - Auswahl geeigneter Programmiermodelle
 
 Die Teilnehmer:innen kennen Verfahren zum Data Profiling, um die zu erwartenden Daten für die Umsetzung der Transformationen vorab zu analysieren.
@@ -88,16 +73,14 @@ Die Teilnehmer:innen verstehen, dass in einem Data Lake (s. LZ 5-6) Daten unters
 
 [[LZ-7-7]]
 ==== LZ 7-7 - Batch Verarbeitung
-Die Teilnehmer:innen verstehen das Verfahren der Batch Verarbeitung (Batch Processing) für die Transformation von Daten. Ihnen ist bewusst, dass
+Die Teilnehmer:innen verstehen das Verfahren der Batch Verarbeitung (Batch Processing) für die Transformation von Daten. Sie wissen, dass die Transformation ein Teil der übergreifenden ETL (Extract-Transform-Load) oder ELT (Extract-Load-Transform) Prozesse ist. Ihnen ist bewusst, dass
 
-- die Batch Verarbeitung üblicherweise dazu dient, eine größere Anzahl Datensätze aus mehreren Datenquellen in einem Schritt zu verarbeiten und die Ergebnisse in eine Datensenke zu schreiben
+- die Batch Verarbeitung üblicherweise dazu dient, eine größere Anzahl Datensätze aus mehreren Datenquellen zu verarbeiten und die Ergebnisse in eine Datensenke (z.B. Staging Area) zu schreiben
 - alle (initial/complete load) oder nur die letzten Änderungen (incremental load) im Batch verarbeitet werden können
 - die Batch-Verarbeitung idR zeitlich geplant (scheduled) und wenige Male je Tag ausgeführt wird
 - eine Batch-Verarbeitung idR alle Datensätze verarbeitet oder (im Fehlerfalle) keine
-- eine Batch-Verarbeitung üblicherweise die Konsistenz (s. LZ 5-3) der Daten in der Datensenke erhält
-- eine Batch-Verarbeitung komplexe Operationen zur Datenverarbeitung enthalten kann
 
-Die Teilnehmer:innen verstehen das Verfahren der Micro-Batch Verarbeitung von Daten []. Sie kennen den Unterschied zwischen Batch und Micro-Batch Verarbeitung (Batches werden nur manuell oder zeitlich angestoßen, Micro-Batches auch dann, wenn ausreichend Datensätze in der Datenquelle angefallen sind).
+Die Teilnehmer:innen verstehen das Verfahren der Micro-Batch Verarbeitung von Daten. Sie wissen, dass Micro-Batches im Gegensatz zu Batches auch dann angestoßen werden, wenn ausreichend Datensätze in der Datenquelle angefallen sind.
 
 [[LZ-7-8]]
 ==== LZ 7-8 - Stream Verarbeitung
@@ -107,41 +90,48 @@ Die Teilnehmer:innen wissen, dass bei der Stream Verarbeitung
 
 - die Daten mehrerer Streams miteinander zu einem weiteren Stream kombiniert werden können.
 - Datensätze (etwa fehlerhafte oder unvollständige) im Stream voneinander getrennt und separat (in unterschiedlichen Streams) weiterverarbeitet werden können.
-- bei der Verarbeitung von Daten im Stream üblicherweise auf komplexe Operationen verzichtet wird.
 
-Die Teilnehmer:innen verstehen, dass das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird.
+Die Teilnehmer:innen verstehen, warum das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird.
 
 Die Teilnehmer:innen können zustandslose (stateless) und zustandsbehaftete (stateful) Stream Verarbeitung unterscheiden.
 
 Die Teilnehmer:innen verstehen, dass Operationen nicht auf allen Datensätzen eines Streams erfolgen können, sondern immer nur auf einzelnen oder einer Gruppe von aufeinanderfolgenden Datensätzen. Sie kennen dazu das Konzept der Fenster (Window) Funktionen.
 
-Die Teilnehmer:innen kennen Frameworks oder Tools für die Stream Verarbeitung wie
+Die Teilnehmer:innen kennen Frameworks oder Tools für die Stream Verarbeitung, wie Kafka Streams.
 
-- Kafka Streams
-- Apache Flink
-- Pulsar Functions
-- Spark Streaming
 // end::DE[]
 
 // tag::EN[]
-[[LG-6-1]]
-==== LG 6-1: Aspects and building blocks
+[[LG-7-1]]
+==== LG 7-1: Differentiation between queries
 tbd.
 
-[[LG-6-2]]
-==== LG 6-2: Central approaches
+[[LG-7-2]]
+==== LG 7-2: Applications
 tbd.
 
-[[LG-6-3]]
-==== LG 6-3: Data Mesh
+[[LG-7-3]]
+==== LG 7-3: Typical transformations
 tbd.
 
-[[LG-6-4]]
-==== LG 6-4: Machine Learning
+[[LG-7-4]]
+==== LG 7-4: Staging Area
 tbd.
 
-[[LG-6-5]]
-==== LG 6-5: Use Cases
+[[LG-7-5]]
+==== LG 7-5: Robust transformations
+tbd.
+
+[[LG-7-6]]
+==== LG 7-6: Quality levels
+tbd.
+
+[[LG-7-7]]
+==== LG 7-7: Batch processing
+tbd.
+
+[[LG-7-8]]
+==== LG 7-8: Stream processing
 tbd.
 
 // end::EN[]
