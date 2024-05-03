@@ -30,7 +30,7 @@ Die Teilnehmer:innen kennen Frameworks und Tools für die Umsetzung von Data Ana
 
 [[LZ-8-5]]
 ==== LZ 8-5 - Machine Learning
-Die Teilnehmer:innen wissen, wie Machine Learning Modelle für den Einsatz im Unternehmen auf Basis operativ anfallender Daten trainiert, verbessert und getestet werden. Sie kennen Anwendungsfälle für die Nutzung solcher Modelle in operativen Anwendungen. Ihnen ist bewusst, das ML Verfahren, anders als analytische Verfahren, auf die vollständigen Rohdaten angewiesen sind und spezielle Repräsentationen (Vektoren) benötigen. Sie kennen die häufige Notwendigkeit spezialiserte Hardware (GPUs).
+Die Teilnehmer:innen wissen, wie Machine Learning Modelle für den Einsatz im Unternehmen auf Basis operativ anfallender Daten trainiert, verbessert und getestet werden. Sie kennen Anwendungsfälle für die Nutzung solcher Modelle in operativen Anwendungen. Ihnen ist bewusst, das ML Verfahren, anders als Data Analytics, auf die vollständigen Rohdaten angewiesen sind und spezielle Repräsentationen (Vektoren) benötigen. Sie kennen die häufige Notwendigkeit spezialiserte Hardware (GPUs).
 
 [[LZ-8-6]]
 ==== LZ 8-6 - Reverse ETL
