@@ -16,6 +16,8 @@ Die Teilnehmer:innen wissen wie die Verfahren des Query-Processings wie Aggregat
 
 Die Teilnehmer:innen kennen Tools zur Visualisierung von Massendaten. Sie kennen verfügbare Arten von Diagrammen (Heatmap, Ranking, Top, ...) und können sie geeignet einsetzen. Sie kennen BI-/Reporting Tools und wissen diese etwa für Slice & Dice, Drill (Down, Up, Across, Through) oder statistische Analysen eingesetzt werden können. Die Teilnehmer:innen wissen, dass auf Basis dieser Tools auch Dashbords oder Notifikationen (Alerts) umgesetzt werden können.
 
+Die Teilnehmer:innen kennen sowohl Verfahren zur explorativen Nutzung (self-service) als auch zur descriptiven Nutzung (vordefiniert).
+
 [[LZ-8-3]]
 ==== LZ 8-3 - Datenprodukte
 Die Teilnehmer:innen kennen das Konzept des Datenprodukts und speziell dessen Verwendung im Data Mesh Ansatz (s. LZ 11-3).
