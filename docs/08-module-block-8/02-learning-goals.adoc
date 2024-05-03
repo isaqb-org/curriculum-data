@@ -20,7 +20,7 @@ Die Teilnehmer:innen kennen sowohl Verfahren zur explorativen Nutzung (self-serv
 
 [[LZ-8-3]]
 ==== LZ 8-3 - Datenprodukte
-Die Teilnehmer:innen kennen das Konzept des Datenprodukts und speziell dessen Verwendung im Data Mesh Ansatz (s. LZ 11-3).
+Die Teilnehmer:innen kennen das Konzept des Datenprodukts und wissen, dass die Datenprodukte verwendet werden können um analytische Daten fachlich zu zerlegen. Sie kennen speziell deren Verwendung im Data Mesh Ansatz (s. LZ 11-3). 
 
 [[LZ-8-4]]
 ==== LZ 8-4 - Data Analytics und Business Intelligence
