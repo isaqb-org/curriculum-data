@@ -19,7 +19,7 @@ Die Teilnehmer:innen kennen Tools zur Visualisierung von Massendaten. Sie kennen
 Die Teilnehmer:innen kennen sowohl Verfahren zur explorativen Nutzung (self-service) als auch zur descriptiven Nutzung (vordefiniert).
 
 [[LZ-8-3]]
-==== LZ 8-3 - Modularsierung
+==== LZ 8-3 - Modularisierung
 Die Teilnehmer:innen wissen, dass analytische Daten vielfältig und unübersichtlich sein können. Sie kennen das Konzept des Datenprodukts und wissen, dass die Datenprodukte verwendet werden können um analytische Daten fachlich zu zerlegen. Sie kennen speziell deren Verwendung im Data Mesh Ansatz (s. LZ 11-3). 
 
 [[LZ-8-4]]
@@ -41,23 +41,27 @@ Die Teilnehmer:innen wissen, dass Reverse ETL Tools mit Konnektoren für gängig
 
 // tag::EN[]
 [[LG-8-1]]
-==== LG 6-1: Aspects and building blocks
+==== LG 6-1: Use Cases
 tbd.
 
 [[LG-8-2]]
-==== LG 6-2: Central approaches
+==== LG 6-2: Representation of mass data
 tbd.
 
 [[LG-8-3]]
-==== LG 6-3: Data Mesh
+==== LG 6-3: Modularization
 tbd.
 
 [[LG-8-4]]
-==== LG 6-4: Machine Learning
+==== LG 6-4: Data Analytics and Business Intelligence
 tbd.
 
 [[LG-8-5]]
-==== LG 6-5: Use Cases
+==== LG 8-5: Machine Learning
+tbd.
+
+[[LG-8-6]]
+==== LG 8-6: Reverse ETL
 tbd.
 
 // end::EN[]
