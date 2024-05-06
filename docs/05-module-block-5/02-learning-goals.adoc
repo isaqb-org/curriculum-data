@@ -106,7 +106,7 @@ Die Teilnehmer:innen verstehen, dass Daten oft nicht unbefristet aufbewahrt werd
 - Automatisches Löschen von Daten nach vorgebenen Kriterien, z.B. Ablauf einer Speicherfrist
 
 [[LZ-5-7]]
-==== LZ 5-7 - Datenmodelle für analytische Anwendungen
+==== LZ 5-7 - Datenmodelle für analytische Daten
 Den Teilnehmer:innen ist der Umgang mit Datenmodellen generell vertraut. Sie verstehen, wie Datenmodelle für die Arbeit mit analytischen Daten sich sowohl an den Datenmodellen der Quellsysteme als auch an den Anforderungen an die Datenanalyse orientieren müssen.
 
 Die Teilnehmer:innen kennen das Konzept der Normalisierung von Datenmodellen. Sie verstehen, dass für die Arbeit mit analytischen Daten häufig auf die für operative Daten übliche Normalisierung verzichtet wird und denormaliserter Datenmodelle in diesem Umfeld verwendet werden.
@@ -174,7 +174,11 @@ tbd.
 tbd.
 
 [[LG-5-7]]
-==== LG 5-7: Data Warehouse and Data Lake
+==== LG 5-7: Data models for analytical data
+tbd.
+
+[[LG-5-8]]
+==== LG 5-8: Data Warehouse and Data Lake
 tbd.
 
 // end::EN[]
