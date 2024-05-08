@@ -26,7 +26,7 @@ Die Teilnehmer:innen wissen, dass analytische Daten vielfältig und unübersicht
 ==== LZ 8-4 - Data Analytics und Business Intelligence
 Den Teilnehmer:innen sind Data Analytics und BI Anwendungen vertraut. Sie kennen Anwendungsfälle für die Analyse operativ anfallender Daten für die Unternehmenssteuerung.
 
-Die Teilnehmer:innen kennen Frameworks und Tools für die Umsetzung von Data Analytics und BI Anwendungen. Ihnen ist bewusst, das diese Anwendungen üblicherweise direkten Zugriff auf die Datenbanken erhalten.
+Die Teilnehmer:innen kennen Frameworks und Tools für die Umsetzung von Data Analytics und BI Anwendungen. Ihnen ist bewusst, das diese Anwendungen üblicherweise direkten Zugriff auf die zugrundeliegenden Speichersysteme benötigen.
 
 [[LZ-8-5]]
 ==== LZ 8-5 - Machine Learning
