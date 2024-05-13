@@ -4,7 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-Datenmodelle, Normalisierung, Begriff 3
+Data Pipelines, Qualitätskriterien, Monitoring, Edge-Computing
 
 // end::DE[]
 

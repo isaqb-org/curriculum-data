@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Data Pipelines
+== Data Mesh
 // end::DE[]
 
 // tag::EN[]
-== Data Pipelines
+== Data Mesh
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

@@ -1,19 +1,19 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 60 Min. | Übungszeit: 0 Min.
 |===
 
 === Begriffe und Konzepte
-Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies
+Data Governance, Datenqualität, Anonymisierung, Pseudonymisierung, Personalisierung, Metadaten, Verantwortlichkeit
 // end::DE[]
 
 // tag::EN[]
 |===
-| Duration: XXX min | Practice time: XXX min
+| Duration: 60 min | Practice time: 0 min
 |===
 
 === Terms and Principles
-Term 1, Term 2, Term 3
+Data Governance, Data Quality, Anonymization, Pseudonymization, Personalization, Metadata, Responsibility
 
 // end::EN[]
 

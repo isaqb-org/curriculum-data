@@ -3,11 +3,11 @@
 // ====================================================
 
 // tag::DE[]
-== Daten Modellierung
+== Data Pipelines
 // end::DE[]
 
 // tag::EN[]
-== Data Modelling
+== Data Pipelines
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]
