@@ -4,8 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-Data Pipelines, Qualitätskriterien, Monitoring, Edge-Computing
-
+Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies
 // end::DE[]
 
 // tag::EN[]

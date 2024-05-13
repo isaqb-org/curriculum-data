@@ -1,6 +1,6 @@
 === {references}
 
-<<varshney>>, <<levy>>, <<singhal>>
+<<christ>>, <<majchrzak>>
 
 // tag::REMARK[]
 [NOTE]

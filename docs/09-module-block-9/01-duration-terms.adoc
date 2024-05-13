@@ -1,19 +1,20 @@
 // tag::DE[]
 |===
-| Dauer: 60 Min. | Übungszeit: 0 Min.
+| Dauer: XXX Min. | Übungszeit: XXX Min.
 |===
 
 === Begriffe und Konzepte
-Data Governance, Datenqualität, Anonymisierung, Pseudonymisierung, Personalisierung, Metadaten, Verantwortlichkeit
+Data Pipelines, Qualitätskriterien, Monitoring, Edge-Computing
+
 // end::DE[]
 
 // tag::EN[]
 |===
-| Duration: 60 min | Practice time: 0 min
+| Duration: XXX min | Practice time: XXX min
 |===
 
 === Terms and Principles
-Data Governance, Data Quality, Anonymization, Pseudonymization, Personalization, Metadata, Responsibility
+Term 1, Term 2, Term 3
 
 // end::EN[]
 
