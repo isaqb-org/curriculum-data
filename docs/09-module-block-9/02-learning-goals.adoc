@@ -2,8 +2,8 @@
 
 
 // tag::DE[]
-[[LZ-10-1]]
-==== LZ 10-1 - Was sind Data Pipelines
+[[LZ-9-1]]
+==== LZ 9-1 - Was sind Data Pipelines
 Die Teilnehmer:innen wissen, dass Daten in Produktion vorher durch verschiedene Stages gelaufen sind. Sie kennen die üblichen Stage Bezeichnungen und wissen was typischerweise mit Data Pipelines in den Stages gemacht wird:
 
 - Ingestion
@@ -19,8 +19,8 @@ Die Teilnehmer:innen wissen auch, dass diese einzelnen an Data Pipelines der Sta
 - Monitored
 - Efficient
 
-[[LZ-10-2]]
-==== LZ 10-2 - Arten von Data Pipelines
+[[LZ-9-2]]
+==== LZ 9-2 - Arten von Data Pipelines
 Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind. Sie kennen daher die Unterscheidungen zwischen:
 
 - ETL vs ELT
@@ -33,8 +33,8 @@ Außerdem kennen die Teilnehmer:innen typische Anwendungsgebiete von Data Pipeli
 - Analytics/ML Processing
 - Delivery
 
-[[LZ-10-3]]
-==== LZ 10-3 - Data Pipeline Qualitätskriterien
+[[LZ-9-3]]
+==== LZ 9-3 - Data Pipeline Qualitätskriterien
 Die Teilnehmer:innen kennen Qualitätskriterien, die die Güte einer Data Pipeline beschreiben. Sie verstehen daher die folgenden Begriffe und wissen, was diese für eine Data Pipeline bedeuten:
 
 - Throughput
@@ -42,8 +42,8 @@ Die Teilnehmer:innen kennen Qualitätskriterien, die die Güte einer Data Pipeli
 - Latency
 - Stability
 
-[[LZ-10-4]]
-==== LZ 10-4 - Building Blocks von Data Pipelines
+[[LZ-9-4]]
+==== LZ 9-4 - Building Blocks von Data Pipelines
 Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht. Sie kennen Beispiele dieser Blocks und wissen wann welches Tooling für einen Anwendungsfall geeignet ist.
 
 Hierfür kennen sie die folgenden Begriffe, kennen Tools für diese und wissen in welchen Kombinationen diese mit anderen Tools verwendet werden können:
@@ -58,8 +58,8 @@ Hierfür kennen sie die folgenden Begriffe, kennen Tools für diese und wissen i
 - Data Catalog
 - ML Framework
 
-[[LZ-10-5]]
-==== LZ 10-5 - Technologien/Tools für Data Pipelines
+[[LZ-9-5]]
+==== LZ 9-5 - Technologien/Tools für Data Pipelines
 Die Teilnehmer:innen kennen Technologien, wie SQL, Python Dataframes oder Spark, mit denen Data Pipelines selbst erstellt werden können. Sie kennen aber auch Tools um Data Pipelines zu erstellen, wie z.B.:
 
 - Apache Airflow
@@ -68,8 +68,8 @@ Die Teilnehmer:innen kennen Technologien, wie SQL, Python Dataframes oder Spark,
 - Astera Centerprise
 - Skyvia
 
-[[LZ-10-6]]
-==== LZ 10-6 - Monitoring
+[[LZ-9-6]]
+==== LZ 9-6 - Monitoring
 Die Teilnehmer:innen wissen, dass für die Data Pipeline ein Monitoring notwendig ist, um die Performanz und Qualität der Verarbeitung sicherzustellen.
 
 Die Teilnehmer:innen verstehen, dass das Monitoring dabei relevante Buisness Metriken umfassen muss, welche von der Anwendung abhängig sind und an diese angepasst werden müssen.
@@ -81,12 +81,12 @@ Den Teilnehmer:innen ist bewusst, dass in einer Cloud Umgebung zusätzliche Eige
 - Datenmenge
 - Auslastung
 
-[[LZ-10-7]]
-==== LZ 10-7 - Optimization
+[[LZ-9-7]]
+==== LZ 9-7 - Optimization
 Den Teilnehmer:innen ist bewusst, dass Data Pipelines sehr häufig automatisiert laufen und wissen, dass Optimierung daher eine große Rolle für Data Pipelines spielt. Die Teilnehmer:innen kennen daher Möglichkeiten eine Laufzeitanalyse für Data Pipelines aufzusetzen und wissen falls nötig dann wie sie die Laufzeiten der Operationen optimieren können.
 
-[[LZ-10-8]]
-==== LZ 10-8 - Cloud vs on-Premise
+[[LZ-9-8]]
+==== LZ 9-8 - Cloud vs on-Premise
 Den Teilnehmer:innen ist bewusst, dass Data Pipelines sowohl in on-Premise als auch in Cloud Umgebungen etabliert werden können.
 
 Die Teilnehmer:innen kennen die Vor- und Nachteile von Cloud vs on-Premise Datenverarbeitung. Zusätzlich kennen sie die Wirkung von Edge-Computing und wissen wie sich diese auf die Datenverarbeitung auswirkt.
