@@ -109,7 +109,7 @@ Die Teilnehmer:innen verstehen, dass Daten oft nicht unbefristet aufbewahrt werd
 ==== LZ 5-7 - Datenmodelle für analytische Daten
 Den Teilnehmer:innen ist der Umgang mit Datenmodellen generell vertraut. Sie verstehen, wie Datenmodelle für die Arbeit mit analytischen Daten sich sowohl an den Datenmodellen der Quellsysteme als auch an den Anforderungen an die Datenanalyse orientieren müssen.
 
-Die Teilnehmer:innen kennen das Konzept der Normalisierung von Datenmodellen. Sie verstehen, dass für die Arbeit mit analytischen Daten häufig auf die für operative Daten übliche Normalisierung verzichtet wird und denormaliserter Datenmodelle in diesem Umfeld verwendet werden.
+Die Teilnehmer:innen kennen das Konzept der Normalisierung von Datenmodellen. Sie verstehen, dass für die Arbeit mit analytischen Daten häufig auf die für operative Daten übliche Normalisierung verzichtet wird und vorrangig denormaliserte Datenmodelle in diesem Umfeld verwendet werden.
 
 Die Teilnehmer:innen verstehen, dass Datenmodelle sowohl im Hinblick auf die verwendeten Quellsysteme als auch, noch weit deutlicher, im Hinblick auf die analytischen Anwendungen, Änderungen unterworfen sind. Sie kennen Ansätze, wie mit entsprechenden Änderungen umgegangen werden kann, wie etwa
 
