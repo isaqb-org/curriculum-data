@@ -42,7 +42,7 @@ Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines best
 - Werkzeuge zur Ablaufsteuerung und Orchestrierung
 - Kostengünstige Speichersysteme für hohe Datenvolumen
 - Datenkataloge
-- Daten-Transformations-Tools
+- Werkzeuge zur Datentransformation
 - Report-Generatoren
 
 [[LZ-9-5]]
