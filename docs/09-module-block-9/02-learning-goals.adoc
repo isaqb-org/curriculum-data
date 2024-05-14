@@ -2,8 +2,8 @@
 
 
 // tag::DE[]
-[[LZ-9-1]]
-==== LZ 9-1 - Was sind Data Pipelines
+[[LZ-10-1]]
+==== LZ 10-1 - Was sind Data Pipelines
 Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten durch die einzelnen Phasen des Data Engineerings zu bewegen. Sie wissen was typischerweise in den einzelnen Phasen geschieht (siehe LZ-1-7). Sie kennen die wesentlichen Eigenschaften von Data Pipelines wie:
 
 - Isolation
@@ -13,15 +13,21 @@ Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten d
 - Erweiterbarkeit
 - Skalierbarkeit
 
-Die Teilnehmer:innen kennen die Unterschiede zwischen Batch, Microbatch und Stream Verarbeitung.
+Außerdem kennen die Teilnehmer:innen typische Anwendungsgebiete von Data Pipelines:
 
-[[LZ-9-2]]
-==== LZ 9-2 - Arten von Data Pipelines
+- Data Engineering
+- Analytics/ML Processing
+- Delivery
+
+[[LZ-10-2]]
+==== LZ 10-2 - Arten von Data Pipelines
 Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind. Sie kennen daher die Unterscheidungen zwischen:
 
-- ETL vs ELT
-- reverse ETL
-- Microbatches vs Stream
+- ETL vs. ELT
+- Streaming
+- Hybrd
+
+Die Teilnehmer:innen kennen die Unterschiede zwischen Batch, Microbatch und Stream Verarbeitung.
 
 [[LZ-9-3]]
 ==== LZ 9-3 - Data Pipeline Qualitätskriterien
