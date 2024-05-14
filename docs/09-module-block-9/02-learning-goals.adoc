@@ -43,9 +43,9 @@ Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines best
 - Message Broker
 - Low Cost/High Volume Speichersysteme
 - Stream Processing Engine
-- Daten Kataloge
+- Datenkataloge
 - Daten-Transformations-Tools
-- Reporting Engine
+- Report-Generatoren
 
 [[LZ-9-5]]
 ==== LZ 9-5 - Technologien/Tools für Data Pipelines
