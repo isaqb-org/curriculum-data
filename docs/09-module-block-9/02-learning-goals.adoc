@@ -27,12 +27,12 @@ Die Teilnehmer:innen kennen die Unterschiede zwischen Batch (ETL und ELT) , Micr
 
 [[LZ-9-3]]
 ==== LZ 9-3 - Data Pipeline Qualitätskriterien
-Die Teilnehmer:innen kennen Qualitätskriterien, die die Güte einer Data Pipeline beschreiben. Sie verstehen daher die folgenden Begriffe und wissen, was diese für eine Data Pipeline bedeuten:
+Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte einer Data Pipeline beschreiben, wie etwa:
 
-- Throughput
-- Reliability
-- Latency
-- Stability
+- Durchsatz
+- Zuverlässigkeit
+- Latenz
+- Stabilität
 
 [[LZ-9-4]]
 ==== LZ 9-4 - Building Blocks von Data Pipelines
