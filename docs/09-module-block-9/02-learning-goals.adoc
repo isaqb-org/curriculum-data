@@ -46,13 +46,11 @@ Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines best
 - Report-Generatoren
 
 [[LZ-9-5]]
-==== LZ 9-5 - Technologien/Tools für Data Pipelines
-Die Teilnehmer:innen kennen Technologien, wie SQL, Python Dataframes oder Spark, mit denen Data Pipelines selbst erstellt werden können. Sie kennen aber auch Tools um Data Pipelines zu erstellen, wie z.B.:
+==== LZ 9-5 - Technologien und Plattformen für Data Pipelines
+Die Teilnehmer:innen wissen wie Data Pipelines auf der Basis von Technologien, wie SQL, Python Dataframes oder Spark, manuell erstellt werden können. Sie kennen zudem auch integrierte Datenplattformen zur Erstellung und dem Management von Data Pipelines, wie z.B.:
 
-- Apache Airflow
 - Databricks
 - Fivetran
-- Astera Centerprise
 - Skyvia
 
 [[LZ-9-6]]
