@@ -36,14 +36,16 @@ Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte eine
 
 [[LZ-9-4]]
 ==== LZ 9-4 - Building Blocks von Data Pipelines
-Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht. Sie kennen Beispiele, wissen wann welche Tools für einen Anwendungsfall geeignet sind und wie diese kombiniert werden können.
+Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht und in welchen Phasen des Lebenszyklus diese verwendet werden. Sie kennen Beispiele dafür, wissen wann diese Building Blocks  für einen Anwendungsfall geeignet sind und wie diese kombiniert werden können.
 
-- Scheduler
-- Workflow Engine
+- Konnektoren 
+- Workflow Engine und Orchestrierung
 - Message Broker
-- Low Cost/High Volume Data Storage
+- Low Cost/High Volume Speichersysteme
 - Stream Processing Engine
-- Data Catalog
+- Daten Kataloge
+- Daten-Transformations-Tools
+- Reporting Engine
 
 [[LZ-9-5]]
 ==== LZ 9-5 - Technologien/Tools für Data Pipelines
