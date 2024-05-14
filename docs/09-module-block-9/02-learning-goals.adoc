@@ -23,12 +23,6 @@ Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie w
 - reverse ETL
 - Microbatches vs Stream
 
-Außerdem kennen die Teilnehmer:innen typische Anwendungsgebiete von Data Pipelines:
-
-- Data Engineering
-- Analytics/ML Processing
-- Delivery
-
 [[LZ-9-3]]
 ==== LZ 9-3 - Data Pipeline Qualitätskriterien
 Die Teilnehmer:innen kennen Qualitätskriterien, die die Güte einer Data Pipeline beschreiben. Sie verstehen daher die folgenden Begriffe und wissen, was diese für eine Data Pipeline bedeuten:
