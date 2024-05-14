@@ -39,10 +39,8 @@ Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte eine
 Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht und in welchen Phasen des Lebenszyklus diese verwendet werden. Sie kennen Beispiele dafür, wissen wann diese Building Blocks  für einen Anwendungsfall geeignet sind und wie diese kombiniert werden können.
 
 - Konnektoren 
-- Workflow Engine und Orchestrierung
-- Message Broker
-- Low Cost/High Volume Speichersysteme
-- Stream Processing Engine
+- Werkzeuge zur Ablaufsteuerung und Orchestrierung
+- Kostengünstige Speichersysteme für hohe Datenvolumen
 - Datenkataloge
 - Daten-Transformations-Tools
 - Report-Generatoren
