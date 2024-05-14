@@ -23,7 +23,7 @@ Außerdem kennen die Teilnehmer:innen typische Anwendungsgebiete von Data Pipeli
 ==== LZ 10-2 - Arten von Data Pipelines
 Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind.
 
-Die Teilnehmer:innen kennen die Unterschiede zwischen Batch (ETL und ELT) , Microbatch und Stream Verarbeitung.
+Die Teilnehmer:innen kennen die Unterschiede zwischen Batch (ETL und ELT), Microbatch, Stream und Eventgetriebener Verarbeitung.
 
 [[LZ-9-3]]
 ==== LZ 9-3 - Data Pipeline Qualitätskriterien
@@ -36,19 +36,14 @@ Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte eine
 
 [[LZ-9-4]]
 ==== LZ 9-4 - Building Blocks von Data Pipelines
-Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht. Sie kennen Beispiele dieser Blocks und wissen wann welches Tooling für einen Anwendungsfall geeignet ist.
-
-Hierfür kennen sie die folgenden Begriffe, kennen Tools für diese und wissen in welchen Kombinationen diese mit anderen Tools verwendet werden können:
+Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht. Sie kennen Beispiele, wissen wann welche Tools für einen Anwendungsfall geeignet sind und wie diese kombiniert werden können.
 
 - Scheduler
 - Workflow Engine
-- Query Engine
-- HTTP/MQTT Endpoints
 - Message Broker
 - Low Cost/High Volume Data Storage
 - Stream Processing Engine
 - Data Catalog
-- ML Framework
 
 [[LZ-9-5]]
 ==== LZ 9-5 - Technologien/Tools für Data Pipelines
