@@ -4,20 +4,16 @@
 // tag::DE[]
 [[LZ-9-1]]
 ==== LZ 9-1 - Was sind Data Pipelines
-Die Teilnehmer:innen wissen, dass Daten in Produktion vorher durch verschiedene Stages gelaufen sind. Sie kennen die üblichen Stage Bezeichnungen und wissen was typischerweise mit Data Pipelines in den Stages gemacht wird:
+Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten durch die einzelnen Phasen des Data Engineerings zu bewegen. Sie wissen was typischerweise in den einzelnen Phasen geschieht (siehe LZ-1-7). Sie kennen die wesentlichen Eigenschaften von Data Pipelines wie:
 
-- Ingestion
-- Transport
-- Storage
-- Transformation
-- Presentation
+- Isolation
+- Unabhängigkeit
+- Einfache Einrichtung und Betreibbarkeit
+- hohe Verfügbarkeit
+- Erweiterbarkeit
+- Skalierbarkeit
 
-Die Teilnehmer:innen wissen auch, dass diese einzelnen an Data Pipelines der Stages zu größeren Data Pipelines zusammengesetzt werden können. Außerdem wissen Sie, wozu Data Pipelines verwendet werden. Sie kennen daher die wesentlichen Eigenschaften die Data Pipelines bieten:
-
-- Accessible
-- Scalable
-- Monitored
-- Efficient
+Die Teilnehmer:innen kennen die Unterschiede zwischen Batch, Microbatch und Stream Verarbeitung.
 
 [[LZ-9-2]]
 ==== LZ 9-2 - Arten von Data Pipelines
