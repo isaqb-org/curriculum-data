@@ -6,15 +6,15 @@
 | Inhalt | Empfohlene Mindestdauer (min)
 | 1. Motivation und Übersicht | 60
 | 2. Referenzarchitekturen für analytische Anwendungssysteme | 120
-| 3. Data Sources | 60
-| 4. Ingestion und Transport | 90
-| 5. Storage | 120
-| 6. Query und Processing | 120
+| 3. Datenquellen | 60
+| 4. Ingestion | 90
+| 5. Datenspeicher | 120
+| 6. Queries | 120
 | 7. Transformation | 90
-| 8. Data Servicing | 90
-| 9. Data modeling | 120
-| 10. Data Pipelines | 120
-| 11. Data Mesh | 90
+| 8. Nutzung und Analyse | 90
+| 9. Data Pipelines | 120
+| 10. Dezentrale Datenarchitekturen | 90
+| 11. Data Governance | 120
 | |
 | Summe | 1080 (18h)
 
