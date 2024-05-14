@@ -21,13 +21,9 @@ Außerdem kennen die Teilnehmer:innen typische Anwendungsgebiete von Data Pipeli
 
 [[LZ-10-2]]
 ==== LZ 10-2 - Arten von Data Pipelines
-Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind. Sie kennen daher die Unterscheidungen zwischen:
+Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind.
 
-- ETL vs. ELT
-- Streaming
-- Hybrd
-
-Die Teilnehmer:innen kennen die Unterschiede zwischen Batch, Microbatch und Stream Verarbeitung.
+Die Teilnehmer:innen kennen die Unterschiede zwischen Batch (ETL und ELT) , Microbatch und Stream Verarbeitung.
 
 [[LZ-9-3]]
 ==== LZ 9-3 - Data Pipeline Qualitätskriterien
