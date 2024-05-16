@@ -26,14 +26,18 @@
 
 [cols="<,>", options="header"]
 |===
-| Content
-| Recommended minimum duration (minutes)
-| 1. Introduction | 180
-| 2. xz | 150
-| 3. Lots of theory | 120
-| 4. xy and example | 180
-| 5. abc und d | 210
-| 6. Final example | 120
+| Content | Recommended minimum duration (minutes)
+| 1. Motivation and Overview | 60
+| 2. Reference architectures for analytical systems | 120
+| 3. Data Sources | 60
+| 4. Ingestion | 90
+| 5. Storage | 120
+| 6. Queries | 120
+| 7. Transformation | 90
+| 8. Usage and Analysis | 90
+| 9. Data Pipelines | 120
+| 10. Decentralized Data Architectures | 90
+| 11. Data Governance | 120
 | |
 | Total | 960 (16h)
 
