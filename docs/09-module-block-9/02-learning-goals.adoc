@@ -56,20 +56,15 @@ Die Teilnehmer:innen wissen wie Data Pipelines auf der Basis von Technologien, w
 - Skyvia
 
 [[LZ-9-6]]
-==== LZ 9-6 - Monitoring
-Die Teilnehmer:innen wissen, dass für die Data Pipeline ein Monitoring notwendig ist, um die Performanz und Qualität der Verarbeitung sicherzustellen.
+==== LZ 9-6 - Betrieb von Data Pipelines
+Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines die folgenden Themen bedacht werden müssen:
 
-Die Teilnehmer:innen verstehen, dass das Monitoring dabei relevante Buisness Metriken umfassen muss, welche von der Anwendung abhängig sind und an diese angepasst werden müssen.
-
-Den Teilnehmer:innen ist bewusst, dass in einer Cloud Umgebung zusätzliche Eigenschaften beobachtet werden müssen, wie z.B.:
-
-- Latenz
-- Häufigkeit von Systemfehlern
-- Datenmenge
-- Auslastung
-
-reliability
-durability
+- Monitoring
+- Abhängigkeiten (Data Lineage)
+- Metadaten
+- Late arriving data
+- Orchestrierung
+- Schema Changes
 
 [[LZ-9-7]]
 ==== LZ 9-7 - Optimization
