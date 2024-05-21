@@ -82,15 +82,15 @@ tbd.
 tbd.
 
 [[LG-6-4]]
-==== LG 6-4: Machine Learning
+==== LG 6-4: Building Blocks of Data Pipelines
 tbd.
 
 [[LG-6-5]]
-==== LG 6-5: Use Cases
+==== LG 6-5: Technologies and platforms for data pipelines
 tbd.
 
 [[LG-6-6]]
-==== LG 6-6: Use Cases
+==== LG 6-6: Operation of data pipelines
 tbd.
 
 // end::EN[]
