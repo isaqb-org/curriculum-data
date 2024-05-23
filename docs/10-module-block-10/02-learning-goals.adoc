@@ -79,6 +79,7 @@ Die Teilnehmer:innen kennen Standards für die Definition von Data Contracts.
 [[LZ-10-7]]
 ==== LZ 10-7 - Top Down vs. Bottom up Realisierung
 
+Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz sowohl Top down wie auch Bottom up realisiert werden kann. Sie verstehen, dass sich der Top Down Ansatz vor allem für Situationen eignet, in denen bestehende monolithische Datensysteme (Data Warehouse, Data Lake) zerlegt werden sollen, während sich der bottom up Ansatz eher an bestehende Domain Teams richtet, welche ihre Daten dezentral für analytische Zwecke zur Verfügung stellen wollen. 
 
 // end::DE[]
 
