@@ -52,9 +52,12 @@ Die Teilnehmer:innen kennen unterschiedliche Formen von Datenprodukten wie Datas
 
 [[LZ-10-4]]
 ==== LZ 10-4 - Self-serve Data Platform
-Die Teilnehmer:innen verstehen die wesentlichen Konzepte einer Domain-agnostischen Dateninfrastrukturplattform. Sie wissen, dass diese Plattform vom Data Platform Team verantwortet wird.
 
-Die Teilnehmer:innen kennen typische Komponenten einer Datenplattform, wie Storage, Data Pipelines, Data Catalogs, Access Management, Monitoring, Visualisation. Ihnen sind bestehende Lösungen speziell der großen Cloud Provider bekannt.
+Die Teilnehmer:innen verstehen die wesentlichen Konzepte einer Domain-agnostischen Data Platform. Sie wissen, dass diese Plattform vom Data Platform Team verantwortet wird.
+
+Die Teilnehmer:innen wissen, dass die Data Platform den Domänen Teams ermöglicht, ihre Datenprodukte eigenständig zu erstellen.
+
+Die Teilnehmer:innen kennen typische Komponenten einer Data Platform, wie Storage, Data Pipelines, Data Catalogs, Access Management, Monitoring, Visualisation. Ihnen sind bestehende Lösungen speziell der großen Cloud Provider bekannt.
 
 [[LZ-10-5]]
 ==== LZ 10-5 - Federated Computational Governance
