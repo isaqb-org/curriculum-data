@@ -3,8 +3,10 @@
 
 // tag::DE[]
 [[LZ-10-1]]
-==== LZ 10-1 - Probleme zentralisierter Datenarchitekturen
-Die Teilnehmer:innen verstehen, aufgrund welcher Probleme zentrale Data-Teams nicht gut skalieren. Sie verstehen, warum dezentrale Domain-Teams nicht gut zu zentralen Data Teams passen.
+==== LZ 10-1 - Warum Data Mesh?
+Die Teilnehmer:innen kennen die Probleme zentralisierter Datenarchitekturen. Sie verstehen, aufgrund welcher Probleme zentrale Data-Teams nicht gut skalieren. Sie verstehen auch, warum dezentrale Domain-Teams nicht gut zu zentralen Data-Teams passen.
+
+Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz darauf abzielt, dezentrale Datenarchitekturen zu ermöglichen.
 
 [[LZ-10-2]]
 ==== LZ 10-2 - Domain Ownership
