@@ -49,7 +49,7 @@ Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines best
 
 [[LZ-9-5]]
 ==== LZ 9-5 - Technologien und Plattformen für Data Pipelines
-Die Teilnehmer:innen wissen wie Data Pipelines auf der Basis von Technologien, wie SQL, Python Dataframes oder Spark, manuell erstellt werden können. Sie kennen zudem auch integrierte Datenplattformen zur Erstellung und dem Management von Data Pipelines, wie z.B.:
+Die Teilnehmer:innen wissen, wie Data Pipelines auf der Basis von Technologien, wie SQL, Python Dataframes oder Spark, manuell erstellt werden können. Sie kennen zudem auch integrierte Datenplattformen zur Erstellung und dem Management von Data Pipelines, wie z.B.:
 
 - Databricks
 - Fivetran
@@ -57,7 +57,7 @@ Die Teilnehmer:innen wissen wie Data Pipelines auf der Basis von Technologien, w
 
 [[LZ-9-6]]
 ==== LZ 9-6 - Betrieb von Data Pipelines
-Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines die folgenden Themen bedacht werden müssen:
+Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines speziell die folgenden Themen bedacht werden müssen:
 
 - Monitoring
 - Abhängigkeiten (Data Lineage)
