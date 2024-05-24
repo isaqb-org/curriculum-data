@@ -84,24 +84,32 @@ Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz sowohl Top down wie auch 
 // end::DE[]
 
 // tag::EN[]
-[[LG-6-1]]
-==== LG 6-1: Aspects and building blocks
+[[LG-10-1]]
+==== LG 10-1: Why Data Mesh?
 tbd.
 
-[[LG-6-2]]
-==== LG 6-2: Central approaches
+[[LG-10-2]]
+==== LG 10-2: Domain Ownership
 tbd.
 
-[[LG-6-3]]
-==== LG 6-3: Data Mesh
+[[LG-10-3]]
+==== LG 10-3: Data as a Product
 tbd.
 
-[[LG-6-4]]
-==== LG 6-4: Machine Learning
+[[LG-10-4]]
+==== LG 10-4: Self-serve Data Platform
 tbd.
 
-[[LG-6-5]]
-==== LG 6-5: Use Cases
+[[LG-10-5]]
+==== LG 10-5: Federated Computational Governance
+tbd.
+
+[[LG-10-6]]
+==== LG 10-6: Data Contracts
+tbd.
+
+[[LG-10-7]]
+==== LG 10-7: Top down vs. bottom up realization
 tbd.
 
 // end::EN[]
