@@ -3,8 +3,10 @@
 
 // tag::DE[]
 [[LZ-7-1]]
-==== LZ 7-1 - Unterscheidung von Queries
-Die Teilnehmer:innen verstehen, dass (Daten-)Transformationen erforderlich sind, um Daten aus operativen Systemen für die Analyse aufzubreiten. Sie verstehen, dass Transformationen in Form von Queries beschrieben werden können, dass bei steigender Komplexität aber einzelne Queries zu unverständlich werden und Abfolgen von Queries (s. Data Pipelines in LZ 10) besser für die Umsetzung von Transformationen geeignet sind.
+==== LZ 7-1 - Was sind Transformationen
+Die Teilnehmer:innen verstehen, dass Daten aus operativen Systemen oftmals aufbereitet werden müssen um für die Analyse nutzbar zu sein. Sie wissen, dass dieser Schritt als (Daten-)Transformation bezeichnet wird. 
+
+Die Teilnehmer:innen verstehen, dass Transformationen in Form von Queries beschrieben werden können, dass bei steigender Komplexität aber einzelne Queries zu unverständlich werden und Abfolgen von Queries (Data Pipeline siehe <<LZ-9-1>>) besser für die Umsetzung von Transformationen geeignet sind.
 
 [[LZ-7-2]]
 ==== LZ 7-2 - Anwendungsfälle
