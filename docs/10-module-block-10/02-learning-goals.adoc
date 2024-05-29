@@ -50,7 +50,7 @@ Die Teilnehmer:innen kennen die Charakteristiken von Datenprodukten:
 
 Die Teilnehmer:innen kennen unterschiedliche Formen von Datenprodukten wie Datasets, Reports, Machine Learning Features bzw. kompletten ML Modellen.
 
-Die Teilnehmer:innen wissen, dass Data Contracts im Sinne einer API für die Implementierung von Datenprodukten dienen.
+Die Teilnehmer:innen wissen, dass Data Contracts im Sinne einer API der Implementierung von Datenprodukten dienen.
 
 [[LZ-10-4]]
 ==== LZ 10-4 - Self-serve Data Platform
