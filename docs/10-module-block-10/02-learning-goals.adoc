@@ -50,6 +50,8 @@ Die Teilnehmer:innen kennen die Charakteristiken von Datenprodukten:
 
 Die Teilnehmer:innen kennen unterschiedliche Formen von Datenprodukten wie Datasets, Reports, Machine Learning Features bzw. kompletten ML Modellen.
 
+Die Teilnehmer:innen wissen, dass Data Contracts im Sinne einer API für die Implementierung von Datenprodukten dienen.
+
 [[LZ-10-4]]
 ==== LZ 10-4 - Self-serve Data Platform
 
@@ -68,14 +70,7 @@ Die Teilnehmer:innen wissen, dass sich die Governance Group auf global gültige 
 Die Teilnehmer:innen verstehen, wie die Self-Serve Data Platform der Verwaltung, Automatisierung und Durchsetzung der global vereinbarten Regeln und Vorgaben dient. Sie wissen, dass die Verantwortung dafür bei den Domain Teams liegt.
 
 [[LZ-10-6]]
-==== LZ 10-6 - Data Contracts 
-
-Die Teilnehmer:innen wissen, dass ein Data Contract die Struktur, das Format, die Semantik, die Qualität und die Nutzungsbedingungen für den Datenaustausch zwischen einem Datenanbieter und seinen Konsumenten definiert. Ihnen ist bewusst, dass es ist damit ein zentrales Werkzeug ist, damit sich Teams über Daten-Schnittstellen verständigen können und somit Stabilität, Datenqualität und Nachvollziehbarkeit in der Datenarchitektur gewährleisten.
-
-Die Teilnehmer:innen kennen Standards für die Definition von Data Contracts.
-
-[[LZ-10-7]]
-==== LZ 10-7 - Top Down vs. Bottom up Realisierung
+==== LZ 10-6 - Top Down vs. Bottom up Realisierung
 
 Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz sowohl Top down wie auch Bottom up realisiert werden kann. Sie verstehen, dass sich der Top Down Ansatz vor allem für Situationen eignet, in denen bestehende monolithische Datensysteme (Data Warehouse, Data Lake) zerlegt werden sollen, während sich der bottom up Ansatz eher an bestehende Domain Teams richtet, welche ihre Daten dezentral für analytische Zwecke zur Verfügung stellen wollen und einen direkten Nutzen für die Domain Teams bieten wollen.
 
@@ -103,11 +98,7 @@ tbd.
 tbd.
 
 [[LG-10-6]]
-==== LG 10-6: Data Contracts
-tbd.
-
-[[LG-10-7]]
-==== LG 10-7: Top down vs. bottom up realization
+==== LG 10-6: Top down vs. bottom up realization
 tbd.
 
 // end::EN[]
