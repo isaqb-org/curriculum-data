@@ -50,7 +50,7 @@ Den Teilnehmer:innen ist bewusst, dass die Ausprägung der jeweiligen Rollen von
 ==== LZ 1-6 - Monolithische und verteilte Datenarchitekturen
 Die Teilnehmer:innen verstehen die Vor- und Nachteile monolithischer und verteilter Softwarearchitekturen für analytische Anwendungen. 
 
-Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine monolithische Architektur haben und dass mit der Diskussion um Data Mesh (s. LZ 11) aktuell ein Paradigmenwandel stattfindet.
+Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine monolithische Architektur haben und dass mit der Diskussion um Data Mesh (siehe <<LZ-10-1>>) aktuell ein Paradigmenwandel stattfindet.
 
 [[LZ-1-7]]
 ==== LZ 1-7 - Lebenszyklus analytischer Daten
