@@ -65,9 +65,7 @@ Die Teilnehmer:innen wissen, dass die sog. Governance Group (im Sinne einer Gild
 
 Die Teilnehmer:innen wissen, dass sich die Governance Group auf global gültige Regel und Vorgaben des Data Mesh Ecosystems, speziell hinsichtlich Interoperability, Security und Compliance verständigt.
 
-Die Teilnehmer:innen verstehen, wie die Self-Serve Data Platform der Verwaltung, Automatisierung und Durchsetzung der global vereinbarten Regeln und Vorgaben dient.
-
-Die Teilnehmer:innen verstehen, dass Data Contracts eine dezentrale Verwaltung der Datenzugriffe ermöglichen.
+Die Teilnehmer:innen verstehen, wie die Self-Serve Data Platform der Verwaltung, Automatisierung und Durchsetzung der global vereinbarten Regeln und Vorgaben unter Verantwortung der Domain Teams dient.
 
 [[LZ-10-6]]
 ==== LZ 10-6 - Data Contracts 
