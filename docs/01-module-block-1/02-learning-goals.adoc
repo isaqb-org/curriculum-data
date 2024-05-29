@@ -68,7 +68,7 @@ Den Teilnehmer:innen ist bewußt, dass begleitend zu diesen Phasen auch die folg
 - Data Discovery - Information bereitstellen, welche Daten es gibt, wie sie aufbereitet und wo sie zu finden sind
 - Data Governance - Erarbeiten und Überwachen allgemein gültiger Regeln für die Verarbeitung der Daten (siehe <<LZ-11-1>>)
 - Data Security - Gewährleisten eines angemessenen Grads an Datenschutz (siehe <<LZ-11-2>>)
-- Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität
+- Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität (siehe <<LZ-11-3>>)
 
 [[LZ-1-8]]
 ==== LZ 1-8 - Abgrenzung von anderen iSAQB Modulen
