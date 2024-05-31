@@ -57,7 +57,7 @@ Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine mo
 Die Teilnehmer:innen können die folgenden Phasen der Datenverarbeitung zur Vereinheitlichung analytischer Daten unterscheiden:
 
 - Sources - Das Erzeugen der Daten (siehe <<LZ-3-1>>)
-- Ingestion und Transport - Das Extrahieren der Daten und deren Transport zum den Speichersystemen (siehe <<LZ-4-1>>)
+- Ingestion und Transport - Das Extrahieren der Daten und deren Transport zu den Speichersystemen (siehe <<LZ-4-1>>)
 - Storage - Das Abspeichern der Daten (siehe <<LZ-5-1>>)
 - Query und Processing - Code zur Verarbeitung und Abfragen gegen die gespeicherten Daten (siehe <<LZ-6-1>>)
 - Transformation - Transformation der Daten in eine für die Analyse geeignete Form (siehe <<LZ-7-1>>)
