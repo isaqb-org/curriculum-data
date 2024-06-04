@@ -18,7 +18,7 @@ Die Teilnehmer:innen kennen Tools zur Visualisierung von Massendaten. Sie kennen
 
 [[LZ-8-3]]
 ==== LZ 8-3 - Modularisierung
-Die Teilnehmer:innen wissen, dass analytische Daten vielfältig und unübersichtlich sein können. Sie kennen das Konzept des Datenprodukts und wissen, dass die Datenprodukte verwendet werden können, um analytische Daten fachlich zu zerlegen. Sie kennen speziell deren Verwendung im Data Mesh Ansatz (s. LZ 11-3). 
+Die Teilnehmer:innen wissen, dass analytische Daten vielfältig und unübersichtlich sein können. Sie kennen das Konzept des Datenprodukts und wissen, dass die Datenprodukte verwendet werden können, um analytische Daten fachlich zu zerlegen. Sie kennen speziell deren Verwendung im Data Mesh Ansatz (siehe <<LZ-10-1>>). 
 
 [[LZ-8-4]]
 ==== LZ 8-4 - Data Analytics und Business Intelligence

@@ -114,7 +114,7 @@ Die Teilnehmer:innen kennen das Konzept der Normalisierung von Datenmodellen. Si
 Die Teilnehmer:innen verstehen, dass Datenmodelle sowohl im Hinblick auf die verwendeten Quellsysteme als auch, noch weit deutlicher, im Hinblick auf die analytischen Anwendungen, Änderungen unterworfen sind. Sie kennen Ansätze, wie mit entsprechenden Änderungen umgegangen werden kann, wie etwa
 
 - Verwendung multidimensionaler Datenmodelle (Star, Snowflake, Data Vault)
-- Zerlegung in Teil-Modelle (s. LZ 11-2 - Domain Ownership)
+- Zerlegung in Teil-Modelle (siehe <<LZ-10-2>> - Domain Ownership)
 - Automatisierung der Modell-Änderungen (DWH Automation)
 
 [[LZ-5-8]]

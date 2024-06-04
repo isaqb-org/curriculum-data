@@ -20,11 +20,11 @@ Die Teilnehmer:innen kennen übliche Aufgaben, die von Transformationen übernom
 - Reduktion des Datenumfangs, Komprimierung
 - Anonymisierung, Pseudonomisierung, Verschlüsselung
 
-Die Teilnehmer:innen verstehen, wie Transformationen Verfahren des Query und Processing (s. LZ 6) nutzen, um auf die Daten in den Speichersystemen (s. LZ 5) zuzugreifen.
+Die Teilnehmer:innen verstehen, wie Transformationen Verfahren des Query und Processing (siehe <<LZ-6-3>>) nutzen, um auf die Daten in den Speichersystemen (siehe <<LZ-5-1>>) zuzugreifen.
 
 Die Teilnehmer:innen verstehen, wie Transformationen bei verteilten Daten parallel ausgeführt werden.
 
-Die Teilnehmer:innen verstehen die Bedeutung von Schemas und Datenmodellen (s. LZ 9) für die Umsetzung von Transformationen.
+Die Teilnehmer:innen verstehen die Bedeutung von Schemas und Datenmodellen für die Umsetzung von Transformationen.
 
 [[LZ-7-3]]
 ==== LZ 7-3 - Typische Transformationen
@@ -69,9 +69,9 @@ Die Teilnehmer:innen kennen das Konzept der Data Lineage für das Nachvollziehen
 ==== LZ 7-6 - Qualitätsstufen
 Die Teilnehmer:innen verstehen, dass über eine schrittweise Transformation eingehender Daten Qualitätsstufen (Quality-Gates) definiert werden können. Sie verstehen, dass damit je nach Art der Analyse Daten einer höheren (Clean Data) oder einer niedrigeren (Raw Data) herangezogen werden können.
 
-Die Teilnehmer:innen verstehen, dass Staging Areas (s. LZ 7-4) ein Quality Gate darstellen, mit dem sichergestellt wird, dass nur qualitätsgesicherte Daten zur Analyse in einem Data Warehouse bereitgestellt werden.
+Die Teilnehmer:innen verstehen, dass Staging Areas (siehe <<LZ-7-4>>) ein Quality Gate darstellen, mit dem sichergestellt wird, dass nur qualitätsgesicherte Daten zur Analyse in einem Data Warehouse bereitgestellt werden.
 
-Die Teilnehmer:innen verstehen, dass in einem Data Lake (s. LZ 5-6) Daten unterschiedlicher Qualitätsstufen gemeinsam aufbewahrt werden und dass es daher sinnvoll sein kann, Zonen unterschiedlicher Datenqualität (etwa Bronze, Silber, Gold) innerhalb von Data Lakes festzulegen (Medallion Architecture).
+Die Teilnehmer:innen verstehen, dass in einem Data Lake (siehe <<LZ-5-8>>) Daten unterschiedlicher Qualitätsstufen gemeinsam aufbewahrt werden und dass es daher sinnvoll sein kann, Zonen unterschiedlicher Datenqualität (etwa Bronze, Silber, Gold) innerhalb von Data Lakes festzulegen (Medallion Architecture).
 
 [[LZ-7-7]]
 ==== LZ 7-7 - Batch Verarbeitung
