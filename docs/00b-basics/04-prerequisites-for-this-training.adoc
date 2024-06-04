@@ -3,8 +3,9 @@
 
 Teilnehmerinnen und Teilnehmer **sollten** folgende Kenntnisse und/oder Erfahrung mitbringen:
 
-- Voraussetzung 1
-- Voraussetzung 2, etc.
+- Grundlagen der Beschreibung von Architekturen mithilfe verschiedener Sichten, übergreifender Konzepte, Entwurfsentscheidungen, Randbedingungen etc., wie es im CPSA-F (Foundation Level) vermittelt wird.
+- Erfahrung mit der Implementierung und Architektur in agilen Projekten.
+- Erfahrungen aus der Entwicklung und Architektur datenzentrierter Anwendungen mit den typischen Herausforderungen.
 
 **Hilfreich** für das Verständnis einiger Konzepte sind darüber hinaus:
 
