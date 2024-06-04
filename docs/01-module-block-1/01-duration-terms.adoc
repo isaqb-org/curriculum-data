@@ -1,10 +1,10 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 60 Min. | Übungszeit: 5 Min.
 |===
 
 === Begriffe und Konzepte
-operative Daten, analytische Daten, OLTP, OLAP, Data Engineer, Data Architect, Data Scientist,
+operative Daten, analytische Daten, OLTP, OLAP, Data Engineer, Data Architect, Data Scientist, Lebenszyklus, Datenanalyse, Datenarchitekturen
 
 // end::DE[]
 
