@@ -4,7 +4,7 @@
 // tag::DE[]
 [[LZ-9-1]]
 ==== LZ 9-1 - Was sind Data Pipelines?
-Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten durch die einzelnen Phasen des Data Engineerings zu bewegen. Sie wissen was typischerweise in den einzelnen Phasen geschieht (siehe LZ-1-7). Sie kennen die wesentlichen Eigenschaften von Data Pipelines wie:
+Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten durch die einzelnen Phasen des Data Engineerings zu bewegen. Sie wissen was typischerweise in den einzelnen Phasen geschieht (siehe <<LZ-1-7>>). Sie kennen die wesentlichen Eigenschaften von Data Pipelines wie:
 
 - Isolation
 - Unabhängigkeit
