@@ -1,6 +1,6 @@
 // tag::DE[]
 |===
-| Dauer: 120 Min. | Übungszeit: 30 Min.
+| Dauer: 90 Min. | Übungszeit: 20 Min.
 |===
 
 === Begriffe und Konzepte
