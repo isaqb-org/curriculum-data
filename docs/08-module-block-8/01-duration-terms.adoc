@@ -1,10 +1,10 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 90 Min. | Übungszeit: 15 Min.
 |===
 
 === Begriffe und Konzepte
-Data Analytics, Query-Processing, Machine Learning Modelle, Reverse ETL
+Data Analytics, Business Intelligence (BI), Reporting Tools, Machine Learning, Reverse ETL, Datenvisualisierung, Vertrauenswürdigkeit von Daten, Rohdaten, Aggregationen
 
 // end::DE[]
 
