@@ -1,11 +1,10 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 60 Min. | Übungszeit: 15 Min.
 |===
 
 === Begriffe und Konzepte
-Datenquellen, Quellsysteme, strukturierte-, semi-strukturierte-, unstukturierte Daten, Daten-Snapshots, Increments/Events, technische-, fachliche Metadaten, Schema Inference
-
+Datenquellen, Strukturiertheit, Formate, Performance, Datenbanksysteme, API, Dateisysteme, Object Stores, Message Queue, Event Streaming
 
 // end::DE[]
 
