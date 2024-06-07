@@ -48,7 +48,11 @@ Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können di
 
 [[LZ-11-7]]
 ==== LZ 11-7 - Data Contracts
-Die Teilnehmer:innen kennen Data Contracts und verstehen wie sie beim Abgleich der Anforderungen von Datenkonsumenten und Datenproduzenten verwendet werden können.
+Die Teilnehmer:innen wissen, dass ein Data Contract die Struktur, das Format, die Semantik, die Qualität und die Nutzungsbedingungen für den Datenaustausch zwischen einem Datenanbieter und seinen Konsumenten definiert. Ihnen ist bewusst, dass es ist damit ein zentrales Werkzeug ist, damit sich Teams über Daten-Schnittstellen verständigen können und somit Stabilität, Datenqualität und Nachvollziehbarkeit in der Datenarchitektur gewährleisten.
+Den Teilnehmer:innen ist bewusst, dass Data Contracts daher trotz des Namens nicht im Sinne eines konkreten Vertrages zwischen einem Datenanbieter und einem Konsumenten zu verstehen sind. 
+
+Die Teilnehmer:innen kennen Standards für die Definition von Data Contracts.
+
 
 [[LZ-11-8]]
 ==== LZ 11-8 - Metadaten
