@@ -1,11 +1,10 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 90 Min. | Übungszeit: 15 Min.
 |===
 
 === Begriffe und Konzepte
-Change Data Capture, Information Hiding, Konnektoren, Message Passing, Event Streaming
-
+Data Ingestion, Identifikation von Entitäten, Änderungserkennung, Change Data Capture (CDC), Outbox Pattern, Konnektoren, Skalierbarkeit, Datenreplkation, Batch vs. Stream Ingestion, Metadatenmanagemen  
 
 // end::DE[]
 
