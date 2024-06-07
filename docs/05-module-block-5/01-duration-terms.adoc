@@ -1,10 +1,10 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 120 Min. | Übungszeit: 30 Min.
 |===
 
 === Begriffe und Konzepte
-Filesystem, Block-Storage, Objekt-Storage, Datenbanksysteme, Relationale DBS, NoSQL DBS, Key-Value DBS, Graph DBS
+Speichersysteme, Relationale Datenbanksysteme, NoSQL Datenbanksysteme, Concurrency Control, Versionierung von Daten, Optimierung und Skalierung, Datenmodelle, Data Warehouse, Data Lake, Datei- und Tabellenformate
 // end::DE[]
 
 // tag::EN[]
