@@ -1,8 +1,5 @@
 === {learning-goals}
 
-## LZ 1
-### Grundlagen
-
 // tag::DE[]
 [[LZ-1-1]]
 ==== LZ 1-1 - Data Engineering
