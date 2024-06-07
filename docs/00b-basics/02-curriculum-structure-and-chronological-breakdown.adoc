@@ -5,13 +5,13 @@
 |===
 | Inhalt | Empfohlene Mindestdauer (min)
 | 1. Motivation und Übersicht | 90
-| 2. Referenzarchitekturen für analytische Anwendungssysteme | 180
+| 2. Referenzarchitekturen für analytische Anwendungssysteme | 210
 | 3. Datenquellen | 60
 | 4. Ingestion | 90
 | 5. Datenspeicher | 90
 | 6. Queries | 60
 | 7. Transformation | 90
-| 8. Nutzung und Analyse | 90
+| 8. Nutzung und Analyse | 60
 | 9. Data Pipelines | 90
 | 10. Data Mesh | 120
 | 11. Data Governance | 120
@@ -28,13 +28,13 @@
 |===
 | Content | Recommended minimum duration (minutes)
 | 1. Motivation and Overview | 90
-| 2. Reference architectures for analytical systems | 180
+| 2. Reference architectures for analytical systems | 210
 | 3. Data Sources | 60
 | 4. Ingestion | 90
 | 5. Storage | 90
 | 6. Queries | 60
 | 7. Transformation | 90
-| 8. Usage and Analysis | 90
+| 8. Usage and Analysis | 60
 | 9. Data Pipelines | 90
 | 10. Data Mesh | 120
 | 11. Data Governance | 120
