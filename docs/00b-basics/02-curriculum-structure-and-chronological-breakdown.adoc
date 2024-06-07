@@ -4,17 +4,17 @@
 [cols="<,>", options="header"]
 |===
 | Inhalt | Empfohlene Mindestdauer (min)
-| 1. Motivation und Übersicht | 60
-| 2. Referenzarchitekturen für analytische Anwendungssysteme | 120
-| 3. Data Sources | 60
-| 4. Ingestion und Transport | 90
-| 5. Storage | 120
-| 6. Query und Processing | 120
+| 1. Motivation und Übersicht | 90
+| 2. Referenzarchitekturen für analytische Anwendungssysteme | 180
+| 3. Datenquellen | 60
+| 4. Ingestion | 90
+| 5. Datenspeicher | 90
+| 6. Queries | 60
 | 7. Transformation | 90
-| 8. Data Servicing | 90
-| 9. Data modeling | 120
-| 10. Data Pipelines | 120
-| 11. Data Mesh | 90
+| 8. Nutzung und Analyse | 90
+| 9. Data Pipelines | 90
+| 10. Data Mesh | 120
+| 11. Data Governance | 120
 | |
 | Summe | 1080 (18h)
 
@@ -26,16 +26,20 @@
 
 [cols="<,>", options="header"]
 |===
-| Content
-| Recommended minimum duration (minutes)
-| 1. Introduction | 180
-| 2. xz | 150
-| 3. Lots of theory | 120
-| 4. xy and example | 180
-| 5. abc und d | 210
-| 6. Final example | 120
+| Content | Recommended minimum duration (minutes)
+| 1. Motivation and Overview | 90
+| 2. Reference architectures for analytical systems | 180
+| 3. Data Sources | 60
+| 4. Ingestion | 90
+| 5. Storage | 90
+| 6. Queries | 60
+| 7. Transformation | 90
+| 8. Usage and Analysis | 90
+| 9. Data Pipelines | 90
+| 10. Data Mesh | 120
+| 11. Data Governance | 120
 | |
-| Total | 960 (16h)
+| Total | 1080 (16h)
 
 |===
 

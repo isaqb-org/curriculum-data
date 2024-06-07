@@ -50,25 +50,25 @@ Den Teilnehmer:innen ist bewusst, dass die Ausprägung der jeweiligen Rollen von
 ==== LZ 1-6 - Monolithische und verteilte Datenarchitekturen
 Die Teilnehmer:innen verstehen die Vor- und Nachteile monolithischer und verteilter Softwarearchitekturen für analytische Anwendungen. 
 
-Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine monolithische Architektur haben und dass mit der Diskussion um Data Mesh (s. LZ 11) aktuell ein Paradigmenwandel stattfindet.
+Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine monolithische Architektur haben und dass mit der Diskussion um Data Mesh (siehe <<LZ-10-1>>) aktuell ein Paradigmenwandel stattfindet.
 
 [[LZ-1-7]]
 ==== LZ 1-7 - Lebenszyklus analytischer Daten
 Die Teilnehmer:innen können die folgenden Phasen der Datenverarbeitung zur Vereinheitlichung analytischer Daten unterscheiden:
 
-- Sources - Das Erzeugen der Daten
-- Ingestion und Transport - Das Extrahieren der Daten und deren Transport zum den Speichersystemen
-- Storage - Das Abspeichern der Daten
-- Query und Processing - Code zur Verarbeitung und Abfragen gegen die gespeicherten Daten
-- Transformation - Transformation der Daten in eine für die Analyse geeignete Form
-- Analysis und Output - Präsentation der Daten für die Analyse und deren Ergebnisse sowie Integration der Analysemöglichkeiten in Anwendungen
+- Sources - Das Erzeugen der Daten (siehe <<LZ-3-1>>)
+- Ingestion und Transport - Das Extrahieren der Daten und deren Transport zu den Speichersystemen (siehe <<LZ-4-1>>)
+- Storage - Das Abspeichern der Daten (siehe <<LZ-5-1>>)
+- Query und Processing - Code zur Verarbeitung und Abfragen gegen die gespeicherten Daten (siehe <<LZ-6-1>>)
+- Transformation - Transformation der Daten in eine für die Analyse geeignete Form (siehe <<LZ-7-1>>)
+- Analysis und Output - Präsentation der Daten für die Analyse und deren Ergebnisse sowie Integration der Analysemöglichkeiten in Anwendungen (siehe <<LZ-8-1>>)
 
 Den Teilnehmer:innen ist bewußt, dass begleitend zu diesen Phasen auch die folgenden Querschnittsthemen zu beachten sind:
 
 - Data Discovery - Information bereitstellen, welche Daten es gibt, wie sie aufbereitet und wo sie zu finden sind
-- Data Governance - Erarbeiten und Überwachen allgemein gültiger Regeln für die Verarbeitung der Daten
-- Data Security - Gewährleisten eines angemessenen Grads an Datenschutz
-- Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität
+- Data Governance - Erarbeiten und Überwachen allgemein gültiger Regeln für die Verarbeitung der Daten (siehe <<LZ-11-1>>)
+- Data Security - Gewährleisten eines angemessenen Grads an Datenschutz (siehe <<LZ-11-2>>)
+- Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität (siehe <<LZ-11-3>>)
 
 [[LZ-1-8]]
 ==== LZ 1-8 - Abgrenzung von anderen iSAQB Modulen
