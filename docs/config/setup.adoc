@@ -15,7 +15,7 @@
 :curriculum-short: DATA
 
 ifeval::["{language}" == "DE"]
-:curriculum-name: Entwerfen, Erstellen und Warten Daten-zentrischer Softwarearchitekturen
+:curriculum-name: Entwerfen, Erstellen und Warten datenzentrierter Softwarearchitekturen
 :curriculum-header-title: iSAQB-Curriculum für Advanced Level: {curriculum-short}
 endif::[]
 
