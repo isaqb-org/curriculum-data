@@ -1,0 +1,4784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>Curriculum fürCertified Professional forSoftware Architecture (CPSA)&#174;Advanced Level: ModulDATAEntwerfen, Erstellen und Warten datenzentrierter Softwarearchitekturen</title>
+<style>
+/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* ========================================================================== HTML5 display definitions ========================================================================== */
+/** Correct `block` display not defined in IE 8/9. */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/** Correct `inline-block` display not defined in IE 8/9. */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/** Address styling not present in IE 8/9. */
+[hidden] {
+  display: none;
+}
+
+/* ========================================================================== Base ========================================================================== */
+/** 1. Prevent system color scheme's background color being used in Firefox, IE, and Opera. 2. Prevent system color scheme's text color being used in Firefox, IE, and Opera. 3. Set default font family to sans-serif. 4. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+html {
+  background: #fff; /* 1 */
+  color: #000; /* 2 */
+  font-family: sans-serif; /* 3 */
+  -ms-text-size-adjust: 100%; /* 4 */
+  -webkit-text-size-adjust: 100%; /* 4 */
+}
+
+/** Remove default margin. */
+body {
+  margin: 0;
+}
+
+/* ========================================================================== Links ========================================================================== */
+/** Address `outline` inconsistency between Chrome and other browsers. */
+a:focus {
+  outline: thin dotted;
+}
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* ========================================================================== Typography ========================================================================== */
+/** Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome. */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/** Address styling not present in IE 8/9, Safari 5, and Chrome. */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/** Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+b, strong {
+  font-weight: bold;
+}
+
+/** Address styling not present in Safari 5 and Chrome. */
+dfn {
+  font-style: italic;
+}
+
+/** Address differences between Firefox and other browsers. */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/** Address styling not present in IE 8/9. */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/** Correct font family set oddly in Safari 5 and Chrome. */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/** Improve readability of pre-formatted text in all browsers. */
+pre {
+  white-space: pre-wrap;
+}
+
+/** Set consistent quote types. */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/** Address inconsistent and variable font size in all browsers. */
+small {
+  font-size: 80%;
+}
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ========================================================================== Embedded content ========================================================================== */
+/** Remove border when inside `a` element in IE 8/9. */
+img {
+  border: 0;
+}
+
+/** Correct overflow displayed oddly in IE 9. */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ========================================================================== Figures ========================================================================== */
+/** Address margin not present in IE 8/9 and Safari 5. */
+figure {
+  margin: 0;
+}
+
+/* ========================================================================== Forms ========================================================================== */
+/** Define consistent border, margin, and padding. */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/** 1. Correct `color` not being inherited in IE 8/9. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/** 1. Correct font family not being inherited in all browsers. 2. Correct font size not being inherited in all browsers. 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome. */
+button, input, select, textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+button, input {
+  line-height: normal;
+}
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+. Correct `select` style inheritance in Firefox 4+ and Opera. */
+button, select {
+  text-transform: none;
+}
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/** Re-set default cursor for disabled elements. */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/** 1. Address box sizing set to `content-box` in IE 8/9. 2. Remove excess padding in IE 8/9. */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/** 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome. 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome (include `-moz` to future-proof). */
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/** Remove inner padding and search cancel button in Safari 5 and Chrome on OS X. */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/** 1. Remove default vertical scrollbar in IE 8/9. 2. Improve readability and alignment in all browsers. */
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+/* ========================================================================== Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 15px;
+}
+
+body {
+  background: white;
+  color: #174a6a;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: auto;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
+}
+
+img, object, embed {
+  max-width: 100%;
+  height: auto;
+}
+
+object, embed {
+  height: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+#map_canvas img, #map_canvas embed, #map_canvas object, .map_canvas img, .map_canvas embed, .map_canvas object {
+  max-width: none !important;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.hide {
+  display: none;
+}
+
+.antialiased, body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+select {
+  width: 100%;
+}
+
+p.lead, .paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p {
+  font-size: 1.23333em;
+  line-height: 1.6;
+}
+
+.subheader, #content #toctitle, .admonitionblock td.content > .title, .exampleblock > .title, .imageblock > .title, .videoblock > .title, .listingblock > .title, .literalblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, .sidebarblock > .title, .tableblock > .title, .verseblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title, .tableblock > caption {
+  line-height: 1.4;
+  color: #777a7b;
+  font-weight: 300;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Typography resets */
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+}
+
+/* Default Link Styles */
+a {
+  color: #f39200;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a:hover, a:focus {
+  color: #fe670a;
+}
+
+a img {
+  border: none;
+}
+
+/* Default paragraph styles */
+p {
+  font-family: helvetica, arial, freesans, clean, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  text-rendering: optimizeLegibility;
+}
+
+p aside {
+  font-size: 0.93333em;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* Default header styles */
+h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 {
+  font-family: "Roboto", helvetica, arial, freesans, clean, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #263e4d;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.2em;
+}
+
+h1 small, h2 small, h3 small, #toctitle small, .sidebarblock > .content > .title small, h4 small, h5 small, h6 small {
+  font-size: 60%;
+  color: gray;
+  line-height: 0;
+}
+
+h1 {
+  font-size: 2.33333em;
+}
+
+h2 {
+  font-size: 1.33333em;
+}
+
+h3, #toctitle, .sidebarblock > .content > .title {
+  font-size: 1.0em;
+}
+
+h4 {
+  font-size: 0.86667em;
+}
+
+h5 {
+  font-size: 0.66667em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+hr {
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.33333em 0 1.26667em;
+  height: 0;
+}
+
+/* Helpful Typography Defaults */
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong, b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+code {
+  font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace;
+  font-weight: normal;
+  color: #666666;
+}
+
+/* Lists */
+ul, ol, dl {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  list-style-position: outside;
+  font-family: "Roboto", helvetica, arial, freesans, clean, sans-serif;
+}
+
+ul, ol {
+  margin-left: 0.7em;
+}
+
+/* Unordered Lists */
+ul li ul, ul li ol {
+  margin-left: 1.33333em;
+  margin-bottom: 0;
+  font-size: 1em; /* Override nested font-size change */
+}
+
+ul.square li ul, ul.circle li ul, ul.disc li ul {
+  list-style: inherit;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+ul.circle {
+  list-style-type: circle;
+}
+
+ul.disc {
+  list-style-type: disc;
+}
+
+ul.no-bullet {
+  list-style: none;
+}
+
+/* Ordered Lists */
+ol li ul, ol li ol {
+  margin-left: 1.33333em;
+  margin-bottom: 0;
+}
+
+/* Definition Lists */
+dl dt {
+  margin-bottom: 0.33333em;
+  font-weight: bold;
+}
+
+dl dd {
+  margin-bottom: 1.33333em;
+}
+
+/* Abbreviations */
+abbr, acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #333333;
+  border-bottom: 1px dotted #dddddd;
+  cursor: help;
+}
+
+abbr {
+  text-transform: none;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 0 0 1em;
+  padding: 0;
+  border-left: none;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 0.86667em;
+  color: #777a7b;
+}
+
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+
+blockquote cite a, blockquote cite a:visited {
+  color: #777a7b;
+}
+
+blockquote, blockquote p {
+  line-height: 1.4;
+  color: #777a7b;
+}
+
+/* Microformats */
+.vcard {
+  display: inline-block;
+  margin: 0 0 1.33333em 0;
+  border: 1px solid #dddddd;
+  padding: 0.66667em 0.8em;
+}
+
+.vcard li {
+  margin: 0;
+  display: block;
+}
+
+.vcard .fn {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.vevent .summary {
+  font-weight: bold;
+}
+
+.vevent abbr {
+  cursor: auto;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  padding: 0 0.06667em;
+}
+
+@media only screen and (min-width: 768px) {
+  h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3, #toctitle, .sidebarblock > .content > .title {
+    font-size: 1.6em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 1.0em
+  }
+}
+
+/* Print styles.  Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/ Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+*/
+.print-only {
+  display: none !important;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; /* h5bp.com/t */
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p, h2, h3, #toctitle, .sidebarblock > .content > .title {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3, #toctitle, .sidebarblock > .content > .title {
+    page-break-after: avoid;
+  }
+
+  .hide-on-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .hide-for-print {
+    display: none !important;
+  }
+
+  .show-for-print {
+    display: inherit !important;
+  }
+}
+
+/* Tables */
+table {
+  background: white;
+  margin-bottom: 1.33333em;
+  border: solid 1px #dddddd;
+}
+
+table thead, table tfoot {
+  background: #1D313E;
+  color: white;
+  font-weight: bold;
+}
+
+table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+  padding: 0.53333em 0.66667em 0.66667em;
+  font-size: 0.93333em;
+  color: white;
+  text-align: left;
+}
+
+table tr th, table tr td {
+  padding: 0.6em 0.66667em;
+  font-size: 0.8em;
+  color: #174a6a;
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+  background: #f0f4f8;
+}
+
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td {
+  display: table-cell;
+  line-height: 1.4;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+.clearfix:before, .clearfix:after, .float-group:before, .float-group:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .float-group:after {
+  clear: both;
+}
+
+*:not(pre) > code {
+  font-size: 0.86667em;
+  padding: 1px 5px 1px 5px;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: none;
+}
+
+pre, pre > code {
+  line-height: 1.6;
+  color: white;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+}
+
+kbd.keyseq {
+  color: #666666;
+}
+
+kbd:not(.keyseq) {
+  display: inline-block;
+  color: #333333;
+  font-size: 0.8em;
+  line-height: 1.4;
+  background-color: #F7F7F7;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  margin: -0.15em 0.15em 0 0.15em;
+  padding: 0.2em 0.6em 0.2em 0.5em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+kbd kbd:first-child {
+  margin-left: 0;
+}
+
+kbd kbd:last-child {
+  margin-right: 0;
+}
+
+.menuseq, .menu {
+  color: #1a1a1a;
+}
+
+#header, #content, #footnotes, #footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 82.5em;
+  *zoom: 1;
+  position: relative;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#header:before, #header:after, #content:before, #content:after, #footnotes:before, #footnotes:after, #footer:before, #footer:after {
+  content: " ";
+  display: table;
+}
+
+#header:after, #content:after, #footnotes:after, #footer:after {
+  clear: both;
+}
+
+#header {
+  margin-bottom: 2.66667em;
+}
+
+#header > h1 {
+  color: #263e4d;
+  font-weight: 300;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: -28px;
+  padding-bottom: 32px;
+}
+
+#header span {
+  color: #777a7b;
+}
+
+#header #revnumber {
+  text-transform: capitalize;
+}
+
+#header br + span {
+  padding-left: 3px;
+}
+
+#header br + span:before {
+  content: "\2013 \0020";
+}
+
+#header br + span.author {
+  padding-left: 0;
+}
+
+#header br + span.author:before {
+  content: ", ";
+}
+
+div .details br {
+  display: none
+}
+
+#toc {
+  border-bottom: 0 solid #dddddd;
+  padding-bottom: 1.33333em;
+}
+
+#toc > ul {
+  margin-left: 0.26667em;
+}
+
+#toc ul.sectlevel0 > li > a {
+  font-style: italic;
+}
+
+#toc ul.sectlevel0 ul.sectlevel1 {
+  margin-left: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#toc ul {
+  list-style-type: none;
+}
+
+#toctitle {
+  color: #777a7b;
+}
+
+@media only screen and (min-width: 1280px) {
+  body.toc2 {
+    padding-left: 20em;
+  }
+
+  #toc.toc2 {
+    position: fixed;
+    width: 20em;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #dddddd;
+    border-bottom: 0;
+    z-index: 1000;
+    padding: 1em;
+    height: 100%;
+    overflow: auto;
+  }
+
+  #toc.toc2 #toctitle {
+    margin-top: 0;
+  }
+
+  #toc.toc2 > ul {
+    font-size: .95em;
+  }
+
+  #toc.toc2 ul ul {
+    margin-left: 0;
+    padding-left: 1.33333em;
+  }
+
+  #toc.toc2 ul.sectlevel0 ul.sectlevel1 {
+    padding-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  body.toc2.toc-right {
+    padding-left: 0;
+    padding-right: 20em;
+  }
+
+  body.toc2.toc-right #toc.toc2 {
+    border-right: 0;
+    border-left: 1px solid #dddddd;
+    left: auto;
+    right: 0;
+  }
+}
+
+#content #toc {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  margin-bottom: 1.33333em;
+  padding: 1.33333em;
+  background: white;
+  border-width: 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#content #toc > :first-child {
+  margin-top: 0;
+}
+
+#content #toc > :last-child {
+  margin-bottom: 0;
+}
+
+#content #toc a {
+  text-decoration: none;
+}
+
+#content #toctitle {
+  font-weight: bold;
+  font-family: "Roboto", helvetica, arial, freesans, clean, sans-serif;
+  font-size: 1.06667em;
+  padding-left: 0.13333em;
+}
+
+#footer {
+  max-width: 100%;
+  background-color: whitesmoke;
+  padding: 1.33333em;
+}
+
+#footer-text {
+  color: #174a6a;
+  line-height: 1.26;
+}
+
+.sect1 {
+  padding-bottom: 1.33333em;
+}
+
+.sect1 + .sect1 {
+  border-top: 0 solid #dddddd;
+}
+
+#content h1 > a.anchor, h2 > a.anchor, h3 > a.anchor, #toctitle > a.anchor, .sidebarblock > .content > .title > a.anchor, h4 > a.anchor, h5 > a.anchor, h6 > a.anchor {
+  position: absolute;
+  width: 1em;
+  margin-left: -1em;
+  display: block;
+  text-decoration: none;
+  visibility: hidden;
+  text-align: center;
+  font-weight: normal;
+}
+
+#content h1 > a.anchor:before, h2 > a.anchor:before, h3 > a.anchor:before, #toctitle > a.anchor:before, .sidebarblock > .content > .title > a.anchor:before, h4 > a.anchor:before, h5 > a.anchor:before, h6 > a.anchor:before {
+  content: '\00A7';
+  font-size: .85em;
+  vertical-align: text-top;
+  display: block;
+  margin-top: 0.05em;
+}
+
+#content h1:hover > a.anchor, #content h1 > a.anchor:hover, h2:hover > a.anchor, h2 > a.anchor:hover, h3:hover > a.anchor, #toctitle:hover > a.anchor, .sidebarblock > .content > .title:hover > a.anchor, h3 > a.anchor:hover, #toctitle > a.anchor:hover, .sidebarblock > .content > .title > a.anchor:hover, h4:hover > a.anchor, h4 > a.anchor:hover, h5:hover > a.anchor, h5 > a.anchor:hover, h6:hover > a.anchor, h6 > a.anchor:hover {
+  visibility: visible;
+}
+
+#content h1 > a.link, h2 > a.link, h3 > a.link, #toctitle > a.link, .sidebarblock > .content > .title > a.link, h4 > a.link, h5 > a.link, h6 > a.link {
+  color: #263e4d;
+  text-decoration: none;
+}
+
+#content h1 > a.link:hover, h2 > a.link:hover, h3 > a.link:hover, #toctitle > a.link:hover, .sidebarblock > .content > .title > a.link:hover, h4 > a.link:hover, h5 > a.link:hover, h6 > a.link:hover {
+  color: #262626;
+}
+
+.imageblock, .literalblock, .listingblock, .verseblock, .videoblock {
+  margin-bottom: 1.33333em;
+}
+
+.admonitionblock td.content > .title, .exampleblock > .title, .imageblock > .title, .videoblock > .title, .listingblock > .title, .literalblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, .sidebarblock > .title, .tableblock > .title, .verseblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title {
+  text-align: left;
+  font-weight: bold;
+}
+
+.tableblock > caption {
+  text-align: left;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: visible;
+  max-width: 0;
+}
+
+table {
+  width: 100%
+}
+
+table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
+  font-size: inherit;
+}
+
+.admonitionblock > table {
+  border: 0;
+  background: none;
+  width: 100%;
+}
+
+.admonitionblock > table td.icon {
+  text-align: center;
+  width: 80px;
+}
+
+.admonitionblock > table td.icon img {
+  max-width: none;
+}
+
+.admonitionblock > table td.icon .title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.admonitionblock > table td.content {
+  padding-left: 1.2em;
+  padding-right: 1.33333em;
+  border-left: 1px solid #dddddd;
+  color: #666666;
+}
+
+.admonitionblock > table td.content > :last-child > :last-child {
+  margin-bottom: 0;
+}
+
+.exampleblock > .content {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  margin-bottom: 1.33333em;
+  padding: 1.33333em;
+  background: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.exampleblock > .content > :first-child {
+  margin-top: 0;
+}
+
+.exampleblock > .content > :last-child {
+  margin-bottom: 0;
+}
+
+.exampleblock > .content h1, .exampleblock > .content h2, .exampleblock > .content h3, .exampleblock > .content #toctitle, .sidebarblock.exampleblock > .content > .title, .exampleblock > .content h4, .exampleblock > .content h5, .exampleblock > .content h6, .exampleblock > .content p {
+  color: #333333;
+}
+
+.exampleblock > .content h1, .exampleblock > .content h2, .exampleblock > .content h3, .exampleblock > .content #toctitle, .sidebarblock.exampleblock > .content > .title, .exampleblock > .content h4, .exampleblock > .content h5, .exampleblock > .content h6 {
+  line-height: 1;
+  margin-bottom: 0.66667em;
+}
+
+.exampleblock > .content h1.subheader, .exampleblock > .content h2.subheader, .exampleblock > .content h3.subheader, .exampleblock > .content .subheader#toctitle, .sidebarblock.exampleblock > .content > .subheader.title, .exampleblock > .content h4.subheader, .exampleblock > .content h5.subheader, .exampleblock > .content h6.subheader {
+  line-height: 1.4;
+}
+
+.exampleblock.result > .content {
+  -webkit-box-shadow: 0 1px 8px #eaeaea;
+  box-shadow: 0 1px 8px #eaeaea;
+}
+
+.sidebarblock {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  margin-bottom: 1.33333em;
+  padding: 1.33333em;
+  background: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.sidebarblock > :first-child {
+  margin-top: 0;
+}
+
+.sidebarblock > :last-child {
+  margin-bottom: 0;
+}
+
+.sidebarblock h1, .sidebarblock h2, .sidebarblock h3, .sidebarblock #toctitle, .sidebarblock > .content > .title, .sidebarblock h4, .sidebarblock h5, .sidebarblock h6, .sidebarblock p {
+  color: #333333;
+}
+
+.sidebarblock h1, .sidebarblock h2, .sidebarblock h3, .sidebarblock #toctitle, .sidebarblock > .content > .title, .sidebarblock h4, .sidebarblock h5, .sidebarblock h6 {
+  line-height: 1;
+  margin-bottom: 0.66667em;
+}
+
+.sidebarblock h1.subheader, .sidebarblock h2.subheader, .sidebarblock h3.subheader, .sidebarblock .subheader#toctitle, .sidebarblock > .content > .subheader.title, .sidebarblock h4.subheader, .sidebarblock h5.subheader, .sidebarblock h6.subheader {
+  line-height: 1.4;
+}
+
+.sidebarblock > .content > .title {
+  color: #777a7b;
+  margin-top: 0;
+  line-height: 1.4;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #cacaca;
+}
+
+.exampleblock > .content > :last-child > :last-child, .exampleblock > .content .olist > ol > li:last-child > :last-child, .exampleblock > .content .ulist > ul > li:last-child > :last-child, .exampleblock > .content .qlist > ol > li:last-child > :last-child, .sidebarblock > .content > :last-child > :last-child, .sidebarblock > .content .olist > ol > li:last-child > :last-child, .sidebarblock > .content .ulist > ul > li:last-child > :last-child, .sidebarblock > .content .qlist > ol > li:last-child > :last-child {
+  margin-bottom: 0;
+}
+
+.literalblock > .content pre, .listingblock > .content pre {
+  background: #333333;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #dddddd;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0.66667em;
+  word-wrap: break-word;
+}
+
+.literalblock > .content pre.nowrap, .listingblock > .content pre.nowrap {
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.literalblock > .content pre > code, .listingblock > .content pre > code {
+  display: block;
+}
+
+@media only screen {
+  .literalblock > .content pre, .listingblock > .content pre {
+    font-size: 0.69333em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .literalblock > .content pre, .listingblock > .content pre {
+    font-size: 0.78em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .literalblock > .content pre, .listingblock > .content pre {
+    font-size: 0.86667em;
+  }
+}
+
+.listingblock > .content {
+  position: relative;
+}
+
+.listingblock:hover code[class*=" language-"]:before {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #999;
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+}
+
+.listingblock:hover code.asciidoc:before {
+  content: "asciidoc";
+}
+
+.listingblock:hover code.clojure:before {
+  content: "clojure";
+}
+
+.listingblock:hover code.css:before {
+  content: "css";
+}
+
+.listingblock:hover code.groovy:before {
+  content: "groovy";
+}
+
+.listingblock:hover code.html:before {
+  content: "html";
+}
+
+.listingblock:hover code.java:before {
+  content: "java";
+}
+
+.listingblock:hover code.javascript:before {
+  content: "javascript";
+}
+
+.listingblock:hover code.python:before {
+  content: "python";
+}
+
+.listingblock:hover code.ruby:before {
+  content: "ruby";
+}
+
+.listingblock:hover code.scss:before {
+  content: "scss";
+}
+
+.listingblock:hover code.xml:before {
+  content: "xml";
+}
+
+.listingblock:hover code.yaml:before {
+  content: "yaml";
+}
+
+.listingblock.terminal pre .command:before {
+  content: attr(data-prompt);
+  padding-right: 0.5em;
+  color: #999;
+}
+
+.listingblock.terminal pre .command:not([data-prompt]):before {
+  content: '$';
+}
+
+table.pyhltable {
+  border: 0;
+  margin-bottom: 0;
+}
+
+table.pyhltable td {
+  vertical-align: top;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+table.pyhltable td.code {
+  padding-left: .75em;
+  padding-right: 0;
+}
+
+.highlight.pygments .lineno, table.pyhltable td:not(.code) {
+  color: #999;
+  padding-left: 0;
+  padding-right: .5em;
+  border-right: 1px solid #dddddd;
+}
+
+.highlight.pygments .lineno {
+  display: inline-block;
+  margin-right: .25em;
+}
+
+table.pyhltable .linenodiv {
+  background-color: transparent !important;
+  padding-right: 0 !important;
+}
+
+.quoteblock {
+  margin: 0 0 1em;
+  padding: 0;
+  border-left: none;
+}
+
+.quoteblock blockquote {
+  margin: 0 0 1em 0;
+  padding: 0 0 0.6em 0;
+  border: 0;
+}
+
+.quoteblock blockquote > .paragraph:last-child p {
+  margin-bottom: 0;
+}
+
+.quoteblock .attribution {
+  margin-top: -.25em;
+  padding-bottom: 0.6em;
+  font-size: 0.86667em;
+  color: #666666;
+}
+
+.quoteblock .attribution br {
+  display: none;
+}
+
+.quoteblock .attribution cite {
+  display: block;
+  margin-bottom: 0.66667em;
+}
+
+table thead th, table tfoot th {
+  font-weight: bold;
+}
+
+table.tableblock.grid-all {
+  border-collapse: separate;
+  border-spacing: 1px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+table.tableblock.frame-topbot, table.tableblock.frame-none {
+  border-left: 0;
+  border-right: 0;
+}
+
+table.tableblock.frame-sides, table.tableblock.frame-none {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+table.tableblock td .paragraph:last-child p, table.tableblock td > p:last-child {
+  margin-bottom: 0;
+}
+
+th.tableblock.halign-left, td.tableblock.halign-left {
+  text-align: left;
+}
+
+th.tableblock.halign-right, td.tableblock.halign-right {
+  text-align: right;
+}
+
+th.tableblock.halign-center, td.tableblock.halign-center {
+  text-align: center;
+}
+
+th.tableblock.valign-top, td.tableblock.valign-top {
+  vertical-align: top;
+}
+
+th.tableblock.valign-bottom, td.tableblock.valign-bottom {
+  vertical-align: bottom;
+}
+
+th.tableblock.valign-middle, td.tableblock.valign-middle {
+  vertical-align: middle;
+}
+
+p.tableblock.header {
+  color: #263e4d;
+  font-weight: bold;
+}
+
+td > div.verse {
+  white-space: pre;
+}
+
+ol {
+  margin-left: 0.96667em;
+}
+
+ul li ol {
+  margin-left: 0.7em;
+}
+
+dl dd {
+  margin-left: 1.125em;
+}
+
+dl dd:last-child, dl dd:last-child > :last-child {
+  margin-bottom: 0;
+}
+
+ol > li p, ul > li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .olist .ulist {
+  margin-bottom: 0.5em;
+}
+
+ul.unstyled, ol.unnumbered, ul.checklist, ul.none {
+  list-style-type: none;
+}
+
+ul.unstyled, ol.unnumbered, ul.checklist {
+  margin-left: 0.66667em;
+}
+
+ul.checklist li > p:first-child > i[class^="icon-check"]:first-child, ul.checklist li > p:first-child > input[type="checkbox"]:first-child {
+  margin-right: 0.25em;
+}
+
+ul.checklist li > p:first-child > input[type="checkbox"]:first-child {
+  position: relative;
+  top: 1px;
+}
+
+ul.inline {
+  margin: 0 auto 0.5em auto;
+  margin-left: -1.46667em;
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+ul.inline > li {
+  list-style: none;
+  float: left;
+  margin-left: 1.46667em;
+  display: block;
+}
+
+ul.inline > li > * {
+  display: block;
+}
+
+.unstyled dl dt {
+  font-weight: normal;
+  font-style: normal;
+}
+
+ol.arabic {
+  list-style-type: decimal;
+}
+
+ol.decimal {
+  list-style-type: decimal-leading-zero;
+}
+
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+ol.lowergreek {
+  list-style-type: lower-greek;
+}
+
+.hdlist > table, .colist > table {
+  border: 0;
+  background: none;
+}
+
+.hdlist > table > tbody > tr, .colist > table > tbody > tr {
+  background: none;
+}
+
+td.hdlist1 {
+  padding-right: .8em;
+  font-weight: bold;
+}
+
+td.hdlist1, td.hdlist2 {
+  vertical-align: top;
+}
+
+.literalblock + .colist, .listingblock + .colist {
+  margin-top: -0.5em;
+}
+
+.colist > table tr > td:first-of-type {
+  padding: 0 .8em;
+  line-height: 1;
+}
+
+.colist > table tr > td:last-of-type {
+  padding: 0.26667em 0;
+}
+
+.qanda > ol > li > p > em:only-child {
+  color: #3876b4;
+}
+
+.thumb, .th {
+  line-height: 0;
+  display: inline-block;
+  border: solid 4px white;
+  -webkit-box-shadow: 0 0 0 1px #dddddd;
+  box-shadow: 0 0 0 1px #dddddd;
+}
+
+.imageblock.left, .imageblock[style*="float: left"] {
+  margin: 0.26667em 0.66667em 1.33333em 0;
+}
+
+.imageblock.right, .imageblock[style*="float: right"] {
+  margin: 0.26667em 0 1.33333em 0.66667em;
+}
+
+.imageblock > .title {
+  margin-bottom: 0;
+}
+
+.imageblock.thumb, .imageblock.th {
+  border-width: 6px;
+}
+
+.imageblock.thumb > .title, .imageblock.th > .title {
+  padding: 0 0.13333em;
+}
+
+.image.left, .image.right {
+  margin-top: 0.26667em;
+  margin-bottom: 0.26667em;
+  display: inline-block;
+  line-height: 0;
+}
+
+.image.left {
+  margin-right: 0.66667em;
+}
+
+.image.right {
+  margin-left: 0.66667em;
+}
+
+a.image {
+  text-decoration: none;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+  font-size: 0.93333em;
+}
+
+span.footnote a, span.footnoteref a {
+  text-decoration: none;
+}
+
+#footnotes {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-bottom: 0.66667em;
+}
+
+#footnotes hr {
+  width: 20%;
+  min-width: 6.66667em;
+  margin: -.25em 0 .75em 0;
+  border-width: 1px 0 0 0;
+}
+
+#footnotes .footnote {
+  padding: 0 0.4em;
+  line-height: 1.3;
+  font-size: 0.93333em;
+  margin-left: 1.2em;
+  text-indent: -1.2em;
+  margin-bottom: .2em;
+}
+
+#footnotes .footnote a:first-of-type {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#footnotes .footnote:last-of-type {
+  margin-bottom: 0;
+}
+
+#content #footnotes {
+  margin-top: -0.66667em;
+  margin-bottom: 0;
+  padding: 0.8em 0;
+}
+
+.gist .file-data > table {
+  border: none;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.gist .file-data > table td.line-data {
+  width: 99%;
+}
+
+div.unbreakable {
+  page-break-inside: avoid;
+}
+
+.big {
+  font-size: larger;
+}
+
+.small {
+  font-size: smaller;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.aqua {
+  color: #00bfbf;
+}
+
+.aqua-background {
+  background-color: #00fafa;
+}
+
+.black {
+  color: black;
+}
+
+.black-background {
+  background-color: black;
+}
+
+.blue {
+  color: #0000bf;
+}
+
+.blue-background {
+  background-color: #0000fa;
+}
+
+.fuchsia {
+  color: #bf00bf;
+}
+
+.fuchsia-background {
+  background-color: #fa00fa;
+}
+
+.gray {
+  color: #606060;
+}
+
+.gray-background {
+  background-color: #7d7d7d;
+}
+
+.green {
+  color: #006000;
+}
+
+.green-background {
+  background-color: #007d00;
+}
+
+.lime {
+  color: #00bf00;
+}
+
+.lime-background {
+  background-color: #00fa00;
+}
+
+.maroon {
+  color: #600000;
+}
+
+.maroon-background {
+  background-color: #7d0000;
+}
+
+.navy {
+  color: #000060;
+}
+
+.navy-background {
+  background-color: #00007d;
+}
+
+.olive {
+  color: #606000;
+}
+
+.olive-background {
+  background-color: #7d7d00;
+}
+
+.purple {
+  color: #600060;
+}
+
+.purple-background {
+  background-color: #7d007d;
+}
+
+.red {
+  color: #bf0000;
+}
+
+.red-background {
+  background-color: #fa0000;
+}
+
+.silver {
+  color: #909090;
+}
+
+.silver-background {
+  background-color: #bcbcbc;
+}
+
+.teal {
+  color: #006060;
+}
+
+.teal-background {
+  background-color: #007d7d;
+}
+
+.white {
+  color: #bfbfbf;
+}
+
+.white-background {
+  background-color: #fafafa;
+}
+
+.yellow {
+  color: #bfbf00;
+}
+
+.yellow-background {
+  background-color: #fafa00;
+}
+
+span.icon > [class^="icon-"], span.icon > [class*=" icon-"] {
+  cursor: default;
+}
+
+.admonitionblock td.icon [class^="icon-"]:before {
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.admonitionblock td.icon .icon-note:before {
+  content: "\f05a";
+  color: #4183c4;
+  color: #2e6295;
+}
+
+.admonitionblock td.icon .icon-tip:before {
+  content: "\f0eb";
+  text-shadow: 1px 1px 2px rgba(155, 155, 0, 0.8);
+  color: #111;
+}
+
+.admonitionblock td.icon .icon-warning:before {
+  content: "\f071";
+  color: #bf6900;
+}
+
+.admonitionblock td.icon .icon-caution:before {
+  content: "\f06d";
+  color: #bf3400;
+}
+
+.admonitionblock td.icon .icon-important:before {
+  content: "\f06a";
+  color: #bf0000;
+}
+
+.conum {
+  display: inline-block;
+  color: white !important;
+  background-color: #333333;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  position: relative;
+  top: -2px;
+  letter-spacing: -1px;
+}
+
+.conum * {
+  color: white !important;
+}
+
+.conum + b {
+  display: none;
+}
+
+.conum:after {
+  content: attr(data-value);
+}
+
+.conum:not([data-value]):empty {
+  display: none;
+}
+
+p.lead, .paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p {
+  font-size: 1em;
+  color: #666666;
+}
+
+h2 {
+  color: #263e4d;
+  border-bottom: 1px solid #dddddd;
+}
+
+#content h1 > a.anchor, h2 > a.anchor, h3 > a.anchor, #toctitle > a.anchor, .sidebarblock > .content > .title > a.anchor, h4 > a.anchor, h5 > a.anchor, h6 > a.anchor {
+  color: #f39200;
+}
+
+#header, #content, #footnotes {
+  max-width: 800px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#content ul {
+  list-style-type: none;
+}
+
+#content ul li {
+  background: url('../html-theme/images/isaqb/li-chevron.png') 0 0.4em no-repeat;
+  padding-left: .7em;
+}
+
+.olist.procedure > ol {
+  counter-reset: li;
+  list-style: none;
+  position: relative;
+}
+
+.olist.procedure > ol > li {
+  position: relative;
+  padding: 5px 0 5px 55px;
+  margin-bottom: 5px;
+}
+
+.olist.procedure > ol > li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30px;
+  padding: 0 10px 0 0;
+  color: #999;
+  font-size: 1.46667em;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: right;
+  border-right: 1px solid #ddd;
+}
+
+.quoteblock blockquote {
+  background: url('../html-theme/images/github/blockquote-arrow.png') 0 2px no-repeat;
+  padding-left: 1em;
+}
+
+.sidebarblock > .content > .title {
+  margin-top: -20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  padding: 1em;
+  font-size: 0.8em;
+  background: #eaeaea;
+}
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Curriculum für<br><br>Certified Professional for<br>Software Architecture (CPSA)<sup>&#174;</sup><br><em>Advanced Level</em>: <br> Modul<br>DATA<br><br>Entwerfen, Erstellen und Warten datenzentrierter Softwarearchitekturen</h1>
+<div class="details">
+<span id="revnumber"> 2024.6-RC0-DE,</span>
+<span id="revdate">20240607</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Inhaltsverzeichnis</div>
+<ul class="sectlevel1">
+<li><a href="#_verzeichnis_der_lernziele">Verzeichnis der Lernziele</a></li>
+<li><a href="#_einführung_allgemeines_zum_isaqb_advanced_level">Einführung: Allgemeines zum iSAQB Advanced Level</a>
+<ul class="sectlevel2">
+<li><a href="#_was_vermittelt_ein_advanced_level_modul">Was vermittelt ein Advanced Level Modul?</a></li>
+<li><a href="#_was_können_absolventen_des_advanced_level_cpsa_a">Was können Absolventen des Advanced Level (CPSA-A)?</a></li>
+<li><a href="#_voraussetzungen_zur_cpsa_a_zertifizierung">Voraussetzungen zur CPSA-A-Zertifizierung</a></li>
+</ul>
+</li>
+<li><a href="#_grundlegendes">Grundlegendes</a>
+<ul class="sectlevel2">
+<li><a href="#_was_vermittelt_das_modul_data">Was vermittelt das Modul „DATA“?</a></li>
+<li><a href="#_was_vermittelt_das_modul_data_nicht">Was vermittelt das Modul „DATA“ nicht?</a></li>
+<li><a href="#_struktur_des_lehrplans_und_empfohlene_zeitliche_aufteilung">Struktur des Lehrplans und empfohlene zeitliche Aufteilung</a></li>
+<li><a href="#_dauer_didaktik_und_weitere_details">Dauer, Didaktik und weitere Details</a></li>
+<li><a href="#_voraussetzungen">Voraussetzungen</a></li>
+<li><a href="#_gliederung_des_lehrplans">Gliederung des Lehrplans</a></li>
+<li><a href="#_ergänzende_informationen_begriffe_übersetzungen">Ergänzende Informationen, Begriffe, Übersetzungen</a></li>
+</ul>
+</li>
+<li><a href="#_motivation_und_übersicht">1. Motivation und Übersicht</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte">1.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele">1.2. Lernziele</a></li>
+<li><a href="#_referenzen">1.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_referenzarchitekturen_für_analytische_anwendungssysteme">2. Referenzarchitekturen für analytische Anwendungssysteme</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_2">2.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_2">2.2. Lernziele</a></li>
+<li><a href="#_referenzen_2">2.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_data_sources">3. Data Sources</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_3">3.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_3">3.2. Lernziele</a></li>
+<li><a href="#_referenzen_3">3.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_ingestion_und_transport">4. Ingestion und Transport</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_4">4.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_4">4.2. Lernziele</a></li>
+<li><a href="#_referenzen_4">4.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_storage">5. Storage</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_5">5.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_5">5.2. Lernziele</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p><strong>&#169; (Copyright), International Software Architecture Qualification Board e. V.
+(iSAQB<sup>&#174;</sup> e. V.) 2023</strong></p>
+</div>
+<div class="paragraph">
+<p>Die Nutzung des Lehrplans ist nur unter den nachfolgenden Voraussetzungen erlaubt:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Sie möchten das Zertifikat zum CPSA Certified Professional for Software Architecture Foundation Level<sup>&#174;</sup> oder CPSA Certified Professional for Software Architecture Advanced Level<sup>&#174;</sup> erwerben.
+Für den Erwerb des Zertifikats ist es gestattet, die Text-Dokumente und/oder Lehrpläne zu nutzen, indem eine Arbeitskopie für den eigenen Rechner erstellt wird. Soll eine darüber hinausgehende Nutzung der Dokumente und/oder Lehrpläne erfolgen, zum Beispiel zur Weiterverbreitung an Dritte, Werbung etc., bitte unter <a href="mailto:info@isaqb.org">info@isaqb.org</a> nachfragen.
+Es müsste dann ein eigener Lizenzvertrag geschlossen werden.</p>
+</li>
+<li>
+<p>Sind Sie Trainer oder Trainingsprovider, ist die Nutzung der Dokumente und/oder Lehrpläne nach Erwerb einer Nutzungslizenz möglich. Hierzu bitte unter <a href="mailto:info@isaqb.org">info@isaqb.org</a> nachfragen.
+Lizenzverträge, die alles umfassend regeln, sind vorhanden.</p>
+</li>
+<li>
+<p>Falls Sie weder unter die Kategorie 1. noch unter die Kategorie 2. fallen, aber dennoch die Dokumente und/oder Lehrpläne nutzen möchten, nehmen Sie bitte ebenfalls Kontakt unter <a href="mailto:info@isaqb.org">info@isaqb.org</a> zum iSAQB e. V. auf.
+Sie werden dort über die Möglichkeit des Erwerbs entsprechender Lizenzen im Rahmen der vorhandenen Lizenzverträge informiert und können die gewünschten Nutzungsgenehmigungen erhalten.</p>
+</li>
+</ol>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Wichtiger Hinweis</div>
+<div class="paragraph">
+<p><strong>Grundsätzlich weisen wir darauf hin, dass dieser Lehrplan urheberrechtlich geschützt ist.
+Alle Rechte an diesen Copyrights stehen ausschließlich dem International Software Architecture Qualification Board e. V. (iSAQB<sup>&#174;</sup> e. V.) zu.</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Die Abkürzung "e. V." ist Teil des offiziellen Namens des iSAQB und steht für "eingetragener Verein", der seinen Status als juristische Person nach deutschem Recht beschreibt.
+Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser Abkürzung als iSAQB bezeichnet.</p>
+</div>
+<div style="page-break-after: always;"></div>
+<!-- toc disabled -->
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_verzeichnis_der_lernziele">Verzeichnis der Lernziele</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#LZ-1-1">LZ 1-1 - Data Engineering</a></p>
+</li>
+<li>
+<p><a href="#LZ-1-2">LZ 1-2 - Unterscheidung operativer und analytischer Daten</a></p>
+</li>
+<li>
+<p><a href="#LZ-1-3">LZ 1-3 - Kategorien der Datenanalyse</a></p>
+</li>
+<li>
+<p><a href="#LZ-1-4">LZ 1-4 - Herausforderungen analytischer Anwendungen</a></p>
+</li>
+<li>
+<p><a href="#LZ-1-5">LZ 1-5 - Rollen im Data Engineering</a></p>
+</li>
+<li>
+<p><a href="#LZ-1-6">LZ 1-6 - Monolithische und verteilte Datenarchitekturen</a></p>
+</li>
+<li>
+<p><a href="#LZ-1-7">LZ 1-7 - Lebenszyklus analytischer Daten</a></p>
+</li>
+<li>
+<p><a href="#LZ-1-8">LZ 1-8 - Abgrenzung von anderen iSAQB Modulen</a></p>
+</li>
+<li>
+<p><a href="#LZ-2-1">LZ 2-1 - Überblick zu Referenzarchitekturen</a></p>
+</li>
+<li>
+<p><a href="#LZ-2-2">LZ 2-2 - Referenzarchitekturen zur Vereinheitlichung analytischer Daten</a></p>
+</li>
+<li>
+<p><a href="#LZ-2-3">LZ 2-3 - Architekturentscheidungen anhand von Referenzarchitekturen</a></p>
+</li>
+<li>
+<p><a href="#LZ-3-1">LZ 3-1 - Arten von Datenquellen und Quellsystemen</a></p>
+</li>
+<li>
+<p><a href="#LZ-3-2">LZ 3-2 - Eigenschaften von Datenquellen und Quellsystemen</a></p>
+</li>
+<li>
+<p><a href="#LZ-3-3">LZ 3-3 - Bereitstellung durch anwendungspezifische APIs</a></p>
+</li>
+<li>
+<p><a href="#LZ-3-4">LZ 3-4 - Bereitstellung durch Datenbanksysteme</a></p>
+</li>
+<li>
+<p><a href="#LZ-3-5">LZ 3-5 - Bereitstellung durch Dateisysteme</a></p>
+</li>
+<li>
+<p><a href="#LZ-3-6">LZ 3-6 - Bereitstellung durch Object Stores</a></p>
+</li>
+<li>
+<p><a href="#LZ-3-7">LZ 3-7 - Bereitstellung durch Message Queues und Event-Streaming</a></p>
+</li>
+<li>
+<p><a href="#LZ-4-1">LZ 4-1 - Was ist Data Ingestion?</a></p>
+</li>
+<li>
+<p><a href="#LZ-4-2">LZ 4-2 - Identifizieren von Entitäten</a></p>
+</li>
+<li>
+<p><a href="#LZ-4-3">LZ 4-3 - Erkennen von Änderungen</a></p>
+</li>
+<li>
+<p><a href="#LZ-4-4">LZ 4-4 - Konnektoren</a></p>
+</li>
+<li>
+<p><a href="#LZ-4-5">LZ 4-5 - Eigenschaften von Data Ingestion</a></p>
+</li>
+<li>
+<p><a href="#LZ-4-6">LZ 4-6 - Batch vs Stream Ingestion</a></p>
+</li>
+<li>
+<p><a href="#LZ-4-7">LZ 4-7 - Metadaten Ingestion</a></p>
+</li>
+<li>
+<p><a href="#LZ-5-1">LZ 5-1 - Speichersysteme</a></p>
+</li>
+<li>
+<p><a href="#LZ-5-2">LZ 5-2 - Datenbanksysteme</a></p>
+</li>
+<li>
+<p><a href="#LZ-5-3">LZ 5-3 - Datenbanksysteme für analytische Anwendungen</a></p>
+</li>
+<li>
+<p><a href="#LZ-5-4">LZ 5-4 - Concurrency Control</a></p>
+</li>
+<li>
+<p><a href="#LZ-5-5">LZ 5-5 - Versionierung von Daten</a></p>
+</li>
+<li>
+<p><a href="#LZ-5-6">LZ 5-6 - Optimierung und Skalierung</a></p>
+</li>
+<li>
+<p><a href="#LZ-5-7">LZ 5-7 - Datenmodelle für analytische Daten</a></p>
+</li>
+<li>
+<p><a href="#LZ-5-8">LZ 5-8 - Data Warehouse und Data Lake</a></p>
+</li>
+<li>
+<p><a href="#LZ-6-1">LZ 6-1 - Analytische Queries</a></p>
+</li>
+<li>
+<p><a href="#LZ-6-2">LZ 6-2 - Query Programmiermodelle</a></p>
+</li>
+<li>
+<p><a href="#LZ-6-3">LZ 6-3 - Query Verarbeitung &amp; Optimierung</a></p>
+</li>
+<li>
+<p><a href="#LZ-7-1">LZ 7-1 - Was versteht man unter (Daten-)transformation?</a></p>
+</li>
+<li>
+<p><a href="#LZ-7-2">LZ 7-2 - Anwendungsfälle</a></p>
+</li>
+<li>
+<p><a href="#LZ-7-3">LZ 7-3 - Typische Transformationen</a></p>
+</li>
+<li>
+<p><a href="#LZ-7-4">LZ 7-4 - Staging Area</a></p>
+</li>
+<li>
+<p><a href="#LZ-7-5">LZ 7-5 - Robuste Transformationen</a></p>
+</li>
+<li>
+<p><a href="#LZ-7-6">LZ 7-6 - Qualitätsstufen</a></p>
+</li>
+<li>
+<p><a href="#LZ-7-7">LZ 7-7 - Batch Verarbeitung</a></p>
+</li>
+<li>
+<p><a href="#LZ-7-8">LZ 7-8 - Stream Verarbeitung</a></p>
+</li>
+<li>
+<p><a href="#LZ-8-1">LZ 8-1 - Anwendungsfälle</a></p>
+</li>
+<li>
+<p><a href="#LZ-8-2">LZ 8-2 - Repräsentation von Massendaten</a></p>
+</li>
+<li>
+<p><a href="#LZ-8-3">LZ 8-3 - Modularisierung</a></p>
+</li>
+<li>
+<p><a href="#LZ-8-4">LZ 8-4 - Data Analytics und Business Intelligence</a></p>
+</li>
+<li>
+<p><a href="#LZ-8-5">LZ 8-5 - Machine Learning</a></p>
+</li>
+<li>
+<p><a href="#LZ-8-6">LZ 8-6 - Reverse ETL</a></p>
+</li>
+<li>
+<p><a href="#LZ-9-1">LZ 9-1 - Was sind Data Pipelines?</a></p>
+</li>
+<li>
+<p><a href="#LZ-9-2">LZ 9-2 - Arten von Data Pipelines</a></p>
+</li>
+<li>
+<p><a href="#LZ-9-3">LZ 9-3 - Qualitätskriterien für Data Pipelines</a></p>
+</li>
+<li>
+<p><a href="#LZ-9-4">LZ 9-4 - Building Blocks von Data Pipelines</a></p>
+</li>
+<li>
+<p><a href="#LZ-9-5">LZ 9-5 - Technologien und Plattformen für Data Pipelines</a></p>
+</li>
+<li>
+<p><a href="#LZ-9-6">LZ 9-6 - Betrieb von Data Pipelines</a></p>
+</li>
+<li>
+<p><a href="#LZ-10-1">LZ 10-1 - Warum Data Mesh?</a></p>
+</li>
+<li>
+<p><a href="#LZ-10-2">LZ 10-2 - Domain Ownership</a></p>
+</li>
+<li>
+<p><a href="#LZ-10-3">LZ 10-3 - Data as a Product</a></p>
+</li>
+<li>
+<p><a href="#LZ-10-4">LZ 10-4 - Self-serve Data Platform</a></p>
+</li>
+<li>
+<p><a href="#LZ-10-5">LZ 10-5 - Federated Computational Governance</a></p>
+</li>
+<li>
+<p><a href="#LZ-10-6">LZ 10-6 - Top Down vs. Bottom up Realisierung</a></p>
+</li>
+<li>
+<p><a href="#LZ-11-1">LZ 11-1 - Begriffsdefinition</a></p>
+</li>
+<li>
+<p><a href="#LZ-11-2">LZ 11-2 - Datenschutz, Compliance, Datensicherheit</a></p>
+</li>
+<li>
+<p><a href="#LZ-11-3">LZ 11-3 - Qualität von Daten</a></p>
+</li>
+<li>
+<p><a href="#LZ-11-4">LZ 11-4 - Datenzugriff und -berechtigungen</a></p>
+</li>
+<li>
+<p><a href="#LZ-11-5">LZ 11-5 - Data Stewardship und Ownership</a></p>
+</li>
+<li>
+<p><a href="#LZ-11-6">LZ 11-6 - Data Contracts</a></p>
+</li>
+<li>
+<p><a href="#LZ-11-7">LZ 11-7 - Richtlinien</a></p>
+</li>
+<li>
+<p><a href="#LZ-11-8">LZ 11-8 - Metadaten</a></p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_einführung_allgemeines_zum_isaqb_advanced_level">Einführung: Allgemeines zum iSAQB Advanced Level</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_was_vermittelt_ein_advanced_level_modul">Was vermittelt ein Advanced Level Modul?</h3>
+<div class="paragraph">
+<p>Das Modul kann unabhängig von einer CPSA-F-Zertifizierung besucht werden.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Der iSAQB Advanced Level bietet eine modulare Ausbildung in drei Kompetenzbereichen mit flexibel gestaltbaren Ausbildungswegen. Er berücksichtigt individuelle Neigungen und Schwerpunkte.</p>
+</li>
+<li>
+<p>Die Zertifizierung erfolgt als Hausarbeit. Die Bewertung und mündliche Prüfung wird durch vom iSAQB benannte Expert:innen vorgenommen.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_was_können_absolventen_des_advanced_level_cpsa_a">Was können Absolventen des Advanced Level (CPSA-A)?</h3>
+<div class="paragraph">
+<p>CPSA-A-Absolventen können:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>eigenständig und methodisch fundiert mittlere bis große IT-Systeme entwerfen</p>
+</li>
+<li>
+<p>in IT-Systemen mittlerer bis hoher Kritikalität technische und inhaltliche Verantwortung übernehmen</p>
+</li>
+<li>
+<p>Maßnahmen zur Erreichung von Qualitätsanforderungen konzeptionieren, entwerfen und dokumentieren sowie Entwicklungsteams bei der Umsetzung dieser Maßnahmen begleiten</p>
+</li>
+<li>
+<p>architekturrelevante Kommunikation in mittleren bis großen Entwicklungsteams steuern und durchführen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_voraussetzungen_zur_cpsa_a_zertifizierung">Voraussetzungen zur CPSA-A-Zertifizierung</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>erfolgreiche Ausbildung und Zertifizierung zum Certified Professional for Software Architecture, Foundation Level<sup>&#174;</sup> (CPSA-F)</p>
+</li>
+<li>
+<p>mindestens drei Jahre Vollzeit-Berufserfahrung in der IT-Branche; dabei Mitarbeit an Entwurf und Entwicklung von mindestens zwei unterschiedlichen IT-Systemen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ausnahmen sind auf Antrag zulässig (etwa: Mitarbeit in Open-Source-Projekten)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Aus- und Weiterbildung im Rahmen von iSAQB-Advanced-Level-Schulungen im Umfang von mindestens 70 Credit Points aus mindestens drei unterschiedlichen Kompetenzbereichen</p>
+</li>
+<li>
+<p>erfolgreiche Bearbeitung der CPSA-A-Zertifizierungsprüfung</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><br>
+<br></p>
+</div>
+<div class="paragraph text-center">
+<p><span class="image"><img src="images/00-preamble/cpsa-a-logo.png" alt="Certified Professional for Software Architecture<sup>&#174;</sup> Advanced Level (CPSA-A)"></span></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_grundlegendes">Grundlegendes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_was_vermittelt_das_modul_data">Was vermittelt das Modul „DATA“?</h3>
+<div class="paragraph">
+<p>Daten werden in modernen Anwendungssystemen zunehmend zu “First Class Citizens”. Gründe dafür sind etwa der deutlich gestiegene und weiter steigende Einsatz mobiler Endgeräte, die massenweise Integration von Geräten über IoT, die universelle Verfügbarkeit von Anwendungen in der Cloud, der zunehmende Einsatz KI-basierter Lösungen und natürlich die Verfügbarkeit günstiger digitaler Speichertechnologie. Dies zeigt sich auch in den Trends “Big Data” oder “Data Driven”. Entsprechend sind in den letzten Jahren die Anforderungen an Software- und Systemarchitekten gestiegen, sich mit geeigneten Architekturen zur Verarbeitung großer Datenmengen zu befassen.
+Der hier vorliegende iSAQB Lehrplan soll einen möglichst umfassenden Überblick über alle Aspekte bieten, die im Zusammenhang mit der Verarbeitung großer Datenmengen aus der Sicht von Software- und Systemarchitekten beachtet werden müssen.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_was_vermittelt_das_modul_data_nicht">Was vermittelt das Modul „DATA“ nicht?</h3>
+<div class="paragraph">
+<p>Insbesondere die folgenden Themengebiete sind im Lehrplan zwar enthalten, werden aber nicht vertieft behandelt:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Data Science (Statistik, Machine Learning)</p>
+</li>
+<li>
+<p>Business Intelligence (OLAP, Multidimensional Modeling)</p>
+</li>
+<li>
+<p>Datenschutz</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In vielen Spezialgebieten spielt die Verarbeitung großer Datenmengen ebenfalls eine maßgebliche Rolle. Sie werden in diesem Lehrplan nicht explizit behandelt. Beispiele dafür sind:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IoT</p>
+</li>
+<li>
+<p>Suchmaschinen</p>
+</li>
+<li>
+<p>Wissenschaftliche Anwendungen (Klimaforschung, Kernphysik, Proteinfaltung, etc)</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Hier bitte das Modul bzw. dessen Lerninhalte zusammenfassend in 5-8 Sätzen beschreiben. Dabei <code>Entwerfen, Erstellen und Warten datenzentrierter Softwarearchitekturen</code>
+nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen ersetzt.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_struktur_des_lehrplans_und_empfohlene_zeitliche_aufteilung">Struktur des Lehrplans und empfohlene zeitliche Aufteilung</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Inhalt</th>
+<th class="tableblock halign-right valign-top">Empfohlene Mindestdauer (min)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Motivation und Übersicht</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Referenzarchitekturen für analytische Anwendungssysteme</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">180</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Datenquellen</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">60</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Ingestion</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Datenspeicher</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. Queries</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">60</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7. Transformation</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8. Nutzung und Analyse</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9. Data Pipelines</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10. Data Mesh</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">120</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11. Data Governance</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">120</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-right valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Summe</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1080 (18h)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Bitte die oben angegebene Tabelle entsprechend anpassen.</p>
+</div>
+<div class="paragraph">
+<p>= = =</p>
+</div>
+<div class="paragraph">
+<p>Please adjust the table above according to your curriculum.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Bitte in dieser Datei nur die "<strong>?</strong>"-Platzhalter durch die Anzahl der Tage sowie die erreichbaren Punkte ersetzen. Ansonsten keine Änderungen vornehmen!</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dauer_didaktik_und_weitere_details">Dauer, Didaktik und weitere Details</h3>
+<div class="paragraph">
+<p>Die unten genannten Zeiten sind Empfehlungen. Die Dauer einer Schulung zum Modul DATA
+sollte mindestens 3 Tage betragen, kann aber länger sein.
+Anbieter können sich durch Dauer, Didaktik, Art und Aufbau der Übungen sowie der detaillierten Kursgliederung voneinander unterscheiden.
+Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett offen.</p>
+</div>
+<div class="paragraph">
+<p>Lizenzierte Schulungen zu DATA tragen zur Zulassung zur abschließenden Advanced-Level-Zertifizierungsprüfung folgende Credit Points) bei:</p>
+</div>
+<table class="tableblock frame-none grid-rows stripes-none stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Methodische Kompetenz:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20 Punkte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technische Kompetenz:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10 Punkte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kommunikative Kompetenz:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0 Punkte</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_voraussetzungen">Voraussetzungen</h3>
+<div class="paragraph">
+<p>Teilnehmerinnen und Teilnehmer <strong>sollten</strong> folgende Kenntnisse und/oder Erfahrung mitbringen:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Grundlagen der Beschreibung von Architekturen mithilfe verschiedener Sichten, übergreifender Konzepte, Entwurfsentscheidungen, Randbedingungen etc., wie es im CPSA-F (Foundation Level) vermittelt wird.</p>
+</li>
+<li>
+<p>Erfahrung mit der Implementierung und Architektur in agilen Projekten.</p>
+</li>
+<li>
+<p>Erfahrungen aus der Entwicklung und Architektur datenzentrierter Anwendungen mit den typischen Herausforderungen.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Hilfreich</strong> für das Verständnis einiger Konzepte sind darüber hinaus:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kenntnisse über SQL und über Probleme und Herausforderungen bei der Nutzung großer Datenbanken</p>
+</li>
+<li>
+<p>Kentnisse über Probleme und Herausforderungen bei der Implementierung verteilter Systeme</p>
+</li>
+<li>
+<p>Kenntnisse über fachliche Modularisierung</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Kenntnisgruppen sowie Voraussetzungen bitte entsprechend ausformulieren!</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gliederung_des_lehrplans">Gliederung des Lehrplans</h3>
+<div class="paragraph">
+<p>Die einzelnen Abschnitte des Lehrplans sind gemäß folgender Gliederung beschrieben:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Begriffe/Konzepte</strong>: Wesentliche Kernbegriffe dieses Themas.</p>
+</li>
+<li>
+<p><strong>Unterrichts-/Übungszeit</strong>: Legt die Unterrichts- und Übungszeit fest, die für dieses Thema bzw. dessen Übung in einer akkreditierten Schulung mindestens aufgewendet werden muss.</p>
+</li>
+<li>
+<p><strong>Lernziele</strong>: Beschreibt die zu vermittelnden Inhalte inklusive ihrer Kernbegriffe und -konzepte.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Dieser Abschnitt skizziert damit auch die zu erwerbenden Kenntnisse in entsprechenden Schulungen.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ergänzende_informationen_begriffe_übersetzungen">Ergänzende Informationen, Begriffe, Übersetzungen</h3>
+<div class="paragraph">
+<p>Soweit für das Verständnis des Lehrplans erforderlich, haben wir Fachbegriffe ins <a href="https://github.com/isaqb-org/glossary">iSAQB-Glossar</a> aufgenommen, definiert und bei Bedarf durch die Übersetzungen der Originalliteratur ergänzt.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_motivation_und_übersicht">1. Motivation und Übersicht</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte">1.1. Begriffe und Konzepte</h3>
+<div class="paragraph">
+<p>operative Daten, analytische Daten, OLTP, OLAP, Data Engineer, Data Architect, Data Scientist,</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lernziele">1.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-1-1">LZ 1-1 - Data Engineering</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen können erläutern, was Data Engineering ist und kennen übliche Definitionen. Die Teilnehmer:innen können erklären, wie sich die Data Engineering entwickelt hat, um den Anforderungen von Data Science und Data Analytics hinsichtlich Datensammlung, -speicherung, -verarbeitung und -analyse zu entsprechen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-1-2">LZ 1-2 - Unterscheidung operativer und analytischer Daten</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen können die Unterschiede hinsichtlich Verwendung, Struktur und Kontext zwischen operativen und analytischen Daten erläutern. Sie können die Begriffe OLTP und OLAP unterscheiden. Ihnen ist klar, warum operative und analytische Daten üblicherweise separat verarbeitet werden und sie kennen typische Beispiele für operative und analytische Anwendungen.
+Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>subjektorientiert</p>
+</li>
+<li>
+<p>beständig</p>
+</li>
+<li>
+<p>integrierbar</p>
+</li>
+<li>
+<p>historisiert</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Beispiele, wie analytische Daten aus operativen Anwendungen entstehen. Sie kennen ebenfalls Beispiele, wie Ergebnisse von Analysen analytischer Daten in operativen Anwendungen genutzt werden können.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-1-3">LZ 1-3 - Kategorien der Datenanalyse</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen die typischen Kategorien der Datenanalyse, können diese unterscheiden und jeweils Beispiele dazu nennen:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Deskriptive Analyse z.B. Berichtswesen</p>
+</li>
+<li>
+<p>Explorative Analyse z.B. Ad-Hoc Reporting</p>
+</li>
+<li>
+<p>Inferentielle Analyse: Ableitung von Aussagen aus Stichproben, z.B. Wirksamkeitsanalyse von Medikamenten</p>
+</li>
+<li>
+<p>Prädiktive Analyse: zukünftige Vorhersagen basierend auf historische Daten, z.B. Kreditrisikobewertung</p>
+</li>
+<li>
+<p>Kausale Analyse: Erkennung von Ursache-Wirkung-Beziehungen</p>
+</li>
+<li>
+<p>Mechanistische Analyse: Integration spezifischen Fachwissens, z.B. physikalischer, biologischer oder chemischer Modelle</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-1-4">LZ 1-4 - Herausforderungen analytischer Anwendungen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen können übliche Herausforderungen bei Konzeption, Umsetzung und Betrieb analytischer Anwendungssysteme speziell im Hinblick auf die folgenden Voraussetzungen bennenen:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Umfang und Komplexität der zu verarbeitenen Daten</p>
+</li>
+<li>
+<p>Komplexität und Anzahl der Analysen, Anfragen / Queries</p>
+</li>
+<li>
+<p>Verfügbarkeit</p>
+</li>
+<li>
+<p>Datensicherheit</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-1-5">LZ 1-5 - Rollen im Data Engineering</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen können Rollen wie Data Architect, Data Analyst, Machine Learning Engineer und Data Scientist beschreiben und voneinander abgrenzen.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass die Ausprägung der jeweiligen Rollen von der Effizienz und Professionalität der jeweiligen Organisationen im Hinblick auf die Arbeit mit Daten abhängen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-1-6">LZ 1-6 - Monolithische und verteilte Datenarchitekturen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen die Vor- und Nachteile monolithischer und verteilter Softwarearchitekturen für analytische Anwendungen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine monolithische Architektur haben und dass mit der Diskussion um Data Mesh (siehe <a href="#LZ-10-1">[LZ-10-1]</a>) aktuell ein Paradigmenwandel stattfindet.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-1-7">LZ 1-7 - Lebenszyklus analytischer Daten</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen können die folgenden Phasen der Datenverarbeitung zur Vereinheitlichung analytischer Daten unterscheiden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sources - Das Erzeugen der Daten (siehe <a href="#LZ-3-1">LZ 3-1 - Arten von Datenquellen und Quellsystemen</a>)</p>
+</li>
+<li>
+<p>Ingestion und Transport - Das Extrahieren der Daten und deren Transport zu den Speichersystemen (siehe <a href="#LZ-4-1">LZ 4-1 - Was ist Data Ingestion?</a>)</p>
+</li>
+<li>
+<p>Storage - Das Abspeichern der Daten (siehe <a href="#LZ-5-1">LZ 5-1 - Speichersysteme</a>)</p>
+</li>
+<li>
+<p>Query und Processing - Code zur Verarbeitung und Abfragen gegen die gespeicherten Daten (siehe <a href="#LZ-6-1">[LZ-6-1]</a>)</p>
+</li>
+<li>
+<p>Transformation - Transformation der Daten in eine für die Analyse geeignete Form (siehe <a href="#LZ-7-1">[LZ-7-1]</a>)</p>
+</li>
+<li>
+<p>Analysis und Output - Präsentation der Daten für die Analyse und deren Ergebnisse sowie Integration der Analysemöglichkeiten in Anwendungen (siehe <a href="#LZ-8-1">[LZ-8-1]</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewußt, dass begleitend zu diesen Phasen auch die folgenden Querschnittsthemen zu beachten sind:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Data Discovery - Information bereitstellen, welche Daten es gibt, wie sie aufbereitet und wo sie zu finden sind</p>
+</li>
+<li>
+<p>Data Governance - Erarbeiten und Überwachen allgemein gültiger Regeln für die Verarbeitung der Daten (siehe <a href="#LZ-11-1">[LZ-11-1]</a>)</p>
+</li>
+<li>
+<p>Data Security - Gewährleisten eines angemessenen Grads an Datenschutz (siehe <a href="#LZ-11-2">[LZ-11-2]</a>)</p>
+</li>
+<li>
+<p>Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität (siehe <a href="#LZ-11-3">[LZ-11-3]</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-1-8">LZ 1-8 - Abgrenzung von anderen iSAQB Modulen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen speziell im Hinblick auf Architekturen für Data Science und Architekturen für operative Anwendungssysteme abgrenzt.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen">1.3. Referenzen</h3>
+<div class="paragraph">
+<p><a href="#codd">[codd]</a>, <a href="#inmon">[inmon]</a>, <a href="#kimball">[kimball]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_referenzarchitekturen_für_analytische_anwendungssysteme">2. Referenzarchitekturen für analytische Anwendungssysteme</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_2">2.1. Begriffe und Konzepte</h3>
+<div class="paragraph">
+<p>Referenzarchitekturen, Cloud, Cloud-Ready, hybrid, on-Premise, zentrales/monolithisches System, dezentrales/förderiertes System</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lernziele_2">2.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-2-1">LZ 2-1 - Überblick zu Referenzarchitekturen</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist der generelle Nutzen von Referenzarchitekturen bewusst:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>eine Vorlage für eine funktionale Zerlegung in wesentliche Bestandteile zur Verfügung zu stellen</p>
+</li>
+<li>
+<p>ein einheitliches Vorgehen für die Aufnahme, Verarbeitung und Verwendung von Daten vorzugeben</p>
+</li>
+<li>
+<p>dadurch eine Vorlage für die Ausprägung konkreter Software-Architekturen zu bieten</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Referenzarchitekturen für analytische Anwendungssysteme generell unterschieden werden, je nachdem, ob eine Basis für</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>die Vereinheitlichung und Integration analytischer Daten</p>
+</li>
+<li>
+<p>die Anwendung von Verfahren der KI und des ML auf analytischen Daten (nicht Bestandteil dieses Lehrplans)</p>
+</li>
+<li>
+<p>beides zugleich</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>geschaffen werden soll.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Ansätze, ein einheitliches Framework für Referenzarchitekturen zu analytischen Anwendungssystemen zu beschreiben.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Referenzarchitekturen sowohl in monolithischen Ansätzen für die Architektur des Gesamtsystem herangezogen werden können, als auch in verteilten Ansätzen wie Data Mesh (siehe <a href="#LZ-10-1">[LZ-10-1]</a>) für die Architektur jedes Teilsystems eingesetzt werden können.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Beispiele von Referenzarchitekturen für analytische Anwendungssysteme wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Data Warehouse</p>
+</li>
+<li>
+<p>Data Lake</p>
+</li>
+<li>
+<p>Lambda Architecture</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-2-2">LZ 2-2 - Referenzarchitekturen zur Vereinheitlichung analytischer Daten</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen die Phasen der Datenverarbeitung und wissen, welche Toolkategorien in den jeweiligen Phasen typischerweise zum Einsatz kommen (siehe [M. Bornstein 2020]).</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Komponenten die zur Abdeckung querschnittlicher Themen geeignet sind.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-2-3">LZ 2-3 - Architekturentscheidungen anhand von Referenzarchitekturen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen können Architekturentscheidungen etwa zu den folgenden Fragestellungen anhand von Referenzarchitekturen diskutieren:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ob ein zentrales/monolithisches oder dezentrales/förderiertes System zu wählen ist</p>
+</li>
+<li>
+<p>ob ein Deployment in der Cloud (ggfs. Cloud-Ready), hybrid oder on-Premise vorzuziehen ist</p>
+</li>
+<li>
+<p>ob eine eigenständige Entwicklung von Komponenten erforderlich ist oder das Kaufen und Konfigurieren von Standardkomponenten ausreicht</p>
+</li>
+<li>
+<p>ob die Integration von Komponenten selbst vorgenommen oder auf die Verwendung bereits integrierter Komponenten vertraut wird</p>
+</li>
+<li>
+<p>ob Stream-, Batch-Processing (ggfs Micro-Batch) oder beides unterstützt werden muss</p>
+</li>
+<li>
+<p>welche Form der Skalierbarkeit konkret benötigt wird, z.B. Datenvolumen, Anzahl der Nutzer</p>
+</li>
+<li>
+<p>welche Rollen und Verantwortlichkeiten vorgesehen werden müssen</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_2">2.3. Referenzen</h3>
+<div class="paragraph">
+<p><a href="#reis">[reis]</a>, <a href="#bornstein">[bornstein]</a>, <a href="#inmon">[inmon]</a>, <a href="#kimball">[kimball]</a>, <a href="#linstedt">[linstedt]</a>, <a href="#giebler">[giebler]</a>, <a href="#pääkkönen">[pääkkönen]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_sources">3. Data Sources</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_3">3.1. Begriffe und Konzepte</h3>
+<div class="paragraph">
+<p>Datenquellen, Quellsysteme, strukturierte-, semi-strukturierte-, unstukturierte Daten, Daten-Snapshots, Increments/Events, technische-, fachliche Metadaten, Schema Inference</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lernziele_3">3.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-3-1">LZ 3-1 - Arten von Datenquellen und Quellsystemen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Beispiele für inhaltliche und technische Arten von Datenquellen und Quellsystemen, von denen analytische Daten typischerweise übernommen werden, wie etwa:</p>
+</div>
+<div class="paragraph">
+<p>inhaltliche Quellen</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sensordaten</p>
+</li>
+<li>
+<p>Standard Anwendungen</p>
+</li>
+<li>
+<p>Logging Systeme</p>
+</li>
+<li>
+<p>(Web-) Analytics</p>
+</li>
+<li>
+<p>Metrics Systeme</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>technische Quellen</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>APIs</p>
+</li>
+<li>
+<p>Datenbanken</p>
+</li>
+<li>
+<p>Event-Feed</p>
+</li>
+<li>
+<p>Messaging Systeme</p>
+</li>
+<li>
+<p>(Cloud) Storage Systeme</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-3-2">LZ 3-2 - Eigenschaften von Datenquellen und Quellsystemen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen können unterscheiden, ob Datenquellen strukturierte, semi-strukturierte oder unstukturierte Daten liefern. Ihnen sind übliche Formate vertraut, in denen Datenquellen ihre Daten zur Verfügung stellen, wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Dokumente</p>
+</li>
+<li>
+<p>Liste von Datensätzen</p>
+</li>
+<li>
+<p>Key-value Paare</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass Quellsysteme z.T. sehr große Datenmengen bereitstellen, und dass geeignete Maßnahmen getroffen werden müssen, um diese Datenmengen transportieren zu können.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass das zur Verfügung stellen analytischer Daten zusätzliche Last für das jeweilige Quellsystem erzeugt werden kann und dass dies i.d.R. den eigentlichen Zweck eines Quellsystems nicht beeinträchtigen darf. Den Teilnehmer:innen ist bewusst, dass es durch spezifische technologische oder organisatorische Rahmenbedingungen schwierig sein kann auf die Daten zuzugreifen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Quellsysteme Daten unter Umständen redundant bereitstellen und können entsprechend mit ihnen umgehen.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, welche Garantien, wie Konsistenz, Integrität, Aktualität, Korrektheit eine Datenquelle zur Verfügung stellen kann.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass die Datenhoheit bei den Quellsystemen liegt und Datenmodelle durch diese geändert werden können.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass Quellsysteme Daten in einem internen Format verwalten, deren Bereitstellung nach aussen problematisch sein kann, weil es dabei zu einer engen Kopplung der Datenmodelle kommen kann.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-3-3">LZ 3-3 - Bereitstellung durch anwendungspezifische APIs</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, das APIs dazu dienen das interne Datenmodell zu abstrahieren und zu definieren was extern bereitgestellt werden soll. Sie kennen zentrale Aspekte beim Entwurf von APIs wie Versionierung und Schemata.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, das APIs üblicherweise vom Quellsystem bereitgestellt werden, aber auch vom Zielsystem angeboten werden können (reverse APIs). Sie kennen Arten von APIs die zur Bereitstellung von Daten dienen wie beispielsweise REST und RPC, Ansätze die Daten direkt transformieren wie GraphQL, sowie Ansätze für reverse APIs wie beispielsweise Webhooks.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-3-4">LZ 3-4 - Bereitstellung durch Datenbanksysteme</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Datenbanken durch ein Datenbankmanagementsystem verwaltet werden, welches beispielsweise Schemaverwaltung, Datenzugriff, Query-Optimizer, Datenverteilung bereitstellt. Ihnen ist bewusst, das Datenbanken vorrangig für die Verwaltung strukturierter Daten verwendet werden.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Open-Table-Formate, welche einen datenbankähnlichen Zugriff auf Dateisysteme und Object Stores erlauben, als Alternative zu traditionellen, monolithischen Datenbankmanagementsystemen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen den Unterschied zwischen relationalen und nicht-relationalen Datenbanken und kennen Beispiele für nicht-reationale Datenbanken wie Zeitreihen-, Graph- oder Dokumentendatenbanken.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-3-5">LZ 3-5 - Bereitstellung durch Dateisysteme</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Dateisysteme hierarchisch oder als Blockspeicher organisiert sein können. Sie wissen, dass der Speicherplatz bei hierarchischen Dateisystemen durch Verzeichnisse strukturiert wird, während er bei Blockspeichern in Blöcke fester Größe eingeteilt ist und sind sich der Konsequenzen für die Navigation durch das jeweilige Dateisystem bewusst.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass die Datenstruktur durch das Dateiformat festgelegt ist. Sie kennen Dateiformate die für den Einsatz mit großen Datenmengen optimiert sind.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen ist bewusst, dass der Datenzugriff über Systemaufrufe auf Betriebssystemebene erfolgt und die Zugriffsberechtigungen ebenfalls vom Betriebssystem verwaltet werden.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Beispiele für Disk-basierte und verteilte Dateisysteme, sowie für Blockspeicher. Sie kennen die Möglichkeiten moderner Dateisysteme hinsichtlich Kompression, Snapshots, Verschlüsselung und Datenintegrität</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-3-6">LZ 3-6 - Bereitstellung durch Object Stores</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, das der Zugriff auf die Daten typischerweise durch RESTful APIs erfolgt. Sie wissen, dass Object Stores für die Speicherung großer Mengen unstrukturierter Daten konzipiert sind und sich üblicherweise horizontal sehr gut skalieren lassen.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen sind die Möglichkeiten hinsichtlich Metadaten für Kategorisierung und Verwaltung, sowie einer flexiblen Verwaltung von Zugriffsberechtigungen bewusst. Sie kennen Möglichkeiten um einen Object Store als Dateisystem zu verwenden.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Beispiele für Object Stores für den Cloud und on-Premise Betrieb.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-3-7">LZ 3-7 - Bereitstellung durch Message Queues und Event-Streaming</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass beide Ansätze auf einer asynchronen Bereitstellung von Daten durch das Quellsystem basieren und ein synchroner Zugriff auf das Quellsystem üblicherweise nicht möglich ist.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen den Unterschied zwischen Messaging Systemen und Streaming Ansätzen. Die Teilnehmer:innen wissen, dass Event Streams ein geordnetes Log der bereitgestellten Daten darstellen, welches von verschiedenen Zielsystemen abonniert werden kann aber nicht muss (Publish Subscribe), wohingegen Messaging Systeme die Daten solange vorhalten, bis sie von einem Zielsystem explizit abgeholt wurden.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen sind sich der Problematik der Übertragung des initialen Zustandes bewusst und kennen Ansätze wie z.B. Snapshots um das Thema zu adressieren.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass Daten mehrfach (at least once) gesendet werden können, da es aufwendig ist sicherzustellen, dass Daten genau einmal bereitgestellt wurden (exactly once). Sie kennen die Vorteile einer idempotenten Verarbeitung.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass die Verwendung von Streams zu temporären Inkonsistenzen im Datenbestand führen kann (eventual consistency).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_3">3.3. Referenzen</h3>
+<div class="paragraph">
+<p><a href="#castagna">[castagna]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ingestion_und_transport">4. Ingestion und Transport</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_4">4.1. Begriffe und Konzepte</h3>
+<div class="paragraph">
+<p>Change Data Capture, Information Hiding, Konnektoren, Message Passing, Event Streaming</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lernziele_4">4.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-4-1">LZ 4-1 - Was ist Data Ingestion?</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass die Data Ingestion der Übernahme der Daten aus den Source Systemen in die Speichersysteme der analytischen Systeme dient. Sie wissen auch, dass damit auch eine Verantwortungsübernahme verbunden ist. Sie verstehen, dass mittels Data Ingestion eine Entkoppelung zwischen Source Systemen und analytischer Verarbeitung ermöglicht wird.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-4-2">LZ 4-2 - Identifizieren von Entitäten</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten in Quellsystemen bekannt, wie etwa Primary Keys (technische vs. fachliche Schlüssel)</p>
+</div>
+<div class="paragraph">
+<p>Das Erkennen von Duplikaten ist Bestandteil von Modul 7 (siehe <a href="#LZ-7-2">[LZ-7-2]</a>).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-4-3">LZ 4-3 - Erkennen von Änderungen</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen sind Verfahren für das Erkennen von Änderungen dieser Entitäten in Quellsystemen bekannt, wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Change Data Capture (CDC)</p>
+</li>
+<li>
+<p>DB-Trigger</p>
+</li>
+<li>
+<p>Create und Update Timestamps</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, für welche Art von Quellsystemen welche dieser Verfahren jeweils geeignet sind.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass das Löschen von Daten üblicherweise ebenfalls als Änderung geliefert wird, da auch gelöschte Daten für die Analyse ggfs. weiter benötigt werden.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass durch den Zugriff auf interne Änderungen des Quellsystems das Prinzip des Information Hidings verletzt werden kann.  Sie verstehen, wie das Outbox Pattern dazu genutzt werden kann, dieses Problem zu adressieren.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-4-4">LZ 4-4 - Konnektoren</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Tools und Frameworks, die über vordefinierte Konnektoren einen vereinheitlichten Zugriff auf Quellsysteme zur Verfügung stellen. Sie wissen, dass diese Tools und Frameworks vorrangig für die folgenden Aufgaben eingesetzt werden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Datenreplikation</p>
+</li>
+<li>
+<p>Datenintegration</p>
+</li>
+<li>
+<p>Datenvirtualisierung</p>
+</li>
+<li>
+<p>Datenorchestrierung</p>
+</li>
+<li>
+<p>Metadatenmanagement</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Beispiele für diese Tools.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-4-5">LZ 4-5 - Eigenschaften von Data Ingestion</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, das die Data Ingestion unabhängig von der nachfolgenden Datenverarbeitung erfolgt, z.B. hinsichtlich Frequenz des Abrufs.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, das Daten in der Regel kontinuierlich erzeugt werden und für die Verarbeitung in Pakete zerlegt werden können.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen die Unterschiede zwischen synchronisierter und nicht-synchronisierter Ingestion und kennen die Probleme, die mit einer synchronisierten Abfolge einhergehen.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass Abläufe für die Ingestion skalierbar gestaltet werden sollte, da diese Prozesse häufig große Datenmengen betreffen und ggf. wiederholt ausgeführt werden müssen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass die Ingestion den aktuellen Zustand der zuletzt geänderten Daten (Snapshot) oder die Änderungen selbst (Increments/Events) betreffen kann, mit denen dieser aktuelle Zustand erzeugt wurde. Sie wissen, dass ggfs. eine initiale Bereitstellung (initial Load) der Daten erforderlich ist.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass die Datenquellen ihre Daten selbst aktiv liefern können (Push), auf Anfrage einmalig bereitstellen (Pull), oder periodisch bereitstellen können (Poll).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-4-6">LZ 4-6 - Batch vs Stream Ingestion</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen sind die Verfahren zur Batch- und Stream-Verarbeitung bekannt. Ihnen ist bewusst, wie Batch Verfahren durch zeitliche (Batch) oder größen-basierte (Micro Batch) Pakete aus einem kontinuierlichen Datenstrom der Quellsysteme erstellt werden können.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen den Unterschied zwischen dem ELT und dem ETL Pattern.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bei der Stream Ingestion bewusst, dass Daten zu spät ankommen können und dass downstream Systeme dies handhaben können müssen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-4-7">LZ 4-7 - Metadaten Ingestion</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen die Bedeutung von Metadaten für die Nutzung von Datenquellen. Sie können technische und fachliche Metadaten unterscheiden. Sie wissen, dass Quellsysteme oft umfassend Metadaten zu den von ihnen bereitgestellten Datenquellen zur Verfügung stellen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen dass beispielsweise folgende Informationen in Form von Metadaten für Folgesysteme von großem Nutzen:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Typ (Tabelle, Bild, Text, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>Größe (Bytes, Gigabytes, Terabytes, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>Schema und Datentypen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass es Verfahren gibt (Schema Inference), um Metadaten aus Daten abzuleiten. Ihnen ist bewusst, dass sich Metadaten über die Nutzungsdauer von Daten ändern können (Schema Evolution) und dass Verfahren existieren, diese Änderungen beim Zugriff auf die Daten zu erkennen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Data Catalogs zur Verwaltung der Metadaten verwendet werden können. Sie wissen, dass neben den Metadaten der Datenquelle auch die Ausführung der Ingestion in Data Catalogs festgehalten werden.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_4">4.3. Referenzen</h3>
+<div class="paragraph">
+<p><a href="#reis">[reis]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_storage">5. Storage</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_5">5.1. Begriffe und Konzepte</h3>
+<div class="paragraph">
+<p>Filesystem, Block-Storage, Objekt-Storage, Datenbanksysteme, Relationale DBS, NoSQL DBS, Key-Value DBS, Graph DBS</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lernziele_5">5.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-5-1">LZ 5-1 - Speichersysteme</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen die folgenden wesentlichen Systeme zum Speichern digitaler Daten und können die jeweiligen Besonderheiten erläutern:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Filesystem</p>
+</li>
+<li>
+<p>Block-Storage System</p>
+</li>
+<li>
+<p>Objekt-Storage System</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen spezielle Kriterien zur Auswahl des passenden Systems für große Datenmengen, wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Performanz - Zugriffszeit (Latency), Durchsatz (Throughput)</p>
+</li>
+<li>
+<p>Skalierbarkeit</p>
+</li>
+<li>
+<p>Kapazität</p>
+</li>
+<li>
+<p>Kosten</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Speichersysteme unterschiedlich an Systeme zur Verarbeitung der Daten angebunden werden können:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Direkte Anbindung (Direct Attached Storage - DAS)</p>
+</li>
+<li>
+<p>Speichernetzwerk (Storage-Area-Network - SAN)</p>
+</li>
+<li>
+<p>Netzwerkspeicher (Network Attached Storage - NAS)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen die Vor- und Nachteile des jeweiligen Ansatzes.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-5-2">LZ 5-2 - Datenbanksysteme</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass die Verwaltung von Daten Aufgaben umfasst, die von Speichersystemen nicht direkt unterstützt werden, wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Verwaltung der Metadaten zu den Daten</p>
+</li>
+<li>
+<p>Vorgabe und Anwendung von Schema-Informationen zu den Daten</p>
+</li>
+<li>
+<p>Sicherstellen der Konsistenz der Daten</p>
+</li>
+<li>
+<p>Validierung von Daten</p>
+</li>
+<li>
+<p>Redundante Datenhaltung speziell für verbesserte Verfügbarkeit und Zugriffszeiten</p>
+</li>
+<li>
+<p>Standardisierte, flexible und performante Datenzugriffe</p>
+</li>
+<li>
+<p>Feingranulare Zugriffskontrolle</p>
+</li>
+<li>
+<p>Skalierbarkeit</p>
+</li>
+<li>
+<p>Optimierung (Reduzierung) der Speichernutzung</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Datenbanksysteme (DBS) diese Aufgaben übernehmen. Sie verstehen, dass DBS auf der Basis aller Speichersysteme umgesetzt werden können. Sie kennen die folgenden Typen von DBS und sind mit den jeweiligen Besonderheiten vertraut:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Relationale DBS</p>
+</li>
+<li>
+<p>NoSQL DBS</p>
+</li>
+<li>
+<p>Key-Value DBS</p>
+</li>
+<li>
+<p>(Wide) Column DBS</p>
+</li>
+<li>
+<p>Document DBS</p>
+</li>
+<li>
+<p>Graph DBS</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen entsprechende Produkte zu diesen DBS-Typen und ihnen ist bewusst, dass Produkte auch mehrere dieser Typen abbilden können.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-5-3">LZ 5-3 - Datenbanksysteme für analytische Anwendungen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Systeme, die für spezielle Anwendungsfälle mit großen Datenmengen optimiert sind:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Searchengines</p>
+</li>
+<li>
+<p>Timeseries DBS</p>
+</li>
+<li>
+<p>Multidimensionale DBS / Data Marts / Cubes</p>
+</li>
+<li>
+<p>In-Memory DBS</p>
+</li>
+<li>
+<p>Event Store DBS</p>
+</li>
+<li>
+<p>Vector DBS</p>
+</li>
+<li>
+<p>Stream Storage</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass einige o.g. Aufgaben alleine durch die Verwendung geeigneter Datei- oder Tabellenformate abgedeckt werden können. Sie kennen speziell die folgenden Formate:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Dateiformate: Avro, ORC, Parquet</p>
+</li>
+<li>
+<p>Tabellenformate (Open Table Formats): Delta, Iceberg, Hudi</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-5-4">LZ 5-4 - Concurrency Control</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass bei Multi-Threading und -Processing Systemen mit nebenläufiger Verarbeitung sowie redundanter Speicherung von Daten die Konsistenz von Daten explizit sichergestellt werden muss. Ihnen ist das Konzept von ACID Transaktionen und deren Serialisierbarkeit vertraut. Sie wissen, dass ACID Transaktionen auf unterschiedliche Weisen und mit unterschiedlichen Garantien für Konsistenz (Consistency) und Isolation umgesetzt werden können.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass ACID Transaktionen üblicherweise von (relationalen) Datenbankmanagementsystemen zur Verfügung gestellt werden, dass sie aber nicht auf diese Systeme beschränkt sind.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist das alternative Konzept der BASE-Transaktionen sowie speziell der eventuellen Konsistenz (Eventual Consistency) verteilter Anwendungen vertraut.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass es bei der Verarbeitung großer Datenmengen (speziell im Batch) sinnvoll sein kann, auf ACID Transaktionen zu verzichten oder sie zumindest mit schwächeren Garantien für Consistency und Isolation zu verwenden um die Verarbeitungsgeschwindigkeit zu verbessern. Sie verstehen, dass beim Einsatz von Streaming Systemen eine nebenläufige Verarbeitung stattfindet, bei der der Einsatz von Transaktionen sinnvoll sein kann.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-5-5">LZ 5-5 - Versionierung von Daten</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass bei veränderlichen Daten nicht nur der aktuelle Zustand, sondern auch die früheren Zustände (speziell für analytische Auswertungen) von Interesse sein können. Sie kennen die folgenden Verfahren für die Versionierung von Daten und verstehen, wie diese etwa in Form von Datenbanksystemen mit den o.g. Speichersystemen kombiniert werden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Transaktionen (über die Serialisierbarkeit)</p>
+</li>
+<li>
+<p>Versionskontrolle</p>
+</li>
+<li>
+<p>Event-Sourcing</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-5-6">LZ 5-6 - Optimierung und Skalierung</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen übliche Verfahren, um Speichersysteme bei steigender Last zu optimieren und zu skalieren, wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sharding</p>
+</li>
+<li>
+<p>Partitionierung (vertikal/horizontal)</p>
+</li>
+<li>
+<p>Indexierung</p>
+</li>
+<li>
+<p>Reflections</p>
+</li>
+<li>
+<p>Caching</p>
+</li>
+<li>
+<p>Append Only / Read Only</p>
+</li>
+<li>
+<p>Blockierender vs. nicht-blockierender Zugriff</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass es bei größeren Datenmengen vorteilhaft und notwendig ist die Daten auf mehreren Servern zu verteilen. Sie wissen dabei, dass mehrere Server sowohl das Speichern, Abrufen und Verarbeiten der Daten schneller macht als auch eine Redundanz der Daten bereitstellt, falls ein Server ausfällt.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Daten oft nicht unbefristet aufbewahrt werden können. Sie kennen Ansätze für Data Retention, wie:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Wahl der Speichertechnologie abhängig von der Häufigkeit des Datenzugriffs  ("Hot" und "Cold" Storage)</p>
+</li>
+<li>
+<p>Automatisches Löschen von Daten nach vorgebenen Kriterien, z.B. Ablauf einer Speicherfrist</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-5-7">LZ 5-7 - Datenmodelle für analytische Daten</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist der Umgang mit Datenmodellen generell vertraut. Sie verstehen, wie Datenmodelle für die Arbeit mit analytischen Daten sich sowohl an den Datenmodellen der Quellsysteme als auch an den Anforderungen an die Datenanalyse orientieren müssen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen das Konzept der Normalisierung von Datenmodellen. Sie verstehen, dass für die Arbeit mit analytischen Daten häufig auf die für operative Daten übliche Normalisierung verzichtet wird und vorrangig denormaliserte Datenmodelle in diesem Umfeld verwendet werden.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Datenmodelle sowohl im Hinblick auf die verwendeten Quellsysteme als auch, noch weit deutlicher, im Hinblick auf die analytischen Anwendungen, Änderungen unterworfen sind. Sie kennen Ansätze, wie mit entsprechenden Änderungen umgegangen werden kann, wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Verwendung multidimensionaler Datenmodelle (Star, Snowflake, Data Vault)</p>
+</li>
+<li>
+<p>Zerlegung in Teil-Modelle (siehe <a href="#LZ-10-2">[LZ-10-2]</a> - Domain Ownership)</p>
+</li>
+<li>
+<p>Automatisierung der Modell-Änderungen (DWH Automation)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-5-8">LZ 5-8 - Data Warehouse und Data Lake</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Data Warehouses und Data Lakes Ansätze sind, um Daten aus verschiedenen Quellsystemen zusammenführen und um einen vereinheitlichten Zugriff auf diese Daten bieten zu können. Sie wissen, dass die beiden Ansätze für OLAP Anwendungen optimiert sind.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, wie Speichersysteme und darauf aufbauende Datenbanksysteme als Grundlage für DWH und DL Systeme verwendet werden.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen wesentliche Unterschiede zwischen DWH und DL Systemen, wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ein definiertes Schema (Schema on Write) beim DWH (das sich im Laufe der Zeit ändern kann) gegenüber mehreren parallelen Schemata (etwa mit Schema on Read) beim DL.</p>
+</li>
+<li>
+<p>Nur vereinheitlichte Daten im DWH während im DL auch die ursprünglichen Quelldaten (Rohdaten) vorgehalten werden.</p>
+</li>
+<li>
+<p>Die bessere Eignung von Data Lakes für Künstliche Intelligenz und Machine Learning Szenarien, da dort noch die ursprünglichen Quelldaten vorhanden sind</p>
+</li>
+<li>
+<p>Optimierte Strukturen für den lesenden (analytischen) Zugriff beim DWH gegenüber vereinfachten schreibenden Zugriffen beim DL.</p>
+</li>
+<li>
+<p>Begrenzung auf strukturierte Daten beim DWH während DL auch unstrukturierte und semi-strukturierte Daten aufnehmen können.</p>
+</li>
+<li>
+<p>Hoher Aufwand für die Integration neuer Datenquellen beim DWH während neue Datenquellen in den DL direkt aufgenommen werden können.</p>
+</li>
+<li>
+<p>Hoher Aufwand für die Vereinheitlichung von Daten beim lesenden (analytischen) Zugriff im DL während dies beim DWH in deutlich geringerem Umfang erforderlich ist.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Lösungsansätze, um in DL Systemen den Aufwand für die Vereinheitlichung beim lesenden Zugriff zu reduzieren:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Aufteilen des DL in Bereiche unterschiedlicher Datenqualität – etwa Bronze, Silber und Gold –, wobei die Rohdaten im Bronze-Bereich und die vereinheitlichten, gut analysierbaren Daten im Gold-Bereich zu finden sind  (Data Lakehouse).</p>
+</li>
+<li>
+<p>Technische Aspekte der Vereinheitlichung direkt bei der Eingangsverarbeitung erledigen (einheitliche Zeichensätze, Null-Values, Datumsformate, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>Modularisierung des DL etwa über die Verwendung von DDD.</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>=== Referenzen</p>
+</div>
+<div class="paragraph">
+<p><a href="#starke">[starke]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>== Query und Processing</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>=== Begriffe und Konzepte
+Begriff 1, Begriff 2, Begriff 3</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>=== Lernziele</p>
+</div>
+<div id="LZ-6-1" class="paragraph">
+<p>==== LZ 6-1 - Analytische Queries
+Die Teilnehmer:innen verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen. Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Query-Ausdrücke für analytische Anwendungen, wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Aggregationen (Sum, Count, Avg, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>Fenstern/Windows (Over Partition by)</p>
+</li>
+<li>
+<p>OLAP Operationen (Slice/Dice, Drill up/down/&#8230;&#8203;)</p>
+</li>
+<li>
+<p>Umformungen (Pivot, Transpose, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>Modularisierung (Views, Common Table Expressions, Stored Procedures, User Defined Functions)</p>
+</li>
+</ul>
+</div>
+<div id="LZ-6-2" class="paragraph">
+<p>==== LZ 6-2 - Query Programmiermodelle
+Die Teilnehmer:innen wissen, dass unterschiedliche Programmiermodelle für analytische Queries eingesetzt werden. Ihnen sind wesentliche Programmiermodelle bekannt und sie können beurteilen, für welche Aufgaben sie speziell geeignet sind:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SQL</p>
+</li>
+<li>
+<p>OLAP</p>
+</li>
+<li>
+<p>Spark</p>
+</li>
+<li>
+<p>Map-Reduce</p>
+</li>
+<li>
+<p>Stream Processing</p>
+</li>
+<li>
+<p>Dataframes</p>
+</li>
+<li>
+<p>Numerical/Statistical</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass die Art des benötigten Datenzugriffs zentral für die Wahl einer Datenarchitektur ist.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen für jedes dieser Programmiermodelle Beispiele zu Frameworks, Libraries und Tools für die Verarbeitung analytischer Queries.</p>
+</div>
+<div id="LZ-6-3" class="paragraph">
+<p>==== LZ 6-3 - Query Verarbeitung &amp; Optimierung
+Die Teilnehmer:innen wissen, dass die Verarbeitung der Queries von der sog. Query-Engine übernommen werden. Die Teilnehmer:innen wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bekannt, dass die Verarbeitung von Queries in den folgenden Schritten erfolgt:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Parsen der Query-Statements</p>
+</li>
+<li>
+<p>Erstellen und Optimieren des Ausführungsplans</p>
+</li>
+<li>
+<p>Ausführen der Query gemäß Ausführungsplan</p>
+</li>
+<li>
+<p>Rückgabe der Ergebnisse</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass analytische Queries i.d.R. nicht komplett im Hauptspeicher verarbeitet werden können und dass analytische Queries oft auf verteilten Daten operieren müssen. Sie wissen, dass eine performante Ausführung von der Engine insbesondere durch Lastverteilung auf parallel arbeitende Worker gewährleistet werden kann.</p>
+</div>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass Unterschiede in Ausführungsplänen zu drastischen Laufzeit-Unterschieden bei der Ausführung von Queries führen können. Sie kennen Beispiele wie Full Table Scans oder Full Outer Joins (Kreuzprodukte), die auf ungünstige Ausführungspläne hinweisen können.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen gängige Verfahren zur Optimierung (analytischer) Queries, wie etwa die Vorgabe günstiger Join-Beziehungen im Star-Schema.</p>
+</div>
+<div class="paragraph">
+<p>=== Referenzen</p>
+</div>
+<div class="paragraph">
+<p><a href="#starke">[starke]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>== Transformation</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>=== Begriffe und Konzepte
+Begriff 1, Begriff 2, Begriff 3</p>
+</div>
+<div class="paragraph">
+<p>=== Lernziele</p>
+</div>
+<div id="LZ-7-1" class="paragraph">
+<p>==== LZ 7-1 - Was versteht man unter (Daten-)transformation?
+Die Teilnehmer:innen verstehen, dass Daten aus operativen Systemen oftmals aufbereitet werden müssen, um für die Analyse nutzbar zu sein. Sie wissen, dass dieser Schritt als (Daten-)Transformation bezeichnet wird.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Transformationen in Form von Queries beschrieben werden können, dass bei steigender Komplexität aber einzelne Queries zu unverständlich werden und Abfolgen von Queries (Data Pipeline siehe <a href="#LZ-9-1">[LZ-9-1]</a>) besser für die Umsetzung von Transformationen geeignet sind. Sie wissen, dass Transformationen üblicherweise vor dem Speichern der Daten erfolgen, es mitunter aber sinnvoll sein kann, Transformationen erst vor der Präsentation auszuführen.</p>
+</div>
+<div id="LZ-7-2" class="paragraph">
+<p>==== LZ 7-2 - Anwendungsfälle
+Die Teilnehmer:innen kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Umwandeln der Datenrepräsentation von Quell- in Zielformate</p>
+</li>
+<li>
+<p>Bereinigen der Daten (Data Cleansing)</p>
+</li>
+<li>
+<p>Identifizieren und Entfernen von Duplikaten</p>
+</li>
+<li>
+<p>Ergänzung der Daten (Enhancement)</p>
+</li>
+<li>
+<p>Vereinheitlichung/Standardisierung von Daten mehrerer Quellsysteme, z.B. Lokalisierung</p>
+</li>
+<li>
+<p>Reduktion des Datenumfangs, Komprimierung</p>
+</li>
+<li>
+<p>Anonymisierung, Pseudonomisierung, Verschlüsselung</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, wie Transformationen Verfahren des Query und Processing (siehe <a href="#LZ-6-3">[LZ-6-3]</a>) nutzen, um auf die Daten in den Speichersystemen (siehe <a href="#LZ-5-1">LZ 5-1 - Speichersysteme</a>) zuzugreifen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, wie Transformationen bei verteilten Daten parallel ausgeführt werden.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen die Bedeutung von Schemas und Datenmodellen für die Umsetzung von Transformationen.</p>
+</div>
+<div id="LZ-7-3" class="paragraph">
+<p>==== LZ 7-3 - Typische Transformationen
+Die Teilnehmer:innen kennen typische Transformationen für die Aufbereitung analytischer Daten, wie etwa</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Normalisierung / Denormalisierung von Datenstrukturen - Star/Snowflake Schema, Data Vault</p>
+</li>
+<li>
+<p>Zuordnung von künstlichen IDs (surrogate keys) zu IDs der Quellsysteme</p>
+</li>
+<li>
+<p>(Multidimensionale) Aggregation (Cubes)</p>
+</li>
+<li>
+<p>Umwandlung zwischen flachen und geschachtelten Datenstrukturen</p>
+</li>
+<li>
+<p>Historisieren (Slowly Changing Dimensions)</p>
+</li>
+<li>
+<p>Ersetzen / Aussortieren unwahrscheinlicher Werte / Datensätze (Outlier)</p>
+</li>
+</ul>
+</div>
+<div id="LZ-7-4" class="paragraph">
+<p>==== LZ 7-4 - Staging Area
+Den Teilnehmer:innen ist das Konzept der Staging Area vertraut. Sie wissen, dass</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>analytische Daten aus Datenquellen in einer Staging Area gesammelt und aufbereitet werden, bevor sie für die Analyse zur Verfügung gestellt werden</p>
+</li>
+<li>
+<p>Staging Areas typischerweise für die Batch Verarbeitung von Daten zum Befüllen eines DWH Systems eingesetzt werden</p>
+</li>
+<li>
+<p>das tatsächliche Befüllen des DWH keine komplexen Operationen mehr erfordert und üblicherweise ganz oder gar nicht erfolgt (atomar)</p>
+</li>
+<li>
+<p>die Staging Area sowohl das vollständige Verarbeiten der Daten einer Datenquelle (initial load) als auch das Verarbeiten der Änderungsdaten (incremental load) unterstützen muss.</p>
+</li>
+<li>
+<p>die Staging Area immer nur genau die Änderungsdaten erhält, die seit der letzten Batchverarbeitung in den Quellsystemen angefallen sind.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, welche Transformationen typischerweise in einer Staging Area angewendet werden.</p>
+</div>
+<div id="LZ-7-5" class="paragraph">
+<p>==== LZ 7-5 - Robuste Transformationen
+Die Teilnehmer:innen verstehen, dass die Umsetzung von Transformationen oft fragil ist, da sich die zu verarbeitenden Daten von Ausführung zu Ausführung im Hinblick auf Umfang, Format oder Bedeutung ändern können. Die Teilnehmer:innen kennen Lösungsansätze, um Transformationen robust zu gestalten:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vermeiden der Umsetzung von Geschäftslogik</p>
+</li>
+<li>
+<p>Gewährleisten der Wiederholbarkeit - Idempotente Transformationen</p>
+</li>
+<li>
+<p>Verwendung von Standards</p>
+</li>
+<li>
+<p>Einsatz von Verfahren zur Code-Generierung für eine automatisierte Anpassung von Transformationen bei Schema-Änderungen</p>
+</li>
+<li>
+<p>Auswahl geeigneter Programmiermodelle</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Verfahren zum Data Profiling, um die zu erwartenden Daten für die Umsetzung der Transformationen vorab zu analysieren.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Verfahren für die Überwachung (Monitoring) der Ausführung von Transformationen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen das Konzept der Data Lineage für das Nachvollziehen der Abhängigkeiten zwischen Ein- und Ausgangsdaten von Transformationen.</p>
+</div>
+<div id="LZ-7-6" class="paragraph">
+<p>==== LZ 7-6 - Qualitätsstufen
+Die Teilnehmer:innen verstehen, dass über eine schrittweise Transformation eingehender Daten Qualitätsstufen (Quality-Gates) definiert werden können. Sie verstehen, dass damit je nach Art der Analyse Daten einer höheren (Clean Data) oder einer niedrigeren (Raw Data) herangezogen werden können.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Staging Areas (siehe <a href="#LZ-7-4">[LZ-7-4]</a>) ein Quality Gate darstellen, mit dem sichergestellt wird, dass nur qualitätsgesicherte Daten zur Analyse in einem Data Warehouse bereitgestellt werden.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass in einem Data Lake (siehe <a href="#LZ-5-8">LZ 5-8 - Data Warehouse und Data Lake</a>) Daten unterschiedlicher Qualitätsstufen gemeinsam aufbewahrt werden und dass es daher sinnvoll sein kann, Zonen unterschiedlicher Datenqualität (etwa Bronze, Silber, Gold) innerhalb von Data Lakes festzulegen (Medallion Architecture).</p>
+</div>
+<div id="LZ-7-7" class="paragraph">
+<p>==== LZ 7-7 - Batch Verarbeitung
+Die Teilnehmer:innen verstehen das Verfahren der Batch Verarbeitung (Batch Processing) für die Transformation von Daten. Sie wissen, dass die Transformation ein Teil der übergreifenden ETL (Extract-Transform-Load) oder ELT (Extract-Load-Transform) Prozesse ist. Ihnen ist bewusst, dass</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>die Batch Verarbeitung üblicherweise dazu dient, eine größere Anzahl Datensätze aus mehreren Datenquellen zu verarbeiten und die Ergebnisse in eine Datensenke (z.B. Staging Area) zu schreiben</p>
+</li>
+<li>
+<p>alle (initial/complete load) oder nur die letzten Änderungen (incremental load) im Batch verarbeitet werden können</p>
+</li>
+<li>
+<p>die Batch-Verarbeitung idR zeitlich geplant (scheduled) und wenige Male je Tag ausgeführt wird</p>
+</li>
+<li>
+<p>eine Batch-Verarbeitung idR alle Datensätze verarbeitet oder (im Fehlerfalle) keine</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen das Verfahren der Micro-Batch Verarbeitung von Daten. Sie wissen, dass Micro-Batches im Gegensatz zu Batches auch dann angestoßen werden, wenn ausreichend Datensätze in der Datenquelle angefallen sind.</p>
+</div>
+<div id="LZ-7-8" class="paragraph">
+<p>==== LZ 7-8 - Stream Verarbeitung
+Die Teilnehmer:innen verstehen das Verfahren der Stream Verarbeitung (Stream Processing) von Daten. Sie wissen, dass Stream Verarbeitung auf der Basis des Event Streamings aufsetzt.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass bei der Stream Verarbeitung</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>die Daten mehrerer Streams miteinander zu einem weiteren Stream kombiniert werden können.</p>
+</li>
+<li>
+<p>Datensätze (etwa fehlerhafte oder unvollständige) im Stream voneinander getrennt und separat (in unterschiedlichen Streams) weiterverarbeitet werden können.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, warum das Schreiben von Daten aus einem Datenstrom meist idempotent gestaltet wird.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen können zustandslose (stateless) und zustandsbehaftete (stateful) Stream Verarbeitung unterscheiden.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Operationen nicht auf allen Datensätzen eines Streams erfolgen können, sondern immer nur auf einzelnen oder einer Gruppe von aufeinanderfolgenden Datensätzen. Sie kennen dazu das Konzept der Fenster (Window) Funktionen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Frameworks oder Tools für die Stream Verarbeitung, wie Kafka Streams.</p>
+</div>
+<div class="paragraph">
+<p>=== Referenzen</p>
+</div>
+<div class="paragraph">
+<p><a href="#starke">[starke]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>== Serving Data</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>=== Begriffe und Konzepte
+Data Analytics, Query-Processing, Machine Learning Modelle, Reverse ETL</p>
+</div>
+<div class="paragraph">
+<p>=== Lernziele</p>
+</div>
+<div id="LZ-8-1" class="paragraph">
+<p>==== LZ 8-1 - Anwendungsfälle
+Die Teilnehmer:innen können die wesentlichen Anwendungsfälle für die Nutzung analytischer Daten unterscheiden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Basis für Data Analytics und Business Intelligence (BI)</p>
+</li>
+<li>
+<p>Test- und Trainingsdaten für das Erstellen und Verbessern von Maschine Learning Modellen</p>
+</li>
+<li>
+<p>Bereitstellen der Ergebnisse analytischer Auswertungen für die Verwendung in operativen Anwendungen (Reverse ETL)</p>
+</li>
+</ul>
+</div>
+<div id="LZ-8-2" class="paragraph">
+<p>==== LZ 8-2 - Repräsentation von Massendaten
+Die Teilnehmer:innen wissen wie die Verfahren des Query-Processings wie Aggregation oder Cubes für die Darstellung von Massendaten verwendet werden können. Ihnen ist bewusst, dass bei analytischen Daten die Vertrauenswürdigkeit eine zentrale Rolle spielt. Sie wissen, dass daher neben den Daten selbst auch Information zu deren Schema, zum Umfang, zur Aktualität, zu den Datenquellen oder zur Qualität angeboten werden können.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Tools zur Visualisierung von Massendaten. Sie kennen verfügbare Arten von Diagrammen (Heatmap, Ranking, Top, &#8230;&#8203;) und können diese speziell im Hinblick auf Kosten/Nutzen beurteilen. Sie kennen BI-/Reporting Tools und wissen, wie diese für explorative (Slice &amp; Dice, Drill, etc) oder descriptive Analysen eingesetzt werden können. Die Teilnehmer:innen wissen, dass auf Basis dieser Tools analytische Anwendungen wie Dashbords umgesetzt werden können.</p>
+</div>
+<div id="LZ-8-3" class="paragraph">
+<p>==== LZ 8-3 - Modularisierung
+Die Teilnehmer:innen wissen, dass analytische Daten vielfältig und unübersichtlich sein können. Sie kennen das Konzept des Datenprodukts und wissen, dass die Datenprodukte verwendet werden können, um analytische Daten fachlich zu zerlegen. Sie kennen speziell deren Verwendung im Data Mesh Ansatz (siehe <a href="#LZ-10-1">[LZ-10-1]</a>).</p>
+</div>
+<div id="LZ-8-4" class="paragraph">
+<p>==== LZ 8-4 - Data Analytics und Business Intelligence
+Den Teilnehmer:innen sind Data Analytics und BI Anwendungen vertraut. Sie kennen Anwendungsfälle für die Analyse operativ anfallender Daten für die Unternehmenssteuerung.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Frameworks und Tools für die Umsetzung von Data Analytics und BI Anwendungen. Ihnen ist bewusst, das diese Anwendungen üblicherweise direkten Zugriff auf die zugrundeliegenden Speichersysteme benötigen.</p>
+</div>
+<div id="LZ-8-5" class="paragraph">
+<p>==== LZ 8-5 - Machine Learning
+Die Teilnehmer:innen wissen, wie Machine Learning Modelle für den Einsatz im Unternehmen auf Basis operativ anfallender Daten trainiert, verbessert und getestet werden. Sie kennen Anwendungsfälle für die Nutzung solcher Modelle in operativen Anwendungen. Ihnen ist bewusst, das ML Verfahren, anders als Data Analytics, auf einen Extract der vollständigen Rohdaten angewiesen sind und spezielle Repräsentationen (Vektoren) benötigen. Sie kennen die häufige Notwendigkeit spezialiserter Hardware (GPUs).</p>
+</div>
+<div id="LZ-8-6" class="paragraph">
+<p>==== LZ 8-6 - Reverse ETL
+Den Teilnehmer:innen ist das Konzept der Reverse ETL vertraut. Sie kennen Anwendungsfälle für die Integration von vereinheitlichten Daten oder von Ergebnissen analytischer Auswertungen in operative Anwendungen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Reverse ETL Tools mit Konnektoren für gängige operative Anwendungen existieren, die die Umsetzung entsprechender Integrationslösungen deutlich erleichtern. Sie kennen Beispiele für diese Tools.</p>
+</div>
+<div class="paragraph">
+<p>=== Referenzen</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>== Data Pipelines</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>=== Begriffe und Konzepte
+Data Pipelines, Qualitätskriterien, Monitoring, Edge-Computing</p>
+</div>
+<div class="paragraph">
+<p>=== Lernziele</p>
+</div>
+<div id="LZ-9-1" class="paragraph">
+<p>==== LZ 9-1 - Was sind Data Pipelines?
+Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten durch die einzelnen Phasen des Data Engineerings zu bewegen. Sie wissen was typischerweise in den einzelnen Phasen geschieht (siehe <a href="#LZ-1-7">LZ 1-7 - Lebenszyklus analytischer Daten</a>). Sie kennen die wesentlichen Eigenschaften von Data Pipelines wie:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Isolation</p>
+</li>
+<li>
+<p>Unabhängigkeit</p>
+</li>
+<li>
+<p>Einfache Einrichtung und Betreibbarkeit</p>
+</li>
+<li>
+<p>hohe Verfügbarkeit</p>
+</li>
+<li>
+<p>Erweiterbarkeit</p>
+</li>
+<li>
+<p>Skalierbarkeit</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Außerdem kennen die Teilnehmer:innen typische Anwendungsgebiete von Data Pipelines:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Data Engineering</p>
+</li>
+<li>
+<p>Analytics/ML Processing</p>
+</li>
+<li>
+<p>Delivery</p>
+</li>
+</ul>
+</div>
+<div id="LZ-9-2" class="paragraph">
+<p>==== LZ 9-2 - Arten von Data Pipelines
+Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen die Unterschiede zwischen Batch (ETL und ELT), Microbatch, Stream und Eventgetriebener Verarbeitung.</p>
+</div>
+<div id="LZ-9-3" class="paragraph">
+<p>==== LZ 9-3 - Qualitätskriterien für Data Pipelines
+Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte einer Data Pipeline beschreiben, wie etwa:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Durchsatz</p>
+</li>
+<li>
+<p>Zuverlässigkeit</p>
+</li>
+<li>
+<p>Latenz</p>
+</li>
+<li>
+<p>Stabilität</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Ansätze wie Idempotenz, Caching, Parallelisierung, Edge Computing um die Qualität von Data Pipelines zu verbessern.</p>
+</div>
+<div id="LZ-9-4" class="paragraph">
+<p>==== LZ 9-4 - Building Blocks von Data Pipelines
+Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht und in welchen Phasen des Lebenszyklus diese verwendet werden. Sie kennen Beispiele dafür, wissen wann diese Building Blocks  für einen Anwendungsfall geeignet sind und wie diese kombiniert werden können.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Konnektoren</p>
+</li>
+<li>
+<p>Werkzeuge zur Ablaufsteuerung und Orchestrierung</p>
+</li>
+<li>
+<p>Kostengünstige Speichersysteme für hohe Datenvolumen</p>
+</li>
+<li>
+<p>Datenkataloge</p>
+</li>
+<li>
+<p>Werkzeuge zur Datentransformation</p>
+</li>
+<li>
+<p>Report-Generatoren</p>
+</li>
+</ul>
+</div>
+<div id="LZ-9-5" class="paragraph">
+<p>==== LZ 9-5 - Technologien und Plattformen für Data Pipelines
+Die Teilnehmer:innen wissen, wie Data Pipelines auf der Basis von Technologien, wie SQL, Python Dataframes oder Spark, manuell erstellt werden können. Sie kennen zudem auch integrierte Datenplattformen zur Erstellung und dem Management von Data Pipelines, wie z.B.:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Databricks</p>
+</li>
+<li>
+<p>Fivetran</p>
+</li>
+<li>
+<p>Skyvia</p>
+</li>
+</ul>
+</div>
+<div id="LZ-9-6" class="paragraph">
+<p>==== LZ 9-6 - Betrieb von Data Pipelines
+Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines speziell die folgenden Themen bedacht werden müssen:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Monitoring</p>
+</li>
+<li>
+<p>Abhängigkeiten (Data Lineage)</p>
+</li>
+<li>
+<p>Metadaten</p>
+</li>
+<li>
+<p>Late arriving data</p>
+</li>
+<li>
+<p>Orchestrierung</p>
+</li>
+<li>
+<p>Schemaänderungen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>=== Referenzen</p>
+</div>
+<div class="paragraph">
+<p><a href="#varshney">[varshney]</a>, <a href="#levy">[levy]</a>, <a href="#singhal">[singhal]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>== Data Mesh</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>=== Begriffe und Konzepte
+Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies</p>
+</div>
+<div class="paragraph">
+<p>=== Lernziele</p>
+</div>
+<div id="LZ-10-1" class="paragraph">
+<p>==== LZ 10-1 - Warum Data Mesh?
+Die Teilnehmer:innen kennen die Probleme zentralisierter Datenarchitekturen. Sie verstehen, aufgrund welcher Probleme zentrale Data Teams nicht gut skalieren. Sie verstehen auch, warum dezentrale Domain-Teams nicht gut zu zentralen Data Teams passen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz darauf abzielt, dezentrale Datenarchitekturen zu ermöglichen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz auf den folgenden vier Säulen beruht:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Domain Ownership</p>
+</li>
+<li>
+<p>Data as a Product</p>
+</li>
+<li>
+<p>Self-serve Data Platform</p>
+</li>
+<li>
+<p>Federated Computational Governance</p>
+</li>
+</ul>
+</div>
+<div id="LZ-10-2" class="paragraph">
+<p>==== LZ 10-2 - Domain Ownership
+Die Teilnehmer:innen kennen relevante Konzepte des Strategic Domain-Driven Design, wie Domains, Subdomains, Bounded Contexts und Context Mapping Patterns.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen die Bedeutung sowie das Problem von Polysemen als geteilte Konzepte zwischen unterschiedlichen Domains.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass die Verantwortung für analytische Daten und deren Qualität von den zentralen Data Teams bei einem Data Mesh an die einzelnen Domain Teams übergeht. Sie wissen, dass die Domain Teams ihre eigenen analytischen Daten verwalten. Sie wissen auch, dass die Domain Teams die analytischen Daten ihrer Domain ihrem Unternehmen zur Verfügung stellen müssen, diese Daten sollten allerdings nur in Form klar definierter Schnittstellen (Datenprodukt) bereitgestellt werden.</p>
+</div>
+<div id="LZ-10-3" class="paragraph">
+<p>==== LZ 10-3 - Data as a Product</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Data as a Product bedeutet, die Idee der Produktentwicklung und Vermarktung auf Daten zu übertragen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Domain Teams ihre Daten anderen Teams in Form von Datenprodukten zur Verfügung stellen. Sie verstehen, dass Datenprodukte First-Class Citizens der Systemarchitektur darstellen, vergleichbar mit UI und API Komponenten.</p>
+</div>
+<div class="paragraph">
+<p>Sie können die drei Archetypen von Datenprodukten in einem Data Mesh unterscheiden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>source-aligned</p>
+</li>
+<li>
+<p>aggregate</p>
+</li>
+<li>
+<p>consumer-aligned</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen die Charakteristiken von Datenprodukten:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Discoverable</p>
+</li>
+<li>
+<p>Addressable</p>
+</li>
+<li>
+<p>Trustworthy</p>
+</li>
+<li>
+<p>Self-descriptive</p>
+</li>
+<li>
+<p>Secure</p>
+</li>
+<li>
+<p>Understandable</p>
+</li>
+<li>
+<p>Interoperable</p>
+</li>
+<li>
+<p>Natively accessible</p>
+</li>
+<li>
+<p>Valuable on their own</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen unterschiedliche Formen von Datenprodukten wie Datasets, Reports, Machine Learning Features bzw. kompletten ML Modellen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Data Contracts im Sinne einer API der Implementierung von Datenprodukten dienen.</p>
+</div>
+<div id="LZ-10-4" class="paragraph">
+<p>==== LZ 10-4 - Self-serve Data Platform</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen die wesentlichen Konzepte einer Domain-agnostischen Data Platform. Sie wissen, dass diese Plattform vom Data Platform Team verantwortet wird.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass die Data Platform den Domänen Teams ermöglicht, ihre Datenprodukte eigenständig zu erstellen.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen typische Komponenten einer Data Platform, wie Storage, Data Pipelines, Data Catalogs, Access Management, Monitoring, Visualisation. Ihnen sind bestehende Lösungen speziell der großen Cloud Provider bekannt.</p>
+</div>
+<div id="LZ-10-5" class="paragraph">
+<p>==== LZ 10-5 - Federated Computational Governance
+Die Teilnehmer:innen wissen, dass die sog. Governance Group (im Sinne einer Gilde) aus Vertretern der einzelnen Domain Teams und dem Data Platform Team besteht.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass sich die Governance Group auf global gültige Regel und Vorgaben des Data Mesh Ecosystems, speziell hinsichtlich Interoperability, Security und Compliance verständigt.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, wie die Self-Serve Data Platform der Verwaltung, Automatisierung und Durchsetzung der global vereinbarten Regeln und Vorgaben dient. Sie wissen, dass die Verantwortung dafür bei den Domain Teams liegt.</p>
+</div>
+<div id="LZ-10-6" class="paragraph">
+<p>==== LZ 10-6 - Top Down vs. Bottom up Realisierung</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz sowohl Top down wie auch Bottom up realisiert werden kann. Sie verstehen, dass sich der Top Down Ansatz vor allem für Situationen eignet, in denen bestehende monolithische Datensysteme (Data Warehouse, Data Lake) zerlegt werden sollen, während sich der bottom up Ansatz eher an bestehende Domain Teams richtet, welche ihre Daten dezentral für analytische Zwecke zur Verfügung stellen wollen und einen direkten Nutzen für die Domain Teams bieten wollen.</p>
+</div>
+<div class="paragraph">
+<p>=== Referenzen</p>
+</div>
+<div class="paragraph">
+<p><a href="#christ">[christ]</a>, <a href="#majchrzak">[majchrzak]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>== Data Governance</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 60 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 0 Min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>=== Begriffe und Konzepte
+Data Governance, Datenqualität, Anonymisierung, Pseudonymisierung, Personalisierung, Metadaten, Verantwortlichkeit</p>
+</div>
+<div class="paragraph">
+<p>=== Lernziele</p>
+</div>
+<div id="LZ-11-1" class="paragraph">
+<p>==== LZ 11-1 - Begriffsdefinition
+Die Teilnehmer:innen verstehen, dass Data Governance eine Vielzahl von Prinzipien und Praktiken hinsichtlich Qualität, Integrität, Datenschutz und -sicherheit, sowie
+Benutzbarkeit umfasst, die sicherstellen, dass Daten im gesamten Lebenszyklus von der Erstellung bis zur Löschung sicher, effektiv und effizient verwaltet werden.</p>
+</div>
+<div id="LZ-11-2" class="paragraph">
+<p>==== LZ 11-2 - Datenschutz, Compliance, Datensicherheit
+Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen  gesetzliche und regulatorischer Anforderungen wie die Datenschutz-Grundverordnung (DSGVO) in der EU, das Bundesdatenschutzgesetz (BDSG) in Deutschland oder den California Consumer Privacy Act (CCPA) in den USA.</p>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Mechanismen zum Schutz von Daten vor unbefugtem Zugriff, Verlust oder Diebstahl. Dies umfasst Verschlüsselungsmaßnahmen, Firewalls und anderen Sicherheitstechnologien.
+Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und kennen die jeweiligen Nutzungsszenarien.
+Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.</p>
+</div>
+<div id="LZ-11-3" class="paragraph">
+<p>==== LZ 11-3 - Qualität von Daten
+Die Teilnehmer:innen verstehen, warum die Gewährleistung von Datenqualität bei analytischen Daten eine besondere Herausforderung ist.
+Sie verstehen dass sich die Data Governance darum kümmert die Datenqualität zu gewährleisten.
+Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können diese erläutern.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sicherheit und Privacy</p>
+</li>
+<li>
+<p>Benutzbarkeit</p>
+</li>
+<li>
+<p>Zuverlässigkeit</p>
+</li>
+<li>
+<p>Verfügbarkeit</p>
+</li>
+</ul>
+</div>
+<div id="LZ-11-4" class="paragraph">
+<p>==== LZ 11-4 - Datenzugriff und -berechtigungen
+Die Teilnehmer:innen kennen die Notwendigkeit einer Definition, wer Zugang zu welchen Daten hat und unter welchen Bedingungen.
+Die Teilnehmer:innen wissen, wie Daten auditiert und gemonitored werden können und kennen die Wichtigkeit der Auditierung für die Bereiche Security, Privacy, Benutzbarkeit und Zuverlässigkeit.</p>
+</div>
+<div id="LZ-11-5" class="paragraph">
+<p>==== LZ 11-5 - Data Stewardship und Ownership
+Die Teilnehmer:innen verstehen die Notwendigkeit von dedizierten Verantwortlichen für Datenpflege und -verwaltung. Dies beinhaltet die Definition von Verantwortlichkeiten für Datenqualität, Datenschutz und andere Governance-Aspekte.
+Die Teilnehmer:innen können die verschiedenen Rollen und Verantwortungsbereiche in der Data Governence nennen und beschreiben.</p>
+</div>
+<div id="LZ-11-6" class="paragraph">
+<p>==== LZ 11-6 - Data Contracts
+Die Teilnehmer:innen kennen Data Contracts und verstehen wie sie beim Abgleich der Anforderungen von Datenkonsumenten und Datenproduzenten verwendet werden können.</p>
+</div>
+<div id="LZ-11-7" class="paragraph">
+<p>==== LZ 11-7 - Richtlinien
+Die Teilnehmer:innen kennen lokale und globale Policies für alle Phasen des Datenlebenszyklus und wissen wie sie diese festlegen und dokumentieren.</p>
+</div>
+<div id="LZ-11-8" class="paragraph">
+<p>==== LZ 11-8 - Metadaten
+Die Teilnehmer:innen verstehen die Bedeutung von Metadaten im Lebenszyklus der Daten und kennen Möglichkeiten, diese zu erheben und festzuhalten.
+Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Business Metadaten</p>
+</li>
+<li>
+<p>Technische Metadaten</p>
+</li>
+<li>
+<p>Betriebs-Metadaten</p>
+</li>
+<li>
+<p>Referenzielle Metadaten</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen insbesondere die Bedeutung von Data-Lineage-Metadaten.
+Sie sind sich der Bedeutung von Datenschemata bewusst und kennen die diesbezüglichen Unterschiede zwischen verschiedenen Speichersystemen, wie z.B. Object Store und Data Warehouse.</p>
+</div>
+<div class="paragraph">
+<p>=== Referenzen</p>
+</div>
+<div class="paragraph">
+<p><a href="#christ">[christ]</a>, <a href="#majchrzak">[majchrzak]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>== Referenzen</p>
+</div>
+<div class="paragraph">
+<p>Dieser Abschnitt enthält Quellenangaben, die ganz oder teilweise im Curriculum referenziert werden.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Aufbau eines Eintrags-Ankers:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>- [[[label,Text der erscheint]]]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ACHTUNG: Die Labels dürfen nur Buchstaben beinhalten, keine Zahlen oder Sonderzeichen</p>
+</div>
+<div class="paragraph">
+<p>= = =</p>
+</div>
+<div class="paragraph">
+<p>Structure of an anchor:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>- [[[label,text that will be shown]]]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ATTENTION: labels have to be non-numeric.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>A</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="agarwal"></a> R. Agarwal: Kafka Connectors — All you need to know to start using connectors in Kafka. <a href="https://medium.com/@the_infinity/kafka-connectors-all-you-need-to-know-to-start-using-connectors-in-kafka-d905cf8a371c" class="bare">https://medium.com/@the_infinity/kafka-connectors-all-you-need-to-know-to-start-using-connectors-in-kafka-d905cf8a371c</a>, [Online; Stand: 2.06.2023].</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>B</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="bachmann"></a>] F. Bachmann, L. Bass, J. Carriere, P. Clements, D. Garlan, J. Ivers, R. Nord, and R. Little: Software architecture documentation in practice: Documenting architectural layers. tech. rep., Carnegie-Mellon University Pittsburgh PA Software Engineering Inst, 2000.</p>
+</li>
+<li>
+<p>[<a id="bornstein"></a>] M. Bornstein, J. Li, and M. Casado: Emerging Architectures for Modern Data Infrastructure. <a href="https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2" class="bare">https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2</a>, 2020.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>C</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="codd"></a>] E. F. Codd: The relational model for database management: version 2. Addison-Wesley Longman Publishing Co., Inc., 1990.</p>
+</li>
+<li>
+<p>[<a id="castagna"></a>] R. Castagna: Strukturierte und unstrukturierte Daten: Die Unterschiede. <a href="https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede" class="bare">https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede</a>, November 2022, [Online; Stand: 2.06.2023].</p>
+</li>
+<li>
+<p>[<a id="carnes"></a>] B. Carnes: Basic SQL Commands - The List of Database Queries and Statements You Should Know. <a href="https://www.freecodecamp.org/news/basic-sql-commands/" class="bare">https://www.freecodecamp.org/news/basic-sql-commands/</a>, 2020.</p>
+</li>
+<li>
+<p>[<a id="christ"></a>] J. Christ, L. Visengeriyeva, S. Harrer: Data Mesh Architecture - Data Mesh From an Engineering Perspective. <a href="https://www.datamesh-architecture.com" class="bare">https://www.datamesh-architecture.com</a>, 2022.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>D</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="dutta"></a>] K. Dutta and M. Jayapal: Big Data Analytics for Real Time Systems. 02 2015.</p>
+</li>
+<li>
+<p>[<a id="dehghani"></a>] Z. Dehghani, J. Christ, and S. Harrer: Data Mesh: Eine dezentrale Datenarchitektur entwerfen. O&#8217;Reilly Media, Inc., 2023.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>E</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="eckerson"></a>] W. Eckerson: Which Data Warehouse Automation Tool is Right for You?. <a href="https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you" class="bare">https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you</a>, 2015.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>G</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="giebler"></a>] C. Giebler, C. Gröger, E. Hoos, R. Eichler, H. Schwarz, and B. Mitschang: The data lake architecture framework. BTW 2021, 2021.</p>
+</li>
+<li>
+<p>[<a id="grellmann"></a>] M. Grellmann: Die sechs Arten der Datenanalyse. <a href="https://martin-grellmann.de/die-sechs-arten-der-datenanalyse" class="bare">https://martin-grellmann.de/die-sechs-arten-der-datenanalyse</a>, 2022.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>I</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="inmon"></a>] W. H. Inmon: Building the data warehouse. John wiley &amp; sons, 2005.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>K</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="kimball"></a>] R. Kimball and M. Ross: The data warehouse toolkit: the complete guide to dimensional modeling. John Wiley &amp; Sons, 2011.</p>
+</li>
+<li>
+<p>[<a id="kutay"></a>] J. Kutay: Change Data Capture (CDC): What it is and How it Works. <a href="https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/" class="bare">https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/</a>, [Online; Stand: 2.06.2023].</p>
+</li>
+<li>
+<p>[<a id="kreps"></a>] J. Kreps, N. Narkhede, J. Rao, et al.: Kafka: A distributed messaging system for log processing. in Proceedings of the NetDB. vol. 11, pp. 1–7, Athens, Greece, 2011.</p>
+</li>
+<li>
+<p>[<a id="klump"></a>] J. Klump, L. Wyborn, M. Wu, J. Martin, R. R. Downs, A. Asmi, et al.: Versioning data is about more than revisions: A conceptual framework and proposed principles. 2021.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>L</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="linstedt"></a>] D. Linstedt and M. Olschimke: Building a scalable data warehouse with data vault 2.0. Morgan Kaufmann, 2015.</p>
+</li>
+<li>
+<p>[<a id="levy"></a>] E. Levy: Batch vs Stream vs Microbatch Processing: A Cheat Sheet. <a href="https://www.upsolver.com/blog/batch-stream-a-cheat-sheet" class="bare">https://www.upsolver.com/blog/batch-stream-a-cheat-sheet</a>, 2021.</p>
+</li>
+<li>
+<p>[<a id="luber"></a>] S. Luber and N. Litzel: Was ist Data Profiling?. <a href="https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/" class="bare">https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/</a>, 2018.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>M</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="mhatre"></a>] P. Mhatre: Data Warehouse vs Data Vault vs Data Lake vs Delta Lake vs Data Fabric vs Data Mesh. <a href="https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961" class="bare">https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961</a>, 2021.</p>
+</li>
+<li>
+<p>[<a id="majchrzak"></a>] J. Majchrzak, S. Balnojan, M. Siwiak, M. Sieraczkiewicz: Data Mesh in Action. Manning Publication, 2022.
+<strong>P</strong></p>
+</li>
+<li>
+<p>[<a id="pääkkönen"></a>] P. Pääkkönen and D. Pakkala: Reference Architecture and Classification of Technologies, Products and Services for Big Data Systems. Big Data Research, vol. 2, no. 4, pp. 166–186, 2015.</p>
+</li>
+<li>
+<p>[<a id="parnas"></a>] D. L. Parnas: The Secret History of Information Hiding. pp. 398–409. Berlin, Heidelberg, Springer Berlin Heidelberg, 2002.</p>
+</li>
+<li>
+<p>[<a id="pedersen"></a>] T. B. Pedersen: Multidimensional Modeling. pp. 1777–1784. Boston, MA: Springer US, 2009.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>R</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="richardson"></a>] C. Richardson, Microservices patterns: with examples in Java. Simon and Schuster, 2018.</p>
+</li>
+<li>
+<p>[<a id="reis"></a>] J. Reis and M. Housley: Fundamentals of Data Engineering. O&#8217;Reilly Media, Inc., 2022.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>S</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="singhal"></a>] B. Singhal and A. Aggarwal: Etl, elt and reverse etl: A business case study. in Second International Conference on Advanced Technologies in Intelligent Control, Environment, Computing and Communication Engineering (ICATIECE), pp. 1–4, 2022.</p>
+</li>
+<li>
+<p>[<a id="silberschatz"></a>] A. Silberschatz, H. F. Korth, and S. Sudarshan: Database system concepts. 2011.</p>
+</li>
+<li>
+<p>[<a id="sharvit"></a>] Y. Sharvit: Data-oriented programming unlearning objects. Manning, 2022.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>V</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<a id="varshney"></a>] H. Varshney: What is a Data Staging Area? Staging Data Simplified 101. <a href="https://hevodata.com/learn/data-staging-area/" class="bare">https://hevodata.com/learn/data-staging-area/</a>, 2023.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+ 2024.6-RC0-DE<br>
+Last updated 2024-06-07 11:40:48 UTC
+</div>
+</div>
+</body>
+</html>
