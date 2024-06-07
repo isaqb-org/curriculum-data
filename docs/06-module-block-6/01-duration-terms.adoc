@@ -1,10 +1,10 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 60 Min. | Übungszeit: 15 Min.
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
+Analytische Queries, Data in Rest, Data in Motion, SQL, OLAP, Stream Processing, Query-Engine, Performance, verteilte Daten, Query Optimierung
 
 // end::DE[]
 
