@@ -1,10 +1,10 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 90 Min. | Übungszeit: 15 Min.
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3
+Datentransformation, Data Cleansing, Duplikaterkennung, Datenanonymisierung, Normalisierung/Denormalisierung, Data Profiling, Data Lineage, Qualitätsstufen, Batch Verarbeitung, Stream Verarbeitung
 
 // end::DE[]
 
