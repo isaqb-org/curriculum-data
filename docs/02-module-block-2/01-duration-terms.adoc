@@ -1,11 +1,10 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 210 Min. | Übungszeit: 30 Min.
 |===
 
 === Begriffe und Konzepte
-Referenzarchitekturen, Cloud, Cloud-Ready, hybrid, on-Premise, zentrales/monolithisches System, dezentrales/förderiertes System
-
+Referenzarchitekturen, Data Warehouse, Data Lake, Lambda Architecture, Cloud, on-Premise, monolithisches System, förderiertes System, Stream & Batch Processing, Skalierbarkeit
 
 // end::DE[]
 

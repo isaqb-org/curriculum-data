@@ -1,10 +1,12 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 90 Min. | Übungszeit: 30 Min.
 |===
 
 === Begriffe und Konzepte
 Data Pipelines, Qualitätskriterien, Monitoring, Edge-Computing
+
+Data Pipelines, Effizienz, Batch (ETL und ELT), Microbatch, Stream Verarbeitung, Eventgetriebene Verarbeitung, Qualitätskriterien, Building Blocks, Technologien, Betrieb
 
 // end::DE[]
 
