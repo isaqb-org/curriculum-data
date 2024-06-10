@@ -1,10 +1,12 @@
 // tag::DE[]
 |===
-| Dauer: XXX Min. | Übungszeit: XXX Min.
+| Dauer: 120 Min. | Übungszeit: 30 Min.
 |===
 
 === Begriffe und Konzepte
-Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies
+
+Dezentralisierung, Data Mesh, Domain-driven Design, Team Topologies, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Top Down vs. Bottom Up Realisierung
+
 // end::DE[]
 
 // tag::EN[]
