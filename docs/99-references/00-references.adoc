@@ -30,7 +30,6 @@ This section contains references that are cited in the curriculum.
 - [[[carnes, B. Carnes 2020]]] B. Carnes: Basic SQL Commands - The List of Database Queries and Statements You Should Know. https://www.freecodecamp.org/news/basic-sql-commands/, 2020.
 - [[[christ, J. Christ 2018]]] J. Christ, L. Visengeriyeva, S. Harrer: Data Mesh Architecture - Data Mesh From an Engineering Perspective. https://www.datamesh-architecture.com, 2022.
 
-
 **D**
 
 - [[[dutta, K. Dutta 2015]]] K. Dutta and M. Jayapal: Big Data Analytics for Real Time Systems. 02 2015.
