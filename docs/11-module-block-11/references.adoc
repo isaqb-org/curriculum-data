@@ -1,6 +1,6 @@
 === {references}
 
-<<christ>>, <<majchrzak>>
+<<reis, J. Reis 2022>>
 
 // tag::REMARK[]
 [NOTE]
