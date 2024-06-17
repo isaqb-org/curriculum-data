@@ -4,7 +4,7 @@
 // tag::DE[]
 
 [[LZ-11-1]]
-==== LZ 11-1 - Datenlebenszyklus übergreifende Themen 
+==== LZ 11-1 - Übergreifende Themen zum Datenlebenszyklus 
 Die Teilnehmer:innen verstehen, dass insbesondere die folgenden Themen übergreifend über die einzelnen Phasen des Datenlebenszyklus hinweg beachtet werden müssen:
 - Data Governance
 - Datensicherheit
@@ -53,7 +53,6 @@ Den Teilnehmer:innen ist bewusst, dass Data Contracts daher trotz des Namens nic
 
 Die Teilnehmer:innen kennen Standards für die Definition von Data Contracts.
 
-
 [[LZ-11-8]]
 ==== LZ 11-8 - Metadaten
 Die Teilnehmer:innen verstehen die Bedeutung von Metadaten im Lebenszyklus der Daten und kennen Möglichkeiten, diese zu erheben und festzuhalten.
@@ -66,6 +65,12 @@ Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden
 
 [[LZ-11-9]]
 ==== LZ 11-9 - Betriebsaspekte
+Die Teilnehmer:innen kennen Vor- und Nachteile von Cloud, On-Premise und Software-as-a-Service. Sie kennen Edge Computing und Content Delivery Networks.
+Die Teilnehmer:innen kennen die Grundkonzepte von Containern und Kubernetes.
+Die Teilnehmer:innen können Maßnahmen für einen kosteneffizienten Betrieb bennenen.
+Die Teilnehmer:innen wissen, wie sie ein effektive Monitoring- und Alerting für datenzentrierte Anwendungen sicherstellen können. Sie verstehen, welche Leistungsmetriken überwacht werden sollten und wie Anomalien erkannt werden können.
+Den Teilnehmer:innen ist die Notwendigkeit eines Daten-Lifecycle-Managements mit automatisierten Verfahren und Regeln zur  Qualitätssicherung, zur Transformation, zur Archivierung oder zur Löschung von Daten bewusst.
+Die Teilnehmer:innen kennen den Begriff DataOps und verstehen, wie damit agile Methoden auf den Bereich des Data Engineerings übertragen werden. 
 
 // end::DE[]
 
