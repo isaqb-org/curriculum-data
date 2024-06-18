@@ -1,19 +1,19 @@
 // tag::DE[]
 |===
-| Dauer: 60 Min. | Übungszeit: 0 Min.
+| Dauer: 120 Min. | Übungszeit: 20 Min.
 |===
 
 === Begriffe und Konzepte
-Data Governance, Datenqualität, Anonymisierung, Pseudonymisierung, Personalisierung, Metadaten, Verantwortlichkeit
+Data Management, Data Governance, Data Contracts, Data Ownership, Datenqualität, Datensicherheit, Anonymisierung, Pseudonymisierung, Personalisierung, Metadaten, Verantwortlichkeit, DataOps
 // end::DE[]
 
 // tag::EN[]
 |===
-| Duration: 60 min | Practice time: 0 min
+| Duration: 120 min | Practice time: 20 min
 |===
 
 === Terms and Principles
-Data Governance, Data Quality, Anonymization, Pseudonymization, Personalization, Metadata, Responsibility
+Data Management, Data Governance, Data Contracts, Data Ownership, Data Quality, Data Security, Anonymization, Pseudonymization, Personalization, Metadata, Responsibility, DataOps
 
 // end::EN[]
 

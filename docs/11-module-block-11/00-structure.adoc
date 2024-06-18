@@ -1,13 +1,13 @@
-// header file for curriculum section 10: Lerneinheit 10
+// header file for curriculum section 11: Lerneinheit 11
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
 // tag::DE[]
-== Data Governance
+== Querschnittsthemen
 // end::DE[]
 
 // tag::EN[]
-== Data Governance
+== Cross Cutting Concerns
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]
