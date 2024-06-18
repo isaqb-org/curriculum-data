@@ -21,7 +21,7 @@ This section contains references that are cited in the curriculum.
 **B**
 
 - [[[bachmann, F. Bachmann et al. 2000]]] F. Bachmann, L. Bass, J. Carriere, P. Clements, D. Garlan, J. Ivers, R. Nord, and R. Little: Software architecture documentation in practice: Documenting architectural layers. tech. rep., Carnegie-Mellon University Pittsburgh PA Software Engineering Inst, 2000.
-- [[[bornstein, M. Bornstein 2020]]] M. Bornstein, J. Li, and M. Casado: Emerging Architectures for Modern Data Infrastructure. https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section--2, 2020.
+- [[[bornstein, M. Bornstein 2020]]] M. Bornstein, J. Li, and M. Casado: Emerging Architectures for Modern Data Infrastructure. https://a16z.com/emerging-architectures-for-modern-data-infrastructure, 2020.
 
 **C**
 
