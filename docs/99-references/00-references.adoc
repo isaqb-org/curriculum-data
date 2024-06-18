@@ -16,7 +16,7 @@ This section contains references that are cited in the curriculum.
 
 **A**
 
-- [[[agarwal, R. Agarwal]] R. Agarwal: Kafka Connectors — All you need to know to start using connectors in Kafka. https://medium.com/@the_infinity/kafka-connectors-all-you-need-to-know-to-start-using-connectors-in-kafka-d905cf8a371c, [Online; Stand: 2.06.2023].
+- [[[agarwal, R. Agarwal]]] R. Agarwal: Kafka Connectors — All you need to know to start using connectors in Kafka. https://medium.com/@the_infinity/kafka-connectors-all-you-need-to-know-to-start-using-connectors-in-kafka-d905cf8a371c, [Online; Stand: 2.06.2023].
 
 **B**
 
