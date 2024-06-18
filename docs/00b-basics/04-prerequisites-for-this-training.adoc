@@ -31,8 +31,3 @@ Knowledge in the following areas may be **helpful** for understanding some conce
   * Experience 4
   * Understanding 5
 // end::EN[]
-
-[NOTE]
-====
-Kenntnisgruppen sowie Voraussetzungen bitte entsprechend ausformulieren!
-====

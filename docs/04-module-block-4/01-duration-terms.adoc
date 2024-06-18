@@ -4,7 +4,7 @@
 |===
 
 === Begriffe und Konzepte
-Data Ingestion, Identifikation von Entitäten, Änderungserkennung, Change Data Capture (CDC), Outbox Pattern, Konnektoren, Skalierbarkeit, Datenreplkation, Batch vs. Stream Ingestion, Metadatenmanagemen  
+Data Ingestion, Identifikation von Entitäten, Änderungserkennung, Change Data Capture (CDC), Outbox Pattern, Konnektoren, Skalierbarkeit, Datenreplkation, Batch vs. Stream Ingestion, Metadatenmanagemen
 
 // end::DE[]
 
@@ -19,7 +19,4 @@ Term 1, Term 2, Term 3
 
 
 
-[NOTE]
-====
-Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
-====
+

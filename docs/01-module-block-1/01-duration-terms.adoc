@@ -17,10 +17,3 @@ operative Daten, analytische Daten, OLTP, OLAP, Data Engineer, Data Architect, D
 Term 1, Term 2, Term 3
 // end::EN[]
 
-
-
-
-[NOTE]
-====
-Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
-====
