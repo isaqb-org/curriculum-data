@@ -47,17 +47,6 @@ git clone https://github.com/isaqb-org/curriculum-data.git --recursive
 
 That will produce both pdf and html output in German (DE) _and_ English (EN), unless you modify the configuration.
 
-In case you want to change that, adjust the following part of `build.gradle`:
-
-[source,groovy]
-----
-task buildDocs {
-  group 'Documentation'
-  description 'Grouping task for generating all languages in several formats'
-  dependsOn "renderDE", "renderEN"
-}
-----
-
 == Additional translations/languages
 include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
 
