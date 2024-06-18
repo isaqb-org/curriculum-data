@@ -40,7 +40,7 @@ Die Teilnehmer:innen kennen Ansätze wie Idempotenz, Caching, Parallelisierung, 
 ==== LZ 9-4 - Building Blocks von Data Pipelines
 Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht und in welchen Phasen des Lebenszyklus diese verwendet werden. Sie kennen Beispiele dafür, wissen wann diese Building Blocks  für einen Anwendungsfall geeignet sind und wie diese kombiniert werden können.
 
-- Konnektoren 
+- Konnektoren
 - Werkzeuge zur Ablaufsteuerung und Orchestrierung
 - Kostengünstige Speichersysteme für hohe Datenvolumen
 - Datenkataloge
@@ -95,9 +95,4 @@ tbd.
 
 // end::EN[]
 
-// tag::REMARK[]
-[NOTE]
-====
-Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
-====
-// end::REMARK[]
+

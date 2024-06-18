@@ -11,7 +11,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-== Status 
+== Status
 image:https://github.com/isaqb-org/curriculum-data/workflows/CI%20-%20Releases%20and%20Main/badge.svg?branch=main["CI – Releases and Main"]
 image:https://img.shields.io/github/last-commit/isaqb-org/curriculum-data/main.svg["Last commit"]
 image:https://img.shields.io/github/contributors/isaqb-org/curriculum-data.svg["Contributors",link="https://github.com/isaqb-org/curriculum-data/graphs/contributors"]
@@ -54,7 +54,7 @@ In case you want to change that, adjust the following part of `build.gradle`:
 task buildDocs {
   group 'Documentation'
   description 'Grouping task for generating all languages in several formats'
-  dependsOn "renderNoRemarksDE", "renderNoRemarksEN"
+  dependsOn "renderDE", "renderEN"
 }
 ----
 
