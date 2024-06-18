@@ -1897,8 +1897,8 @@ h2 {
 <div id="header">
 <h1>Curriculum for<br><br>Certified Professional for<br>Software Architecture (CPSA)<sup>&#174;</sup><br><em>Advanced Level</em>: <br> Module<br>DATA<br><br>Designing, building, and maintaining data-centric software architectures</h1>
 <div class="details">
-<span id="revnumber"> 2024.6-RC0-EN,</span>
-<span id="revdate">20240607</span>
+<span id="revnumber"> 2024.1-RC1-EN,</span>
+<span id="revdate">20240618</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -1953,8 +1953,52 @@ h2 {
 <ul class="sectlevel2">
 <li><a href="#_terms_and_principles_5">5.1. Terms and Principles</a></li>
 <li><a href="#_learning_goals_5">5.2. Learning Goals</a></li>
+<li><a href="#_references_5">5.3. References</a></li>
 </ul>
 </li>
+<li><a href="#_query_und_processing">6. Query und Processing</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_6">6.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_6">6.2. Learning Goals</a></li>
+<li><a href="#_references_6">6.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_transformation">7. Transformation</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_7">7.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_7">7.2. Learning Goals</a></li>
+<li><a href="#_references_7">7.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_serving_data">8. Serving Data</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_8">8.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_8">8.2. Learning Goals</a></li>
+<li><a href="#_references_8">8.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_data_pipelines">9. Data Pipelines</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_9">9.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_9">9.2. Learning Goals</a></li>
+<li><a href="#_references_9">9.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_data_mesh">10. Data Mesh</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_10">10.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_10">10.2. Learning Goals</a></li>
+<li><a href="#_references_10">10.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_cross_cutting_concerns">11. Cross Cutting Concerns</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_11">11.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_11">11.2. Learning Goals</a></li>
+<li><a href="#_references_11">11.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_references_12">References</a></li>
 </ul>
 </div>
 </div>
@@ -2216,6 +2260,9 @@ For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSA
 <li>
 <p><a href="#LG-12-8">LG 12-8 - Metadata</a></p>
 </li>
+<li>
+<p><a href="#LG-12-8">LG 12-8 - Operating</a></p>
+</li>
 </ul>
 </div>
 <div style="page-break-after: always;"></div>
@@ -2340,7 +2387,7 @@ nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen e
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2. Reference architectures for analytical systems</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">180</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">210</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3. Data Sources</p></td>
@@ -2364,7 +2411,7 @@ nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen e
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8. Usage and Analysis</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">60</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9. Data Pipelines</p></td>
@@ -2634,7 +2681,7 @@ In particular, the curriculum provides no specifications on the nature of the ex
 <div class="sect2">
 <h3 id="_references">1.3. References</h3>
 <div class="paragraph">
-<p><a href="#codd">[codd]</a>, <a href="#inmon">[inmon]</a>, <a href="#kimball">[kimball]</a></p>
+<p><a href="#codd">[E. F. Codd 1990]</a>, <a href="#inmon">[W. H. Inmon 2005]</a>, <a href="#kimball">[R. Kimball 2011]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2699,7 +2746,7 @@ In particular, the curriculum provides no specifications on the nature of the ex
 <div class="sect2">
 <h3 id="_references_2">2.3. References</h3>
 <div class="paragraph">
-<p><a href="#reis">[reis]</a>, <a href="#bornstein">[bornstein]</a>, <a href="#inmon">[inmon]</a>, <a href="#kimball">[kimball]</a>, <a href="#linstedt">[linstedt]</a>, <a href="#giebler">[giebler]</a>, <a href="#pääkkönen">[pääkkönen]</a></p>
+<p><a href="#reis">[J. Reis 2022]</a>, <a href="#bornstein">[M. Bornstein 2020]</a>, <a href="#inmon">[W. H. Inmon 2005]</a>, <a href="#kimball">[R. Kimball 2011]</a>, <a href="#linstedt">[D. Linstedt 2015]</a>, <a href="#giebler">[C. Giebler et al. 2021]</a>, <a href="#pääkkönen">[P. Pääkkönen 2015]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2788,7 +2835,7 @@ In particular, the curriculum provides no specifications on the nature of the ex
 <div class="sect2">
 <h3 id="_references_3">3.3. References</h3>
 <div class="paragraph">
-<p><a href="#castagna">[castagna]</a></p>
+<p><a href="#castagna">[R. Castagna 2022]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2877,7 +2924,7 @@ In particular, the curriculum provides no specifications on the nature of the ex
 <div class="sect2">
 <h3 id="_references_4">4.3. References</h3>
 <div class="paragraph">
-<p><a href="#reis">[reis]</a></p>
+<p><a href="#reis">[J. Reis 2022]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2967,18 +3014,20 @@ In particular, the curriculum provides no specifications on the nature of the ex
 <div class="paragraph">
 <p>tbd.</p>
 </div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>=== References</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_references_5">5.3. References</h3>
 <div class="paragraph">
 <p><a href="#starke">[starke]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Query und Processing</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_query_und_processing">6. Query und Processing</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2991,9 +3040,10 @@ In particular, the curriculum provides no specifications on the nature of the ex
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_terms_and_principles_6">6.1. Terms and Principles</h3>
 <div class="paragraph">
-<p>=== Terms and Principles
-Term 1, Term 2, Term 3</p>
+<p>Term 1, Term 2, Term 3</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3009,92 +3059,40 @@ Term 1, Term 2, Term 3</p>
 </tr>
 </table>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_6">6.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-6-1">LG 6-1: Analytical queries</h4>
 <div class="paragraph">
-<p>=== Learning Goals</p>
+<p>tbd.</p>
 </div>
-<div id="LG-6-1" class="paragraph">
-<p>==== LG 6-1: Analytical queries
-tbd.</p>
 </div>
-<div id="LG-6-2" class="paragraph">
-<p>==== LG 6-2: Query programming models
-tbd.</p>
-</div>
-<div id="LG-6-3" class="paragraph">
-<p>==== LG 6-3: Query processing &amp; optimization
-tbd.</p>
-</div>
+<div class="sect3">
+<h4 id="LG-6-2">LG 6-2: Query programming models</h4>
 <div class="paragraph">
-<p>=== References</p>
+<p>tbd.</p>
 </div>
+</div>
+<div class="sect3">
+<h4 id="LG-6-3">LG 6-3: Query processing &amp; optimization</h4>
 <div class="paragraph">
-<p><a href="#starke">[starke]</a></p>
+<p>tbd.</p>
 </div>
-<div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Transformation</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: XXX min</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: XXX min</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>=== Terms and Principles
-Term 1, Term 2, Term 3</p>
 </div>
-<div class="paragraph">
-<p>=== Learning Goals</p>
-</div>
-<div id="LG-7-1" class="paragraph">
-<p>==== LG 7-1: Differentiation between queries
-tbd.</p>
-</div>
-<div id="LG-7-2" class="paragraph">
-<p>==== LG 7-2: Applications
-tbd.</p>
-</div>
-<div id="LG-7-3" class="paragraph">
-<p>==== LG 7-3: Typical transformations
-tbd.</p>
-</div>
-<div id="LG-7-4" class="paragraph">
-<p>==== LG 7-4: Staging Area
-tbd.</p>
-</div>
-<div id="LG-7-5" class="paragraph">
-<p>==== LG 7-5: Robust transformations
-tbd.</p>
-</div>
-<div id="LG-7-6" class="paragraph">
-<p>==== LG 7-6: Quality levels
-tbd.</p>
-</div>
-<div id="LG-7-7" class="paragraph">
-<p>==== LG 7-7: Batch processing
-tbd.</p>
-</div>
-<div id="LG-7-8" class="paragraph">
-<p>==== LG 7-8: Stream processing
-tbd.</p>
-</div>
-<div class="paragraph">
-<p>=== References</p>
-</div>
+<div class="sect2">
+<h3 id="_references_6">6.3. References</h3>
 <div class="paragraph">
 <p><a href="#starke">[starke]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Serving Data</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_transformation">7. Transformation</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3107,44 +3105,75 @@ tbd.</p>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_terms_and_principles_7">7.1. Terms and Principles</h3>
 <div class="paragraph">
-<p>=== Terms and Principles
-Term 1, Term 2, Term 3</p>
+<p>Term 1, Term 2, Term 3</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_7">7.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-7-1">LG 7-1: Differentiation between queries</h4>
 <div class="paragraph">
-<p>=== Learning Goals</p>
+<p>tbd.</p>
 </div>
-<div id="LG-8-1" class="paragraph">
-<p>==== LG 6-1: Use Cases
-tbd.</p>
 </div>
-<div id="LG-8-2" class="paragraph">
-<p>==== LG 6-2: Representation of mass data
-tbd.</p>
-</div>
-<div id="LG-8-3" class="paragraph">
-<p>==== LG 6-3: Modularization
-tbd.</p>
-</div>
-<div id="LG-8-4" class="paragraph">
-<p>==== LG 6-4: Data Analytics and Business Intelligence
-tbd.</p>
-</div>
-<div id="LG-8-5" class="paragraph">
-<p>==== LG 8-5: Machine Learning
-tbd.</p>
-</div>
-<div id="LG-8-6" class="paragraph">
-<p>==== LG 8-6: Reverse ETL
-tbd.</p>
-</div>
+<div class="sect3">
+<h4 id="LG-7-2">LG 7-2: Applications</h4>
 <div class="paragraph">
-<p>=== References</p>
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-7-3">LG 7-3: Typical transformations</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-7-4">LG 7-4: Staging Area</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-7-5">LG 7-5: Robust transformations</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-7-6">LG 7-6: Quality levels</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-7-7">LG 7-7: Batch processing</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-7-8">LG 7-8: Stream processing</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_7">7.3. References</h3>
+<div class="paragraph">
+<p><a href="#starke">[starke]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Data Pipelines</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_serving_data">8. Serving Data</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3157,47 +3186,60 @@ tbd.</p>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_terms_and_principles_8">8.1. Terms and Principles</h3>
 <div class="paragraph">
-<p>=== Terms and Principles
-Term 1, Term 2, Term 3</p>
+<p>Term 1, Term 2, Term 3</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_8">8.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-8-1">LG 6-1: Use Cases</h4>
 <div class="paragraph">
-<p>=== Learning Goals</p>
+<p>tbd.</p>
 </div>
-<div id="LG-6-1" class="paragraph">
-<p>==== LG 6-1: What are data pipelines?
-tbd.</p>
 </div>
-<div id="LG-6-2" class="paragraph">
-<p>==== LG 6-2: Types of Data Pipelines
-tbd.</p>
-</div>
-<div id="LG-6-3" class="paragraph">
-<p>==== LG 6-3: Quality criteria for data pipelines
-tbd.</p>
-</div>
-<div id="LG-6-4" class="paragraph">
-<p>==== LG 6-4: Building Blocks of Data Pipelines
-tbd.</p>
-</div>
-<div id="LG-6-5" class="paragraph">
-<p>==== LG 6-5: Technologies and platforms for data pipelines
-tbd.</p>
-</div>
-<div id="LG-6-6" class="paragraph">
-<p>==== LG 6-6: Operation of data pipelines
-tbd.</p>
-</div>
+<div class="sect3">
+<h4 id="LG-8-2">LG 6-2: Representation of mass data</h4>
 <div class="paragraph">
-<p>=== References</p>
+<p>tbd.</p>
 </div>
+</div>
+<div class="sect3">
+<h4 id="LG-8-3">LG 6-3: Modularization</h4>
 <div class="paragraph">
-<p><a href="#varshney">[varshney]</a>, <a href="#levy">[levy]</a>, <a href="#singhal">[singhal]</a></p>
+<p>tbd.</p>
 </div>
+</div>
+<div class="sect3">
+<h4 id="LG-8-4">LG 6-4: Data Analytics and Business Intelligence</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-8-5">LG 8-5: Machine Learning</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-8-6">LG 8-6: Reverse ETL</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_8">8.3. References</h3>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Data Mesh</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_pipelines">9. Data Pipelines</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3210,47 +3252,63 @@ tbd.</p>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_terms_and_principles_9">9.1. Terms and Principles</h3>
 <div class="paragraph">
-<p>=== Terms and Principles
-Term 1, Term 2, Term 3</p>
+<p>Term 1, Term 2, Term 3</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_9">9.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-6-1">LG 6-1: What are data pipelines?</h4>
 <div class="paragraph">
-<p>=== Learning Goals</p>
+<p>tbd.</p>
 </div>
-<div id="LG-10-1" class="paragraph">
-<p>==== LG 10-1: Why Data Mesh?
-tbd.</p>
 </div>
-<div id="LG-10-2" class="paragraph">
-<p>==== LG 10-2: Domain Ownership
-tbd.</p>
-</div>
-<div id="LG-10-3" class="paragraph">
-<p>==== LG 10-3: Data as a Product
-tbd.</p>
-</div>
-<div id="LG-10-4" class="paragraph">
-<p>==== LG 10-4: Self-serve Data Platform
-tbd.</p>
-</div>
-<div id="LG-10-5" class="paragraph">
-<p>==== LG 10-5: Federated Computational Governance
-tbd.</p>
-</div>
-<div id="LG-10-6" class="paragraph">
-<p>==== LG 10-6: Top down vs. bottom up realization
-tbd.</p>
-</div>
+<div class="sect3">
+<h4 id="LG-6-2">LG 6-2: Types of Data Pipelines</h4>
 <div class="paragraph">
-<p>=== References</p>
+<p>tbd.</p>
 </div>
+</div>
+<div class="sect3">
+<h4 id="LG-6-3">LG 6-3: Quality criteria for data pipelines</h4>
 <div class="paragraph">
-<p><a href="#christ">[christ]</a>, <a href="#majchrzak">[majchrzak]</a></p>
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-6-4">LG 6-4: Building Blocks of Data Pipelines</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-6-5">LG 6-5: Technologies and platforms for data pipelines</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-6-6">LG 6-6: Operation of data pipelines</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_9">9.3. References</h3>
+<div class="paragraph">
+<p><a href="#varshney">[H. Varshney 2023]</a>, <a href="#levy">[E. Levy 2021]</a>, <a href="#singhal">[B. Singhal 2022]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Data Governance</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_mesh">10. Data Mesh</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3258,103 +3316,161 @@ tbd.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 60 min</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: 0 min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: XXX min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: XXX min</p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_terms_and_principles_10">10.1. Terms and Principles</h3>
 <div class="paragraph">
-<p>=== Terms and Principles
-Data Governance, Data Quality, Anonymization, Pseudonymization, Personalization, Metadata, Responsibility</p>
+<p>Term 1, Term 2, Term 3</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_10">10.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-10-1">LG 10-1: Why Data Mesh?</h4>
 <div class="paragraph">
-<p>=== Learning Goals</p>
+<p>tbd.</p>
 </div>
-<div id="LG-12-1" class="paragraph">
-<p>==== LG 12-1: Definition
-tbd.</p>
 </div>
-<div id="LG-12-2" class="paragraph">
-<p>==== LG 12-2 - Privacy, Compliance, Data Security
-tbd.</p>
-</div>
-<div id="LG-12-3" class="paragraph">
-<p>==== LG 12-3 - Data Quality
-tbd.</p>
-</div>
-<div id="LG-12-4" class="paragraph">
-<p>==== LG 12-4 - Data Access and Privileges</p>
-</div>
-<div id="LG-12-5" class="paragraph">
-<p>==== LG 12-5 - Data Stewardship und Ownership
-tbd.</p>
-</div>
-<div id="LG-12-6" class="paragraph">
-<p>==== LG 12-6 - Data Contracts
-tbd.</p>
-</div>
-<div id="LG-12-7" class="paragraph">
-<p>==== LG 12-7 - Policies
-tbd.</p>
-</div>
-<div id="LG-12-8" class="paragraph">
-<p>==== LG 12-8 - Metadata
-tbd.</p>
-</div>
+<div class="sect3">
+<h4 id="LG-10-2">LG 10-2: Domain Ownership</h4>
 <div class="paragraph">
-<p>=== References</p>
+<p>tbd.</p>
 </div>
+</div>
+<div class="sect3">
+<h4 id="LG-10-3">LG 10-3: Data as a Product</h4>
 <div class="paragraph">
-<p><a href="#christ">[christ]</a>, <a href="#majchrzak">[majchrzak]</a></p>
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-10-4">LG 10-4: Self-serve Data Platform</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-10-5">LG 10-5: Federated Computational Governance</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-10-6">LG 10-6: Top down vs. bottom up realization</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_10">10.3. References</h3>
+<div class="paragraph">
+<p><a href="#christ">J. Christ 2018</a>, <a href="#majchrzak">J. Majchrzak 2022</a>, <a href="#dehghani">Z. Dehghani 2023</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== References</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cross_cutting_concerns">11. Cross Cutting Concerns</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 120 min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Practice time: 20 min</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_11">11.1. Terms and Principles</h3>
+<div class="paragraph">
+<p>Data Management, Data Governance, Data Contracts, Data Ownership, Data Quality, Data Security, Anonymization, Pseudonymization, Personalization, Metadata, Responsibility, DataOps</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_11">11.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-12-1">LG 12-1: Definition</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-12-2">LG 12-2 - Privacy, Compliance, Data Security</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-12-3">LG 12-3 - Data Quality</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-12-4">LG 12-4 - Data Access and Privileges</h4>
+
+</div>
+<div class="sect3">
+<h4 id="LG-12-5">LG 12-5 - Data Stewardship und Ownership</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-12-6">LG 12-6 - Data Contracts</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-12-7">LG 12-7 - Policies</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-12-8">LG 12-8 - Metadata</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-12-8">LG 12-8 - Operating</h4>
+<div class="paragraph">
+<p>tbd.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_11">11.3. References</h3>
+<div class="paragraph">
+<p><a href="#reis">J. Reis 2022</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references_12">References</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This section contains references that are cited in the curriculum.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Aufbau eines Eintrags-Ankers:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>- [[[label,Text der erscheint]]]</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>ACHTUNG: Die Labels dürfen nur Buchstaben beinhalten, keine Zahlen oder Sonderzeichen</p>
-</div>
-<div class="paragraph">
-<p>= = =</p>
-</div>
-<div class="paragraph">
-<p>Structure of an anchor:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>- [[[label,text that will be shown]]]</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>ATTENTION: labels have to be non-numeric.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p><strong>A</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
 <p>[<a id="agarwal"></a> R. Agarwal: Kafka Connectors — All you need to know to start using connectors in Kafka. <a href="https://medium.com/@the_infinity/kafka-connectors-all-you-need-to-know-to-start-using-connectors-in-kafka-d905cf8a371c" class="bare">https://medium.com/@the_infinity/kafka-connectors-all-you-need-to-know-to-start-using-connectors-in-kafka-d905cf8a371c</a>, [Online; Stand: 2.06.2023].</p>
 </li>
@@ -3363,189 +3479,185 @@ tbd.</p>
 <div class="paragraph">
 <p><strong>B</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="bachmann"></a>] F. Bachmann, L. Bass, J. Carriere, P. Clements, D. Garlan, J. Ivers, R. Nord, and R. Little: Software architecture documentation in practice: Documenting architectural layers. tech. rep., Carnegie-Mellon University Pittsburgh PA Software Engineering Inst, 2000.</p>
+<p><a id="bachmann"></a>[F. Bachmann et al. 2000] F. Bachmann, L. Bass, J. Carriere, P. Clements, D. Garlan, J. Ivers, R. Nord, and R. Little: Software architecture documentation in practice: Documenting architectural layers. tech. rep., Carnegie-Mellon University Pittsburgh PA Software Engineering Inst, 2000.</p>
 </li>
 <li>
-<p>[<a id="bornstein"></a>] M. Bornstein, J. Li, and M. Casado: Emerging Architectures for Modern Data Infrastructure. <a href="https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2" class="bare">https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2</a>, 2020.</p>
+<p><a id="bornstein"></a>[M. Bornstein 2020] M. Bornstein, J. Li, and M. Casado: Emerging Architectures for Modern Data Infrastructure. <a href="https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2" class="bare">https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2</a>, 2020.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>C</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="codd"></a>] E. F. Codd: The relational model for database management: version 2. Addison-Wesley Longman Publishing Co., Inc., 1990.</p>
+<p><a id="codd"></a>[E. F. Codd 1990] E. F. Codd: The relational model for database management: version 2. Addison-Wesley Longman Publishing Co., Inc., 1990.</p>
 </li>
 <li>
-<p>[<a id="castagna"></a>] R. Castagna: Strukturierte und unstrukturierte Daten: Die Unterschiede. <a href="https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede" class="bare">https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede</a>, November 2022, [Online; Stand: 2.06.2023].</p>
+<p><a id="castagna"></a>[R. Castagna 2022] R. Castagna: Strukturierte und unstrukturierte Daten: Die Unterschiede. <a href="https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede" class="bare">https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede</a>, November 2022, [Online; Stand: 2.06.2023].</p>
 </li>
 <li>
-<p>[<a id="carnes"></a>] B. Carnes: Basic SQL Commands - The List of Database Queries and Statements You Should Know. <a href="https://www.freecodecamp.org/news/basic-sql-commands/" class="bare">https://www.freecodecamp.org/news/basic-sql-commands/</a>, 2020.</p>
+<p><a id="carnes"></a>[B. Carnes 2020] B. Carnes: Basic SQL Commands - The List of Database Queries and Statements You Should Know. <a href="https://www.freecodecamp.org/news/basic-sql-commands/" class="bare">https://www.freecodecamp.org/news/basic-sql-commands/</a>, 2020.</p>
 </li>
 <li>
-<p>[<a id="christ"></a>] J. Christ, L. Visengeriyeva, S. Harrer: Data Mesh Architecture - Data Mesh From an Engineering Perspective. <a href="https://www.datamesh-architecture.com" class="bare">https://www.datamesh-architecture.com</a>, 2022.</p>
+<p><a id="christ"></a>[J. Christ 2018] J. Christ, L. Visengeriyeva, S. Harrer: Data Mesh Architecture - Data Mesh From an Engineering Perspective. <a href="https://www.datamesh-architecture.com" class="bare">https://www.datamesh-architecture.com</a>, 2022.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>D</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="dutta"></a>] K. Dutta and M. Jayapal: Big Data Analytics for Real Time Systems. 02 2015.</p>
+<p><a id="dutta"></a>[K. Dutta 2015] K. Dutta and M. Jayapal: Big Data Analytics for Real Time Systems. 02 2015.</p>
 </li>
 <li>
-<p>[<a id="dehghani"></a>] Z. Dehghani, J. Christ, and S. Harrer: Data Mesh: Eine dezentrale Datenarchitektur entwerfen. O&#8217;Reilly Media, Inc., 2023.</p>
+<p><a id="dehghani"></a>[Z. Dehghani 2023] Z. Dehghani, J. Christ, and S. Harrer: Data Mesh: Eine dezentrale Datenarchitektur entwerfen. O&#8217;Reilly Media, Inc., 2023.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>E</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="eckerson"></a>] W. Eckerson: Which Data Warehouse Automation Tool is Right for You?. <a href="https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you" class="bare">https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you</a>, 2015.</p>
+<p><a id="eckerson"></a>[W. Eckerson 2015] W. Eckerson: Which Data Warehouse Automation Tool is Right for You?. <a href="https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you" class="bare">https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you</a>, 2015.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>G</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="giebler"></a>] C. Giebler, C. Gröger, E. Hoos, R. Eichler, H. Schwarz, and B. Mitschang: The data lake architecture framework. BTW 2021, 2021.</p>
+<p><a id="giebler"></a>[C. Giebler et al. 2021] C. Giebler, C. Gröger, E. Hoos, R. Eichler, H. Schwarz, and B. Mitschang: The data lake architecture framework. BTW 2021, 2021.</p>
 </li>
 <li>
-<p>[<a id="grellmann"></a>] M. Grellmann: Die sechs Arten der Datenanalyse. <a href="https://martin-grellmann.de/die-sechs-arten-der-datenanalyse" class="bare">https://martin-grellmann.de/die-sechs-arten-der-datenanalyse</a>, 2022.</p>
+<p><a id="grellmann"></a>[M. Grellmann 2022] M. Grellmann: Die sechs Arten der Datenanalyse. <a href="https://martin-grellmann.de/die-sechs-arten-der-datenanalyse" class="bare">https://martin-grellmann.de/die-sechs-arten-der-datenanalyse</a>, 2022.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>I</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="inmon"></a>] W. H. Inmon: Building the data warehouse. John wiley &amp; sons, 2005.</p>
+<p><a id="inmon"></a>[W. H. Inmon 2005] W. H. Inmon: Building the data warehouse. John wiley &amp; sons, 2005.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>K</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="kimball"></a>] R. Kimball and M. Ross: The data warehouse toolkit: the complete guide to dimensional modeling. John Wiley &amp; Sons, 2011.</p>
+<p><a id="kimball"></a>[R. Kimball 2011] R. Kimball and M. Ross: The data warehouse toolkit: the complete guide to dimensional modeling. John Wiley &amp; Sons, 2011.</p>
 </li>
 <li>
-<p>[<a id="kutay"></a>] J. Kutay: Change Data Capture (CDC): What it is and How it Works. <a href="https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/" class="bare">https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/</a>, [Online; Stand: 2.06.2023].</p>
+<p><a id="kutay"></a>[J. Kutay] J. Kutay: Change Data Capture (CDC): What it is and How it Works. <a href="https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/" class="bare">https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/</a>, [Online; Stand: 2.06.2023].</p>
 </li>
 <li>
-<p>[<a id="kreps"></a>] J. Kreps, N. Narkhede, J. Rao, et al.: Kafka: A distributed messaging system for log processing. in Proceedings of the NetDB. vol. 11, pp. 1–7, Athens, Greece, 2011.</p>
+<p><a id="kreps"></a>[J. Kreps et al. 2011] J. Kreps, N. Narkhede, J. Rao, et al.: Kafka: A distributed messaging system for log processing. in Proceedings of the NetDB. vol. 11, pp. 1–7, Athens, Greece, 2011.</p>
 </li>
 <li>
-<p>[<a id="klump"></a>] J. Klump, L. Wyborn, M. Wu, J. Martin, R. R. Downs, A. Asmi, et al.: Versioning data is about more than revisions: A conceptual framework and proposed principles. 2021.</p>
+<p><a id="klump"></a>[J. Klump et al. 2021] J. Klump, L. Wyborn, M. Wu, J. Martin, R. R. Downs, A. Asmi, et al.: Versioning data is about more than revisions: A conceptual framework and proposed principles. 2021.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>L</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="linstedt"></a>] D. Linstedt and M. Olschimke: Building a scalable data warehouse with data vault 2.0. Morgan Kaufmann, 2015.</p>
+<p><a id="linstedt"></a>[D. Linstedt 2015] D. Linstedt and M. Olschimke: Building a scalable data warehouse with data vault 2.0. Morgan Kaufmann, 2015.</p>
 </li>
 <li>
-<p>[<a id="levy"></a>] E. Levy: Batch vs Stream vs Microbatch Processing: A Cheat Sheet. <a href="https://www.upsolver.com/blog/batch-stream-a-cheat-sheet" class="bare">https://www.upsolver.com/blog/batch-stream-a-cheat-sheet</a>, 2021.</p>
+<p><a id="levy"></a>[E. Levy 2021] E. Levy: Batch vs Stream vs Microbatch Processing: A Cheat Sheet. <a href="https://www.upsolver.com/blog/batch-stream-a-cheat-sheet" class="bare">https://www.upsolver.com/blog/batch-stream-a-cheat-sheet</a>, 2021.</p>
 </li>
 <li>
-<p>[<a id="luber"></a>] S. Luber and N. Litzel: Was ist Data Profiling?. <a href="https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/" class="bare">https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/</a>, 2018.</p>
+<p><a id="luber"></a>[S. Luber 2018] S. Luber and N. Litzel: Was ist Data Profiling?. <a href="https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/" class="bare">https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/</a>, 2018.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>M</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="mhatre"></a>] P. Mhatre: Data Warehouse vs Data Vault vs Data Lake vs Delta Lake vs Data Fabric vs Data Mesh. <a href="https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961" class="bare">https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961</a>, 2021.</p>
+<p><a id="mhatre"></a>[P. Mhatre 2021] P. Mhatre: Data Warehouse vs Data Vault vs Data Lake vs Delta Lake vs Data Fabric vs Data Mesh. <a href="https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961" class="bare">https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961</a>, 2021.</p>
 </li>
 <li>
-<p>[<a id="majchrzak"></a>] J. Majchrzak, S. Balnojan, M. Siwiak, M. Sieraczkiewicz: Data Mesh in Action. Manning Publication, 2022.
+<p><a id="majchrzak"></a>[J. Majchrzak 2022] J. Majchrzak, S. Balnojan, M. Siwiak, M. Sieraczkiewicz: Data Mesh in Action. Manning Publication, 2022.
 <strong>P</strong></p>
 </li>
 <li>
-<p>[<a id="pääkkönen"></a>] P. Pääkkönen and D. Pakkala: Reference Architecture and Classification of Technologies, Products and Services for Big Data Systems. Big Data Research, vol. 2, no. 4, pp. 166–186, 2015.</p>
+<p><a id="pääkkönen"></a>[P. Pääkkönen 2015] P. Pääkkönen and D. Pakkala: Reference Architecture and Classification of Technologies, Products and Services for Big Data Systems. Big Data Research, vol. 2, no. 4, pp. 166–186, 2015.</p>
 </li>
 <li>
-<p>[<a id="parnas"></a>] D. L. Parnas: The Secret History of Information Hiding. pp. 398–409. Berlin, Heidelberg, Springer Berlin Heidelberg, 2002.</p>
+<p><a id="parnas"></a>[D. L. Parnas 2002] D. L. Parnas: The Secret History of Information Hiding. pp. 398–409. Berlin, Heidelberg, Springer Berlin Heidelberg, 2002.</p>
 </li>
 <li>
-<p>[<a id="pedersen"></a>] T. B. Pedersen: Multidimensional Modeling. pp. 1777–1784. Boston, MA: Springer US, 2009.</p>
+<p><a id="pedersen"></a>[T. B. Pedersen 2009] T. B. Pedersen: Multidimensional Modeling. pp. 1777–1784. Boston, MA: Springer US, 2009.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>R</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="richardson"></a>] C. Richardson, Microservices patterns: with examples in Java. Simon and Schuster, 2018.</p>
+<p><a id="richardson"></a>[C. Richardson 2018] C. Richardson, Microservices patterns: with examples in Java. Simon and Schuster, 2018.</p>
 </li>
 <li>
-<p>[<a id="reis"></a>] J. Reis and M. Housley: Fundamentals of Data Engineering. O&#8217;Reilly Media, Inc., 2022.</p>
+<p><a id="reis"></a>[J. Reis 2022] J. Reis and M. Housley: Fundamentals of Data Engineering. O&#8217;Reilly Media, Inc., 2022.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>S</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="singhal"></a>] B. Singhal and A. Aggarwal: Etl, elt and reverse etl: A business case study. in Second International Conference on Advanced Technologies in Intelligent Control, Environment, Computing and Communication Engineering (ICATIECE), pp. 1–4, 2022.</p>
+<p><a id="singhal"></a>[B. Singhal 2022] B. Singhal and A. Aggarwal: Etl, elt and reverse etl: A business case study. in Second International Conference on Advanced Technologies in Intelligent Control, Environment, Computing and Communication Engineering (ICATIECE), pp. 1–4, 2022.</p>
 </li>
 <li>
-<p>[<a id="silberschatz"></a>] A. Silberschatz, H. F. Korth, and S. Sudarshan: Database system concepts. 2011.</p>
+<p><a id="silberschatz"></a>[A. Silberschatz 2011] A. Silberschatz, H. F. Korth, and S. Sudarshan: Database system concepts. 2011.</p>
 </li>
 <li>
-<p>[<a id="sharvit"></a>] Y. Sharvit: Data-oriented programming unlearning objects. Manning, 2022.</p>
+<p><a id="sharvit"></a>[Y. Sharvit 2022] Y. Sharvit: Data-oriented programming unlearning objects. Manning, 2022.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>V</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="varshney"></a>] H. Varshney: What is a Data Staging Area? Staging Data Simplified 101. <a href="https://hevodata.com/learn/data-staging-area/" class="bare">https://hevodata.com/learn/data-staging-area/</a>, 2023.</p>
+<p><a id="varshney"></a>[H. Varshney 2023] H. Varshney: What is a Data Staging Area? Staging Data Simplified 101. <a href="https://hevodata.com/learn/data-staging-area/" class="bare">https://hevodata.com/learn/data-staging-area/</a>, 2023.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
 <div id="footer">
 <div id="footer-text">
- 2024.6-RC0-EN<br>
-Last updated 2024-06-07 11:40:48 UTC
+ 2024.1-RC1-EN<br>
+Last updated 2024-06-18 07:12:33 UTC
 </div>
 </div>
 </body>

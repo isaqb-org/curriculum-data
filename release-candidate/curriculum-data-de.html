@@ -1897,8 +1897,8 @@ h2 {
 <div id="header">
 <h1>Curriculum für<br><br>Certified Professional for<br>Software Architecture (CPSA)<sup>&#174;</sup><br><em>Advanced Level</em>: <br> Modul<br>DATA<br><br>Entwerfen, Erstellen und Warten datenzentrierter Softwarearchitekturen</h1>
 <div class="details">
-<span id="revnumber"> 2024.6-RC0-DE,</span>
-<span id="revdate">20240607</span>
+<span id="revnumber"> 2024.1-RC1-DE,</span>
+<span id="revdate">20240618</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Inhaltsverzeichnis</div>
@@ -1954,8 +1954,52 @@ h2 {
 <ul class="sectlevel2">
 <li><a href="#_begriffe_und_konzepte_5">5.1. Begriffe und Konzepte</a></li>
 <li><a href="#_lernziele_5">5.2. Lernziele</a></li>
+<li><a href="#_referenzen_5">5.3. Referenzen</a></li>
 </ul>
 </li>
+<li><a href="#_query_und_processing">6. Query und Processing</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_6">6.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_6">6.2. Lernziele</a></li>
+<li><a href="#_referenzen_6">6.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_transformation">7. Transformation</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_7">7.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_7">7.2. Lernziele</a></li>
+<li><a href="#_referenzen_7">7.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_serving_data">8. Serving Data</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_8">8.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_8">8.2. Lernziele</a></li>
+<li><a href="#_referenzen_8">8.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_data_pipelines">9. Data Pipelines</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_9">9.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_9">9.2. Lernziele</a></li>
+<li><a href="#_referenzen_9">9.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_data_mesh">10. Data Mesh</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_10">10.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_10">10.2. Lernziele</a></li>
+<li><a href="#_referenzen_10">10.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_querschnittsthemen">11. Querschnittsthemen</a>
+<ul class="sectlevel2">
+<li><a href="#_begriffe_und_konzepte_11">11.1. Begriffe und Konzepte</a></li>
+<li><a href="#_lernziele_11">11.2. Lernziele</a></li>
+<li><a href="#_referenzen_11">11.3. Referenzen</a></li>
+</ul>
+</li>
+<li><a href="#_referenzen_12">Referenzen</a></li>
 </ul>
 </div>
 </div>
@@ -2197,28 +2241,31 @@ Der Einfachheit halber wird iSAQB e. V. im Folgenden ohne die Verwendung dieser 
 <p><a href="#LZ-10-6">LZ 10-6 - Top Down vs. Bottom up Realisierung</a></p>
 </li>
 <li>
-<p><a href="#LZ-11-1">LZ 11-1 - Begriffsdefinition</a></p>
+<p><a href="#LZ-11-1">LZ 11-1 - Übergreifende Themen zum Datenlebenszyklus </a></p>
 </li>
 <li>
-<p><a href="#LZ-11-2">LZ 11-2 - Datenschutz, Compliance, Datensicherheit</a></p>
+<p><a href="#LZ-11-2">LZ 11-2 - Data Governance</a></p>
 </li>
 <li>
-<p><a href="#LZ-11-3">LZ 11-3 - Qualität von Daten</a></p>
+<p><a href="#LZ-11-3">LZ 11-3 - Data Stewardship und Ownership</a></p>
 </li>
 <li>
 <p><a href="#LZ-11-4">LZ 11-4 - Datenzugriff und -berechtigungen</a></p>
 </li>
 <li>
-<p><a href="#LZ-11-5">LZ 11-5 - Data Stewardship und Ownership</a></p>
+<p><a href="#LZ-11-5">LZ 11-5 - Datenschutz, Compliance, Datensicherheit</a></p>
 </li>
 <li>
-<p><a href="#LZ-11-6">LZ 11-6 - Data Contracts</a></p>
+<p><a href="#LZ-11-6">LZ 11-6 - Qualität von Daten</a></p>
 </li>
 <li>
-<p><a href="#LZ-11-7">LZ 11-7 - Richtlinien</a></p>
+<p><a href="#LZ-11-7">LZ 11-7 - Data Contracts</a></p>
 </li>
 <li>
 <p><a href="#LZ-11-8">LZ 11-8 - Metadaten</a></p>
+</li>
+<li>
+<p><a href="#LZ-11-9">LZ 11-9 - Betriebsaspekte</a></p>
 </li>
 </ul>
 </div>
@@ -2382,7 +2429,7 @@ nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen e
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2. Referenzarchitekturen für analytische Anwendungssysteme</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">180</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">210</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3. Datenquellen</p></td>
@@ -2406,7 +2453,7 @@ nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen e
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8. Nutzung und Analyse</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">60</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9. Data Pipelines</p></td>
@@ -2587,15 +2634,15 @@ Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett off
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 90 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 15 Min.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="sect2">
 <h3 id="_begriffe_und_konzepte">1.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>operative Daten, analytische Daten, OLTP, OLAP, Data Engineer, Data Architect, Data Scientist,</p>
+<p>operative Daten, analytische Daten, OLTP, OLAP, Data Engineer, Data Architect, Data Scientist, Lebenszyklus, Datenanalyse, Datenarchitekturen</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2711,7 +2758,7 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <p>Die Teilnehmer:innen verstehen die Vor- und Nachteile monolithischer und verteilter Softwarearchitekturen für analytische Anwendungen.</p>
 </div>
 <div class="paragraph">
-<p>Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine monolithische Architektur haben und dass mit der Diskussion um Data Mesh (siehe <a href="#LZ-10-1">[LZ-10-1]</a>) aktuell ein Paradigmenwandel stattfindet.</p>
+<p>Die Teilnehmer:innen wissen, dass analytische Anwendungen bisher häufig eine monolithische Architektur haben und dass mit der Diskussion um Data Mesh (siehe <a href="#LZ-10-1">LZ 10-1 - Warum Data Mesh?</a>) aktuell ein Paradigmenwandel stattfindet.</p>
 </div>
 </div>
 <div class="sect3">
@@ -2731,13 +2778,13 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <p>Storage - Das Abspeichern der Daten (siehe <a href="#LZ-5-1">LZ 5-1 - Speichersysteme</a>)</p>
 </li>
 <li>
-<p>Query und Processing - Code zur Verarbeitung und Abfragen gegen die gespeicherten Daten (siehe <a href="#LZ-6-1">[LZ-6-1]</a>)</p>
+<p>Query und Processing - Code zur Verarbeitung und Abfragen gegen die gespeicherten Daten (siehe <a href="#LZ-6-1">LZ 6-1 - Analytische Queries</a>)</p>
 </li>
 <li>
-<p>Transformation - Transformation der Daten in eine für die Analyse geeignete Form (siehe <a href="#LZ-7-1">[LZ-7-1]</a>)</p>
+<p>Transformation - Transformation der Daten in eine für die Analyse geeignete Form (siehe <a href="#LZ-7-1">LZ 7-1 - Was versteht man unter (Daten-)transformation?</a>)</p>
 </li>
 <li>
-<p>Analysis und Output - Präsentation der Daten für die Analyse und deren Ergebnisse sowie Integration der Analysemöglichkeiten in Anwendungen (siehe <a href="#LZ-8-1">[LZ-8-1]</a>)</p>
+<p>Analysis und Output - Präsentation der Daten für die Analyse und deren Ergebnisse sowie Integration der Analysemöglichkeiten in Anwendungen (siehe <a href="#LZ-8-1">LZ 8-1 - Anwendungsfälle</a>)</p>
 </li>
 </ul>
 </div>
@@ -2750,13 +2797,13 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <p>Data Discovery - Information bereitstellen, welche Daten es gibt, wie sie aufbereitet und wo sie zu finden sind</p>
 </li>
 <li>
-<p>Data Governance - Erarbeiten und Überwachen allgemein gültiger Regeln für die Verarbeitung der Daten (siehe <a href="#LZ-11-1">[LZ-11-1]</a>)</p>
+<p>Data Governance - Erarbeiten und Überwachen allgemein gültiger Regeln für die Verarbeitung der Daten (siehe <a href="#LZ-11-1">LZ 11-1 - Übergreifende Themen zum Datenlebenszyklus</a>)</p>
 </li>
 <li>
-<p>Data Security - Gewährleisten eines angemessenen Grads an Datenschutz (siehe <a href="#LZ-11-2">[LZ-11-2]</a>)</p>
+<p>Data Security - Gewährleisten eines angemessenen Grads an Datenschutz (siehe <a href="#LZ-11-2">LZ 11-2 - Data Governance</a>)</p>
 </li>
 <li>
-<p>Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität (siehe <a href="#LZ-11-3">[LZ-11-3]</a>)</p>
+<p>Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität (siehe <a href="#LZ-11-3">LZ 11-3 - Data Stewardship und Ownership</a>)</p>
 </li>
 </ul>
 </div>
@@ -2771,7 +2818,7 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <div class="sect2">
 <h3 id="_referenzen">1.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#codd">[codd]</a>, <a href="#inmon">[inmon]</a>, <a href="#kimball">[kimball]</a></p>
+<p><a href="#codd">[E. F. Codd 1990]</a>, <a href="#inmon">[W. H. Inmon 2005]</a>, <a href="#kimball">[R. Kimball 2011]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2787,15 +2834,15 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 210 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 30 Min.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="sect2">
 <h3 id="_begriffe_und_konzepte_2">2.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>Referenzarchitekturen, Cloud, Cloud-Ready, hybrid, on-Premise, zentrales/monolithisches System, dezentrales/förderiertes System</p>
+<p>Referenzarchitekturen, Data Warehouse, Data Lake, Lambda Architecture, Cloud, on-Premise, monolithisches System, förderiertes System, Stream &amp; Batch Processing, Skalierbarkeit</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2855,7 +2902,7 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <p>Die Teilnehmer:innen kennen Ansätze, ein einheitliches Framework für Referenzarchitekturen zu analytischen Anwendungssystemen zu beschreiben.</p>
 </div>
 <div class="paragraph">
-<p>Die Teilnehmer:innen verstehen, dass Referenzarchitekturen sowohl in monolithischen Ansätzen für die Architektur des Gesamtsystem herangezogen werden können, als auch in verteilten Ansätzen wie Data Mesh (siehe <a href="#LZ-10-1">[LZ-10-1]</a>) für die Architektur jedes Teilsystems eingesetzt werden können.</p>
+<p>Die Teilnehmer:innen verstehen, dass Referenzarchitekturen sowohl in monolithischen Ansätzen für die Architektur des Gesamtsystem herangezogen werden können, als auch in verteilten Ansätzen wie Data Mesh (siehe <a href="#LZ-10-1">LZ 10-1 - Warum Data Mesh?</a>) für die Architektur jedes Teilsystems eingesetzt werden können.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen Beispiele von Referenzarchitekturen für analytische Anwendungssysteme wie etwa</p>
@@ -2918,7 +2965,7 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <div class="sect2">
 <h3 id="_referenzen_2">2.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#reis">[reis]</a>, <a href="#bornstein">[bornstein]</a>, <a href="#inmon">[inmon]</a>, <a href="#kimball">[kimball]</a>, <a href="#linstedt">[linstedt]</a>, <a href="#giebler">[giebler]</a>, <a href="#pääkkönen">[pääkkönen]</a></p>
+<p><a href="#reis">[J. Reis 2022]</a>, <a href="#bornstein">[M. Bornstein 2020]</a>, <a href="#inmon">[W. H. Inmon 2005]</a>, <a href="#kimball">[R. Kimball 2011]</a>, <a href="#linstedt">[D. Linstedt 2015]</a>, <a href="#giebler">[C. Giebler et al. 2021]</a>, <a href="#pääkkönen">[P. Pääkkönen 2015]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2934,15 +2981,15 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 60 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 15 Min.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="sect2">
 <h3 id="_begriffe_und_konzepte_3">3.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>Datenquellen, Quellsysteme, strukturierte-, semi-strukturierte-, unstukturierte Daten, Daten-Snapshots, Increments/Events, technische-, fachliche Metadaten, Schema Inference</p>
+<p>Datenquellen, Strukturiertheit, Formate, Performance, Datenbanksysteme, API, Dateisysteme, Object Stores, Message Queue, Event Streaming</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3118,7 +3165,7 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <div class="sect2">
 <h3 id="_referenzen_3">3.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#castagna">[castagna]</a></p>
+<p><a href="#castagna">[R. Castagna 2022]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -3134,15 +3181,15 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 90 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 15 Min.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="sect2">
 <h3 id="_begriffe_und_konzepte_4">4.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>Change Data Capture, Information Hiding, Konnektoren, Message Passing, Event Streaming</p>
+<p>Data Ingestion, Identifikation von Entitäten, Änderungserkennung, Change Data Capture (CDC), Outbox Pattern, Konnektoren, Skalierbarkeit, Datenreplkation, Batch vs. Stream Ingestion, Metadatenmanagemen</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3173,7 +3220,7 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <p>Den Teilnehmer:innen sind Verfahren für das Identifizieren von Entitäten in Quellsystemen bekannt, wie etwa Primary Keys (technische vs. fachliche Schlüssel)</p>
 </div>
 <div class="paragraph">
-<p>Das Erkennen von Duplikaten ist Bestandteil von Modul 7 (siehe <a href="#LZ-7-2">[LZ-7-2]</a>).</p>
+<p>Das Erkennen von Duplikaten ist Bestandteil von Modul 7 (siehe <a href="#LZ-7-2">LZ 7-2 - Anwendungsfälle</a>).</p>
 </div>
 </div>
 <div class="sect3">
@@ -3297,7 +3344,7 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <div class="sect2">
 <h3 id="_referenzen_4">4.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#reis">[reis]</a></p>
+<p><a href="#reis">[J. Reis 2022]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -3313,15 +3360,15 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 90 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 20 Min.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="sect2">
 <h3 id="_begriffe_und_konzepte_5">5.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>Filesystem, Block-Storage, Objekt-Storage, Datenbanksysteme, Relationale DBS, NoSQL DBS, Key-Value DBS, Graph DBS</p>
+<p>Speichersysteme, Relationale Datenbanksysteme, NoSQL Datenbanksysteme, Concurrency Control, Versionierung von Daten, Optimierung und Skalierung, Datenmodelle, Data Warehouse, Data Lake, Datei- und Tabellenformate</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3604,7 +3651,7 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 <p>Verwendung multidimensionaler Datenmodelle (Star, Snowflake, Data Vault)</p>
 </li>
 <li>
-<p>Zerlegung in Teil-Modelle (siehe <a href="#LZ-10-2">[LZ-10-2]</a> - Domain Ownership)</p>
+<p>Zerlegung in Teil-Modelle (siehe <a href="#LZ-10-2">LZ 10-2 - Domain Ownership</a> - Domain Ownership)</p>
 </li>
 <li>
 <p>Automatisierung der Modell-Änderungen (DWH Automation)</p>
@@ -3664,18 +3711,20 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 </li>
 </ul>
 </div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>=== Referenzen</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_5">5.3. Referenzen</h3>
 <div class="paragraph">
 <p><a href="#starke">[starke]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Query und Processing</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_query_und_processing">6. Query und Processing</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3683,14 +3732,15 @@ Sie können die folgenden Eigenschaften analytischer Daten erläutern:</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 60 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 15 Min.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_6">6.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>=== Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3</p>
+<p>Analytische Queries, Data in Rest, Data in Motion, SQL, OLAP, Stream Processing, Query-Engine, Performance, verteilte Daten, Query Optimierung</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3706,12 +3756,13 @@ Begriff 1, Begriff 2, Begriff 3</p>
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>=== Lernziele</p>
 </div>
-<div id="LZ-6-1" class="paragraph">
-<p>==== LZ 6-1 - Analytische Queries
-Die Teilnehmer:innen verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen. Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.</p>
+<div class="sect2">
+<h3 id="_lernziele_6">6.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-6-1">LZ 6-1 - Analytische Queries</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass sich analytische Queries stets lesend auf eine größere Anzahl von Datensätzen beziehen. Sie wissen, dass diese Daten für die Analyse sowohl komplett abgespeichert (Data in Rest) als auch im Fluss (Data in Motion) sein können.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen Query-Ausdrücke für analytische Anwendungen, wie etwa</p>
@@ -3735,9 +3786,11 @@ Die Teilnehmer:innen verstehen, dass sich analytische Queries stets lesend auf e
 </li>
 </ul>
 </div>
-<div id="LZ-6-2" class="paragraph">
-<p>==== LZ 6-2 - Query Programmiermodelle
-Die Teilnehmer:innen wissen, dass unterschiedliche Programmiermodelle für analytische Queries eingesetzt werden. Ihnen sind wesentliche Programmiermodelle bekannt und sie können beurteilen, für welche Aufgaben sie speziell geeignet sind:</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-6-2">LZ 6-2 - Query Programmiermodelle</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass unterschiedliche Programmiermodelle für analytische Queries eingesetzt werden. Ihnen sind wesentliche Programmiermodelle bekannt und sie können beurteilen, für welche Aufgaben sie speziell geeignet sind:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3770,9 +3823,11 @@ Die Teilnehmer:innen wissen, dass unterschiedliche Programmiermodelle für analy
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen für jedes dieser Programmiermodelle Beispiele zu Frameworks, Libraries und Tools für die Verarbeitung analytischer Queries.</p>
 </div>
-<div id="LZ-6-3" class="paragraph">
-<p>==== LZ 6-3 - Query Verarbeitung &amp; Optimierung
-Die Teilnehmer:innen wissen, dass die Verarbeitung der Queries von der sog. Query-Engine übernommen werden. Die Teilnehmer:innen wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten.</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-6-3">LZ 6-3 - Query Verarbeitung &amp; Optimierung</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass die Verarbeitung der Queries von der sog. Query-Engine übernommen werden. Die Teilnehmer:innen wissen, dass diese Engines sehr eng an ein verwendetes Datenbanksystem gekoppelt sein können, dass es aber auch Engines gibt, die davon unabhängig arbeiten.</p>
 </div>
 <div class="paragraph">
 <p>Den Teilnehmer:innen ist bekannt, dass die Verarbeitung von Queries in den folgenden Schritten erfolgt:</p>
@@ -3802,16 +3857,20 @@ Die Teilnehmer:innen wissen, dass die Verarbeitung der Queries von der sog. Quer
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen gängige Verfahren zur Optimierung (analytischer) Queries, wie etwa die Vorgabe günstiger Join-Beziehungen im Star-Schema.</p>
 </div>
-<div class="paragraph">
-<p>=== Referenzen</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_6">6.3. Referenzen</h3>
 <div class="paragraph">
 <p><a href="#starke">[starke]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Transformation</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_transformation">7. Transformation</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3819,28 +3878,32 @@ Die Teilnehmer:innen wissen, dass die Verarbeitung der Queries von der sog. Quer
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 90 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 15 Min.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_7">7.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>=== Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3</p>
+<p>Datentransformation, Data Cleansing, Duplikaterkennung, Datenanonymisierung, Normalisierung/Denormalisierung, Data Profiling, Data Lineage, Qualitätsstufen, Batch Verarbeitung, Stream Verarbeitung</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lernziele_7">7.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-7-1">LZ 7-1 - Was versteht man unter (Daten-)transformation?</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Daten aus operativen Systemen oftmals aufbereitet werden müssen, um für die Analyse nutzbar zu sein. Sie wissen, dass dieser Schritt als (Daten-)Transformation bezeichnet wird.</p>
 </div>
 <div class="paragraph">
-<p>=== Lernziele</p>
+<p>Die Teilnehmer:innen verstehen, dass Transformationen in Form von Queries beschrieben werden können, dass bei steigender Komplexität aber einzelne Queries zu unverständlich werden und Abfolgen von Queries (Data Pipeline siehe <a href="#LZ-9-1">LZ 9-1 - Was sind Data Pipelines?</a>) besser für die Umsetzung von Transformationen geeignet sind. Sie wissen, dass Transformationen üblicherweise vor dem Speichern der Daten erfolgen, es mitunter aber sinnvoll sein kann, Transformationen erst vor der Präsentation auszuführen.</p>
 </div>
-<div id="LZ-7-1" class="paragraph">
-<p>==== LZ 7-1 - Was versteht man unter (Daten-)transformation?
-Die Teilnehmer:innen verstehen, dass Daten aus operativen Systemen oftmals aufbereitet werden müssen, um für die Analyse nutzbar zu sein. Sie wissen, dass dieser Schritt als (Daten-)Transformation bezeichnet wird.</p>
 </div>
+<div class="sect3">
+<h4 id="LZ-7-2">LZ 7-2 - Anwendungsfälle</h4>
 <div class="paragraph">
-<p>Die Teilnehmer:innen verstehen, dass Transformationen in Form von Queries beschrieben werden können, dass bei steigender Komplexität aber einzelne Queries zu unverständlich werden und Abfolgen von Queries (Data Pipeline siehe <a href="#LZ-9-1">[LZ-9-1]</a>) besser für die Umsetzung von Transformationen geeignet sind. Sie wissen, dass Transformationen üblicherweise vor dem Speichern der Daten erfolgen, es mitunter aber sinnvoll sein kann, Transformationen erst vor der Präsentation auszuführen.</p>
-</div>
-<div id="LZ-7-2" class="paragraph">
-<p>==== LZ 7-2 - Anwendungsfälle
-Die Teilnehmer:innen kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell</p>
+<p>Die Teilnehmer:innen kennen übliche Aufgaben, die von Transformationen übernommen werden, wie speziell</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3868,7 +3931,7 @@ Die Teilnehmer:innen kennen übliche Aufgaben, die von Transformationen übernom
 </ul>
 </div>
 <div class="paragraph">
-<p>Die Teilnehmer:innen verstehen, wie Transformationen Verfahren des Query und Processing (siehe <a href="#LZ-6-3">[LZ-6-3]</a>) nutzen, um auf die Daten in den Speichersystemen (siehe <a href="#LZ-5-1">LZ 5-1 - Speichersysteme</a>) zuzugreifen.</p>
+<p>Die Teilnehmer:innen verstehen, wie Transformationen Verfahren des Query und Processing (siehe <a href="#LZ-6-3">LZ 6-3 - Query Verarbeitung &amp; Optimierung</a>) nutzen, um auf die Daten in den Speichersystemen (siehe <a href="#LZ-5-1">LZ 5-1 - Speichersysteme</a>) zuzugreifen.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen verstehen, wie Transformationen bei verteilten Daten parallel ausgeführt werden.</p>
@@ -3876,9 +3939,11 @@ Die Teilnehmer:innen kennen übliche Aufgaben, die von Transformationen übernom
 <div class="paragraph">
 <p>Die Teilnehmer:innen verstehen die Bedeutung von Schemas und Datenmodellen für die Umsetzung von Transformationen.</p>
 </div>
-<div id="LZ-7-3" class="paragraph">
-<p>==== LZ 7-3 - Typische Transformationen
-Die Teilnehmer:innen kennen typische Transformationen für die Aufbereitung analytischer Daten, wie etwa</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-7-3">LZ 7-3 - Typische Transformationen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen typische Transformationen für die Aufbereitung analytischer Daten, wie etwa</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3902,9 +3967,11 @@ Die Teilnehmer:innen kennen typische Transformationen für die Aufbereitung anal
 </li>
 </ul>
 </div>
-<div id="LZ-7-4" class="paragraph">
-<p>==== LZ 7-4 - Staging Area
-Den Teilnehmer:innen ist das Konzept der Staging Area vertraut. Sie wissen, dass</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-7-4">LZ 7-4 - Staging Area</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist das Konzept der Staging Area vertraut. Sie wissen, dass</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3928,9 +3995,11 @@ Den Teilnehmer:innen ist das Konzept der Staging Area vertraut. Sie wissen, dass
 <div class="paragraph">
 <p>Die Teilnehmer:innen wissen, welche Transformationen typischerweise in einer Staging Area angewendet werden.</p>
 </div>
-<div id="LZ-7-5" class="paragraph">
-<p>==== LZ 7-5 - Robuste Transformationen
-Die Teilnehmer:innen verstehen, dass die Umsetzung von Transformationen oft fragil ist, da sich die zu verarbeitenden Daten von Ausführung zu Ausführung im Hinblick auf Umfang, Format oder Bedeutung ändern können. Die Teilnehmer:innen kennen Lösungsansätze, um Transformationen robust zu gestalten:</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-7-5">LZ 7-5 - Robuste Transformationen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass die Umsetzung von Transformationen oft fragil ist, da sich die zu verarbeitenden Daten von Ausführung zu Ausführung im Hinblick auf Umfang, Format oder Bedeutung ändern können. Die Teilnehmer:innen kennen Lösungsansätze, um Transformationen robust zu gestalten:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3960,19 +4029,23 @@ Die Teilnehmer:innen verstehen, dass die Umsetzung von Transformationen oft frag
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen das Konzept der Data Lineage für das Nachvollziehen der Abhängigkeiten zwischen Ein- und Ausgangsdaten von Transformationen.</p>
 </div>
-<div id="LZ-7-6" class="paragraph">
-<p>==== LZ 7-6 - Qualitätsstufen
-Die Teilnehmer:innen verstehen, dass über eine schrittweise Transformation eingehender Daten Qualitätsstufen (Quality-Gates) definiert werden können. Sie verstehen, dass damit je nach Art der Analyse Daten einer höheren (Clean Data) oder einer niedrigeren (Raw Data) herangezogen werden können.</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-7-6">LZ 7-6 - Qualitätsstufen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass über eine schrittweise Transformation eingehender Daten Qualitätsstufen (Quality-Gates) definiert werden können. Sie verstehen, dass damit je nach Art der Analyse Daten einer höheren (Clean Data) oder einer niedrigeren (Raw Data) herangezogen werden können.</p>
 </div>
 <div class="paragraph">
-<p>Die Teilnehmer:innen verstehen, dass Staging Areas (siehe <a href="#LZ-7-4">[LZ-7-4]</a>) ein Quality Gate darstellen, mit dem sichergestellt wird, dass nur qualitätsgesicherte Daten zur Analyse in einem Data Warehouse bereitgestellt werden.</p>
+<p>Die Teilnehmer:innen verstehen, dass Staging Areas (siehe <a href="#LZ-7-4">LZ 7-4 - Staging Area</a>) ein Quality Gate darstellen, mit dem sichergestellt wird, dass nur qualitätsgesicherte Daten zur Analyse in einem Data Warehouse bereitgestellt werden.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen verstehen, dass in einem Data Lake (siehe <a href="#LZ-5-8">LZ 5-8 - Data Warehouse und Data Lake</a>) Daten unterschiedlicher Qualitätsstufen gemeinsam aufbewahrt werden und dass es daher sinnvoll sein kann, Zonen unterschiedlicher Datenqualität (etwa Bronze, Silber, Gold) innerhalb von Data Lakes festzulegen (Medallion Architecture).</p>
 </div>
-<div id="LZ-7-7" class="paragraph">
-<p>==== LZ 7-7 - Batch Verarbeitung
-Die Teilnehmer:innen verstehen das Verfahren der Batch Verarbeitung (Batch Processing) für die Transformation von Daten. Sie wissen, dass die Transformation ein Teil der übergreifenden ETL (Extract-Transform-Load) oder ELT (Extract-Load-Transform) Prozesse ist. Ihnen ist bewusst, dass</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-7-7">LZ 7-7 - Batch Verarbeitung</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen das Verfahren der Batch Verarbeitung (Batch Processing) für die Transformation von Daten. Sie wissen, dass die Transformation ein Teil der übergreifenden ETL (Extract-Transform-Load) oder ELT (Extract-Load-Transform) Prozesse ist. Ihnen ist bewusst, dass</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3993,9 +4066,11 @@ Die Teilnehmer:innen verstehen das Verfahren der Batch Verarbeitung (Batch Proce
 <div class="paragraph">
 <p>Die Teilnehmer:innen verstehen das Verfahren der Micro-Batch Verarbeitung von Daten. Sie wissen, dass Micro-Batches im Gegensatz zu Batches auch dann angestoßen werden, wenn ausreichend Datensätze in der Datenquelle angefallen sind.</p>
 </div>
-<div id="LZ-7-8" class="paragraph">
-<p>==== LZ 7-8 - Stream Verarbeitung
-Die Teilnehmer:innen verstehen das Verfahren der Stream Verarbeitung (Stream Processing) von Daten. Sie wissen, dass Stream Verarbeitung auf der Basis des Event Streamings aufsetzt.</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-7-8">LZ 7-8 - Stream Verarbeitung</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen das Verfahren der Stream Verarbeitung (Stream Processing) von Daten. Sie wissen, dass Stream Verarbeitung auf der Basis des Event Streamings aufsetzt.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen wissen, dass bei der Stream Verarbeitung</p>
@@ -4022,16 +4097,20 @@ Die Teilnehmer:innen verstehen das Verfahren der Stream Verarbeitung (Stream Pro
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen Frameworks oder Tools für die Stream Verarbeitung, wie Kafka Streams.</p>
 </div>
-<div class="paragraph">
-<p>=== Referenzen</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_7">7.3. Referenzen</h3>
 <div class="paragraph">
 <p><a href="#starke">[starke]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Serving Data</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_serving_data">8. Serving Data</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -4039,21 +4118,23 @@ Die Teilnehmer:innen verstehen das Verfahren der Stream Verarbeitung (Stream Pro
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 60 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 15 Min.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_8">8.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>=== Begriffe und Konzepte
-Data Analytics, Query-Processing, Machine Learning Modelle, Reverse ETL</p>
+<p>Data Analytics, Business Intelligence (BI), Reporting Tools, Machine Learning, Reverse ETL, Datenvisualisierung, Vertrauenswürdigkeit von Daten, Rohdaten, Aggregationen</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_lernziele_8">8.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-8-1">LZ 8-1 - Anwendungsfälle</h4>
 <div class="paragraph">
-<p>=== Lernziele</p>
-</div>
-<div id="LZ-8-1" class="paragraph">
-<p>==== LZ 8-1 - Anwendungsfälle
-Die Teilnehmer:innen können die wesentlichen Anwendungsfälle für die Nutzung analytischer Daten unterscheiden:</p>
+<p>Die Teilnehmer:innen können die wesentlichen Anwendungsfälle für die Nutzung analytischer Daten unterscheiden:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4068,42 +4149,56 @@ Die Teilnehmer:innen können die wesentlichen Anwendungsfälle für die Nutzung 
 </li>
 </ul>
 </div>
-<div id="LZ-8-2" class="paragraph">
-<p>==== LZ 8-2 - Repräsentation von Massendaten
-Die Teilnehmer:innen wissen wie die Verfahren des Query-Processings wie Aggregation oder Cubes für die Darstellung von Massendaten verwendet werden können. Ihnen ist bewusst, dass bei analytischen Daten die Vertrauenswürdigkeit eine zentrale Rolle spielt. Sie wissen, dass daher neben den Daten selbst auch Information zu deren Schema, zum Umfang, zur Aktualität, zu den Datenquellen oder zur Qualität angeboten werden können.</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-8-2">LZ 8-2 - Repräsentation von Massendaten</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen wie die Verfahren des Query-Processings wie Aggregation oder Cubes für die Darstellung von Massendaten verwendet werden können. Ihnen ist bewusst, dass bei analytischen Daten die Vertrauenswürdigkeit eine zentrale Rolle spielt. Sie wissen, dass daher neben den Daten selbst auch Information zu deren Schema, zum Umfang, zur Aktualität, zu den Datenquellen oder zur Qualität angeboten werden können.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen Tools zur Visualisierung von Massendaten. Sie kennen verfügbare Arten von Diagrammen (Heatmap, Ranking, Top, &#8230;&#8203;) und können diese speziell im Hinblick auf Kosten/Nutzen beurteilen. Sie kennen BI-/Reporting Tools und wissen, wie diese für explorative (Slice &amp; Dice, Drill, etc) oder descriptive Analysen eingesetzt werden können. Die Teilnehmer:innen wissen, dass auf Basis dieser Tools analytische Anwendungen wie Dashbords umgesetzt werden können.</p>
 </div>
-<div id="LZ-8-3" class="paragraph">
-<p>==== LZ 8-3 - Modularisierung
-Die Teilnehmer:innen wissen, dass analytische Daten vielfältig und unübersichtlich sein können. Sie kennen das Konzept des Datenprodukts und wissen, dass die Datenprodukte verwendet werden können, um analytische Daten fachlich zu zerlegen. Sie kennen speziell deren Verwendung im Data Mesh Ansatz (siehe <a href="#LZ-10-1">[LZ-10-1]</a>).</p>
 </div>
-<div id="LZ-8-4" class="paragraph">
-<p>==== LZ 8-4 - Data Analytics und Business Intelligence
-Den Teilnehmer:innen sind Data Analytics und BI Anwendungen vertraut. Sie kennen Anwendungsfälle für die Analyse operativ anfallender Daten für die Unternehmenssteuerung.</p>
+<div class="sect3">
+<h4 id="LZ-8-3">LZ 8-3 - Modularisierung</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass analytische Daten vielfältig und unübersichtlich sein können. Sie kennen das Konzept des Datenprodukts und wissen, dass die Datenprodukte verwendet werden können, um analytische Daten fachlich zu zerlegen. Sie kennen speziell deren Verwendung im Data Mesh Ansatz (siehe <a href="#LZ-10-1">LZ 10-1 - Warum Data Mesh?</a>).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-8-4">LZ 8-4 - Data Analytics und Business Intelligence</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen sind Data Analytics und BI Anwendungen vertraut. Sie kennen Anwendungsfälle für die Analyse operativ anfallender Daten für die Unternehmenssteuerung.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen Frameworks und Tools für die Umsetzung von Data Analytics und BI Anwendungen. Ihnen ist bewusst, das diese Anwendungen üblicherweise direkten Zugriff auf die zugrundeliegenden Speichersysteme benötigen.</p>
 </div>
-<div id="LZ-8-5" class="paragraph">
-<p>==== LZ 8-5 - Machine Learning
-Die Teilnehmer:innen wissen, wie Machine Learning Modelle für den Einsatz im Unternehmen auf Basis operativ anfallender Daten trainiert, verbessert und getestet werden. Sie kennen Anwendungsfälle für die Nutzung solcher Modelle in operativen Anwendungen. Ihnen ist bewusst, das ML Verfahren, anders als Data Analytics, auf einen Extract der vollständigen Rohdaten angewiesen sind und spezielle Repräsentationen (Vektoren) benötigen. Sie kennen die häufige Notwendigkeit spezialiserter Hardware (GPUs).</p>
 </div>
-<div id="LZ-8-6" class="paragraph">
-<p>==== LZ 8-6 - Reverse ETL
-Den Teilnehmer:innen ist das Konzept der Reverse ETL vertraut. Sie kennen Anwendungsfälle für die Integration von vereinheitlichten Daten oder von Ergebnissen analytischer Auswertungen in operative Anwendungen.</p>
+<div class="sect3">
+<h4 id="LZ-8-5">LZ 8-5 - Machine Learning</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, wie Machine Learning Modelle für den Einsatz im Unternehmen auf Basis operativ anfallender Daten trainiert, verbessert und getestet werden. Sie kennen Anwendungsfälle für die Nutzung solcher Modelle in operativen Anwendungen. Ihnen ist bewusst, das ML Verfahren, anders als Data Analytics, auf einen Extract der vollständigen Rohdaten angewiesen sind und spezielle Repräsentationen (Vektoren) benötigen. Sie kennen die häufige Notwendigkeit spezialiserter Hardware (GPUs).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-8-6">LZ 8-6 - Reverse ETL</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist das Konzept der Reverse ETL vertraut. Sie kennen Anwendungsfälle für die Integration von vereinheitlichten Daten oder von Ergebnissen analytischer Auswertungen in operative Anwendungen.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen wissen, dass Reverse ETL Tools mit Konnektoren für gängige operative Anwendungen existieren, die die Umsetzung entsprechender Integrationslösungen deutlich erleichtern. Sie kennen Beispiele für diese Tools.</p>
 </div>
-<div class="paragraph">
-<p>=== Referenzen</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_8">8.3. Referenzen</h3>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Data Pipelines</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_pipelines">9. Data Pipelines</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -4111,21 +4206,26 @@ Den Teilnehmer:innen ist das Konzept der Reverse ETL vertraut. Sie kennen Anwend
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 90 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 30 Min.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_9">9.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>=== Begriffe und Konzepte
-Data Pipelines, Qualitätskriterien, Monitoring, Edge-Computing</p>
+<p>Data Pipelines, Qualitätskriterien, Monitoring, Edge-Computing</p>
 </div>
 <div class="paragraph">
-<p>=== Lernziele</p>
+<p>Data Pipelines, Effizienz, Batch (ETL und ELT), Microbatch, Stream Verarbeitung, Eventgetriebene Verarbeitung, Qualitätskriterien, Building Blocks, Technologien, Betrieb</p>
 </div>
-<div id="LZ-9-1" class="paragraph">
-<p>==== LZ 9-1 - Was sind Data Pipelines?
-Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten durch die einzelnen Phasen des Data Engineerings zu bewegen. Sie wissen was typischerweise in den einzelnen Phasen geschieht (siehe <a href="#LZ-1-7">LZ 1-7 - Lebenszyklus analytischer Daten</a>). Sie kennen die wesentlichen Eigenschaften von Data Pipelines wie:</p>
+</div>
+<div class="sect2">
+<h3 id="_lernziele_9">9.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-9-1">LZ 9-1 - Was sind Data Pipelines?</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten durch die einzelnen Phasen des Data Engineerings zu bewegen. Sie wissen was typischerweise in den einzelnen Phasen geschieht (siehe <a href="#LZ-1-7">LZ 1-7 - Lebenszyklus analytischer Daten</a>). Sie kennen die wesentlichen Eigenschaften von Data Pipelines wie:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4165,16 +4265,20 @@ Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten d
 </li>
 </ul>
 </div>
-<div id="LZ-9-2" class="paragraph">
-<p>==== LZ 9-2 - Arten von Data Pipelines
-Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind.</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-9-2">LZ 9-2 - Arten von Data Pipelines</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen die Unterschiede zwischen Batch (ETL und ELT), Microbatch, Stream und Eventgetriebener Verarbeitung.</p>
 </div>
-<div id="LZ-9-3" class="paragraph">
-<p>==== LZ 9-3 - Qualitätskriterien für Data Pipelines
-Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte einer Data Pipeline beschreiben, wie etwa:</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-9-3">LZ 9-3 - Qualitätskriterien für Data Pipelines</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte einer Data Pipeline beschreiben, wie etwa:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4195,9 +4299,11 @@ Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte eine
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen Ansätze wie Idempotenz, Caching, Parallelisierung, Edge Computing um die Qualität von Data Pipelines zu verbessern.</p>
 </div>
-<div id="LZ-9-4" class="paragraph">
-<p>==== LZ 9-4 - Building Blocks von Data Pipelines
-Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht und in welchen Phasen des Lebenszyklus diese verwendet werden. Sie kennen Beispiele dafür, wissen wann diese Building Blocks  für einen Anwendungsfall geeignet sind und wie diese kombiniert werden können.</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-9-4">LZ 9-4 - Building Blocks von Data Pipelines</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht und in welchen Phasen des Lebenszyklus diese verwendet werden. Sie kennen Beispiele dafür, wissen wann diese Building Blocks  für einen Anwendungsfall geeignet sind und wie diese kombiniert werden können.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4221,9 +4327,11 @@ Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines best
 </li>
 </ul>
 </div>
-<div id="LZ-9-5" class="paragraph">
-<p>==== LZ 9-5 - Technologien und Plattformen für Data Pipelines
-Die Teilnehmer:innen wissen, wie Data Pipelines auf der Basis von Technologien, wie SQL, Python Dataframes oder Spark, manuell erstellt werden können. Sie kennen zudem auch integrierte Datenplattformen zur Erstellung und dem Management von Data Pipelines, wie z.B.:</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-9-5">LZ 9-5 - Technologien und Plattformen für Data Pipelines</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, wie Data Pipelines auf der Basis von Technologien, wie SQL, Python Dataframes oder Spark, manuell erstellt werden können. Sie kennen zudem auch integrierte Datenplattformen zur Erstellung und dem Management von Data Pipelines, wie z.B.:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4238,9 +4346,11 @@ Die Teilnehmer:innen wissen, wie Data Pipelines auf der Basis von Technologien, 
 </li>
 </ul>
 </div>
-<div id="LZ-9-6" class="paragraph">
-<p>==== LZ 9-6 - Betrieb von Data Pipelines
-Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines speziell die folgenden Themen bedacht werden müssen:</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-9-6">LZ 9-6 - Betrieb von Data Pipelines</h4>
+<div class="paragraph">
+<p>Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines speziell die folgenden Themen bedacht werden müssen:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4264,16 +4374,20 @@ Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines spezi
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>=== Referenzen</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_9">9.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#varshney">[varshney]</a>, <a href="#levy">[levy]</a>, <a href="#singhal">[singhal]</a></p>
+<p><a href="#varshney">[H. Varshney 2023]</a>, <a href="#levy">[E. Levy 2021]</a>, <a href="#singhal">[B. Singhal 2022]</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Data Mesh</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_mesh">10. Data Mesh</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -4281,21 +4395,23 @@ Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines spezi
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: XXX Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: XXX Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 120 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 30 Min.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_10">10.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>=== Begriffe und Konzepte
-Data Mesh, Domain-driven Design, Bounded Context, Context Mapping, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Team Topologies</p>
+<p>Dezentralisierung, Data Mesh, Domain-driven Design, Team Topologies, Data as a Product, Product Thinking, Self-serve Data Platform, Federated Computational Governance, Top Down vs. Bottom Up Realisierung</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_lernziele_10">10.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-10-1">LZ 10-1 - Warum Data Mesh?</h4>
 <div class="paragraph">
-<p>=== Lernziele</p>
-</div>
-<div id="LZ-10-1" class="paragraph">
-<p>==== LZ 10-1 - Warum Data Mesh?
-Die Teilnehmer:innen kennen die Probleme zentralisierter Datenarchitekturen. Sie verstehen, aufgrund welcher Probleme zentrale Data Teams nicht gut skalieren. Sie verstehen auch, warum dezentrale Domain-Teams nicht gut zu zentralen Data Teams passen.</p>
+<p>Die Teilnehmer:innen kennen die Probleme zentralisierter Datenarchitekturen. Sie verstehen, aufgrund welcher Probleme zentrale Data Teams nicht gut skalieren. Sie verstehen auch, warum dezentrale Domain-Teams nicht gut zu zentralen Data Teams passen.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz darauf abzielt, dezentrale Datenarchitekturen zu ermöglichen.</p>
@@ -4319,9 +4435,11 @@ Die Teilnehmer:innen kennen die Probleme zentralisierter Datenarchitekturen. Sie
 </li>
 </ul>
 </div>
-<div id="LZ-10-2" class="paragraph">
-<p>==== LZ 10-2 - Domain Ownership
-Die Teilnehmer:innen kennen relevante Konzepte des Strategic Domain-Driven Design, wie Domains, Subdomains, Bounded Contexts und Context Mapping Patterns.</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-10-2">LZ 10-2 - Domain Ownership</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen relevante Konzepte des Strategic Domain-Driven Design, wie Domains, Subdomains, Bounded Contexts und Context Mapping Patterns.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen verstehen die Bedeutung sowie das Problem von Polysemen als geteilte Konzepte zwischen unterschiedlichen Domains.</p>
@@ -4329,9 +4447,9 @@ Die Teilnehmer:innen kennen relevante Konzepte des Strategic Domain-Driven Desig
 <div class="paragraph">
 <p>Die Teilnehmer:innen verstehen, dass die Verantwortung für analytische Daten und deren Qualität von den zentralen Data Teams bei einem Data Mesh an die einzelnen Domain Teams übergeht. Sie wissen, dass die Domain Teams ihre eigenen analytischen Daten verwalten. Sie wissen auch, dass die Domain Teams die analytischen Daten ihrer Domain ihrem Unternehmen zur Verfügung stellen müssen, diese Daten sollten allerdings nur in Form klar definierter Schnittstellen (Datenprodukt) bereitgestellt werden.</p>
 </div>
-<div id="LZ-10-3" class="paragraph">
-<p>==== LZ 10-3 - Data as a Product</p>
 </div>
+<div class="sect3">
+<h4 id="LZ-10-3">LZ 10-3 - Data as a Product</h4>
 <div class="paragraph">
 <p>Die Teilnehmer:innen wissen, dass Data as a Product bedeutet, die Idee der Produktentwicklung und Vermarktung auf Daten zu übertragen.</p>
 </div>
@@ -4394,9 +4512,9 @@ Die Teilnehmer:innen kennen relevante Konzepte des Strategic Domain-Driven Desig
 <div class="paragraph">
 <p>Die Teilnehmer:innen wissen, dass Data Contracts im Sinne einer API der Implementierung von Datenprodukten dienen.</p>
 </div>
-<div id="LZ-10-4" class="paragraph">
-<p>==== LZ 10-4 - Self-serve Data Platform</p>
 </div>
+<div class="sect3">
+<h4 id="LZ-10-4">LZ 10-4 - Self-serve Data Platform</h4>
 <div class="paragraph">
 <p>Die Teilnehmer:innen verstehen die wesentlichen Konzepte einer Domain-agnostischen Data Platform. Sie wissen, dass diese Plattform vom Data Platform Team verantwortet wird.</p>
 </div>
@@ -4406,9 +4524,11 @@ Die Teilnehmer:innen kennen relevante Konzepte des Strategic Domain-Driven Desig
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen typische Komponenten einer Data Platform, wie Storage, Data Pipelines, Data Catalogs, Access Management, Monitoring, Visualisation. Ihnen sind bestehende Lösungen speziell der großen Cloud Provider bekannt.</p>
 </div>
-<div id="LZ-10-5" class="paragraph">
-<p>==== LZ 10-5 - Federated Computational Governance
-Die Teilnehmer:innen wissen, dass die sog. Governance Group (im Sinne einer Gilde) aus Vertretern der einzelnen Domain Teams und dem Data Platform Team besteht.</p>
+</div>
+<div class="sect3">
+<h4 id="LZ-10-5">LZ 10-5 - Federated Computational Governance</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass die sog. Governance Group (im Sinne einer Gilde) aus Vertretern der einzelnen Domain Teams und dem Data Platform Team besteht.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen wissen, dass sich die Governance Group auf global gültige Regel und Vorgaben des Data Mesh Ecosystems, speziell hinsichtlich Interoperability, Security und Compliance verständigt.</p>
@@ -4416,22 +4536,26 @@ Die Teilnehmer:innen wissen, dass die sog. Governance Group (im Sinne einer Gild
 <div class="paragraph">
 <p>Die Teilnehmer:innen verstehen, wie die Self-Serve Data Platform der Verwaltung, Automatisierung und Durchsetzung der global vereinbarten Regeln und Vorgaben dient. Sie wissen, dass die Verantwortung dafür bei den Domain Teams liegt.</p>
 </div>
-<div id="LZ-10-6" class="paragraph">
-<p>==== LZ 10-6 - Top Down vs. Bottom up Realisierung</p>
 </div>
+<div class="sect3">
+<h4 id="LZ-10-6">LZ 10-6 - Top Down vs. Bottom up Realisierung</h4>
 <div class="paragraph">
 <p>Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz sowohl Top down wie auch Bottom up realisiert werden kann. Sie verstehen, dass sich der Top Down Ansatz vor allem für Situationen eignet, in denen bestehende monolithische Datensysteme (Data Warehouse, Data Lake) zerlegt werden sollen, während sich der bottom up Ansatz eher an bestehende Domain Teams richtet, welche ihre Daten dezentral für analytische Zwecke zur Verfügung stellen wollen und einen direkten Nutzen für die Domain Teams bieten wollen.</p>
 </div>
-<div class="paragraph">
-<p>=== Referenzen</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_10">10.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#christ">[christ]</a>, <a href="#majchrzak">[majchrzak]</a></p>
+<p><a href="#christ">J. Christ 2018</a>, <a href="#majchrzak">J. Majchrzak 2022</a>, <a href="#dehghani">Z. Dehghani 2023</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Data Governance</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_querschnittsthemen">11. Querschnittsthemen</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -4439,26 +4563,54 @@ Die Teilnehmer:innen wissen, dass die sog. Governance Group (im Sinne einer Gild
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 60 Min.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 0 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dauer: 120 Min.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übungszeit: 20 Min.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_begriffe_und_konzepte_11">11.1. Begriffe und Konzepte</h3>
 <div class="paragraph">
-<p>=== Begriffe und Konzepte
-Data Governance, Datenqualität, Anonymisierung, Pseudonymisierung, Personalisierung, Metadaten, Verantwortlichkeit</p>
+<p>Data Management, Data Governance, Data Contracts, Data Ownership, Datenqualität, Datensicherheit, Anonymisierung, Pseudonymisierung, Personalisierung, Metadaten, Verantwortlichkeit, DataOps</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_lernziele_11">11.2. Lernziele</h3>
+<div class="sect3">
+<h4 id="LZ-11-1">LZ 11-1 - Übergreifende Themen zum Datenlebenszyklus</h4>
 <div class="paragraph">
-<p>=== Lernziele</p>
+<p>Die Teilnehmer:innen verstehen, dass insbesondere die folgenden Themen übergreifend über die einzelnen Phasen des Datenlebenszyklus hinweg beachtet werden müssen:
+- Data Governance
+- Datensicherheit
+- Datenqualität
+- Betriebsaspekte (DataOps)</p>
 </div>
-<div id="LZ-11-1" class="paragraph">
-<p>==== LZ 11-1 - Begriffsdefinition
-Die Teilnehmer:innen verstehen, dass Data Governance eine Vielzahl von Prinzipien und Praktiken hinsichtlich Qualität, Integrität, Datenschutz und -sicherheit, sowie
-Benutzbarkeit umfasst, die sicherstellen, dass Daten im gesamten Lebenszyklus von der Erstellung bis zur Löschung sicher, effektiv und effizient verwaltet werden.</p>
 </div>
-<div id="LZ-11-2" class="paragraph">
-<p>==== LZ 11-2 - Datenschutz, Compliance, Datensicherheit
-Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.</p>
+<div class="sect3">
+<h4 id="LZ-11-2">LZ 11-2 - Data Governance</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, dass Data Governance eine Vielzahl von Prinzipien und Praktiken umfasst, die sicherstellen, dass Daten im gesamten Lebenszyklus von der Erstellung bis zur Löschung sicher, effektiv und effizient verwaltet werden.
+Die Teilnehmer:innen kennen lokale und globale Richtlinien für alle Phasen des Datenlebenszyklus und wissen wie sie diese festlegen und dokumentieren.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-11-3">LZ 11-3 - Data Stewardship und Ownership</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen die Notwendigkeit von dedizierten Verantwortlichen für Datenpflege und -verwaltung. Dies beinhaltet die Definition von Verantwortlichkeiten für Datenqualität, Datenschutz und andere Governance-Aspekte.
+Die Teilnehmer:innen können die verschiedenen Rollen und Verantwortungsbereiche in der Data Governence nennen und beschreiben.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-11-4">LZ 11-4 - Datenzugriff und -berechtigungen</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen die Notwendigkeit einer Definition, wer Zugang zu welchen Daten hat und unter welchen Bedingungen.
+Die Teilnehmer:innen wissen, wie Daten auditiert und gemonitored werden können und kennen die Wichtigkeit der Auditierung für die Bereiche Security, Privacy, Benutzbarkeit und Zuverlässigkeit.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LZ-11-5">LZ 11-5 - Datenschutz, Compliance, Datensicherheit</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung von Sicherheitsmaßnahmen zum Schutz sensibler Daten.</p>
 </div>
 <div class="paragraph">
 <p>Die Teilnehmer:innen kennen  gesetzliche und regulatorischer Anforderungen wie die Datenschutz-Grundverordnung (DSGVO) in der EU, das Bundesdatenschutzgesetz (BDSG) in Deutschland oder den California Consumer Privacy Act (CCPA) in den USA.</p>
@@ -4468,49 +4620,42 @@ Die Teilnehmer:innen kennen Vorgehensweisen und Mechanismen zur Implementierung 
 Die Teilnehmer:innen verstehen, welche Daten anonymisiert oder pseudonymisiert werden müssen und kennen die jeweiligen Nutzungsszenarien.
 Die Teilnehmer:innen kennen gängige Praktiken zur Anonymisierung und Pseudonymisierung von Daten und wissen, in welchen Fällen diese angewendet werden.</p>
 </div>
-<div id="LZ-11-3" class="paragraph">
-<p>==== LZ 11-3 - Qualität von Daten
-Die Teilnehmer:innen verstehen, warum die Gewährleistung von Datenqualität bei analytischen Daten eine besondere Herausforderung ist.
+</div>
+<div class="sect3">
+<h4 id="LZ-11-6">LZ 11-6 - Qualität von Daten</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen, warum die Gewährleistung von Datenqualität bei analytischen Daten eine besondere Herausforderung ist.
 Sie verstehen dass sich die Data Governance darum kümmert die Datenqualität zu gewährleisten.
 Die Teilnehmer:innen kennen typische Qualitätsmerkmale von Daten und können diese erläutern.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Sicherheit und Privacy</p>
+<p>Auffindbarkeit</p>
 </li>
 <li>
-<p>Benutzbarkeit</p>
+<p>Benutzbarkeit (Verständlichkeit, Korrektheit)</p>
 </li>
 <li>
-<p>Zuverlässigkeit</p>
-</li>
-<li>
-<p>Verfügbarkeit</p>
+<p>Zuverlässigkeit, Verfügbarkeit</p>
 </li>
 </ul>
 </div>
-<div id="LZ-11-4" class="paragraph">
-<p>==== LZ 11-4 - Datenzugriff und -berechtigungen
-Die Teilnehmer:innen kennen die Notwendigkeit einer Definition, wer Zugang zu welchen Daten hat und unter welchen Bedingungen.
-Die Teilnehmer:innen wissen, wie Daten auditiert und gemonitored werden können und kennen die Wichtigkeit der Auditierung für die Bereiche Security, Privacy, Benutzbarkeit und Zuverlässigkeit.</p>
 </div>
-<div id="LZ-11-5" class="paragraph">
-<p>==== LZ 11-5 - Data Stewardship und Ownership
-Die Teilnehmer:innen verstehen die Notwendigkeit von dedizierten Verantwortlichen für Datenpflege und -verwaltung. Dies beinhaltet die Definition von Verantwortlichkeiten für Datenqualität, Datenschutz und andere Governance-Aspekte.
-Die Teilnehmer:innen können die verschiedenen Rollen und Verantwortungsbereiche in der Data Governence nennen und beschreiben.</p>
+<div class="sect3">
+<h4 id="LZ-11-7">LZ 11-7 - Data Contracts</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen wissen, dass ein Data Contract die Struktur, das Format, die Semantik, die Qualität und die Nutzungsbedingungen für den Datenaustausch zwischen einem Datenanbieter und seinen Konsumenten definiert. Ihnen ist bewusst, dass es ist damit ein zentrales Werkzeug ist, damit sich Teams über Daten-Schnittstellen verständigen können und somit Stabilität, Datenqualität und Nachvollziehbarkeit in der Datenarchitektur gewährleisten.
+Den Teilnehmer:innen ist bewusst, dass Data Contracts daher trotz des Namens nicht im Sinne eines konkreten Vertrages zwischen einem Datenanbieter und einem Konsumenten zu verstehen sind.</p>
 </div>
-<div id="LZ-11-6" class="paragraph">
-<p>==== LZ 11-6 - Data Contracts
-Die Teilnehmer:innen kennen Data Contracts und verstehen wie sie beim Abgleich der Anforderungen von Datenkonsumenten und Datenproduzenten verwendet werden können.</p>
+<div class="paragraph">
+<p>Die Teilnehmer:innen kennen Standards für die Definition von Data Contracts.</p>
 </div>
-<div id="LZ-11-7" class="paragraph">
-<p>==== LZ 11-7 - Richtlinien
-Die Teilnehmer:innen kennen lokale und globale Policies für alle Phasen des Datenlebenszyklus und wissen wie sie diese festlegen und dokumentieren.</p>
 </div>
-<div id="LZ-11-8" class="paragraph">
-<p>==== LZ 11-8 - Metadaten
-Die Teilnehmer:innen verstehen die Bedeutung von Metadaten im Lebenszyklus der Daten und kennen Möglichkeiten, diese zu erheben und festzuhalten.
+<div class="sect3">
+<h4 id="LZ-11-8">LZ 11-8 - Metadaten</h4>
+<div class="paragraph">
+<p>Die Teilnehmer:innen verstehen die Bedeutung von Metadaten im Lebenszyklus der Daten und kennen Möglichkeiten, diese zu erheben und festzuhalten.
 Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden:</p>
 </div>
 <div class="ulist">
@@ -4529,64 +4674,39 @@ Sie kennen verschiedene Kategorien von Metadaten und können diese unterscheiden
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>Die Teilnehmer:innen kennen insbesondere die Bedeutung von Data-Lineage-Metadaten.
-Sie sind sich der Bedeutung von Datenschemata bewusst und kennen die diesbezüglichen Unterschiede zwischen verschiedenen Speichersystemen, wie z.B. Object Store und Data Warehouse.</p>
 </div>
+<div class="sect3">
+<h4 id="LZ-11-9">LZ 11-9 - Betriebsaspekte</h4>
 <div class="paragraph">
-<p>=== Referenzen</p>
+<p>Die Teilnehmer:innen kennen Vor- und Nachteile von Cloud, On-Premise und Software-as-a-Service. Sie kennen Edge Computing und Content Delivery Networks.
+Die Teilnehmer:innen kennen die Grundkonzepte von Containern und Kubernetes.
+Die Teilnehmer:innen können Maßnahmen für einen kosteneffizienten Betrieb bennenen.
+Die Teilnehmer:innen wissen, wie sie ein effektive Monitoring- und Alerting für datenzentrierte Anwendungen sicherstellen können. Sie verstehen, welche Leistungsmetriken überwacht werden sollten und wie Anomalien erkannt werden können.
+Den Teilnehmer:innen ist die Notwendigkeit eines Daten-Lifecycle-Managements mit automatisierten Verfahren und Regeln zur  Qualitätssicherung, zur Transformation, zur Archivierung oder zur Löschung von Daten bewusst.
+Die Teilnehmer:innen kennen den Begriff DataOps und verstehen, wie damit agile Methoden auf den Bereich des Data Engineerings übertragen werden.</p>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_referenzen_11">11.3. Referenzen</h3>
 <div class="paragraph">
-<p><a href="#christ">[christ]</a>, <a href="#majchrzak">[majchrzak]</a></p>
+<p><a href="#reis">J. Reis 2022</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>== Referenzen</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_referenzen_12">Referenzen</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Dieser Abschnitt enthält Quellenangaben, die ganz oder teilweise im Curriculum referenziert werden.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Aufbau eines Eintrags-Ankers:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>- [[[label,Text der erscheint]]]</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>ACHTUNG: Die Labels dürfen nur Buchstaben beinhalten, keine Zahlen oder Sonderzeichen</p>
-</div>
-<div class="paragraph">
-<p>= = =</p>
-</div>
-<div class="paragraph">
-<p>Structure of an anchor:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>- [[[label,text that will be shown]]]</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>ATTENTION: labels have to be non-numeric.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p><strong>A</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
 <p>[<a id="agarwal"></a> R. Agarwal: Kafka Connectors — All you need to know to start using connectors in Kafka. <a href="https://medium.com/@the_infinity/kafka-connectors-all-you-need-to-know-to-start-using-connectors-in-kafka-d905cf8a371c" class="bare">https://medium.com/@the_infinity/kafka-connectors-all-you-need-to-know-to-start-using-connectors-in-kafka-d905cf8a371c</a>, [Online; Stand: 2.06.2023].</p>
 </li>
@@ -4595,189 +4715,185 @@ Sie sind sich der Bedeutung von Datenschemata bewusst und kennen die diesbezügl
 <div class="paragraph">
 <p><strong>B</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="bachmann"></a>] F. Bachmann, L. Bass, J. Carriere, P. Clements, D. Garlan, J. Ivers, R. Nord, and R. Little: Software architecture documentation in practice: Documenting architectural layers. tech. rep., Carnegie-Mellon University Pittsburgh PA Software Engineering Inst, 2000.</p>
+<p><a id="bachmann"></a>[F. Bachmann et al. 2000] F. Bachmann, L. Bass, J. Carriere, P. Clements, D. Garlan, J. Ivers, R. Nord, and R. Little: Software architecture documentation in practice: Documenting architectural layers. tech. rep., Carnegie-Mellon University Pittsburgh PA Software Engineering Inst, 2000.</p>
 </li>
 <li>
-<p>[<a id="bornstein"></a>] M. Bornstein, J. Li, and M. Casado: Emerging Architectures for Modern Data Infrastructure. <a href="https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2" class="bare">https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2</a>, 2020.</p>
+<p><a id="bornstein"></a>[M. Bornstein 2020] M. Bornstein, J. Li, and M. Casado: Emerging Architectures for Modern Data Infrastructure. <a href="https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2" class="bare">https://a16z.com/emerging-architectures-for-modern-data-infrastructure/#section&#8212;&#8203;2</a>, 2020.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>C</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="codd"></a>] E. F. Codd: The relational model for database management: version 2. Addison-Wesley Longman Publishing Co., Inc., 1990.</p>
+<p><a id="codd"></a>[E. F. Codd 1990] E. F. Codd: The relational model for database management: version 2. Addison-Wesley Longman Publishing Co., Inc., 1990.</p>
 </li>
 <li>
-<p>[<a id="castagna"></a>] R. Castagna: Strukturierte und unstrukturierte Daten: Die Unterschiede. <a href="https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede" class="bare">https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede</a>, November 2022, [Online; Stand: 2.06.2023].</p>
+<p><a id="castagna"></a>[R. Castagna 2022] R. Castagna: Strukturierte und unstrukturierte Daten: Die Unterschiede. <a href="https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede" class="bare">https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede</a>, November 2022, [Online; Stand: 2.06.2023].</p>
 </li>
 <li>
-<p>[<a id="carnes"></a>] B. Carnes: Basic SQL Commands - The List of Database Queries and Statements You Should Know. <a href="https://www.freecodecamp.org/news/basic-sql-commands/" class="bare">https://www.freecodecamp.org/news/basic-sql-commands/</a>, 2020.</p>
+<p><a id="carnes"></a>[B. Carnes 2020] B. Carnes: Basic SQL Commands - The List of Database Queries and Statements You Should Know. <a href="https://www.freecodecamp.org/news/basic-sql-commands/" class="bare">https://www.freecodecamp.org/news/basic-sql-commands/</a>, 2020.</p>
 </li>
 <li>
-<p>[<a id="christ"></a>] J. Christ, L. Visengeriyeva, S. Harrer: Data Mesh Architecture - Data Mesh From an Engineering Perspective. <a href="https://www.datamesh-architecture.com" class="bare">https://www.datamesh-architecture.com</a>, 2022.</p>
+<p><a id="christ"></a>[J. Christ 2018] J. Christ, L. Visengeriyeva, S. Harrer: Data Mesh Architecture - Data Mesh From an Engineering Perspective. <a href="https://www.datamesh-architecture.com" class="bare">https://www.datamesh-architecture.com</a>, 2022.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>D</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="dutta"></a>] K. Dutta and M. Jayapal: Big Data Analytics for Real Time Systems. 02 2015.</p>
+<p><a id="dutta"></a>[K. Dutta 2015] K. Dutta and M. Jayapal: Big Data Analytics for Real Time Systems. 02 2015.</p>
 </li>
 <li>
-<p>[<a id="dehghani"></a>] Z. Dehghani, J. Christ, and S. Harrer: Data Mesh: Eine dezentrale Datenarchitektur entwerfen. O&#8217;Reilly Media, Inc., 2023.</p>
+<p><a id="dehghani"></a>[Z. Dehghani 2023] Z. Dehghani, J. Christ, and S. Harrer: Data Mesh: Eine dezentrale Datenarchitektur entwerfen. O&#8217;Reilly Media, Inc., 2023.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>E</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="eckerson"></a>] W. Eckerson: Which Data Warehouse Automation Tool is Right for You?. <a href="https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you" class="bare">https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you</a>, 2015.</p>
+<p><a id="eckerson"></a>[W. Eckerson 2015] W. Eckerson: Which Data Warehouse Automation Tool is Right for You?. <a href="https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you" class="bare">https://www.eckerson.com/register?content=which-data-warehouse-automation-tool-is-right-for-you</a>, 2015.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>G</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="giebler"></a>] C. Giebler, C. Gröger, E. Hoos, R. Eichler, H. Schwarz, and B. Mitschang: The data lake architecture framework. BTW 2021, 2021.</p>
+<p><a id="giebler"></a>[C. Giebler et al. 2021] C. Giebler, C. Gröger, E. Hoos, R. Eichler, H. Schwarz, and B. Mitschang: The data lake architecture framework. BTW 2021, 2021.</p>
 </li>
 <li>
-<p>[<a id="grellmann"></a>] M. Grellmann: Die sechs Arten der Datenanalyse. <a href="https://martin-grellmann.de/die-sechs-arten-der-datenanalyse" class="bare">https://martin-grellmann.de/die-sechs-arten-der-datenanalyse</a>, 2022.</p>
+<p><a id="grellmann"></a>[M. Grellmann 2022] M. Grellmann: Die sechs Arten der Datenanalyse. <a href="https://martin-grellmann.de/die-sechs-arten-der-datenanalyse" class="bare">https://martin-grellmann.de/die-sechs-arten-der-datenanalyse</a>, 2022.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>I</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="inmon"></a>] W. H. Inmon: Building the data warehouse. John wiley &amp; sons, 2005.</p>
+<p><a id="inmon"></a>[W. H. Inmon 2005] W. H. Inmon: Building the data warehouse. John wiley &amp; sons, 2005.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>K</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="kimball"></a>] R. Kimball and M. Ross: The data warehouse toolkit: the complete guide to dimensional modeling. John Wiley &amp; Sons, 2011.</p>
+<p><a id="kimball"></a>[R. Kimball 2011] R. Kimball and M. Ross: The data warehouse toolkit: the complete guide to dimensional modeling. John Wiley &amp; Sons, 2011.</p>
 </li>
 <li>
-<p>[<a id="kutay"></a>] J. Kutay: Change Data Capture (CDC): What it is and How it Works. <a href="https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/" class="bare">https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/</a>, [Online; Stand: 2.06.2023].</p>
+<p><a id="kutay"></a>[J. Kutay] J. Kutay: Change Data Capture (CDC): What it is and How it Works. <a href="https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/" class="bare">https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/</a>, [Online; Stand: 2.06.2023].</p>
 </li>
 <li>
-<p>[<a id="kreps"></a>] J. Kreps, N. Narkhede, J. Rao, et al.: Kafka: A distributed messaging system for log processing. in Proceedings of the NetDB. vol. 11, pp. 1–7, Athens, Greece, 2011.</p>
+<p><a id="kreps"></a>[J. Kreps et al. 2011] J. Kreps, N. Narkhede, J. Rao, et al.: Kafka: A distributed messaging system for log processing. in Proceedings of the NetDB. vol. 11, pp. 1–7, Athens, Greece, 2011.</p>
 </li>
 <li>
-<p>[<a id="klump"></a>] J. Klump, L. Wyborn, M. Wu, J. Martin, R. R. Downs, A. Asmi, et al.: Versioning data is about more than revisions: A conceptual framework and proposed principles. 2021.</p>
+<p><a id="klump"></a>[J. Klump et al. 2021] J. Klump, L. Wyborn, M. Wu, J. Martin, R. R. Downs, A. Asmi, et al.: Versioning data is about more than revisions: A conceptual framework and proposed principles. 2021.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>L</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="linstedt"></a>] D. Linstedt and M. Olschimke: Building a scalable data warehouse with data vault 2.0. Morgan Kaufmann, 2015.</p>
+<p><a id="linstedt"></a>[D. Linstedt 2015] D. Linstedt and M. Olschimke: Building a scalable data warehouse with data vault 2.0. Morgan Kaufmann, 2015.</p>
 </li>
 <li>
-<p>[<a id="levy"></a>] E. Levy: Batch vs Stream vs Microbatch Processing: A Cheat Sheet. <a href="https://www.upsolver.com/blog/batch-stream-a-cheat-sheet" class="bare">https://www.upsolver.com/blog/batch-stream-a-cheat-sheet</a>, 2021.</p>
+<p><a id="levy"></a>[E. Levy 2021] E. Levy: Batch vs Stream vs Microbatch Processing: A Cheat Sheet. <a href="https://www.upsolver.com/blog/batch-stream-a-cheat-sheet" class="bare">https://www.upsolver.com/blog/batch-stream-a-cheat-sheet</a>, 2021.</p>
 </li>
 <li>
-<p>[<a id="luber"></a>] S. Luber and N. Litzel: Was ist Data Profiling?. <a href="https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/" class="bare">https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/</a>, 2018.</p>
+<p><a id="luber"></a>[S. Luber 2018] S. Luber and N. Litzel: Was ist Data Profiling?. <a href="https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/" class="bare">https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/</a>, 2018.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>M</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="mhatre"></a>] P. Mhatre: Data Warehouse vs Data Vault vs Data Lake vs Delta Lake vs Data Fabric vs Data Mesh. <a href="https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961" class="bare">https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961</a>, 2021.</p>
+<p><a id="mhatre"></a>[P. Mhatre 2021] P. Mhatre: Data Warehouse vs Data Vault vs Data Lake vs Delta Lake vs Data Fabric vs Data Mesh. <a href="https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961" class="bare">https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961</a>, 2021.</p>
 </li>
 <li>
-<p>[<a id="majchrzak"></a>] J. Majchrzak, S. Balnojan, M. Siwiak, M. Sieraczkiewicz: Data Mesh in Action. Manning Publication, 2022.
+<p><a id="majchrzak"></a>[J. Majchrzak 2022] J. Majchrzak, S. Balnojan, M. Siwiak, M. Sieraczkiewicz: Data Mesh in Action. Manning Publication, 2022.
 <strong>P</strong></p>
 </li>
 <li>
-<p>[<a id="pääkkönen"></a>] P. Pääkkönen and D. Pakkala: Reference Architecture and Classification of Technologies, Products and Services for Big Data Systems. Big Data Research, vol. 2, no. 4, pp. 166–186, 2015.</p>
+<p><a id="pääkkönen"></a>[P. Pääkkönen 2015] P. Pääkkönen and D. Pakkala: Reference Architecture and Classification of Technologies, Products and Services for Big Data Systems. Big Data Research, vol. 2, no. 4, pp. 166–186, 2015.</p>
 </li>
 <li>
-<p>[<a id="parnas"></a>] D. L. Parnas: The Secret History of Information Hiding. pp. 398–409. Berlin, Heidelberg, Springer Berlin Heidelberg, 2002.</p>
+<p><a id="parnas"></a>[D. L. Parnas 2002] D. L. Parnas: The Secret History of Information Hiding. pp. 398–409. Berlin, Heidelberg, Springer Berlin Heidelberg, 2002.</p>
 </li>
 <li>
-<p>[<a id="pedersen"></a>] T. B. Pedersen: Multidimensional Modeling. pp. 1777–1784. Boston, MA: Springer US, 2009.</p>
+<p><a id="pedersen"></a>[T. B. Pedersen 2009] T. B. Pedersen: Multidimensional Modeling. pp. 1777–1784. Boston, MA: Springer US, 2009.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>R</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="richardson"></a>] C. Richardson, Microservices patterns: with examples in Java. Simon and Schuster, 2018.</p>
+<p><a id="richardson"></a>[C. Richardson 2018] C. Richardson, Microservices patterns: with examples in Java. Simon and Schuster, 2018.</p>
 </li>
 <li>
-<p>[<a id="reis"></a>] J. Reis and M. Housley: Fundamentals of Data Engineering. O&#8217;Reilly Media, Inc., 2022.</p>
+<p><a id="reis"></a>[J. Reis 2022] J. Reis and M. Housley: Fundamentals of Data Engineering. O&#8217;Reilly Media, Inc., 2022.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>S</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="singhal"></a>] B. Singhal and A. Aggarwal: Etl, elt and reverse etl: A business case study. in Second International Conference on Advanced Technologies in Intelligent Control, Environment, Computing and Communication Engineering (ICATIECE), pp. 1–4, 2022.</p>
+<p><a id="singhal"></a>[B. Singhal 2022] B. Singhal and A. Aggarwal: Etl, elt and reverse etl: A business case study. in Second International Conference on Advanced Technologies in Intelligent Control, Environment, Computing and Communication Engineering (ICATIECE), pp. 1–4, 2022.</p>
 </li>
 <li>
-<p>[<a id="silberschatz"></a>] A. Silberschatz, H. F. Korth, and S. Sudarshan: Database system concepts. 2011.</p>
+<p><a id="silberschatz"></a>[A. Silberschatz 2011] A. Silberschatz, H. F. Korth, and S. Sudarshan: Database system concepts. 2011.</p>
 </li>
 <li>
-<p>[<a id="sharvit"></a>] Y. Sharvit: Data-oriented programming unlearning objects. Manning, 2022.</p>
+<p><a id="sharvit"></a>[Y. Sharvit 2022] Y. Sharvit: Data-oriented programming unlearning objects. Manning, 2022.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p><strong>V</strong></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist bibliography">
+<ul class="bibliography">
 <li>
-<p>[<a id="varshney"></a>] H. Varshney: What is a Data Staging Area? Staging Data Simplified 101. <a href="https://hevodata.com/learn/data-staging-area/" class="bare">https://hevodata.com/learn/data-staging-area/</a>, 2023.</p>
+<p><a id="varshney"></a>[H. Varshney 2023] H. Varshney: What is a Data Staging Area? Staging Data Simplified 101. <a href="https://hevodata.com/learn/data-staging-area/" class="bare">https://hevodata.com/learn/data-staging-area/</a>, 2023.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
 <div id="footer">
 <div id="footer-text">
- 2024.6-RC0-DE<br>
-Last updated 2024-06-07 11:40:48 UTC
+ 2024.1-RC1-DE<br>
+Last updated 2024-06-18 07:12:33 UTC
 </div>
 </div>
 </body>
