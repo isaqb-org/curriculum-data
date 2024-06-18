@@ -28,7 +28,7 @@ This section contains references that are cited in the curriculum.
 - [[[codd, E. F. Codd 1990]]] E. F. Codd: The relational model for database management: version 2. Addison-Wesley Longman Publishing Co., Inc., 1990.
 - [[[castagna, R. Castagna 2022]]] R. Castagna: Strukturierte und unstrukturierte Daten: Die Unterschiede. https://www.computerweekly.com/de/feature/Strukturierte-und-unstrukturierte-Daten-Die-Unterschiede, November 2022, [Online; Stand: 2.06.2023].
 - [[[carnes, B. Carnes 2020]]] B. Carnes: Basic SQL Commands - The List of Database Queries and Statements You Should Know. https://www.freecodecamp.org/news/basic-sql-commands/, 2020.
-- [[[christ, J. Christ 2018]]] J. Christ, L. Visengeriyeva, S. Harrer: Data Mesh Architecture - Data Mesh From an Engineering Perspective. https://www.datamesh-architecture.com, 2022.
+- [[[christ, J. Christ et al. 2018]]] J. Christ, L. Visengeriyeva, S. Harrer: Data Mesh Architecture - Data Mesh From an Engineering Perspective. https://www.datamesh-architecture.com, 2022.
 
 **D**
 
@@ -51,20 +51,21 @@ This section contains references that are cited in the curriculum.
 **K**
 
 - [[[kimball, R. Kimball 2011]]] R. Kimball and M. Ross: The data warehouse toolkit: the complete guide to dimensional modeling. John Wiley & Sons, 2011.
-- [[[kutay, J. Kutay]]] J. Kutay: Change Data Capture (CDC): What it is and How it Works. https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/, [Online; Stand: 2.06.2023].
-- [[[kreps, J. Kreps et al. 2011]]] J. Kreps, N. Narkhede, J. Rao, et al.: Kafka: A distributed messaging system for log processing. in Proceedings of the NetDB. vol. 11, pp. 1–7, Athens, Greece, 2011.
 - [[[klump, J. Klump et al. 2021]]] J. Klump, L. Wyborn, M. Wu, J. Martin, R. R. Downs, A. Asmi, et al.: Versioning data is about more than revisions: A conceptual framework and proposed principles. 2021.
+- [[[kreps, J. Kreps et al. 2011]]] J. Kreps, N. Narkhede, J. Rao, et al.: Kafka: A distributed messaging system for log processing. in Proceedings of the NetDB. vol. 11, pp. 1–7, Athens, Greece, 2011.
+- [[[kutay, J. Kutay]]] J. Kutay: Change Data Capture (CDC): What it is and How it Works. https://www.striim.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/, [Online; Stand: 2.06.2023].
 
 **L**
 
-- [[[linstedt, D. Linstedt 2015]]] D. Linstedt and M. Olschimke: Building a scalable data warehouse with data vault 2.0. Morgan Kaufmann, 2015.
 - [[[levy, E. Levy 2021]]] E. Levy: Batch vs Stream vs Microbatch Processing: A Cheat Sheet. https://www.upsolver.com/blog/batch-stream-a-cheat-sheet, 2021.
+- [[[linstedt, D. Linstedt 2015]]] D. Linstedt and M. Olschimke: Building a scalable data warehouse with data vault 2.0. Morgan Kaufmann, 2015.
 - [[[luber, S. Luber 2018]]] S. Luber and N. Litzel: Was ist Data Profiling?. https://www.bigdata-insider.de/was-ist-data-profiling-a-691538/, 2018.
 
 **M**
 
-- [[[mhatre, P. Mhatre 2021]]] P. Mhatre: Data Warehouse vs Data Vault vs Data Lake vs Delta Lake vs Data Fabric vs Data Mesh. https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961, 2021.
 - [[[majchrzak, J. Majchrzak 2022]]] J. Majchrzak, S. Balnojan, M. Siwiak, M. Sieraczkiewicz: Data Mesh in Action. Manning Publication, 2022.
+- [[[mhatre, P. Mhatre 2021]]] P. Mhatre: Data Warehouse vs Data Vault vs Data Lake vs Delta Lake vs Data Fabric vs Data Mesh. https://medium.com/@mhatrep/data-warehouse-vs-data-vault-vs-data-lake-vs-delta-lake-vs-data-fabric-vs-data-mesh-1cf4c8991961, 2021.
+
 **P**
 
 - [[[pääkkönen, P. Pääkkönen 2015]]] P. Pääkkönen and D. Pakkala: Reference Architecture and Classification of Technologies, Products and Services for Big Data Systems. Big Data Research, vol. 2, no. 4, pp. 166–186, 2015.
@@ -78,9 +79,9 @@ This section contains references that are cited in the curriculum.
 
 **S**
 
+- [[[sharvit, Y. Sharvit 2022]]] Y. Sharvit: Data-oriented programming unlearning objects. Manning, 2022.
 - [[[singhal, B. Singhal 2022]]] B. Singhal and A. Aggarwal: Etl, elt and reverse etl: A business case study. in Second International Conference on Advanced Technologies in Intelligent Control, Environment, Computing and Communication Engineering (ICATIECE), pp. 1–4, 2022.
 - [[[silberschatz, A. Silberschatz 2011]]] A. Silberschatz, H. F. Korth, and S. Sudarshan: Database system concepts. 2011.
-- [[[sharvit, Y. Sharvit 2022]]] Y. Sharvit: Data-oriented programming unlearning objects. Manning, 2022.
 
 **V**
 
