@@ -13,11 +13,7 @@ Insbesondere die folgenden Themengebiete sind im Lehrplan zwar enthalten, werden
 - Business Intelligence (OLAP, Multidimensional Modeling)
 - Datenschutz
 
-In vielen Spezialgebieten spielt die Verarbeitung großer Datenmengen ebenfalls eine maßgebliche Rolle. Sie werden in diesem Lehrplan nicht explizit behandelt. Beispiele dafür sind:
-
-- IoT
-- Suchmaschinen
-- Wissenschaftliche Anwendungen (Klimaforschung, Kernphysik, Proteinfaltung, etc)
+In vielen Spezialgebieten spielt die Verarbeitung großer Datenmengen ebenfalls eine maßgebliche Rolle. Sie werden in diesem Lehrplan nicht explizit behandelt. Beispiele dafür sind IoT, Suchmaschinen oder Wissenschaftliche Anwendungen (Klimaforschung, Kernphysik, Proteinfaltung, etc).
 // end::DE[]
 
 // tag::EN[]
