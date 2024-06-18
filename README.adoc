@@ -54,7 +54,7 @@ In case you want to change that, adjust the following part of `build.gradle`:
 task buildDocs {
   group 'Documentation'
   description 'Grouping task for generating all languages in several formats'
-  dependsOn "renderNoRemarksDE", "renderNoRemarksEN", "renderWithRemarksDE", "renderWithRemarksEN"
+  dependsOn "renderNoRemarksDE", "renderNoRemarksEN"
 }
 ----
 
@@ -63,7 +63,7 @@ include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
 
 == Maintainers
 
-This repository is currently maintained by Larysa Visengeriyeva, Burkhard Neppert und Holger Tiemeyer.
+This repository is currently maintained by Christine Koppelt and Rainer Jaspert.
 It was forked from https://github.com/isaqb-org/advanced-template,
 so the contributors of that project basically contributed to this one, too.
 
