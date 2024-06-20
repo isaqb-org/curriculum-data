@@ -39,7 +39,7 @@
 | 10. Data Mesh | 120
 | 11. Data Governance | 120
 | |
-| Total | 1080 (16h)
+| Total | 1080 (18h)
 
 |===
 
