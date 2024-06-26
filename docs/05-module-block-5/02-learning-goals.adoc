@@ -151,15 +151,15 @@ tbd.
 tbd.
 
 [[LG-5-3]]
-==== LG 5-2: Database systems for analytical applications
+==== LG 5-3: Database systems for analytical applications
 tbd.
 
 [[LG-5-4]]
-==== LG 5-2: Concurrency Control
+==== LG 5-4: Concurrency Control
 tbd.
 
 [[LG-5-5]]
-==== LG 5-2: Versioning of data
+==== LG 5-5: Versioning of data
 tbd.
 
 [[LG-5-6]]
