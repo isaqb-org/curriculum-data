@@ -39,19 +39,19 @@ Die Teilnehmer:innen wissen, dass Reverse ETL Tools mit Konnektoren für gängig
 
 // tag::EN[]
 [[LG-8-1]]
-==== LG 6-1: Use Cases
+==== LG 8-1: Use Cases
 tbd.
 
 [[LG-8-2]]
-==== LG 6-2: Representation of mass data
+==== LG 8-2: Representation of mass data
 tbd.
 
 [[LG-8-3]]
-==== LG 6-3: Modularization
+==== LG 8-3: Modularization
 tbd.
 
 [[LG-8-4]]
-==== LG 6-4: Data Analytics and Business Intelligence
+==== LG 8-4: Data Analytics and Business Intelligence
 tbd.
 
 [[LG-8-5]]
