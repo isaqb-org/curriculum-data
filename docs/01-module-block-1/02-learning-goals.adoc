@@ -67,10 +67,6 @@ Den Teilnehmer:innen ist bewußt, dass begleitend zu diesen Phasen auch die folg
 - Data Security - Gewährleisten eines angemessenen Grads an Datenschutz (siehe <<LZ-11-2>>)
 - Data Quality - Gewährleisten eines angemessenen Grads an Datenqualität (siehe <<LZ-11-3>>)
 
-[[LZ-1-8]]
-==== LZ 1-8 - Abgrenzung von anderen iSAQB Modulen
-Die Teilnehmer:innen wissen, wie sich dieses Modul von anderen iSAQB Modulen speziell im Hinblick auf Architekturen für Data Science und Architekturen für operative Anwendungssysteme abgrenzt.
-
 // end::DE[]
 
 // tag::EN[]
@@ -100,10 +96,6 @@ tbd.
 
 [[LG-1-7]]
 ==== LG 1-7: Lifecycle of analytical data
-tbd.
-
-[[LG-1-8]]
-==== LG 1-8: Distinction from other iSAQB modules
 tbd.
 
 // end::EN[]
