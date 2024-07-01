@@ -3,9 +3,11 @@
 
 // tag::DE[]
 [[LZ-10-1]]
-==== LZ 10-1 - Warum Data Mesh?
+==== LZ 10-1 - Nachteile zentraler Datenarchitekturen
 Die Teilnehmer:innen kennen die Probleme zentralisierter Datenarchitekturen. Sie verstehen, aufgrund welcher Probleme zentrale Data Teams nicht gut skalieren. Sie verstehen auch, warum dezentrale Domain-Teams nicht gut zu zentralen Data Teams passen.
 
+[[LZ-10-2]]
+==== LZ 10-2 - Begriffsbestimmung Data Mesh
 Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz darauf abzielt, dezentrale Datenarchitekturen zu ermöglichen.
 
 Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz auf den folgenden vier Säulen beruht:
@@ -15,16 +17,16 @@ Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz auf den folgenden vier S�
 - Self-serve Data Platform
 - Federated Computational Governance
 
-[[LZ-10-2]]
-==== LZ 10-2 - Domain Ownership
+[[LZ-10-3]]
+==== LZ 10-3 - Domain Ownership
 Die Teilnehmer:innen kennen relevante Konzepte des Strategic Domain-Driven Design, wie Domains, Subdomains, Bounded Contexts und Context Mapping Patterns.
 
 Die Teilnehmer:innen verstehen die Bedeutung sowie das Problem von Polysemen als geteilte Konzepte zwischen unterschiedlichen Domains.
 
 Die Teilnehmer:innen verstehen, dass die Verantwortung für analytische Daten und deren Qualität von den zentralen Data Teams bei einem Data Mesh an die einzelnen Domain Teams übergeht. Sie wissen, dass die Domain Teams ihre eigenen analytischen Daten verwalten. Sie wissen auch, dass die Domain Teams die analytischen Daten ihrer Domain ihrem Unternehmen zur Verfügung stellen müssen, diese Daten sollten allerdings nur in Form klar definierter Schnittstellen (Datenprodukt) bereitgestellt werden.
 
-[[LZ-10-3]]
-==== LZ 10-3 - Data as a Product
+[[LZ-10-4]]
+==== LZ 10-4 - Data as a Product
 
 Die Teilnehmer:innen wissen, dass Data as a Product bedeutet, die Idee der Produktentwicklung und Vermarktung auf Daten zu übertragen.
 
@@ -52,8 +54,8 @@ Die Teilnehmer:innen kennen unterschiedliche Formen von Datenprodukten wie Datas
 
 Die Teilnehmer:innen wissen, dass Data Contracts im Sinne einer API der Implementierung von Datenprodukten dienen.
 
-[[LZ-10-4]]
-==== LZ 10-4 - Self-serve Data Platform
+[[LZ-10-5]]
+==== LZ 10-5 - Self-serve Data Platform
 
 Die Teilnehmer:innen verstehen die wesentlichen Konzepte einer Domain-agnostischen Data Platform. Sie wissen, dass diese Plattform vom Data Platform Team verantwortet wird.
 
@@ -61,16 +63,16 @@ Die Teilnehmer:innen wissen, dass die Data Platform den Domänen Teams ermöglic
 
 Die Teilnehmer:innen kennen typische Komponenten einer Data Platform, wie Storage, Data Pipelines, Data Catalogs, Access Management, Monitoring, Visualisation. Ihnen sind bestehende Lösungen speziell der großen Cloud Provider bekannt.
 
-[[LZ-10-5]]
-==== LZ 10-5 - Federated Computational Governance
+[[LZ-10-6]]
+==== LZ 10-6 - Federated Computational Governance
 Die Teilnehmer:innen wissen, dass die sog. Governance Group (im Sinne einer Gilde) aus Vertretern der einzelnen Domain Teams und dem Data Platform Team besteht.
 
 Die Teilnehmer:innen wissen, dass sich die Governance Group auf global gültige Regel und Vorgaben des Data Mesh Ecosystems, speziell hinsichtlich Interoperability, Security und Compliance verständigt.
 
 Die Teilnehmer:innen verstehen, wie die Self-Serve Data Platform der Verwaltung, Automatisierung und Durchsetzung der global vereinbarten Regeln und Vorgaben dient. Sie wissen, dass die Verantwortung dafür bei den Domain Teams liegt.
 
-[[LZ-10-6]]
-==== LZ 10-6 - Top Down vs. Bottom up Realisierung
+[[LZ-10-7]]
+==== LZ 10-7 - Top Down vs. Bottom up Realisierung
 
 Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz sowohl Top down wie auch Bottom up realisiert werden kann. Sie verstehen, dass sich der Top Down Ansatz vor allem für Situationen eignet, in denen bestehende monolithische Datensysteme (Data Warehouse, Data Lake) zerlegt werden sollen, während sich der bottom up Ansatz eher an bestehende Domain Teams richtet, welche ihre Daten dezentral für analytische Zwecke zur Verfügung stellen wollen und einen direkten Nutzen für die Domain Teams bieten wollen.
 
@@ -78,27 +80,31 @@ Die Teilnehmer:innen wissen, dass der Data Mesh Ansatz sowohl Top down wie auch 
 
 // tag::EN[]
 [[LG-10-1]]
-==== LG 10-1: Why Data Mesh?
+==== LG 10-1: Disadvantages of central data architectures
 tbd.
 
 [[LG-10-2]]
-==== LG 10-2: Domain Ownership
+==== LG 10-2: Definition Data Mesh
 tbd.
 
 [[LG-10-3]]
-==== LG 10-3: Data as a Product
+==== LG 10-3: Domain Ownership
 tbd.
 
 [[LG-10-4]]
-==== LG 10-4: Self-serve Data Platform
+==== LG 10-4: Data as a Product
 tbd.
 
 [[LG-10-5]]
-==== LG 10-5: Federated Computational Governance
+==== LG 10-5: Self-serve Data Platform
 tbd.
 
 [[LG-10-6]]
-==== LG 10-6: Top down vs. bottom up realization
+==== LG 10-6: Federated Computational Governance
+tbd.
+
+[[LG-10-7]]
+==== LG 10-7: Top down vs. bottom up realization
 tbd.
 
 // end::EN[]
