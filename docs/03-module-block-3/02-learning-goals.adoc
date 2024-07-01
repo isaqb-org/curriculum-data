@@ -44,7 +44,7 @@ Den Teilnehmer:innen ist bewusst, dass Quellsysteme Daten in einem internen Form
 
 
 [[LZ-3-3]]
-==== LZ 3-3 - Bereitstellung durch anwendungspezifische APIs
+==== LZ 3-3 - Bereitstellung von Daten durch anwendungspezifische APIs
 
 Den Teilnehmer:innen ist bewusst, das APIs dazu dienen das interne Datenmodell zu abstrahieren und zu definieren was extern bereitgestellt werden soll. Sie kennen zentrale Aspekte beim Entwurf von APIs wie Versionierung und Schemata.
 
@@ -52,7 +52,7 @@ Den Teilnehmer:innen ist bewusst, das APIs üblicherweise vom Quellsystem bereit
 
 
 [[LZ-3-4]]
-==== LZ 3-4 - Bereitstellung durch Datenbanksysteme
+==== LZ 3-4 - Bereitstellung von Daten durch Datenbanksysteme
 
 Die Teilnehmer:innen wissen, dass Datenbanken durch ein Datenbankmanagementsystem verwaltet werden, welches beispielsweise Schemaverwaltung, Datenzugriff, Query-Optimizer, Datenverteilung bereitstellt. Ihnen ist bewusst, das Datenbanken vorrangig für die Verwaltung strukturierter Daten verwendet werden. 
 
@@ -62,7 +62,7 @@ Die Teilnehmer:innen kennen den Unterschied zwischen relationalen und nicht-rela
 
 
 [[LZ-3-5]]
-==== LZ 3-5 - Bereitstellung durch Dateisysteme
+==== LZ 3-5 - Bereitstellung von Daten durch Dateisysteme
 Die Teilnehmer:innen wissen, dass Dateisysteme hierarchisch oder als Blockspeicher organisiert sein können. Sie wissen, dass der Speicherplatz bei hierarchischen Dateisystemen durch Verzeichnisse strukturiert wird, während er bei Blockspeichern in Blöcke fester Größe eingeteilt ist und sind sich der Konsequenzen für die Navigation durch das jeweilige Dateisystem bewusst. 
 
 Den Teilnehmer:innen ist bewusst, dass die Datenstruktur durch das Dateiformat festgelegt ist. Sie kennen Dateiformate die für den Einsatz mit großen Datenmengen optimiert sind.
@@ -73,7 +73,7 @@ Die Teilnehmer:innen kennen Beispiele für Disk-basierte und verteilte Dateisyst
 
 
 [[LZ-3-6]]
-==== LZ 3-6 - Bereitstellung durch Object Stores
+==== LZ 3-6 - Bereitstellung von Daten durch Object Stores
 Die Teilnehmer:innen wissen, das der Zugriff auf die Daten typischerweise durch RESTful APIs erfolgt. Sie wissen, dass Object Stores für die Speicherung großer Mengen unstrukturierter Daten konzipiert sind und sich üblicherweise horizontal sehr gut skalieren lassen.
 
 Den Teilnehmer:innen sind die Möglichkeiten hinsichtlich Metadaten für Kategorisierung und Verwaltung, sowie einer flexiblen Verwaltung von Zugriffsberechtigungen bewusst. Sie kennen Möglichkeiten um einen Object Store als Dateisystem zu verwenden. 
@@ -82,7 +82,7 @@ Die Teilnehmer:innen kennen Beispiele für Object Stores für den Cloud und on-P
 
 
 [[LZ-3-7]]
-==== LZ 3-7 - Bereitstellung durch Message Queues und Event-Streaming
+==== LZ 3-7 - Bereitstellung von Daten durch Message Queues und Event-Streaming
 
 Die Teilnehmer:innen wissen, dass beide Ansätze auf einer asynchronen Bereitstellung von Daten durch das Quellsystem basieren und ein synchroner Zugriff auf das Quellsystem üblicherweise nicht möglich ist. 
 
@@ -106,23 +106,23 @@ tbd.
 tbd.
 
 [[LG-3-3]]
-==== LG 3-3: Provisioning through application-specific APIs
+==== LG 3-3: Provisioning of data through application-specific APIs
 tbd.
 
 [[LG-3-4]]
-==== LG 3-4: Provisioning through database systems
+==== LG 3-4: Provisioning of data through database systems
 tbd.
 
 [[LG-3-5]]
-==== LG 3-5: Provisioning through file systems
+==== LG 3-5: Provisioning of data through file systems
 tbd.
 
 [[LG-3-6]]
-==== LG 3-6: Provisioning through object stores
+==== LG 3-6: Provisioning of data through object stores
 tbd.
 
 [[LG-3-7]]
-==== LG 3-7: Provisioning through Message Queues and Event-Streaming
+==== LG 3-7: Provisioning of data through Message Queues and Event-Streaming
 tbd.
 // end::EN[]
 
