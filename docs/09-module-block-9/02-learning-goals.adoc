@@ -3,7 +3,7 @@
 
 // tag::DE[]
 [[LZ-9-1]]
-==== LZ 9-1 - Was sind Data Pipelines?
+==== LZ 9-1 - Begriffsbestimmung Data Pipelines
 Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten durch die einzelnen Phasen des Data Engineerings zu bewegen. Sie wissen was typischerweise in den einzelnen Phasen geschieht (siehe <<LZ-1-7>>). Sie kennen die wesentlichen Eigenschaften von Data Pipelines wie:
 
 - Isolation
@@ -13,20 +13,22 @@ Die Teilnehmer:innen wissen, dass Data Pipelines dazu dienen analytische Daten d
 - Erweiterbarkeit
 - Skalierbarkeit
 
-Außerdem kennen die Teilnehmer:innen typische Anwendungsgebiete von Data Pipelines:
+[[LZ-9-2]]
+==== LZ 9-2 - Anwendungsgebiete von Data Pipelines
+Die Teilnehmer:innen kennen typische Anwendungsgebiete von Data Pipelines:
 
 - Data Engineering
 - Analytics/ML Processing
 - Delivery
 
-[[LZ-9-2]]
-==== LZ 9-2 - Arten von Data Pipelines
+[[LZ-9-3]]
+==== LZ 9-3 - Arten von Data Pipelines
 Die Teilnehmer:innen wissen um die verschiedenen Arten von Data Pipelines. Sie wissen in welchen Situationen diese zum Einsatz kommen und wann sie vorteilhaft sind.
 
 Die Teilnehmer:innen kennen die Unterschiede zwischen Batch (ETL und ELT), Microbatch, Stream und Eventgetriebener Verarbeitung.
 
-[[LZ-9-3]]
-==== LZ 9-3 - Qualitätskriterien für Data Pipelines
+[[LZ-9-4]]
+==== LZ 9-4 - Qualitätskriterien für Data Pipelines
 Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte einer Data Pipeline beschreiben, wie etwa:
 
 - Durchsatz
@@ -36,8 +38,8 @@ Die Teilnehmer:innen kennen maßgebliche Qualitätskriterien, die die Güte eine
 
 Die Teilnehmer:innen kennen Ansätze wie Idempotenz, Caching, Parallelisierung, Edge Computing um die Qualität von Data Pipelines zu verbessern.
 
-[[LZ-9-4]]
-==== LZ 9-4 - Building Blocks von Data Pipelines
+[[LZ-9-5]]
+==== LZ 9-5 - Building Blocks von Data Pipelines
 Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines besteht und in welchen Phasen des Lebenszyklus diese verwendet werden. Sie kennen Beispiele dafür, wissen wann diese Building Blocks  für einen Anwendungsfall geeignet sind und wie diese kombiniert werden können.
 
 - Konnektoren
@@ -47,16 +49,16 @@ Die Teilnehmer:innen wissen aus welchen Building Blocks eine Data Pipelines best
 - Werkzeuge zur Datentransformation
 - Report-Generatoren
 
-[[LZ-9-5]]
-==== LZ 9-5 - Technologien und Plattformen für Data Pipelines
+[[LZ-9-6]]
+==== LZ 9-6 - Technologien und Plattformen für Data Pipelines
 Die Teilnehmer:innen wissen, wie Data Pipelines auf der Basis von Technologien, wie SQL, Python Dataframes oder Spark, manuell erstellt werden können. Sie kennen zudem auch integrierte Datenplattformen zur Erstellung und dem Management von Data Pipelines, wie z.B.:
 
 - Databricks
 - Fivetran
 - Skyvia
 
-[[LZ-9-6]]
-==== LZ 9-6 - Betrieb von Data Pipelines
+[[LZ-9-7]]
+==== LZ 9-7 - Betrieb von Data Pipelines
 Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines speziell die folgenden Themen bedacht werden müssen:
 
 - Monitoring
@@ -69,28 +71,32 @@ Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines spezi
 // end::DE[]
 
 // tag::EN[]
-[[LG-6-1]]
-==== LG 6-1: What are data pipelines?
+[[LG-9-1]]
+==== LG 9-1: Definition Data Pipelines
 tbd.
 
-[[LG-6-2]]
-==== LG 6-2: Types of Data Pipelines
+[[LG-9-2]]
+==== LG 9-2: Applications of Data Pipelines
 tbd.
 
-[[LG-6-3]]
-==== LG 6-3: Quality criteria for data pipelines
+[[LG-9-3]]
+==== LG 9-3: Types of Data Pipelines
 tbd.
 
-[[LG-6-4]]
-==== LG 6-4: Building Blocks of Data Pipelines
+[[LG-9-4]]
+==== LG 9-4: Quality criteria for data pipelines
 tbd.
 
-[[LG-6-5]]
-==== LG 6-5: Technologies and platforms for data pipelines
+[[LG-9-5]]
+==== LG 9-5: Building Blocks of Data Pipelines
 tbd.
 
-[[LG-6-6]]
-==== LG 6-6: Operation of data pipelines
+[[LG-9-6]]
+==== LG 9-6: Technologies and platforms for data pipelines
+tbd.
+
+[[LG-9-7]]
+==== LG 9-7: Operation of data pipelines
 tbd.
 
 // end::EN[]
