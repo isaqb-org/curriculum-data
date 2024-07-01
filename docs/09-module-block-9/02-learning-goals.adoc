@@ -69,30 +69,28 @@ Den Teilnehmer:innen ist bewusst, dass für den Betrieb von Data Pipelines spezi
 // end::DE[]
 
 // tag::EN[]
-[[LG-6-1]]
-==== LG 6-1: What are data pipelines?
+[[LG-9-1]]
+==== LG 9-1: What are data pipelines?
 tbd.
 
-[[LG-6-2]]
-==== LG 6-2: Types of Data Pipelines
+[[LG-9-2]]
+==== LG 9-2: Types of Data Pipelines
 tbd.
 
-[[LG-6-3]]
-==== LG 6-3: Quality criteria for data pipelines
+[[LG-9-3]]
+==== LG 9-3: Quality criteria for data pipelines
 tbd.
 
-[[LG-6-4]]
-==== LG 6-4: Building Blocks of Data Pipelines
+[[LG-9-4]]
+==== LG 9-4: Building Blocks of Data Pipelines
 tbd.
 
-[[LG-6-5]]
-==== LG 6-5: Technologies and platforms for data pipelines
+[[LG-9-5]]
+==== LG 9-5: Technologies and platforms for data pipelines
 tbd.
 
-[[LG-6-6]]
-==== LG 6-6: Operation of data pipelines
+[[LG-9-6]]
+==== LG 9-6: Operation of data pipelines
 tbd.
 
 // end::EN[]
-
-

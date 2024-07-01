@@ -75,39 +75,39 @@ Die Teilnehmer:innen kennen den Begriff DataOps und verstehen, wie damit agile M
 // end::DE[]
 
 // tag::EN[]
-[[LG-12-1]]
-==== LG 12-1: Definition
+[[LG-11-1]]
+==== LG 11-1: Definition
 tbd.
 
-[[LG-12-2]]
-==== LG 12-2 - Privacy, Compliance, Data Security
+[[LG-11-2]]
+==== LG 11-2 - Privacy, Compliance, Data Security
 tbd.
 
-[[LG-12-3]]
-==== LG 12-3 - Data Quality
+[[LG-11-3]]
+==== LG 11-3 - Data Quality
 tbd.
 
-[[LG-12-4]]
-==== LG 12-4 - Data Access and Privileges
+[[LG-11-4]]
+==== LG 11-4 - Data Access and Privileges
 
-[[LG-12-5]]
-==== LG 12-5 - Data Stewardship und Ownership
+[[LG-11-5]]
+==== LG 11-5 - Data Stewardship und Ownership
 tbd.
 
-[[LG-12-6]]
-==== LG 12-6 - Data Contracts
+[[LG-11-6]]
+==== LG 11-6 - Data Contracts
 tbd.
 
-[[LG-12-7]]
-==== LG 12-7 - Policies
+[[LG-11-7]]
+==== LG 11-7 - Policies
 tbd.
 
-[[LG-12-8]]
-==== LG 12-8 - Metadata
+[[LG-11-8]]
+==== LG 11-8 - Metadata
 tbd.
 
-[[LG-12-8]]
-==== LG 12-8 - Operating
+[[LG-11-9]]
+==== LG 11-9 - Operational aspects
 tbd.
 
 
