@@ -3,7 +3,7 @@
 
 // tag::DE[]
 [[LZ-7-1]]
-==== LZ 7-1 - Was versteht man unter (Daten-)transformation?
+==== LZ 7-1 - Begriffsbestimmung (Daten-)transformation
 Die Teilnehmer:innen verstehen, dass Daten aus operativen Systemen oftmals aufbereitet werden müssen, um für die Analyse nutzbar zu sein. Sie wissen, dass dieser Schritt als (Daten-)Transformation bezeichnet wird.
 
 Die Teilnehmer:innen verstehen, dass Transformationen in Form von Queries beschrieben werden können, dass bei steigender Komplexität aber einzelne Queries zu unverständlich werden und Abfolgen von Queries (Data Pipeline siehe <<LZ-9-1>>) besser für die Umsetzung von Transformationen geeignet sind. Sie wissen, dass Transformationen üblicherweise vor dem Speichern der Daten erfolgen, es mitunter aber sinnvoll sein kann, Transformationen erst vor der Präsentation auszuführen.
@@ -105,7 +105,7 @@ Die Teilnehmer:innen kennen Frameworks oder Tools für die Stream Verarbeitung, 
 
 // tag::EN[]
 [[LG-7-1]]
-==== LG 7-1: Differentiation between queries
+==== LG 7-1: Definition Data Transformation
 tbd.
 
 [[LG-7-2]]
