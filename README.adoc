@@ -42,7 +42,7 @@ git clone https://github.com/isaqb-org/curriculum-data.git --recursive
 ----
 --
 
-. Build the project with http://www.gradle.com[gradle] (you need a locally installed JDK) via `./gradlew buildDocs`.
+. Build the project with http://www.gradle.com[gradle] (you need a locally installed JDK) via `./gradle-tools/gradlew buildDocs`.
 . Once "BUILD SUCCESSFUL" is shown, you can review the build result under `./build/index.html`
 
 That will produce both pdf and html output in German (DE) _and_ English (EN), unless you modify the configuration.
